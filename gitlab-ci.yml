@@ -1,0 +1,46 @@
+stages:
+  - test
+
+variables:
+  # TODO variable inside variable seems not be working on our gitlab instance,
+  # see post below, therefore use hardcoded image here for sphinx job
+  # https://stackoverflow.com/questions/67005507/variable-inside-variable-gitlab-ci
+  PYTHON_VERSION: "registry.git.rwth-aachen.de/ebc/ebc_all/github_ci/bim2sim/environment:development"
+#  PYTHON_VERSION: "${CI_REGISTRY}/environment:development"
+  GIT_SUBMODULE_STRATEGY: recursive
+  TEST_ENGINE: "unittest"
+  TEST_PATH: test
+  CI_REGISTRY_BIM2SIM: "registry.git.rwth-aachen.de/ebc/ebc_all/github_ci/bim2sim"
+
+include:
+  - project: 'EBC/EBC_all/gitlab_ci/templates'
+    file: 'python/code-quality/pylint.gitlab-ci.yml'
+  - project: 'EBC/EBC_all/gitlab_ci/templates'
+    file: 'python/doc/sphinxdoc.gitlab-ci.yml'
+  - project: 'EBC/EBC_all/gitlab_ci/templates'
+    file: 'pages/gh-pages.gitlab-ci.yml'
+  - project: 'EBC/EBC_all/gitlab_ci/templates'
+    file: 'python/tests/coverage.gitlab-ci.yml'
+
+# This is a workaround to download the test files by overwriting the utils method from original CI testing of EBC
+.install_local_repository:
+  script:
+    - python ./test/resources/dl_test_resources.py --domain=hydraulic --force_new
+    - python ./test/resources/dl_test_resources.py --domain=arch --force_new
+
+test_Base:
+ image: $CI_REGISTRY_BIM2SIM/environment:development
+ stage: test
+
+ script:
+   # Clone the bim2sim repository (REPO B) into bim2sim-coding and verify content
+   - git clone -b development https://github.com/BIM2SIM/bim2sim.git bim2sim-coding
+   - ls -R
+   - ls -R bim2sim-coding/
+   - ls -R bim2sim-coding/bim2sim
+   # Copy test resources from the current repository (REPO A) to the cloned repository
+   - cp -r resources/* bim2sim-coding/test/resources/
+   # List the contents to verify
+   - ls -R bim2sim-coding/test/resources
+   - coverage run -m unittest discover /bim2sim-coding/test
+   - coverage report -i
