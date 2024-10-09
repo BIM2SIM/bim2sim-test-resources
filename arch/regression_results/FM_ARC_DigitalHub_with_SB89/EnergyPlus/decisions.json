@@ -1,0 +1,61 @@
+{
+  "version": "0.1",
+  "checksum_ifc": null,
+  "decisions": {
+    "tool_IFC-based Space Boundary Generator_#403771=IfcApplication(#403769,'0.9','IFC-based Space Boundary Generator','IFC2SB')_29e5d63ff04fde0a623f98c1f87dd6a6": {
+      "value": "Other"
+    },
+    "SetClass:IfcBuildingElementProxy.0P898JVsX6VQGfAj0lC8zv": {
+      "value": null,
+      "checksum": "67a95e51cea81ae194595d483a9d36ea"
+    },
+    "SetClass:IfcBuildingElementProxy.3LJODRGPbDdfXHXShFL8ox": {
+      "value": null,
+      "checksum": "67a95e51cea81ae194595d483a9d36ea"
+    },
+    "SetClass:IfcBuildingElementProxy.3A8hY1UoD7JhnLeZeDyP8A": {
+      "value": null,
+      "checksum": "67a95e51cea81ae194595d483a9d36ea"
+    },
+    "SetClass:IfcBuildingElementProxy.3A8hY1UoD7JhnLeZeDyR_x": {
+      "value": null,
+      "checksum": "67a95e51cea81ae194595d483a9d36ea"
+    },
+    "SetClass:IfcBuildingElementProxy.3A8hY1UoD7JhnLeZeDyQc9": {
+      "value": null,
+      "checksum": "67a95e51cea81ae194595d483a9d36ea"
+    },
+    "SetClass:IfcBuildingElementProxy.3A8hY1UoD7JhnLeZeDyUK3": {
+      "value": null,
+      "checksum": "67a95e51cea81ae194595d483a9d36ea"
+    },
+    "SetClass:IfcBuildingElementProxy.3A8hY1UoD7JhnLeZeDyOSj": {
+      "value": null,
+      "checksum": "67a95e51cea81ae194595d483a9d36ea"
+    },
+    "SetClass:IfcBuildingElementProxy.3A8hY1UoD7JhnLeZeDyRma": {
+      "value": null,
+      "checksum": "67a95e51cea81ae194595d483a9d36ea"
+    },
+    "SetClass:IfcBuildingElementProxy.3LJODRGPbDdfXHXShFL9C7": {
+      "value": null,
+      "checksum": "67a95e51cea81ae194595d483a9d36ea"
+    },
+    "SetClass:IfcBuildingElementProxy.3A8hY1UoD7JhnLeZeDyPUs": {
+      "value": null,
+      "checksum": "67a95e51cea81ae194595d483a9d36ea"
+    },
+    "SetClass:IfcBuildingElementProxy.3A8hY1UoD7JhnLeZeDyR7S": {
+      "value": null,
+      "checksum": "67a95e51cea81ae194595d483a9d36ea"
+    },
+    "SetClass:IfcBuildingElementProxy.3A8hY1UoD7JhnLeZeDyQWN": {
+      "value": null,
+      "checksum": "67a95e51cea81ae194595d483a9d36ea"
+    },
+    "IfcBuilding_1OVsTAdVr0zxMeLRosmk1X.year_of_construction": {
+      "value": 2015,
+      "unit": "year"
+    }
+  }
+}

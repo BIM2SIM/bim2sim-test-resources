@@ -1,0 +1,18 @@
+{
+   "settings": {
+      "use": true
+},
+   "usage_definitions": {
+      "Traffic area":[
+         "att",
+         "Corridor3",
+         "Corridor8"
+      ],
+      "Living": [
+         "Children10",
+         "Children7",
+         "Kitchen5",
+         "Hobby2"
+      ]
+   }
+}
