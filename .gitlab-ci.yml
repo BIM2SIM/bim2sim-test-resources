@@ -7,20 +7,8 @@ variables:
   # https://stackoverflow.com/questions/67005507/variable-inside-variable-gitlab-ci
   PYTHON_VERSION: "registry.git.rwth-aachen.de/ebc/ebc_all/github_ci/bim2sim/environment:development"
 #  PYTHON_VERSION: "${CI_REGISTRY}/environment:development"
-  GIT_SUBMODULE_STRATEGY: recursive
-  TEST_ENGINE: "unittest"
-  TEST_PATH: test
   CI_REGISTRY_BIM2SIM: "registry.git.rwth-aachen.de/ebc/ebc_all/github_ci/bim2sim"
 
-include:
-  - project: 'EBC/EBC_all/gitlab_ci/templates'
-    file: 'python/code-quality/pylint.gitlab-ci.yml'
-  - project: 'EBC/EBC_all/gitlab_ci/templates'
-    file: 'python/doc/sphinxdoc.gitlab-ci.yml'
-  - project: 'EBC/EBC_all/gitlab_ci/templates'
-    file: 'pages/gh-pages.gitlab-ci.yml'
-  - project: 'EBC/EBC_all/gitlab_ci/templates'
-    file: 'python/tests/coverage.gitlab-ci.yml'
 
 # This is a workaround to download the test files by overwriting the utils method from original CI testing of EBC
 .install_local_repository:
