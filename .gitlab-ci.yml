@@ -19,7 +19,8 @@ variables:
 test_Base:
  image: $CI_REGISTRY_BIM2SIM/environment:development
  stage: test
-
+ before_script:
+   - pip install coverage
  script:
    # Clone the bim2sim repository (REPO B) into bim2sim-coding and verify content
    - git clone -b development https://github.com/BIM2SIM/bim2sim.git bim2sim-coding
