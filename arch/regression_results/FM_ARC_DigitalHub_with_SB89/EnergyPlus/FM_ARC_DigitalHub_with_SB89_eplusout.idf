@@ -11703,7 +11703,7 @@ BUILDINGSURFACE:DETAILED,
 
 BUILDINGSURFACE:DETAILED,
     1upt0WcgrDkRmiBUmjITGm,    !- Name
-    Floor,                    !- Surface Type
+    Ceiling,                  !- Surface Type
     BPS-InnerFloor_3_0.04_0.06_0.16,    !- Construction Name
     1AvOdkQ3T28R35aw88sFH_,    !- Zone Name
     Adiabatic,                !- Outside Boundary Condition
@@ -14133,7 +14133,7 @@ BUILDINGSURFACE:DETAILED,
 
 BUILDINGSURFACE:DETAILED,
     0VUp3L8sr8qR_ypzLLAJhh,    !- Name
-    Ceiling,                  !- Surface Type
+    Floor,                    !- Surface Type
     BPS-InnerFloor_3_0.04_0.06_0.16,    !- Construction Name
     1Pa4Dm1xXFOuQ42mT39OUf,    !- Zone Name
     Adiabatic,                !- Outside Boundary Condition
@@ -14205,7 +14205,7 @@ BUILDINGSURFACE:DETAILED,
 
 BUILDINGSURFACE:DETAILED,
     0fL49WPQ5EKh0CAU$WqYwW,    !- Name
-    Ceiling,                  !- Surface Type
+    Floor,                    !- Surface Type
     BPS-InnerFloor_3_0.04_0.06_0.16,    !- Construction Name
     1Pa4Dm1xXFOuQ42mT39OUf,    !- Zone Name
     Adiabatic,                !- Outside Boundary Condition
@@ -14253,7 +14253,7 @@ BUILDINGSURFACE:DETAILED,
 
 BUILDINGSURFACE:DETAILED,
     2ZIhs6Qt1EfR1zm$ELlzoh,    !- Name
-    Ceiling,                  !- Surface Type
+    Floor,                    !- Surface Type
     BPS-InnerFloor_3_0.04_0.06_0.16,    !- Construction Name
     1Pa4Dm1xXFOuQ42mT39OUf,    !- Zone Name
     Adiabatic,                !- Outside Boundary Condition
@@ -14313,7 +14313,7 @@ BUILDINGSURFACE:DETAILED,
 
 BUILDINGSURFACE:DETAILED,
     1Xz0tr95z86x_1TKF3ILzm,    !- Name
-    Ceiling,                  !- Surface Type
+    Floor,                    !- Surface Type
     BPS-InnerFloor_3_0.04_0.06_0.16,    !- Construction Name
     1Pa4Dm1xXFOuQ42mT39OUf,    !- Zone Name
     Adiabatic,                !- Outside Boundary Condition
@@ -14367,7 +14367,7 @@ BUILDINGSURFACE:DETAILED,
 
 BUILDINGSURFACE:DETAILED,
     2mzxg1QPH4b9RNnMV0RyGH,    !- Name
-    Ceiling,                  !- Surface Type
+    Floor,                    !- Surface Type
     BPS-InnerFloor_3_0.04_0.06_0.16,    !- Construction Name
     1Pa4Dm1xXFOuQ42mT39OUf,    !- Zone Name
     Adiabatic,                !- Outside Boundary Condition
@@ -14415,7 +14415,7 @@ BUILDINGSURFACE:DETAILED,
 
 BUILDINGSURFACE:DETAILED,
     2q_yJZm7rE_vzQW6FGABZ3,    !- Name
-    Ceiling,                  !- Surface Type
+    Floor,                    !- Surface Type
     BPS-InnerFloor_3_0.04_0.06_0.16,    !- Construction Name
     1Pa4Dm1xXFOuQ42mT39OUf,    !- Zone Name
     Adiabatic,                !- Outside Boundary Condition
@@ -14463,7 +14463,7 @@ BUILDINGSURFACE:DETAILED,
 
 BUILDINGSURFACE:DETAILED,
     0ov9Paamf4AveRDIu5Enza,    !- Name
-    Ceiling,                  !- Surface Type
+    Floor,                    !- Surface Type
     BPS-InnerFloor_3_0.04_0.06_0.16,    !- Construction Name
     1Pa4Dm1xXFOuQ42mT39OUf,    !- Zone Name
     Adiabatic,                !- Outside Boundary Condition
@@ -14487,7 +14487,7 @@ BUILDINGSURFACE:DETAILED,
 
 BUILDINGSURFACE:DETAILED,
     3F5sbRbrnE_RsSv321Zwhy,    !- Name
-    Ceiling,                  !- Surface Type
+    Floor,                    !- Surface Type
     BPS-InnerFloor_3_0.04_0.06_0.16,    !- Construction Name
     1Pa4Dm1xXFOuQ42mT39OUf,    !- Zone Name
     Adiabatic,                !- Outside Boundary Condition
@@ -14643,7 +14643,7 @@ BUILDINGSURFACE:DETAILED,
 
 BUILDINGSURFACE:DETAILED,
     28B1t0b75CJuquHrf16qKK,    !- Name
-    Ceiling,                  !- Surface Type
+    Floor,                    !- Surface Type
     BPS-InnerFloor_3_0.04_0.06_0.16,    !- Construction Name
     1Pa4Dm1xXFOuQ42mT39OUf,    !- Zone Name
     Adiabatic,                !- Outside Boundary Condition
@@ -14667,7 +14667,7 @@ BUILDINGSURFACE:DETAILED,
 
 BUILDINGSURFACE:DETAILED,
     3Mes6sF$9F0ADPktK8pOLv,    !- Name
-    Ceiling,                  !- Surface Type
+    Floor,                    !- Surface Type
     BPS-InnerFloor_3_0.04_0.06_0.16,    !- Construction Name
     1Pa4Dm1xXFOuQ42mT39OUf,    !- Zone Name
     Adiabatic,                !- Outside Boundary Condition
@@ -14691,7 +14691,7 @@ BUILDINGSURFACE:DETAILED,
 
 BUILDINGSURFACE:DETAILED,
     3wTBCmfi59gQ39Sl6m4XC7,    !- Name
-    Ceiling,                  !- Surface Type
+    Floor,                    !- Surface Type
     BPS-InnerFloor_3_0.04_0.06_0.16,    !- Construction Name
     1Pa4Dm1xXFOuQ42mT39OUf,    !- Zone Name
     Adiabatic,                !- Outside Boundary Condition
@@ -14715,7 +14715,7 @@ BUILDINGSURFACE:DETAILED,
 
 BUILDINGSURFACE:DETAILED,
     1vTmTKnHnCfODtPZ017LMm,    !- Name
-    Ceiling,                  !- Surface Type
+    Floor,                    !- Surface Type
     BPS-InnerFloor_3_0.04_0.06_0.16,    !- Construction Name
     1Pa4Dm1xXFOuQ42mT39OUf,    !- Zone Name
     Adiabatic,                !- Outside Boundary Condition
@@ -14739,7 +14739,7 @@ BUILDINGSURFACE:DETAILED,
 
 BUILDINGSURFACE:DETAILED,
     2pod4YUhDB5e7VHvh14ODF,    !- Name
-    Ceiling,                  !- Surface Type
+    Floor,                    !- Surface Type
     BPS-InnerFloor_3_0.04_0.06_0.16,    !- Construction Name
     1Pa4Dm1xXFOuQ42mT39OUf,    !- Zone Name
     Adiabatic,                !- Outside Boundary Condition
@@ -14763,7 +14763,7 @@ BUILDINGSURFACE:DETAILED,
 
 BUILDINGSURFACE:DETAILED,
     2l4YWP3Sz4fuZw0gSftMsa,    !- Name
-    Ceiling,                  !- Surface Type
+    Floor,                    !- Surface Type
     BPS-InnerFloor_3_0.04_0.06_0.16,    !- Construction Name
     1Pa4Dm1xXFOuQ42mT39OUf,    !- Zone Name
     Adiabatic,                !- Outside Boundary Condition
@@ -15723,7 +15723,7 @@ BUILDINGSURFACE:DETAILED,
 
 BUILDINGSURFACE:DETAILED,
     2_TfUrpxH46PbPrS8Jjsoe,    !- Name
-    Ceiling,                  !- Surface Type
+    Floor,                    !- Surface Type
     BPS-InnerFloor_3_0.04_0.06_0.16,    !- Construction Name
     1Pa4Dm1xXFOuQ42mT39OUf,    !- Zone Name
     Adiabatic,                !- Outside Boundary Condition
@@ -15771,7 +15771,7 @@ BUILDINGSURFACE:DETAILED,
 
 BUILDINGSURFACE:DETAILED,
     2zUq$a9qb8WvUQ6yruOCM_,    !- Name
-    Ceiling,                  !- Surface Type
+    Floor,                    !- Surface Type
     BPS-InnerFloor_3_0.04_0.06_0.16,    !- Construction Name
     1Pa4Dm1xXFOuQ42mT39OUf,    !- Zone Name
     Adiabatic,                !- Outside Boundary Condition
@@ -15819,7 +15819,7 @@ BUILDINGSURFACE:DETAILED,
 
 BUILDINGSURFACE:DETAILED,
     3n_EdFfqv3dh2qNw5VvObt,    !- Name
-    Ceiling,                  !- Surface Type
+    Floor,                    !- Surface Type
     BPS-InnerFloor_3_0.04_0.06_0.16,    !- Construction Name
     1Pa4Dm1xXFOuQ42mT39OUf,    !- Zone Name
     Adiabatic,                !- Outside Boundary Condition
@@ -15843,7 +15843,7 @@ BUILDINGSURFACE:DETAILED,
 
 BUILDINGSURFACE:DETAILED,
     3bGPfXLA15YP9nvQ4sylgP,    !- Name
-    Ceiling,                  !- Surface Type
+    Floor,                    !- Surface Type
     BPS-InnerFloor_3_0.04_0.06_0.16,    !- Construction Name
     1Pa4Dm1xXFOuQ42mT39OUf,    !- Zone Name
     Adiabatic,                !- Outside Boundary Condition
@@ -20391,7 +20391,7 @@ BUILDINGSURFACE:DETAILED,
 
 BUILDINGSURFACE:DETAILED,
     07zxPMacn1KglHtsjQdiua,    !- Name
-    Floor,                    !- Surface Type
+    Ceiling,                  !- Surface Type
     BPS-InnerFloor_3_0.04_0.06_0.16,    !- Construction Name
     1Pa4Dm1xXFOuQ42mT39OUf,    !- Zone Name
     Adiabatic,                !- Outside Boundary Condition
@@ -20511,7 +20511,7 @@ BUILDINGSURFACE:DETAILED,
 
 BUILDINGSURFACE:DETAILED,
     3pAALUYlbCvRKrJAgR92W7,    !- Name
-    Floor,                    !- Surface Type
+    Ceiling,                  !- Surface Type
     BPS-InnerFloor_3_0.04_0.06_0.16,    !- Construction Name
     1Pa4Dm1xXFOuQ42mT39OUf,    !- Zone Name
     Adiabatic,                !- Outside Boundary Condition
@@ -20595,7 +20595,7 @@ BUILDINGSURFACE:DETAILED,
 
 BUILDINGSURFACE:DETAILED,
     3BHd8VQS14UgHuwsQRubMP,    !- Name
-    Floor,                    !- Surface Type
+    Ceiling,                  !- Surface Type
     BPS-InnerFloor_3_0.04_0.06_0.16,    !- Construction Name
     1Pa4Dm1xXFOuQ42mT39OUf,    !- Zone Name
     Adiabatic,                !- Outside Boundary Condition
@@ -23637,7 +23637,7 @@ BUILDINGSURFACE:DETAILED,
 
 BUILDINGSURFACE:DETAILED,
     1QXqRTWz51Uui95VJY7sF_,    !- Name
-    Floor,                    !- Surface Type
+    Ceiling,                  !- Surface Type
     BPS-InnerFloor_3_0.04_0.06_0.16,    !- Construction Name
     1msjJyNQ933PrIH1dhlgKE,    !- Zone Name
     Adiabatic,                !- Outside Boundary Condition
@@ -24669,7 +24669,7 @@ BUILDINGSURFACE:DETAILED,
 
 BUILDINGSURFACE:DETAILED,
     0CkBNsyJL4LRdBlRrQDBZ6,    !- Name
-    Floor,                    !- Surface Type
+    Ceiling,                  !- Surface Type
     BPS-InnerFloor_3_0.04_0.06_0.16,    !- Construction Name
     1msjJyNQ933PrIH1dhlgKE,    !- Zone Name
     Adiabatic,                !- Outside Boundary Condition
@@ -30537,7 +30537,7 @@ BUILDINGSURFACE:DETAILED,
 
 BUILDINGSURFACE:DETAILED,
     1sK0rq0fjB7BB41JrzHHPn,    !- Name
-    Floor,                    !- Surface Type
+    Ceiling,                  !- Surface Type
     BPS-InnerFloor_3_0.04_0.06_0.16,    !- Construction Name
     2lQXmN_JDFywNHbCkUB0Bx,    !- Zone Name
     Adiabatic,                !- Outside Boundary Condition
@@ -83814,7 +83814,7 @@ OUTPUT:VARIABLE,
 
 OUTPUT:VARIABLE,
     *,                        !- Key Value
-    Zone Total Internal Total Heating Energy,    !- Variable Name
+    Zone Ideal Loads Zone Total Heating Energy,    !- Variable Name
     Hourly;                   !- Reporting Frequency
 
 OUTPUT:VARIABLE,
