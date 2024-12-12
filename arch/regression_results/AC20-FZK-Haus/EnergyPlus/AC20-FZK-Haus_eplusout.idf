@@ -1,4 +1,4 @@
-!- Windows Line endings
+!- Windows Line endings 
 
 Version,
     9.4;                      !- Version Identifier
@@ -3779,7 +3779,7 @@ CONSTRUCTION,
     WM_Glas1995_2015AluoderStahlfensterWaermeschutzverglasungzweifach_0.024;    !- Outside Layer
 
 CONSTRUCTION,
-    BPS-Floor_3_0.04_0.06_0.16,    !- Name
+    BPS-InnerFloor_3_0.04_0.06_0.16,    !- Name
     concrete_CEM_II_BS325R_wz05_0.16,    !- Outside Layer
     EPS_040_15_0.06,          !- Layer 2
     cement_floating_screed_2_bottom_0.04;    !- Layer 3
@@ -4167,7 +4167,7 @@ BUILDINGSURFACE:DETAILED,
 BUILDINGSURFACE:DETAILED,
     2pDD83uqxmRSy8GMp6Szu8,    !- Name
     Ceiling,                  !- Surface Type
-    BPS-Floor_3_0.04_0.06_0.16,    !- Construction Name
+    BPS-InnerFloor_3_0.04_0.06_0.16,    !- Construction Name
     0e_hbkIQ5DMQlIJ$2V3j_m,    !- Zone Name
     Surface,                  !- Outside Boundary Condition
     3poPVBFJumC3O8TyAwfjTl,    !- Outside Boundary Condition Object
@@ -4359,7 +4359,7 @@ BUILDINGSURFACE:DETAILED,
 BUILDINGSURFACE:DETAILED,
     30_zhx$GCtcBp285QVsdG_,    !- Name
     Ceiling,                  !- Surface Type
-    BPS-Floor_3_0.04_0.06_0.16,    !- Construction Name
+    BPS-InnerFloor_3_0.04_0.06_0.16,    !- Construction Name
     17JZcMFrf5tOftUTidA0d3,    !- Zone Name
     Surface,                  !- Outside Boundary Condition
     1qEbH1KsDpUVONBlPN2z6e,    !- Outside Boundary Condition Object
@@ -4479,7 +4479,7 @@ BUILDINGSURFACE:DETAILED,
 BUILDINGSURFACE:DETAILED,
     14TeGe_aGDXLMTt8fX0vQP,    !- Name
     Ceiling,                  !- Surface Type
-    BPS-Floor_3_0.04_0.06_0.16,    !- Construction Name
+    BPS-InnerFloor_3_0.04_0.06_0.16,    !- Construction Name
     2RSCzLOBz4FAK$_wE8VckM,    !- Zone Name
     Surface,                  !- Outside Boundary Condition
     0RmNuXZ0b7zvL3k1pnthLj,    !- Outside Boundary Condition Object
@@ -4599,7 +4599,7 @@ BUILDINGSURFACE:DETAILED,
 BUILDINGSURFACE:DETAILED,
     30Y14$n6BcKo4zt3hjgwMk,    !- Name
     Floor,                    !- Surface Type
-    BPS-Floor_3_0.04_0.06_0.16,    !- Construction Name
+    BPS-InnerFloor_3_0.04_0.06_0.16,    !- Construction Name
     2dQFggKBb1fOc1CqZDIDlx,    !- Zone Name
     Surface,                  !- Outside Boundary Condition
     2XUhfJhXX3mEyxbTybTDYC,    !- Outside Boundary Condition Object
@@ -4623,7 +4623,7 @@ BUILDINGSURFACE:DETAILED,
 BUILDINGSURFACE:DETAILED,
     1qEbH1KsDpUVONBlPN2z6e,    !- Name
     Floor,                    !- Surface Type
-    BPS-Floor_3_0.04_0.06_0.16,    !- Construction Name
+    BPS-InnerFloor_3_0.04_0.06_0.16,    !- Construction Name
     2dQFggKBb1fOc1CqZDIDlx,    !- Zone Name
     Surface,                  !- Outside Boundary Condition
     30_zhx$GCtcBp285QVsdG_,    !- Outside Boundary Condition Object
@@ -4647,7 +4647,7 @@ BUILDINGSURFACE:DETAILED,
 BUILDINGSURFACE:DETAILED,
     0RmNuXZ0b7zvL3k1pnthLj,    !- Name
     Floor,                    !- Surface Type
-    BPS-Floor_3_0.04_0.06_0.16,    !- Construction Name
+    BPS-InnerFloor_3_0.04_0.06_0.16,    !- Construction Name
     2dQFggKBb1fOc1CqZDIDlx,    !- Zone Name
     Surface,                  !- Outside Boundary Condition
     14TeGe_aGDXLMTt8fX0vQP,    !- Outside Boundary Condition Object
@@ -4671,7 +4671,7 @@ BUILDINGSURFACE:DETAILED,
 BUILDINGSURFACE:DETAILED,
     3poPVBFJumC3O8TyAwfjTl,    !- Name
     Floor,                    !- Surface Type
-    BPS-Floor_3_0.04_0.06_0.16,    !- Construction Name
+    BPS-InnerFloor_3_0.04_0.06_0.16,    !- Construction Name
     2dQFggKBb1fOc1CqZDIDlx,    !- Zone Name
     Surface,                  !- Outside Boundary Condition
     2pDD83uqxmRSy8GMp6Szu8,    !- Outside Boundary Condition Object
@@ -4695,7 +4695,7 @@ BUILDINGSURFACE:DETAILED,
 BUILDINGSURFACE:DETAILED,
     1hYST5uGdrRPiH45KdXX64,    !- Name
     Floor,                    !- Surface Type
-    BPS-Floor_3_0.04_0.06_0.16,    !- Construction Name
+    BPS-InnerFloor_3_0.04_0.06_0.16,    !- Construction Name
     2dQFggKBb1fOc1CqZDIDlx,    !- Zone Name
     Surface,                  !- Outside Boundary Condition
     1Oj77mh75tbSxm94qqlPFI,    !- Outside Boundary Condition Object
@@ -4791,7 +4791,7 @@ BUILDINGSURFACE:DETAILED,
 BUILDINGSURFACE:DETAILED,
     348wyWzxcjJLGiA5p7KlFU,    !- Name
     Floor,                    !- Surface Type
-    BPS-Floor_3_0.04_0.06_0.16,    !- Construction Name
+    BPS-GroundFloor_3_0.04_0.06_0.16,    !- Construction Name
     2dQFggKBb1fOc1CqZDIDlx,    !- Zone Name
     Ground,                   !- Outside Boundary Condition
     ,                         !- Outside Boundary Condition Object
@@ -5061,7 +5061,7 @@ BUILDINGSURFACE:DETAILED,
 BUILDINGSURFACE:DETAILED,
     1Oj77mh75tbSxm94qqlPFI,    !- Name
     Ceiling,                  !- Surface Type
-    BPS-Floor_3_0.04_0.06_0.16,    !- Construction Name
+    BPS-InnerFloor_3_0.04_0.06_0.16,    !- Construction Name
     3$f2p7VyLB7eox67SA_zKE,    !- Zone Name
     Surface,                  !- Outside Boundary Condition
     1hYST5uGdrRPiH45KdXX64,    !- Outside Boundary Condition Object
@@ -5253,7 +5253,7 @@ BUILDINGSURFACE:DETAILED,
 BUILDINGSURFACE:DETAILED,
     2XUhfJhXX3mEyxbTybTDYC,    !- Name
     Ceiling,                  !- Surface Type
-    BPS-Floor_3_0.04_0.06_0.16,    !- Construction Name
+    BPS-InnerFloor_3_0.04_0.06_0.16,    !- Construction Name
     347jFE2yX7IhCEIALmupEH,    !- Zone Name
     Surface,                  !- Outside Boundary Condition
     30Y14$n6BcKo4zt3hjgwMk,    !- Outside Boundary Condition Object
@@ -5347,12 +5347,12 @@ BUILDINGSURFACE:DETAILED,
     2.5;                      !- Vertex 4 Zcoordinate
 
 BUILDINGSURFACE:DETAILED,
-    2qRiKzEgP91RFgDyO8xfY8,    !- Name
+    3jXm$feiv78uMi6i8Y84qc,    !- Name
     Floor,                    !- Surface Type
-    BPS-Floor_3_0.04_0.06_0.16,    !- Construction Name
+    BPS-InnerFloor_3_0.04_0.06_0.16,    !- Construction Name
     2dQFggKBb1fOc1CqZDIDlx,    !- Zone Name
     Surface,                  !- Outside Boundary Condition
-    1kcE2L09j4JOVpaw_yUGtp,    !- Outside Boundary Condition Object
+    2TWy$SMQTDxhjSYLkn5KFY,    !- Outside Boundary Condition Object
     NoSun,                    !- Sun Exposure
     NoWind,                   !- Wind Exposure
     autocalculate,            !- View Factor to Ground
@@ -5371,12 +5371,12 @@ BUILDINGSURFACE:DETAILED,
     2.7;                      !- Vertex 4 Zcoordinate
 
 BUILDINGSURFACE:DETAILED,
-    1kcE2L09j4JOVpaw_yUGtp,    !- Name
+    2TWy$SMQTDxhjSYLkn5KFY,    !- Name
     Ceiling,                  !- Surface Type
-    BPS-Floor_3_0.04_0.06_0.16,    !- Construction Name
+    BPS-InnerFloor_3_0.04_0.06_0.16,    !- Construction Name
     0Lt8gR_E9ESeGH5uY_g9e9,    !- Zone Name
     Surface,                  !- Outside Boundary Condition
-    2qRiKzEgP91RFgDyO8xfY8,    !- Outside Boundary Condition Object
+    3jXm$feiv78uMi6i8Y84qc,    !- Outside Boundary Condition Object
     NoSun,                    !- Sun Exposure
     NoWind,                   !- Wind Exposure
     autocalculate,            !- View Factor to Ground
@@ -5395,12 +5395,12 @@ BUILDINGSURFACE:DETAILED,
     2.5;                      !- Vertex 4 Zcoordinate
 
 BUILDINGSURFACE:DETAILED,
-    3sLXuGqp948A1LdvC5N6Gi,    !- Name
+    0ntu87gy117u6rZXgVYMw_,    !- Name
     Ceiling,                  !- Surface Type
-    BPS-Floor_3_0.04_0.06_0.16,    !- Construction Name
+    BPS-InnerFloor_3_0.04_0.06_0.16,    !- Construction Name
     3$f2p7VyLB7eox67SA_zKE,    !- Zone Name
     Surface,                  !- Outside Boundary Condition
-    0OGQ6W8ML3OuDP1nERbAHg,    !- Outside Boundary Condition Object
+    28RUXH521Dj9UZfQKiGyzN,    !- Outside Boundary Condition Object
     NoSun,                    !- Sun Exposure
     NoWind,                   !- Wind Exposure
     autocalculate,            !- View Factor to Ground
@@ -5419,12 +5419,12 @@ BUILDINGSURFACE:DETAILED,
     2.5;                      !- Vertex 4 Zcoordinate
 
 BUILDINGSURFACE:DETAILED,
-    0OGQ6W8ML3OuDP1nERbAHg,    !- Name
+    28RUXH521Dj9UZfQKiGyzN,    !- Name
     Floor,                    !- Surface Type
-    BPS-Floor_3_0.04_0.06_0.16,    !- Construction Name
+    BPS-InnerFloor_3_0.04_0.06_0.16,    !- Construction Name
     2dQFggKBb1fOc1CqZDIDlx,    !- Zone Name
     Surface,                  !- Outside Boundary Condition
-    3sLXuGqp948A1LdvC5N6Gi,    !- Outside Boundary Condition Object
+    0ntu87gy117u6rZXgVYMw_,    !- Outside Boundary Condition Object
     NoSun,                    !- Sun Exposure
     NoWind,                   !- Wind Exposure
     autocalculate,            !- View Factor to Ground
@@ -5443,12 +5443,12 @@ BUILDINGSURFACE:DETAILED,
     2.7;                      !- Vertex 4 Zcoordinate
 
 BUILDINGSURFACE:DETAILED,
-    3L5S9$GUD7jwLYvYvtAbXZ,    !- Name
+    39snEGJNLD2gz1JGl79POb,    !- Name
     Ceiling,                  !- Surface Type
-    BPS-Floor_3_0.04_0.06_0.16,    !- Construction Name
+    BPS-InnerFloor_3_0.04_0.06_0.16,    !- Construction Name
     3$f2p7VyLB7eox67SA_zKE,    !- Zone Name
     Surface,                  !- Outside Boundary Condition
-    1Gx0d$Msb7$Our$Bs2dGtY,    !- Outside Boundary Condition Object
+    1MHSgtRULC5P4qzvBoHeyh,    !- Outside Boundary Condition Object
     NoSun,                    !- Sun Exposure
     NoWind,                   !- Wind Exposure
     autocalculate,            !- View Factor to Ground
@@ -5467,12 +5467,12 @@ BUILDINGSURFACE:DETAILED,
     2.5;                      !- Vertex 4 Zcoordinate
 
 BUILDINGSURFACE:DETAILED,
-    1Gx0d$Msb7$Our$Bs2dGtY,    !- Name
+    1MHSgtRULC5P4qzvBoHeyh,    !- Name
     Floor,                    !- Surface Type
-    BPS-Floor_3_0.04_0.06_0.16,    !- Construction Name
+    BPS-InnerFloor_3_0.04_0.06_0.16,    !- Construction Name
     2dQFggKBb1fOc1CqZDIDlx,    !- Zone Name
     Surface,                  !- Outside Boundary Condition
-    3L5S9$GUD7jwLYvYvtAbXZ,    !- Outside Boundary Condition Object
+    39snEGJNLD2gz1JGl79POb,    !- Outside Boundary Condition Object
     NoSun,                    !- Sun Exposure
     NoWind,                   !- Wind Exposure
     autocalculate,            !- View Factor to Ground
@@ -5491,7 +5491,7 @@ BUILDINGSURFACE:DETAILED,
     2.7;                      !- Vertex 4 Zcoordinate
 
 BUILDINGSURFACE:DETAILED,
-    06nCzU6pzF5eY22WTqqBLc,    !- Name
+    1fKDDA$XXCpBAPq7RjNowj,    !- Name
     Floor,                    !- Surface Type
     BPS-GroundFloor_3_0.04_0.06_0.16,    !- Construction Name
     3$f2p7VyLB7eox67SA_zKE,    !- Zone Name
@@ -5515,7 +5515,7 @@ BUILDINGSURFACE:DETAILED,
     0;                        !- Vertex 4 Zcoordinate
 
 BUILDINGSURFACE:DETAILED,
-    34gCzetgH9u9M97dmUvOgD,    !- Name
+    0jxeXeW_19Gv$vcOf2qBYf,    !- Name
     Floor,                    !- Surface Type
     BPS-GroundFloor_3_0.04_0.06_0.16,    !- Construction Name
     3$f2p7VyLB7eox67SA_zKE,    !- Zone Name
@@ -5539,7 +5539,7 @@ BUILDINGSURFACE:DETAILED,
     0;                        !- Vertex 4 Zcoordinate
 
 BUILDINGSURFACE:DETAILED,
-    3SprCKiIvFrudmBITgNJnh,    !- Name
+    0gqcVLmT59nBcytsAUIOki,    !- Name
     Wall,                     !- Surface Type
     BPS-InnerWall_3_0.01_0.15_0.01,    !- Construction Name
     0Lt8gR_E9ESeGH5uY_g9e9,    !- Zone Name
@@ -5566,7 +5566,7 @@ BUILDINGSURFACE:DETAILED,
     2.5;                      !- Vertex 5 Zcoordinate
 
 BUILDINGSURFACE:DETAILED,
-    1K7$zkT_14IvoeUeCpy8W4,    !- Name
+    2_xMFFSGP3D8s168NAnk9Q,    !- Name
     Wall,                     !- Surface Type
     BPS-InnerWall_3_0.01_0.15_0.01,    !- Construction Name
     3$f2p7VyLB7eox67SA_zKE,    !- Zone Name
@@ -5602,7 +5602,7 @@ BUILDINGSURFACE:DETAILED,
     2.5;                      !- Vertex 8 Zcoordinate
 
 BUILDINGSURFACE:DETAILED,
-    3hE$GNakr5NBY1PK5Ubzzk,    !- Name
+    1EsTVzDWT8Iu671erLELcz,    !- Name
     Wall,                     !- Surface Type
     BPS-InnerWall_3_0.01_0.15_0.01,    !- Construction Name
     3$f2p7VyLB7eox67SA_zKE,    !- Zone Name
@@ -5626,7 +5626,7 @@ BUILDINGSURFACE:DETAILED,
     2.5;                      !- Vertex 4 Zcoordinate
 
 BUILDINGSURFACE:DETAILED,
-    07NbzXRfvEwRlpIttsdNi1,    !- Name
+    0R0lb3L_f51xbLci6i5HDo,    !- Name
     Wall,                     !- Surface Type
     BPS-InnerWall_3_0.01_0.15_0.01,    !- Construction Name
     3$f2p7VyLB7eox67SA_zKE,    !- Zone Name
@@ -5662,7 +5662,7 @@ BUILDINGSURFACE:DETAILED,
     2.5;                      !- Vertex 8 Zcoordinate
 
 BUILDINGSURFACE:DETAILED,
-    2xJQVUoKnFtBfAIGO47TMo,    !- Name
+    1ESGA80yXFiQp6t6Rq9p9o,    !- Name
     Wall,                     !- Surface Type
     BPS-InnerWall_3_0.01_0.15_0.01,    !- Construction Name
     347jFE2yX7IhCEIALmupEH,    !- Zone Name
@@ -5686,9 +5686,9 @@ BUILDINGSURFACE:DETAILED,
     2.5;                      !- Vertex 4 Zcoordinate
 
 BUILDINGSURFACE:DETAILED,
-    3ImZSjZC16MeAuzLVCk4qp,    !- Name
+    2ZuaW8VpXD4grr8vMSiUTx,    !- Name
     Floor,                    !- Surface Type
-    BPS-Floor_3_0.04_0.06_0.16,    !- Construction Name
+    BPS-InnerFloor_3_0.04_0.06_0.16,    !- Construction Name
     2dQFggKBb1fOc1CqZDIDlx,    !- Zone Name
     Adiabatic,                !- Outside Boundary Condition
     ,                         !- Outside Boundary Condition Object
@@ -5710,9 +5710,9 @@ BUILDINGSURFACE:DETAILED,
     2.7;                      !- Vertex 4 Zcoordinate
 
 BUILDINGSURFACE:DETAILED,
-    1zLg43BYj7kgkugFYzZJsX,    !- Name
+    0BsLNxHg5Dd9urI00lrDWs,    !- Name
     Floor,                    !- Surface Type
-    BPS-Floor_3_0.04_0.06_0.16,    !- Construction Name
+    BPS-InnerFloor_3_0.04_0.06_0.16,    !- Construction Name
     2dQFggKBb1fOc1CqZDIDlx,    !- Zone Name
     Adiabatic,                !- Outside Boundary Condition
     ,                         !- Outside Boundary Condition Object
@@ -5734,9 +5734,9 @@ BUILDINGSURFACE:DETAILED,
     2.7;                      !- Vertex 4 Zcoordinate
 
 BUILDINGSURFACE:DETAILED,
-    2TViTmqIrAFhBda$_NH5Ug,    !- Name
+    2G2vaojULCyOJ5$Q6nh2KS,    !- Name
     Floor,                    !- Surface Type
-    BPS-Floor_3_0.04_0.06_0.16,    !- Construction Name
+    BPS-InnerFloor_3_0.04_0.06_0.16,    !- Construction Name
     2dQFggKBb1fOc1CqZDIDlx,    !- Zone Name
     Adiabatic,                !- Outside Boundary Condition
     ,                         !- Outside Boundary Condition Object
@@ -5758,9 +5758,9 @@ BUILDINGSURFACE:DETAILED,
     2.7;                      !- Vertex 4 Zcoordinate
 
 BUILDINGSURFACE:DETAILED,
-    2Q$zI2$GD2GuvG_NpVFSaU,    !- Name
+    3UYTBO6pn2h8F6XUITcALM,    !- Name
     Floor,                    !- Surface Type
-    BPS-Floor_3_0.04_0.06_0.16,    !- Construction Name
+    BPS-InnerFloor_3_0.04_0.06_0.16,    !- Construction Name
     2dQFggKBb1fOc1CqZDIDlx,    !- Zone Name
     Adiabatic,                !- Outside Boundary Condition
     ,                         !- Outside Boundary Condition Object
@@ -5782,9 +5782,9 @@ BUILDINGSURFACE:DETAILED,
     2.7;                      !- Vertex 4 Zcoordinate
 
 BUILDINGSURFACE:DETAILED,
-    1Sgetpgmn8x8th56waDYPn,    !- Name
+    2JICzSG8b9kuE1cRLK6oys,    !- Name
     Floor,                    !- Surface Type
-    BPS-Floor_3_0.04_0.06_0.16,    !- Construction Name
+    BPS-InnerFloor_3_0.04_0.06_0.16,    !- Construction Name
     2dQFggKBb1fOc1CqZDIDlx,    !- Zone Name
     Adiabatic,                !- Outside Boundary Condition
     ,                         !- Outside Boundary Condition Object
@@ -5806,9 +5806,9 @@ BUILDINGSURFACE:DETAILED,
     2.7;                      !- Vertex 4 Zcoordinate
 
 BUILDINGSURFACE:DETAILED,
-    1$kljSYOL1Zv7ROkMbCzrb,    !- Name
+    06WKph9cP0lg8oS31KNlMR,    !- Name
     Floor,                    !- Surface Type
-    BPS-Floor_3_0.04_0.06_0.16,    !- Construction Name
+    BPS-InnerFloor_3_0.04_0.06_0.16,    !- Construction Name
     2dQFggKBb1fOc1CqZDIDlx,    !- Zone Name
     Adiabatic,                !- Outside Boundary Condition
     ,                         !- Outside Boundary Condition Object
@@ -5830,9 +5830,9 @@ BUILDINGSURFACE:DETAILED,
     2.7;                      !- Vertex 4 Zcoordinate
 
 BUILDINGSURFACE:DETAILED,
-    3B97iKlz52OgxGPWtYydK2,    !- Name
+    129hgLhYzAaua7RiBczJFy,    !- Name
     Floor,                    !- Surface Type
-    BPS-Floor_3_0.04_0.06_0.16,    !- Construction Name
+    BPS-InnerFloor_3_0.04_0.06_0.16,    !- Construction Name
     2dQFggKBb1fOc1CqZDIDlx,    !- Zone Name
     Adiabatic,                !- Outside Boundary Condition
     ,                         !- Outside Boundary Condition Object
@@ -5854,9 +5854,9 @@ BUILDINGSURFACE:DETAILED,
     2.7;                      !- Vertex 4 Zcoordinate
 
 BUILDINGSURFACE:DETAILED,
-    28V519rzP1JRPGEIc0TlGJ,    !- Name
+    3vODZTwVv2wxgdBfkcrNJK,    !- Name
     Floor,                    !- Surface Type
-    BPS-Floor_3_0.04_0.06_0.16,    !- Construction Name
+    BPS-InnerFloor_3_0.04_0.06_0.16,    !- Construction Name
     2dQFggKBb1fOc1CqZDIDlx,    !- Zone Name
     Adiabatic,                !- Outside Boundary Condition
     ,                         !- Outside Boundary Condition Object
@@ -6720,7 +6720,7 @@ LIGHTS,
     Schedule Lighting Living,    !- Schedule Name
     Watts/Area,               !- Design Level Calculation Method
     ,                         !- Lighting Level
-    7,                        !- Watts per Zone Floor Area
+    10,                       !- Watts per Zone Floor Area
     ,                         !- Watts per Person
     0,                        !- Return Air Fraction
     0.42,                     !- Fraction Radiant
@@ -6788,7 +6788,7 @@ LIGHTS,
     Schedule Lighting Living,    !- Schedule Name
     Watts/Area,               !- Design Level Calculation Method
     ,                         !- Lighting Level
-    7,                        !- Watts per Zone Floor Area
+    10,                       !- Watts per Zone Floor Area
     ,                         !- Watts per Person
     0,                        !- Return Air Fraction
     0.42,                     !- Fraction Radiant
@@ -7374,7 +7374,12 @@ OUTPUT:VARIABLE,
 
 OUTPUT:VARIABLE,
     *,                        !- Key Value
-    Zone Total Internal Total Heating Energy,    !- Variable Name
+    Zone Ideal Loads Zone Total Heating Energy,    !- Variable Name
+    Hourly;                   !- Reporting Frequency
+
+OUTPUT:VARIABLE,
+    *,                        !- Key Value
+    Zone Ideal Loads Zone Total Cooling Energy,    !- Variable Name
     Hourly;                   !- Reporting Frequency
 
 OUTPUT:VARIABLE,
