@@ -174,30 +174,30 @@ SCHEDULE:DAY:HOURLY,
 SCHEDULE:DAY:HOURLY,
     Schedule Cooling Living,    !- Name
     Temperature,              !- Schedule Type Limits Name
-    21,                       !- Hour 1
-    21,                       !- Hour 2
-    21,                       !- Hour 3
-    21,                       !- Hour 4
-    21,                       !- Hour 5
-    21,                       !- Hour 6
-    21,                       !- Hour 7
-    21,                       !- Hour 8
-    21,                       !- Hour 9
-    21,                       !- Hour 10
-    21,                       !- Hour 11
-    21,                       !- Hour 12
-    21,                       !- Hour 13
-    21,                       !- Hour 14
-    21,                       !- Hour 15
-    21,                       !- Hour 16
-    21,                       !- Hour 17
-    21,                       !- Hour 18
-    21,                       !- Hour 19
-    21,                       !- Hour 20
-    21,                       !- Hour 21
-    21,                       !- Hour 22
-    21,                       !- Hour 23
-    21;                       !- Hour 24
+    25,                       !- Hour 1
+    25,                       !- Hour 2
+    25,                       !- Hour 3
+    25,                       !- Hour 4
+    25,                       !- Hour 5
+    25,                       !- Hour 6
+    25,                       !- Hour 7
+    25,                       !- Hour 8
+    25,                       !- Hour 9
+    25,                       !- Hour 10
+    25,                       !- Hour 11
+    25,                       !- Hour 12
+    25,                       !- Hour 13
+    25,                       !- Hour 14
+    25,                       !- Hour 15
+    25,                       !- Hour 16
+    25,                       !- Hour 17
+    25,                       !- Hour 18
+    25,                       !- Hour 19
+    25,                       !- Hour 20
+    25,                       !- Hour 21
+    25,                       !- Hour 22
+    25,                       !- Hour 23
+    25;                       !- Hour 24
 
 SCHEDULE:DAY:HOURLY,
     Schedule People Living,    !- Name
@@ -4699,7 +4699,7 @@ CONSTRUCTION,
     lime_plaster_0.01;        !- Layer 3
 
 CONSTRUCTION,
-    BPS-Floor_3_0.04_0.06_0.16,    !- Name
+    BPS-InnerFloor_3_0.04_0.06_0.16,    !- Name
     concrete_CEM_II_BS325R_wz05_0.16,    !- Outside Layer
     EPS_040_15_0.06,          !- Layer 2
     cement_floating_screed_2_bottom_0.04;    !- Layer 3
@@ -4967,7 +4967,7 @@ BUILDINGSURFACE:DETAILED,
 BUILDINGSURFACE:DETAILED,
     2pgK3dPJsC39txkgxE$HQ4,    !- Name
     Ceiling,                  !- Surface Type
-    BPS-Floor_3_0.04_0.06_0.16,    !- Construction Name
+    BPS-InnerFloor_3_0.04_0.06_0.16,    !- Construction Name
     0Lt8gR_E9ESeGH5uY_g9e9,    !- Zone Name
     Surface,                  !- Outside Boundary Condition
     0vscZaFtJ3t7_0IAksqJ3z,    !- Outside Boundary Condition Object
@@ -5138,7 +5138,7 @@ BUILDINGSURFACE:DETAILED,
 BUILDINGSURFACE:DETAILED,
     2pDD83uqxmRSy8GMp6Szu8,    !- Name
     Ceiling,                  !- Surface Type
-    BPS-Floor_3_0.04_0.06_0.16,    !- Construction Name
+    BPS-InnerFloor_3_0.04_0.06_0.16,    !- Construction Name
     0e_hbkIQ5DMQlIJ$2V3j_m,    !- Zone Name
     Surface,                  !- Outside Boundary Condition
     3poPVBFJumC3O8TyAwfjTl,    !- Outside Boundary Condition Object
@@ -5330,7 +5330,7 @@ BUILDINGSURFACE:DETAILED,
 BUILDINGSURFACE:DETAILED,
     30_zhx$GCtcBp285QVsdG_,    !- Name
     Ceiling,                  !- Surface Type
-    BPS-Floor_3_0.04_0.06_0.16,    !- Construction Name
+    BPS-InnerFloor_3_0.04_0.06_0.16,    !- Construction Name
     17JZcMFrf5tOftUTidA0d3,    !- Zone Name
     Surface,                  !- Outside Boundary Condition
     1qEbH1KsDpUVONBlPN2z6e,    !- Outside Boundary Condition Object
@@ -5450,7 +5450,7 @@ BUILDINGSURFACE:DETAILED,
 BUILDINGSURFACE:DETAILED,
     14TeGe_aGDXLMTt8fX0vQP,    !- Name
     Ceiling,                  !- Surface Type
-    BPS-Floor_3_0.04_0.06_0.16,    !- Construction Name
+    BPS-InnerFloor_3_0.04_0.06_0.16,    !- Construction Name
     2RSCzLOBz4FAK$_wE8VckM,    !- Zone Name
     Surface,                  !- Outside Boundary Condition
     0RmNuXZ0b7zvL3k1pnthLj,    !- Outside Boundary Condition Object
@@ -5570,7 +5570,7 @@ BUILDINGSURFACE:DETAILED,
 BUILDINGSURFACE:DETAILED,
     0vscZaFtJ3t7_0IAksqJ3z,    !- Name
     Floor,                    !- Surface Type
-    BPS-Floor_3_0.04_0.06_0.16,    !- Construction Name
+    BPS-InnerFloor_3_0.04_0.06_0.16,    !- Construction Name
     2dQFggKBb1fOc1CqZDIDlx,    !- Zone Name
     Surface,                  !- Outside Boundary Condition
     2pgK3dPJsC39txkgxE$HQ4,    !- Outside Boundary Condition Object
@@ -5597,7 +5597,7 @@ BUILDINGSURFACE:DETAILED,
 BUILDINGSURFACE:DETAILED,
     30Y14$n6BcKo4zt3hjgwMk,    !- Name
     Floor,                    !- Surface Type
-    BPS-Floor_3_0.04_0.06_0.16,    !- Construction Name
+    BPS-InnerFloor_3_0.04_0.06_0.16,    !- Construction Name
     2dQFggKBb1fOc1CqZDIDlx,    !- Zone Name
     Surface,                  !- Outside Boundary Condition
     2XUhfJhXX3mEyxbTybTDYC,    !- Outside Boundary Condition Object
@@ -5621,7 +5621,7 @@ BUILDINGSURFACE:DETAILED,
 BUILDINGSURFACE:DETAILED,
     1qEbH1KsDpUVONBlPN2z6e,    !- Name
     Floor,                    !- Surface Type
-    BPS-Floor_3_0.04_0.06_0.16,    !- Construction Name
+    BPS-InnerFloor_3_0.04_0.06_0.16,    !- Construction Name
     2dQFggKBb1fOc1CqZDIDlx,    !- Zone Name
     Surface,                  !- Outside Boundary Condition
     30_zhx$GCtcBp285QVsdG_,    !- Outside Boundary Condition Object
@@ -5645,7 +5645,7 @@ BUILDINGSURFACE:DETAILED,
 BUILDINGSURFACE:DETAILED,
     0RmNuXZ0b7zvL3k1pnthLj,    !- Name
     Floor,                    !- Surface Type
-    BPS-Floor_3_0.04_0.06_0.16,    !- Construction Name
+    BPS-InnerFloor_3_0.04_0.06_0.16,    !- Construction Name
     2dQFggKBb1fOc1CqZDIDlx,    !- Zone Name
     Surface,                  !- Outside Boundary Condition
     14TeGe_aGDXLMTt8fX0vQP,    !- Outside Boundary Condition Object
@@ -5669,7 +5669,7 @@ BUILDINGSURFACE:DETAILED,
 BUILDINGSURFACE:DETAILED,
     3poPVBFJumC3O8TyAwfjTl,    !- Name
     Floor,                    !- Surface Type
-    BPS-Floor_3_0.04_0.06_0.16,    !- Construction Name
+    BPS-InnerFloor_3_0.04_0.06_0.16,    !- Construction Name
     2dQFggKBb1fOc1CqZDIDlx,    !- Zone Name
     Surface,                  !- Outside Boundary Condition
     2pDD83uqxmRSy8GMp6Szu8,    !- Outside Boundary Condition Object
@@ -5693,7 +5693,7 @@ BUILDINGSURFACE:DETAILED,
 BUILDINGSURFACE:DETAILED,
     0iVlcYUfm86KH6vpLEFx4l,    !- Name
     Floor,                    !- Surface Type
-    BPS-Floor_3_0.04_0.06_0.16,    !- Construction Name
+    BPS-InnerFloor_3_0.04_0.06_0.16,    !- Construction Name
     2dQFggKBb1fOc1CqZDIDlx,    !- Zone Name
     Surface,                  !- Outside Boundary Condition
     3gDPy6RtY1_t5dbjoUwYxI,    !- Outside Boundary Condition Object
@@ -5723,7 +5723,7 @@ BUILDINGSURFACE:DETAILED,
 BUILDINGSURFACE:DETAILED,
     1hYST5uGdrRPiH45KdXX64,    !- Name
     Floor,                    !- Surface Type
-    BPS-Floor_3_0.04_0.06_0.16,    !- Construction Name
+    BPS-InnerFloor_3_0.04_0.06_0.16,    !- Construction Name
     2dQFggKBb1fOc1CqZDIDlx,    !- Zone Name
     Surface,                  !- Outside Boundary Condition
     1Oj77mh75tbSxm94qqlPFI,    !- Outside Boundary Condition Object
@@ -5819,7 +5819,7 @@ BUILDINGSURFACE:DETAILED,
 BUILDINGSURFACE:DETAILED,
     348wyWzxcjJLGiA5p7KlFU,    !- Name
     Floor,                    !- Surface Type
-    BPS-Floor_3_0.04_0.06_0.16,    !- Construction Name
+    BPS-GroundFloor_3_0.04_0.06_0.16,    !- Construction Name
     2dQFggKBb1fOc1CqZDIDlx,    !- Zone Name
     Ground,                   !- Outside Boundary Condition
     ,                         !- Outside Boundary Condition Object
@@ -6089,7 +6089,7 @@ BUILDINGSURFACE:DETAILED,
 BUILDINGSURFACE:DETAILED,
     3gDPy6RtY1_t5dbjoUwYxI,    !- Name
     Ceiling,                  !- Surface Type
-    BPS-Floor_3_0.04_0.06_0.16,    !- Construction Name
+    BPS-InnerFloor_3_0.04_0.06_0.16,    !- Construction Name
     3$f2p7VyLB7eox67SA_zKE,    !- Zone Name
     Surface,                  !- Outside Boundary Condition
     0iVlcYUfm86KH6vpLEFx4l,    !- Outside Boundary Condition Object
@@ -6119,7 +6119,7 @@ BUILDINGSURFACE:DETAILED,
 BUILDINGSURFACE:DETAILED,
     1Oj77mh75tbSxm94qqlPFI,    !- Name
     Ceiling,                  !- Surface Type
-    BPS-Floor_3_0.04_0.06_0.16,    !- Construction Name
+    BPS-InnerFloor_3_0.04_0.06_0.16,    !- Construction Name
     3$f2p7VyLB7eox67SA_zKE,    !- Zone Name
     Surface,                  !- Outside Boundary Condition
     1hYST5uGdrRPiH45KdXX64,    !- Outside Boundary Condition Object
@@ -6341,7 +6341,7 @@ BUILDINGSURFACE:DETAILED,
 BUILDINGSURFACE:DETAILED,
     2XUhfJhXX3mEyxbTybTDYC,    !- Name
     Ceiling,                  !- Surface Type
-    BPS-Floor_3_0.04_0.06_0.16,    !- Construction Name
+    BPS-InnerFloor_3_0.04_0.06_0.16,    !- Construction Name
     347jFE2yX7IhCEIALmupEH,    !- Zone Name
     Surface,                  !- Outside Boundary Condition
     30Y14$n6BcKo4zt3hjgwMk,    !- Outside Boundary Condition Object
@@ -6435,7 +6435,7 @@ BUILDINGSURFACE:DETAILED,
     2.5;                      !- Vertex 4 Zcoordinate
 
 BUILDINGSURFACE:DETAILED,
-    2Jf6uwVXDDd94Zm1TiKsSN,    !- Name
+    1qx14jnunC$RGNTbGOYQYu,    !- Name
     Wall,                     !- Surface Type
     BPS-InnerWall_3_0.01_0.15_0.01,    !- Construction Name
     0Lt8gR_E9ESeGH5uY_g9e9,    !- Zone Name
@@ -6462,9 +6462,9 @@ BUILDINGSURFACE:DETAILED,
     2.5;                      !- Vertex 5 Zcoordinate
 
 BUILDINGSURFACE:DETAILED,
-    3lUAYji_HBTAd8z9PK1C0C,    !- Name
+    0zHfn9pe59$OmEKEH3Q_ib,    !- Name
     Floor,                    !- Surface Type
-    BPS-Floor_3_0.04_0.06_0.16,    !- Construction Name
+    BPS-InnerFloor_3_0.04_0.06_0.16,    !- Construction Name
     2dQFggKBb1fOc1CqZDIDlx,    !- Zone Name
     Adiabatic,                !- Outside Boundary Condition
     ,                         !- Outside Boundary Condition Object
@@ -6531,9 +6531,9 @@ BUILDINGSURFACE:DETAILED,
     2.7;                      !- Vertex 19 Zcoordinate
 
 BUILDINGSURFACE:DETAILED,
-    0M6JKiTdjDEAnr3sAN6ola,    !- Name
+    201Y3DOyH34A2OxAcNVGhJ,    !- Name
     Floor,                    !- Surface Type
-    BPS-Floor_3_0.04_0.06_0.16,    !- Construction Name
+    BPS-InnerFloor_3_0.04_0.06_0.16,    !- Construction Name
     2dQFggKBb1fOc1CqZDIDlx,    !- Zone Name
     Adiabatic,                !- Outside Boundary Condition
     ,                         !- Outside Boundary Condition Object
@@ -6567,7 +6567,7 @@ BUILDINGSURFACE:DETAILED,
     2.7;                      !- Vertex 8 Zcoordinate
 
 BUILDINGSURFACE:DETAILED,
-    3p2Rt39Y1EXhK6Aqub0CXC,    !- Name
+    1kssHdzMb02xarjIDiOIT_,    !- Name
     Wall,                     !- Surface Type
     BPS-InnerWall_3_0.01_0.15_0.01,    !- Construction Name
     3$f2p7VyLB7eox67SA_zKE,    !- Zone Name
@@ -6603,7 +6603,7 @@ BUILDINGSURFACE:DETAILED,
     2.5;                      !- Vertex 8 Zcoordinate
 
 BUILDINGSURFACE:DETAILED,
-    0hf757JWf5RB5mJftGiHIz,    !- Name
+    1uwozMCVX8$Omnka4Lwk9r,    !- Name
     Wall,                     !- Surface Type
     BPS-InnerWall_3_0.01_0.15_0.01,    !- Construction Name
     3$f2p7VyLB7eox67SA_zKE,    !- Zone Name
@@ -6627,7 +6627,7 @@ BUILDINGSURFACE:DETAILED,
     2.5;                      !- Vertex 4 Zcoordinate
 
 BUILDINGSURFACE:DETAILED,
-    2WAxt0OKDEZAfhaNcMxXTu,    !- Name
+    3y8n0rkrX5pe$ClBYzHQUt,    !- Name
     Wall,                     !- Surface Type
     BPS-InnerWall_3_0.01_0.15_0.01,    !- Construction Name
     3$f2p7VyLB7eox67SA_zKE,    !- Zone Name
@@ -6663,7 +6663,7 @@ BUILDINGSURFACE:DETAILED,
     2.5;                      !- Vertex 8 Zcoordinate
 
 BUILDINGSURFACE:DETAILED,
-    3bi0uIaN5CZfZfMcCpCITY,    !- Name
+    3lNO67Uf98Gg6ZCB1UwnGE,    !- Name
     Wall,                     !- Surface Type
     BPS-InnerWall_3_0.01_0.15_0.01,    !- Construction Name
     347jFE2yX7IhCEIALmupEH,    !- Zone Name
@@ -7677,7 +7677,7 @@ LIGHTS,
     Schedule Lighting Living,    !- Schedule Name
     Watts/Area,               !- Design Level Calculation Method
     ,                         !- Lighting Level
-    7,                        !- Watts per Zone Floor Area
+    0.5,                      !- Watts per Zone Floor Area
     ,                         !- Watts per Person
     0,                        !- Return Air Fraction
     0.42,                     !- Fraction Radiant
@@ -7694,7 +7694,7 @@ LIGHTS,
     Schedule Lighting WC and sanitary rooms in non-residential buildings,    !- Schedule Name
     Watts/Area,               !- Design Level Calculation Method
     ,                         !- Lighting Level
-    11.1,                     !- Watts per Zone Floor Area
+    1.3333333333333333,       !- Watts per Zone Floor Area
     ,                         !- Watts per Person
     0,                        !- Return Air Fraction
     0.42,                     !- Fraction Radiant
@@ -7711,7 +7711,7 @@ LIGHTS,
     Schedule Lighting Kitchen in non-residential buildings,    !- Schedule Name
     Watts/Area,               !- Design Level Calculation Method
     ,                         !- Lighting Level
-    12.5,                     !- Watts per Zone Floor Area
+    3.3333333333333335,       !- Watts per Zone Floor Area
     ,                         !- Watts per Person
     0,                        !- Return Air Fraction
     0.42,                     !- Fraction Radiant
@@ -7728,7 +7728,7 @@ LIGHTS,
     Schedule Lighting Single office,    !- Schedule Name
     Watts/Area,               !- Design Level Calculation Method
     ,                         !- Lighting Level
-    15.9,                     !- Watts per Zone Floor Area
+    3.3333333333333335,       !- Watts per Zone Floor Area
     ,                         !- Watts per Person
     0,                        !- Return Air Fraction
     0.42,                     !- Fraction Radiant
@@ -7745,7 +7745,7 @@ LIGHTS,
     Schedule Lighting Living,    !- Schedule Name
     Watts/Area,               !- Design Level Calculation Method
     ,                         !- Lighting Level
-    7,                        !- Watts per Zone Floor Area
+    0.5,                      !- Watts per Zone Floor Area
     ,                         !- Watts per Person
     0,                        !- Return Air Fraction
     0.42,                     !- Fraction Radiant
@@ -7762,7 +7762,7 @@ LIGHTS,
     Schedule Lighting Traffic area,    !- Schedule Name
     Watts/Area,               !- Design Level Calculation Method
     ,                         !- Lighting Level
-    7,                        !- Watts per Zone Floor Area
+    0.6666666666666666,       !- Watts per Zone Floor Area
     ,                         !- Watts per Person
     0,                        !- Return Air Fraction
     0.42,                     !- Fraction Radiant
@@ -7779,7 +7779,7 @@ LIGHTS,
     Schedule Lighting Bed room,    !- Schedule Name
     Watts/Area,               !- Design Level Calculation Method
     ,                         !- Lighting Level
-    4.5,                      !- Watts per Zone Floor Area
+    2,                        !- Watts per Zone Floor Area
     ,                         !- Watts per Person
     0,                        !- Return Air Fraction
     0.42,                     !- Fraction Radiant
@@ -8919,7 +8919,12 @@ OUTPUT:VARIABLE,
 
 OUTPUT:VARIABLE,
     *,                        !- Key Value
-    Zone Total Internal Total Heating Energy,    !- Variable Name
+    Zone Ideal Loads Zone Total Heating Energy,    !- Variable Name
+    Hourly;                   !- Reporting Frequency
+
+OUTPUT:VARIABLE,
+    *,                        !- Key Value
+    Zone Ideal Loads Zone Total Cooling Energy,    !- Variable Name
     Hourly;                   !- Reporting Frequency
 
 OUTPUT:VARIABLE,
