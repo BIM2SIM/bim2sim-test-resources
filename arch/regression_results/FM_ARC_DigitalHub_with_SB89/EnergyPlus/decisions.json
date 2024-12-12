@@ -5,15 +5,43 @@
     "tool_IFC-based Space Boundary Generator_#403771=IfcApplication(#403769,'0.9','IFC-based Space Boundary Generator','IFC2SB')_29e5d63ff04fde0a623f98c1f87dd6a6": {
       "value": "Other"
     },
-    "SetClass:IfcBuildingElementProxy.3A8hY1UoD7JhnLeZeDyPr9.Markierung:B 120:2443043": {
+    "SetClass:IfcBuildingElementProxy.3A8hY1UoD7JhnLeZeDyRm6.Anfahrschutz Rohr:1000 x 700:2451052": {
       "value": null,
       "checksum": "167e36fc209105d1ce0b8d10852ded66"
     },
-    "SetClass:IfcBuildingElementProxy.3A8hY1UoD7JhnLeZeDyULl.Parkplatz - 01 90:2500 x 5000:2440965": {
+    "SetClass:IfcBuildingElementProxy.3A8hY1UoD7JhnLeZeDyPtn.Markierung:B 120:2443163": {
       "value": null,
       "checksum": "167e36fc209105d1ce0b8d10852ded66"
     },
-    "SetClass:IfcBuildingElementProxy.0P898JVsX6VQGfAj0lC8zv.Baum RPC - Laubbaum:Rotesche - 7,6 Meter:2460394": {
+    "SetClass:IfcBuildingElementProxy.3A8hY1UoD7JhnLeZeDyUIN.Parkplatz - 01 90:2500 x 5000:2440957": {
+      "value": null,
+      "checksum": "167e36fc209105d1ce0b8d10852ded66"
+    },
+    "SetClass:IfcBuildingElementProxy.3A8hY1UoD7JhnLeZeDyQto.Baum RPC - Laubbaum:Rotesche - 7,6 Meter:2455448": {
+      "value": null,
+      "checksum": "167e36fc209105d1ce0b8d10852ded66"
+    },
+    "SetClass:IfcBuildingElementProxy.3LJODRGPbDdfXHXShFL93W.Oberfl\u00e4che:2437789": {
+      "value": null,
+      "checksum": "167e36fc209105d1ce0b8d10852ded66"
+    },
+    "SetClass:IfcBuildingElementProxy.3A8hY1UoD7JhnLeZeDyRpb.E-Ladestation - 03:Typ1:2451087": {
+      "value": null,
+      "checksum": "167e36fc209105d1ce0b8d10852ded66"
+    },
+    "SetClass:IfcBuildingElementProxy.3A8hY1UoD7JhnLeZeDyPRy.Richtungspfeil - Abzweigung und geradeaus:Typ1:2444438": {
+      "value": null,
+      "checksum": "167e36fc209105d1ce0b8d10852ded66"
+    },
+    "SetClass:IfcBuildingElementProxy.0P898JVsX6VQGfAj0lC8$w.Unterregion:2460265": {
+      "value": null,
+      "checksum": "167e36fc209105d1ce0b8d10852ded66"
+    },
+    "SetClass:IfcBuildingElementProxy.3A8hY1UoD7JhnLeZeDyRPg.Radst\u00e4nder - 04:3000, 5 R\u00e4der:2452480": {
+      "value": null,
+      "checksum": "167e36fc209105d1ce0b8d10852ded66"
+    },
+    "SetClass:IfcBuildingElementProxy.3A8hY1UoD7JhnLeZeDyQXy.Fahrrad - Rennrad:Typ1:2454038": {
       "value": null,
       "checksum": "167e36fc209105d1ce0b8d10852ded66"
     },
@@ -21,35 +49,7 @@
       "value": null,
       "checksum": "167e36fc209105d1ce0b8d10852ded66"
     },
-    "SetClass:IfcBuildingElementProxy.3A8hY1UoD7JhnLeZeDyRpB.E-Ladestation - 03:Typ1:2451105": {
-      "value": null,
-      "checksum": "167e36fc209105d1ce0b8d10852ded66"
-    },
-    "SetClass:IfcBuildingElementProxy.3A8hY1UoD7JhnLeZeDyR$V.Anfahrschutz Rohr:1000 x 700:2450869": {
-      "value": null,
-      "checksum": "167e36fc209105d1ce0b8d10852ded66"
-    },
-    "SetClass:IfcBuildingElementProxy.3A8hY1UoD7JhnLeZeDyUs3.Unterregion:2439145": {
-      "value": null,
-      "checksum": "167e36fc209105d1ce0b8d10852ded66"
-    },
     "SetClass:IfcBuildingElementProxy.3A8hY1UoD7JhnLeZeDyOSj.PKW Verkehrsinsel Schranken Ein-Ausfahrt:Typ1:2448711": {
-      "value": null,
-      "checksum": "167e36fc209105d1ce0b8d10852ded66"
-    },
-    "SetClass:IfcBuildingElementProxy.3LJODRGPbDdfXHXShFL9C7.Oberfl\u00e4che:2437498": {
-      "value": null,
-      "checksum": "167e36fc209105d1ce0b8d10852ded66"
-    },
-    "SetClass:IfcBuildingElementProxy.3A8hY1UoD7JhnLeZeDyRTB.Radst\u00e4nder - 04:3000, 5 R\u00e4der:2452769": {
-      "value": null,
-      "checksum": "167e36fc209105d1ce0b8d10852ded66"
-    },
-    "SetClass:IfcBuildingElementProxy.3A8hY1UoD7JhnLeZeDyPUs.Richtungspfeil - Abzweigung und geradeaus:Typ1:2444764": {
-      "value": null,
-      "checksum": "167e36fc209105d1ce0b8d10852ded66"
-    },
-    "SetClass:IfcBuildingElementProxy.3A8hY1UoD7JhnLeZeDyQWN.Fahrrad - Rennrad:Typ1:2454141": {
       "value": null,
       "checksum": "167e36fc209105d1ce0b8d10852ded66"
     },

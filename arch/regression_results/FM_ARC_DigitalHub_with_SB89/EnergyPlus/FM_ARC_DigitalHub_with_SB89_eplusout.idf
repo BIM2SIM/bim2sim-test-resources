@@ -79184,7 +79184,7 @@ LIGHTS,
     Schedule Lighting WC and sanitary rooms in non-residential buildings,    !- Schedule Name
     Watts/Area,               !- Design Level Calculation Method
     ,                         !- Lighting Level
-    11.1,                     !- Watts per Zone Floor Area
+    1.3333333333333333,       !- Watts per Zone Floor Area
     ,                         !- Watts per Person
     0,                        !- Return Air Fraction
     0.42,                     !- Fraction Radiant
@@ -79201,7 +79201,7 @@ LIGHTS,
     Schedule Lighting Group Office (between 2 and 6 employees),    !- Schedule Name
     Watts/Area,               !- Design Level Calculation Method
     ,                         !- Lighting Level
-    12.5,                     !- Watts per Zone Floor Area
+    3.3333333333333335,       !- Watts per Zone Floor Area
     ,                         !- Watts per Person
     0,                        !- Return Air Fraction
     0.42,                     !- Fraction Radiant
@@ -79218,7 +79218,7 @@ LIGHTS,
     Schedule Lighting Stock technical equipment archives,    !- Schedule Name
     Watts/Area,               !- Design Level Calculation Method
     ,                         !- Lighting Level
-    11.3,                     !- Watts per Zone Floor Area
+    0.6666666666666666,       !- Watts per Zone Floor Area
     ,                         !- Watts per Person
     0,                        !- Return Air Fraction
     0.42,                     !- Fraction Radiant
@@ -79235,7 +79235,7 @@ LIGHTS,
     Schedule Lighting Group Office (between 2 and 6 employees),    !- Schedule Name
     Watts/Area,               !- Design Level Calculation Method
     ,                         !- Lighting Level
-    12.5,                     !- Watts per Zone Floor Area
+    3.3333333333333335,       !- Watts per Zone Floor Area
     ,                         !- Watts per Person
     0,                        !- Return Air Fraction
     0.42,                     !- Fraction Radiant
@@ -79252,7 +79252,7 @@ LIGHTS,
     Schedule Lighting Stock technical equipment archives,    !- Schedule Name
     Watts/Area,               !- Design Level Calculation Method
     ,                         !- Lighting Level
-    11.3,                     !- Watts per Zone Floor Area
+    0.6666666666666666,       !- Watts per Zone Floor Area
     ,                         !- Watts per Person
     0,                        !- Return Air Fraction
     0.42,                     !- Fraction Radiant
@@ -79269,7 +79269,7 @@ LIGHTS,
     Schedule Lighting Group Office (between 2 and 6 employees),    !- Schedule Name
     Watts/Area,               !- Design Level Calculation Method
     ,                         !- Lighting Level
-    12.5,                     !- Watts per Zone Floor Area
+    3.3333333333333335,       !- Watts per Zone Floor Area
     ,                         !- Watts per Person
     0,                        !- Return Air Fraction
     0.42,                     !- Fraction Radiant
@@ -79286,7 +79286,7 @@ LIGHTS,
     Schedule Lighting Stock technical equipment archives,    !- Schedule Name
     Watts/Area,               !- Design Level Calculation Method
     ,                         !- Lighting Level
-    11.3,                     !- Watts per Zone Floor Area
+    0.6666666666666666,       !- Watts per Zone Floor Area
     ,                         !- Watts per Person
     0,                        !- Return Air Fraction
     0.42,                     !- Fraction Radiant
@@ -79303,7 +79303,7 @@ LIGHTS,
     Schedule Lighting Stock technical equipment archives,    !- Schedule Name
     Watts/Area,               !- Design Level Calculation Method
     ,                         !- Lighting Level
-    11.3,                     !- Watts per Zone Floor Area
+    0.6666666666666666,       !- Watts per Zone Floor Area
     ,                         !- Watts per Person
     0,                        !- Return Air Fraction
     0.42,                     !- Fraction Radiant
@@ -79320,7 +79320,7 @@ LIGHTS,
     Schedule Lighting Group Office (between 2 and 6 employees),    !- Schedule Name
     Watts/Area,               !- Design Level Calculation Method
     ,                         !- Lighting Level
-    12.5,                     !- Watts per Zone Floor Area
+    3.3333333333333335,       !- Watts per Zone Floor Area
     ,                         !- Watts per Person
     0,                        !- Return Air Fraction
     0.42,                     !- Fraction Radiant
@@ -79337,7 +79337,7 @@ LIGHTS,
     Schedule Lighting Stock technical equipment archives,    !- Schedule Name
     Watts/Area,               !- Design Level Calculation Method
     ,                         !- Lighting Level
-    11.3,                     !- Watts per Zone Floor Area
+    0.6666666666666666,       !- Watts per Zone Floor Area
     ,                         !- Watts per Person
     0,                        !- Return Air Fraction
     0.42,                     !- Fraction Radiant
@@ -79354,7 +79354,7 @@ LIGHTS,
     Schedule Lighting Group Office (between 2 and 6 employees),    !- Schedule Name
     Watts/Area,               !- Design Level Calculation Method
     ,                         !- Lighting Level
-    12.5,                     !- Watts per Zone Floor Area
+    3.3333333333333335,       !- Watts per Zone Floor Area
     ,                         !- Watts per Person
     0,                        !- Return Air Fraction
     0.42,                     !- Fraction Radiant
@@ -79371,7 +79371,7 @@ LIGHTS,
     Schedule Lighting Traffic area,    !- Schedule Name
     Watts/Area,               !- Design Level Calculation Method
     ,                         !- Lighting Level
-    7,                        !- Watts per Zone Floor Area
+    0.6666666666666666,       !- Watts per Zone Floor Area
     ,                         !- Watts per Person
     0,                        !- Return Air Fraction
     0.42,                     !- Fraction Radiant
@@ -79388,7 +79388,7 @@ LIGHTS,
     Schedule Lighting Group Office (between 2 and 6 employees),    !- Schedule Name
     Watts/Area,               !- Design Level Calculation Method
     ,                         !- Lighting Level
-    12.5,                     !- Watts per Zone Floor Area
+    3.3333333333333335,       !- Watts per Zone Floor Area
     ,                         !- Watts per Person
     0,                        !- Return Air Fraction
     0.42,                     !- Fraction Radiant
@@ -79405,7 +79405,7 @@ LIGHTS,
     Schedule Lighting Meeting Conference seminar,    !- Schedule Name
     Watts/Area,               !- Design Level Calculation Method
     ,                         !- Lighting Level
-    15.9,                     !- Watts per Zone Floor Area
+    3.3333333333333335,       !- Watts per Zone Floor Area
     ,                         !- Watts per Person
     0,                        !- Return Air Fraction
     0.42,                     !- Fraction Radiant
@@ -79422,7 +79422,7 @@ LIGHTS,
     Schedule Lighting Traffic area,    !- Schedule Name
     Watts/Area,               !- Design Level Calculation Method
     ,                         !- Lighting Level
-    7,                        !- Watts per Zone Floor Area
+    0.6666666666666666,       !- Watts per Zone Floor Area
     ,                         !- Watts per Person
     0,                        !- Return Air Fraction
     0.42,                     !- Fraction Radiant
@@ -79439,7 +79439,7 @@ LIGHTS,
     Schedule Lighting Group Office (between 2 and 6 employees),    !- Schedule Name
     Watts/Area,               !- Design Level Calculation Method
     ,                         !- Lighting Level
-    12.5,                     !- Watts per Zone Floor Area
+    3.3333333333333335,       !- Watts per Zone Floor Area
     ,                         !- Watts per Person
     0,                        !- Return Air Fraction
     0.42,                     !- Fraction Radiant
@@ -79456,7 +79456,7 @@ LIGHTS,
     Schedule Lighting Group Office (between 2 and 6 employees),    !- Schedule Name
     Watts/Area,               !- Design Level Calculation Method
     ,                         !- Lighting Level
-    12.5,                     !- Watts per Zone Floor Area
+    3.3333333333333335,       !- Watts per Zone Floor Area
     ,                         !- Watts per Person
     0,                        !- Return Air Fraction
     0.42,                     !- Fraction Radiant
@@ -79473,7 +79473,7 @@ LIGHTS,
     Schedule Lighting Group Office (between 2 and 6 employees),    !- Schedule Name
     Watts/Area,               !- Design Level Calculation Method
     ,                         !- Lighting Level
-    12.5,                     !- Watts per Zone Floor Area
+    3.3333333333333335,       !- Watts per Zone Floor Area
     ,                         !- Watts per Person
     0,                        !- Return Air Fraction
     0.42,                     !- Fraction Radiant
@@ -79490,7 +79490,7 @@ LIGHTS,
     Schedule Lighting Meeting Conference seminar,    !- Schedule Name
     Watts/Area,               !- Design Level Calculation Method
     ,                         !- Lighting Level
-    15.9,                     !- Watts per Zone Floor Area
+    3.3333333333333335,       !- Watts per Zone Floor Area
     ,                         !- Watts per Person
     0,                        !- Return Air Fraction
     0.42,                     !- Fraction Radiant
@@ -79507,7 +79507,7 @@ LIGHTS,
     Schedule Lighting Main Hall Reception,    !- Schedule Name
     Watts/Area,               !- Design Level Calculation Method
     ,                         !- Lighting Level
-    4.4,                      !- Watts per Zone Floor Area
+    2,                        !- Watts per Zone Floor Area
     ,                         !- Watts per Person
     0,                        !- Return Air Fraction
     0.42,                     !- Fraction Radiant
@@ -79524,7 +79524,7 @@ LIGHTS,
     Schedule Lighting Group Office (between 2 and 6 employees),    !- Schedule Name
     Watts/Area,               !- Design Level Calculation Method
     ,                         !- Lighting Level
-    12.5,                     !- Watts per Zone Floor Area
+    3.3333333333333335,       !- Watts per Zone Floor Area
     ,                         !- Watts per Person
     0,                        !- Return Air Fraction
     0.42,                     !- Fraction Radiant
@@ -79541,7 +79541,7 @@ LIGHTS,
     Schedule Lighting Open-plan Office (7 or more employees),    !- Schedule Name
     Watts/Area,               !- Design Level Calculation Method
     ,                         !- Lighting Level
-    12.5,                     !- Watts per Zone Floor Area
+    3.3333333333333335,       !- Watts per Zone Floor Area
     ,                         !- Watts per Person
     0,                        !- Return Air Fraction
     0.42,                     !- Fraction Radiant
@@ -79558,7 +79558,7 @@ LIGHTS,
     Schedule Lighting Stock technical equipment archives,    !- Schedule Name
     Watts/Area,               !- Design Level Calculation Method
     ,                         !- Lighting Level
-    11.3,                     !- Watts per Zone Floor Area
+    0.6666666666666666,       !- Watts per Zone Floor Area
     ,                         !- Watts per Person
     0,                        !- Return Air Fraction
     0.42,                     !- Fraction Radiant
@@ -79575,7 +79575,7 @@ LIGHTS,
     Schedule Lighting Group Office (between 2 and 6 employees),    !- Schedule Name
     Watts/Area,               !- Design Level Calculation Method
     ,                         !- Lighting Level
-    12.5,                     !- Watts per Zone Floor Area
+    3.3333333333333335,       !- Watts per Zone Floor Area
     ,                         !- Watts per Person
     0,                        !- Return Air Fraction
     0.42,                     !- Fraction Radiant
@@ -79592,7 +79592,7 @@ LIGHTS,
     Schedule Lighting Group Office (between 2 and 6 employees),    !- Schedule Name
     Watts/Area,               !- Design Level Calculation Method
     ,                         !- Lighting Level
-    12.5,                     !- Watts per Zone Floor Area
+    3.3333333333333335,       !- Watts per Zone Floor Area
     ,                         !- Watts per Person
     0,                        !- Return Air Fraction
     0.42,                     !- Fraction Radiant
@@ -79609,7 +79609,7 @@ LIGHTS,
     Schedule Lighting Stock technical equipment archives,    !- Schedule Name
     Watts/Area,               !- Design Level Calculation Method
     ,                         !- Lighting Level
-    11.3,                     !- Watts per Zone Floor Area
+    0.6666666666666666,       !- Watts per Zone Floor Area
     ,                         !- Watts per Person
     0,                        !- Return Air Fraction
     0.42,                     !- Fraction Radiant
@@ -79626,7 +79626,7 @@ LIGHTS,
     Schedule Lighting Meeting Conference seminar,    !- Schedule Name
     Watts/Area,               !- Design Level Calculation Method
     ,                         !- Lighting Level
-    15.9,                     !- Watts per Zone Floor Area
+    3.3333333333333335,       !- Watts per Zone Floor Area
     ,                         !- Watts per Person
     0,                        !- Return Air Fraction
     0.42,                     !- Fraction Radiant
@@ -79643,7 +79643,7 @@ LIGHTS,
     Schedule Lighting Group Office (between 2 and 6 employees),    !- Schedule Name
     Watts/Area,               !- Design Level Calculation Method
     ,                         !- Lighting Level
-    12.5,                     !- Watts per Zone Floor Area
+    3.3333333333333335,       !- Watts per Zone Floor Area
     ,                         !- Watts per Person
     0,                        !- Return Air Fraction
     0.42,                     !- Fraction Radiant
@@ -79660,7 +79660,7 @@ LIGHTS,
     Schedule Lighting Group Office (between 2 and 6 employees),    !- Schedule Name
     Watts/Area,               !- Design Level Calculation Method
     ,                         !- Lighting Level
-    12.5,                     !- Watts per Zone Floor Area
+    3.3333333333333335,       !- Watts per Zone Floor Area
     ,                         !- Watts per Person
     0,                        !- Return Air Fraction
     0.42,                     !- Fraction Radiant
@@ -79677,7 +79677,7 @@ LIGHTS,
     Schedule Lighting Group Office (between 2 and 6 employees),    !- Schedule Name
     Watts/Area,               !- Design Level Calculation Method
     ,                         !- Lighting Level
-    12.5,                     !- Watts per Zone Floor Area
+    3.3333333333333335,       !- Watts per Zone Floor Area
     ,                         !- Watts per Person
     0,                        !- Return Air Fraction
     0.42,                     !- Fraction Radiant
@@ -79694,7 +79694,7 @@ LIGHTS,
     Schedule Lighting WC and sanitary rooms in non-residential buildings,    !- Schedule Name
     Watts/Area,               !- Design Level Calculation Method
     ,                         !- Lighting Level
-    11.1,                     !- Watts per Zone Floor Area
+    1.3333333333333333,       !- Watts per Zone Floor Area
     ,                         !- Watts per Person
     0,                        !- Return Air Fraction
     0.42,                     !- Fraction Radiant
@@ -79711,7 +79711,7 @@ LIGHTS,
     Schedule Lighting Stock technical equipment archives,    !- Schedule Name
     Watts/Area,               !- Design Level Calculation Method
     ,                         !- Lighting Level
-    11.3,                     !- Watts per Zone Floor Area
+    0.6666666666666666,       !- Watts per Zone Floor Area
     ,                         !- Watts per Person
     0,                        !- Return Air Fraction
     0.42,                     !- Fraction Radiant
@@ -79728,7 +79728,7 @@ LIGHTS,
     Schedule Lighting WC and sanitary rooms in non-residential buildings,    !- Schedule Name
     Watts/Area,               !- Design Level Calculation Method
     ,                         !- Lighting Level
-    11.1,                     !- Watts per Zone Floor Area
+    1.3333333333333333,       !- Watts per Zone Floor Area
     ,                         !- Watts per Person
     0,                        !- Return Air Fraction
     0.42,                     !- Fraction Radiant
@@ -79745,7 +79745,7 @@ LIGHTS,
     Schedule Lighting Group Office (between 2 and 6 employees),    !- Schedule Name
     Watts/Area,               !- Design Level Calculation Method
     ,                         !- Lighting Level
-    12.5,                     !- Watts per Zone Floor Area
+    3.3333333333333335,       !- Watts per Zone Floor Area
     ,                         !- Watts per Person
     0,                        !- Return Air Fraction
     0.42,                     !- Fraction Radiant
@@ -79762,7 +79762,7 @@ LIGHTS,
     Schedule Lighting Traffic area,    !- Schedule Name
     Watts/Area,               !- Design Level Calculation Method
     ,                         !- Lighting Level
-    7,                        !- Watts per Zone Floor Area
+    0.6666666666666666,       !- Watts per Zone Floor Area
     ,                         !- Watts per Person
     0,                        !- Return Air Fraction
     0.42,                     !- Fraction Radiant
@@ -79779,7 +79779,7 @@ LIGHTS,
     Schedule Lighting Laboratory,    !- Schedule Name
     Watts/Area,               !- Design Level Calculation Method
     ,                         !- Lighting Level
-    14,                       !- Watts per Zone Floor Area
+    3.3333333333333335,       !- Watts per Zone Floor Area
     ,                         !- Watts per Person
     0,                        !- Return Air Fraction
     0.42,                     !- Fraction Radiant
@@ -79796,7 +79796,7 @@ LIGHTS,
     Schedule Lighting Group Office (between 2 and 6 employees),    !- Schedule Name
     Watts/Area,               !- Design Level Calculation Method
     ,                         !- Lighting Level
-    12.5,                     !- Watts per Zone Floor Area
+    3.3333333333333335,       !- Watts per Zone Floor Area
     ,                         !- Watts per Person
     0,                        !- Return Air Fraction
     0.42,                     !- Fraction Radiant
@@ -79813,7 +79813,7 @@ LIGHTS,
     Schedule Lighting WC and sanitary rooms in non-residential buildings,    !- Schedule Name
     Watts/Area,               !- Design Level Calculation Method
     ,                         !- Lighting Level
-    11.1,                     !- Watts per Zone Floor Area
+    1.3333333333333333,       !- Watts per Zone Floor Area
     ,                         !- Watts per Person
     0,                        !- Return Air Fraction
     0.42,                     !- Fraction Radiant
@@ -79830,7 +79830,7 @@ LIGHTS,
     Schedule Lighting WC and sanitary rooms in non-residential buildings,    !- Schedule Name
     Watts/Area,               !- Design Level Calculation Method
     ,                         !- Lighting Level
-    11.1,                     !- Watts per Zone Floor Area
+    1.3333333333333333,       !- Watts per Zone Floor Area
     ,                         !- Watts per Person
     0,                        !- Return Air Fraction
     0.42,                     !- Fraction Radiant
@@ -79847,7 +79847,7 @@ LIGHTS,
     Schedule Lighting WC and sanitary rooms in non-residential buildings,    !- Schedule Name
     Watts/Area,               !- Design Level Calculation Method
     ,                         !- Lighting Level
-    11.1,                     !- Watts per Zone Floor Area
+    1.3333333333333333,       !- Watts per Zone Floor Area
     ,                         !- Watts per Person
     0,                        !- Return Air Fraction
     0.42,                     !- Fraction Radiant
@@ -79864,7 +79864,7 @@ LIGHTS,
     Schedule Lighting Meeting Conference seminar,    !- Schedule Name
     Watts/Area,               !- Design Level Calculation Method
     ,                         !- Lighting Level
-    15.9,                     !- Watts per Zone Floor Area
+    3.3333333333333335,       !- Watts per Zone Floor Area
     ,                         !- Watts per Person
     0,                        !- Return Air Fraction
     0.42,                     !- Fraction Radiant
@@ -79881,7 +79881,7 @@ LIGHTS,
     Schedule Lighting Kitchen in non-residential buildings,    !- Schedule Name
     Watts/Area,               !- Design Level Calculation Method
     ,                         !- Lighting Level
-    12.5,                     !- Watts per Zone Floor Area
+    3.3333333333333335,       !- Watts per Zone Floor Area
     ,                         !- Watts per Person
     0,                        !- Return Air Fraction
     0.42,                     !- Fraction Radiant
@@ -79898,7 +79898,7 @@ LIGHTS,
     Schedule Lighting Canteen,    !- Schedule Name
     Watts/Area,               !- Design Level Calculation Method
     ,                         !- Lighting Level
-    6.1,                      !- Watts per Zone Floor Area
+    1.3333333333333333,       !- Watts per Zone Floor Area
     ,                         !- Watts per Person
     0,                        !- Return Air Fraction
     0.42,                     !- Fraction Radiant
@@ -79915,7 +79915,7 @@ LIGHTS,
     Schedule Lighting Open-plan Office (7 or more employees),    !- Schedule Name
     Watts/Area,               !- Design Level Calculation Method
     ,                         !- Lighting Level
-    12.5,                     !- Watts per Zone Floor Area
+    3.3333333333333335,       !- Watts per Zone Floor Area
     ,                         !- Watts per Person
     0,                        !- Return Air Fraction
     0.42,                     !- Fraction Radiant
@@ -79932,7 +79932,7 @@ LIGHTS,
     Schedule Lighting Group Office (between 2 and 6 employees),    !- Schedule Name
     Watts/Area,               !- Design Level Calculation Method
     ,                         !- Lighting Level
-    12.5,                     !- Watts per Zone Floor Area
+    3.3333333333333335,       !- Watts per Zone Floor Area
     ,                         !- Watts per Person
     0,                        !- Return Air Fraction
     0.42,                     !- Fraction Radiant
@@ -79949,7 +79949,7 @@ LIGHTS,
     Schedule Lighting Meeting Conference seminar,    !- Schedule Name
     Watts/Area,               !- Design Level Calculation Method
     ,                         !- Lighting Level
-    15.9,                     !- Watts per Zone Floor Area
+    3.3333333333333335,       !- Watts per Zone Floor Area
     ,                         !- Watts per Person
     0,                        !- Return Air Fraction
     0.42,                     !- Fraction Radiant
@@ -79966,7 +79966,7 @@ LIGHTS,
     Schedule Lighting WC and sanitary rooms in non-residential buildings,    !- Schedule Name
     Watts/Area,               !- Design Level Calculation Method
     ,                         !- Lighting Level
-    11.1,                     !- Watts per Zone Floor Area
+    1.3333333333333333,       !- Watts per Zone Floor Area
     ,                         !- Watts per Person
     0,                        !- Return Air Fraction
     0.42,                     !- Fraction Radiant
@@ -79983,7 +79983,7 @@ LIGHTS,
     Schedule Lighting WC and sanitary rooms in non-residential buildings,    !- Schedule Name
     Watts/Area,               !- Design Level Calculation Method
     ,                         !- Lighting Level
-    11.1,                     !- Watts per Zone Floor Area
+    1.3333333333333333,       !- Watts per Zone Floor Area
     ,                         !- Watts per Person
     0,                        !- Return Air Fraction
     0.42,                     !- Fraction Radiant
@@ -80000,7 +80000,7 @@ LIGHTS,
     Schedule Lighting Meeting Conference seminar,    !- Schedule Name
     Watts/Area,               !- Design Level Calculation Method
     ,                         !- Lighting Level
-    15.9,                     !- Watts per Zone Floor Area
+    3.3333333333333335,       !- Watts per Zone Floor Area
     ,                         !- Watts per Person
     0,                        !- Return Air Fraction
     0.42,                     !- Fraction Radiant
@@ -80017,7 +80017,7 @@ LIGHTS,
     Schedule Lighting Group Office (between 2 and 6 employees),    !- Schedule Name
     Watts/Area,               !- Design Level Calculation Method
     ,                         !- Lighting Level
-    12.5,                     !- Watts per Zone Floor Area
+    3.3333333333333335,       !- Watts per Zone Floor Area
     ,                         !- Watts per Person
     0,                        !- Return Air Fraction
     0.42,                     !- Fraction Radiant
@@ -80034,7 +80034,7 @@ LIGHTS,
     Schedule Lighting Stock technical equipment archives,    !- Schedule Name
     Watts/Area,               !- Design Level Calculation Method
     ,                         !- Lighting Level
-    11.3,                     !- Watts per Zone Floor Area
+    0.6666666666666666,       !- Watts per Zone Floor Area
     ,                         !- Watts per Person
     0,                        !- Return Air Fraction
     0.42,                     !- Fraction Radiant
@@ -80051,7 +80051,7 @@ LIGHTS,
     Schedule Lighting Group Office (between 2 and 6 employees),    !- Schedule Name
     Watts/Area,               !- Design Level Calculation Method
     ,                         !- Lighting Level
-    12.5,                     !- Watts per Zone Floor Area
+    3.3333333333333335,       !- Watts per Zone Floor Area
     ,                         !- Watts per Person
     0,                        !- Return Air Fraction
     0.42,                     !- Fraction Radiant
@@ -80068,7 +80068,7 @@ LIGHTS,
     Schedule Lighting Traffic area,    !- Schedule Name
     Watts/Area,               !- Design Level Calculation Method
     ,                         !- Lighting Level
-    7,                        !- Watts per Zone Floor Area
+    0.6666666666666666,       !- Watts per Zone Floor Area
     ,                         !- Watts per Person
     0,                        !- Return Air Fraction
     0.42,                     !- Fraction Radiant
@@ -80085,7 +80085,7 @@ LIGHTS,
     Schedule Lighting Group Office (between 2 and 6 employees),    !- Schedule Name
     Watts/Area,               !- Design Level Calculation Method
     ,                         !- Lighting Level
-    12.5,                     !- Watts per Zone Floor Area
+    3.3333333333333335,       !- Watts per Zone Floor Area
     ,                         !- Watts per Person
     0,                        !- Return Air Fraction
     0.42,                     !- Fraction Radiant
@@ -80102,7 +80102,7 @@ LIGHTS,
     Schedule Lighting Traffic area,    !- Schedule Name
     Watts/Area,               !- Design Level Calculation Method
     ,                         !- Lighting Level
-    7,                        !- Watts per Zone Floor Area
+    0.6666666666666666,       !- Watts per Zone Floor Area
     ,                         !- Watts per Person
     0,                        !- Return Air Fraction
     0.42,                     !- Fraction Radiant
@@ -80119,7 +80119,7 @@ LIGHTS,
     Schedule Lighting Group Office (between 2 and 6 employees),    !- Schedule Name
     Watts/Area,               !- Design Level Calculation Method
     ,                         !- Lighting Level
-    12.5,                     !- Watts per Zone Floor Area
+    3.3333333333333335,       !- Watts per Zone Floor Area
     ,                         !- Watts per Person
     0,                        !- Return Air Fraction
     0.42,                     !- Fraction Radiant
@@ -80136,7 +80136,7 @@ LIGHTS,
     Schedule Lighting Group Office (between 2 and 6 employees),    !- Schedule Name
     Watts/Area,               !- Design Level Calculation Method
     ,                         !- Lighting Level
-    12.5,                     !- Watts per Zone Floor Area
+    3.3333333333333335,       !- Watts per Zone Floor Area
     ,                         !- Watts per Person
     0,                        !- Return Air Fraction
     0.42,                     !- Fraction Radiant
@@ -80153,7 +80153,7 @@ LIGHTS,
     Schedule Lighting Stock technical equipment archives,    !- Schedule Name
     Watts/Area,               !- Design Level Calculation Method
     ,                         !- Lighting Level
-    11.3,                     !- Watts per Zone Floor Area
+    0.6666666666666666,       !- Watts per Zone Floor Area
     ,                         !- Watts per Person
     0,                        !- Return Air Fraction
     0.42,                     !- Fraction Radiant
@@ -80170,7 +80170,7 @@ LIGHTS,
     Schedule Lighting Meeting Conference seminar,    !- Schedule Name
     Watts/Area,               !- Design Level Calculation Method
     ,                         !- Lighting Level
-    15.9,                     !- Watts per Zone Floor Area
+    3.3333333333333335,       !- Watts per Zone Floor Area
     ,                         !- Watts per Person
     0,                        !- Return Air Fraction
     0.42,                     !- Fraction Radiant
