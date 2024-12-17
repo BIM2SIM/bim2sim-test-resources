@@ -1,5 +1,5 @@
 {
-    "version": "bim2sim-v0.2.2",
+    "version": "bim2sim-v0.2.3",
     "Group Office (between 2 and 6 employees)": {
         "with_heating": true,
         "T_threshold_heating": 288.15,
