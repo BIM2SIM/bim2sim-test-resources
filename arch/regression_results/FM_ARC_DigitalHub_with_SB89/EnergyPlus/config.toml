@@ -6,13 +6,11 @@ group_unidentified = fuzzy
 fuzzy_threshold = 0.7
 reset_guids = False
 weather_file_path = None
+building_rotation_overwrite = 0
 add_space_boundaries = False
 correct_space_boundaries = False
 close_space_boundary_gaps = False
-
-[PlantSimSettings]
-aggregations = ['UnderfloorHeating', 'PipeStrand', 'Consumer', 'ParallelPump', 'ConsumerHeatingDistributorModule', 'GeneratorOneFluid']
-tolerance_connect_by_position = 10
+stories_to_load_guids = []
 
 [BuildingSimSettings]
 layers_and_materials = LOD.low
@@ -20,9 +18,9 @@ year_of_construction_overwrite = None
 construction_class_walls = iwu_heavy
 construction_class_windows = Alu- oder Stahlfenster, Waermeschutzverglasung, zweifach
 construction_class_doors = iwu_typical
-heating = True
-cooling = False
-deactivate_ahu = False
+heating_tz_overwrite = None
+cooling_tz_overwrite = None
+ahu_tz_overwrite = None
 prj_use_conditions = None
 prj_custom_usages = None
 setpoints_from_template = False
@@ -41,13 +39,39 @@ run_period_start_day = 1
 run_period_end_month = 12
 run_period_end_day = 31
 plot_singe_zone_guid = 
-overwrite_ahu_by_settings = True
-ahu_heating = False
-ahu_cooling = False
-ahu_dehumidification = False
-ahu_humidification = False
-ahu_heat_recovery = False
-ahu_heat_recovery_efficiency = 0.65
+ahu_heating_overwrite = None
+ahu_cooling_overwrite = None
+ahu_dehumidification_overwrite = None
+ahu_humidification_overwrite = None
+ahu_heat_recovery_overwrite = None
+ahu_heat_recovery_efficiency_overwrite = None
+use_constant_infiltration_overwrite = None
+base_infiltration_rate_overwrite = None
+
+[PlantSimSettings]
+aggregations = ['UnderfloorHeating', 'PipeStrand', 'Consumer', 'ParallelPump', 'ConsumerHeatingDistributorModule', 'GeneratorOneFluid']
+tolerance_connect_by_position = 10
+verify_connection_by_position = True
+
+[EnergyPlusSimSettings]
+cfd_export = False
+split_bounds = False
+add_shadings = True
+split_shadings = False
+run_full_simulation = False
+ep_version = 9-4-0
+ep_install_path = \usr\local\EnergyPlus-9-4-0
+system_sizing = True
+run_for_sizing_periods = False
+run_for_weather_period = True
+solar_distribution = FullExterior
+add_window_shading = None
+output_format = CommaAndHTML
+unit_conversion = JtoKWH
+output_keys = ['output_outdoor_conditions', 'output_zone_temperature', 'output_zone', 'output_infiltration', 'output_meters']
+correct_space_boundaries = True
+close_space_boundary_gaps = True
+add_natural_ventilation = True
 
 [Backend]
 use = energyplus
