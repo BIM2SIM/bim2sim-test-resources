@@ -4666,7 +4666,7 @@ MATERIAL,
 
 WINDOWMATERIAL:SIMPLEGLAZINGSYSTEM,
     WM_Glas1995_2015AluoderStahlfensterWaermeschutzverglasungzweifach_0.024,    !- Name
-    1.2475377544320418,       !- UFactor
+    1.1308562197092082,       !- UFactor
     0.65;                     !- Solar Heat Gain Coefficient
 
 WINDOWMATERIAL:SIMPLEGLAZINGSYSTEM,
@@ -6435,7 +6435,7 @@ BUILDINGSURFACE:DETAILED,
     2.5;                      !- Vertex 4 Zcoordinate
 
 BUILDINGSURFACE:DETAILED,
-    1qx14jnunC$RGNTbGOYQYu,    !- Name
+    2xcYROmyTB8hG5n2YkiXv9,    !- Name
     Wall,                     !- Surface Type
     BPS-InnerWall_3_0.01_0.15_0.01,    !- Construction Name
     0Lt8gR_E9ESeGH5uY_g9e9,    !- Zone Name
@@ -6462,7 +6462,7 @@ BUILDINGSURFACE:DETAILED,
     2.5;                      !- Vertex 5 Zcoordinate
 
 BUILDINGSURFACE:DETAILED,
-    0zHfn9pe59$OmEKEH3Q_ib,    !- Name
+    3HY3KyrV12IBsv6uPD0a_N,    !- Name
     Floor,                    !- Surface Type
     BPS-InnerFloor_3_0.04_0.06_0.16,    !- Construction Name
     2dQFggKBb1fOc1CqZDIDlx,    !- Zone Name
@@ -6531,7 +6531,7 @@ BUILDINGSURFACE:DETAILED,
     2.7;                      !- Vertex 19 Zcoordinate
 
 BUILDINGSURFACE:DETAILED,
-    201Y3DOyH34A2OxAcNVGhJ,    !- Name
+    2s7RzJeqP2PRnuOv2mNUjo,    !- Name
     Floor,                    !- Surface Type
     BPS-InnerFloor_3_0.04_0.06_0.16,    !- Construction Name
     2dQFggKBb1fOc1CqZDIDlx,    !- Zone Name
@@ -6567,7 +6567,7 @@ BUILDINGSURFACE:DETAILED,
     2.7;                      !- Vertex 8 Zcoordinate
 
 BUILDINGSURFACE:DETAILED,
-    1kssHdzMb02xarjIDiOIT_,    !- Name
+    1VkvZs0B5B594LZomtL5yZ,    !- Name
     Wall,                     !- Surface Type
     BPS-InnerWall_3_0.01_0.15_0.01,    !- Construction Name
     3$f2p7VyLB7eox67SA_zKE,    !- Zone Name
@@ -6603,7 +6603,7 @@ BUILDINGSURFACE:DETAILED,
     2.5;                      !- Vertex 8 Zcoordinate
 
 BUILDINGSURFACE:DETAILED,
-    1uwozMCVX8$Omnka4Lwk9r,    !- Name
+    07qw1AuV54AhQG8JQoxnNp,    !- Name
     Wall,                     !- Surface Type
     BPS-InnerWall_3_0.01_0.15_0.01,    !- Construction Name
     3$f2p7VyLB7eox67SA_zKE,    !- Zone Name
@@ -6627,7 +6627,7 @@ BUILDINGSURFACE:DETAILED,
     2.5;                      !- Vertex 4 Zcoordinate
 
 BUILDINGSURFACE:DETAILED,
-    3y8n0rkrX5pe$ClBYzHQUt,    !- Name
+    1FYdPMSSn7bAwZCptJ4EAX,    !- Name
     Wall,                     !- Surface Type
     BPS-InnerWall_3_0.01_0.15_0.01,    !- Construction Name
     3$f2p7VyLB7eox67SA_zKE,    !- Zone Name
@@ -6663,7 +6663,7 @@ BUILDINGSURFACE:DETAILED,
     2.5;                      !- Vertex 8 Zcoordinate
 
 BUILDINGSURFACE:DETAILED,
-    3lNO67Uf98Gg6ZCB1UwnGE,    !- Name
+    0N7a1zX09EnOTFds2I_gVD,    !- Name
     Wall,                     !- Surface Type
     BPS-InnerWall_3_0.01_0.15_0.01,    !- Construction Name
     347jFE2yX7IhCEIALmupEH,    !- Zone Name
