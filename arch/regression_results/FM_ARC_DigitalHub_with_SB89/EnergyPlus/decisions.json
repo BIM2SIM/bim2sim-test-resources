@@ -1,57 +1,57 @@
 {
-  "version": "bim2sim",
+  "version": "version(\"bim2sim\")",
   "checksum_ifc": null,
   "decisions": {
     "tool_IFC-based Space Boundary Generator_#403771=IfcApplication(#403769,'0.9','IFC-based Space Boundary Generator','IFC2SB')_29e5d63ff04fde0a623f98c1f87dd6a6": {
       "value": "Other"
     },
-    "SetClass:IfcBuildingElementProxy.3A8hY1UoD7JhnLeZeDyRm6.Anfahrschutz Rohr:1000 x 700:2451052": {
-      "value": null,
-      "checksum": "167e36fc209105d1ce0b8d10852ded66"
-    },
-    "SetClass:IfcBuildingElementProxy.3A8hY1UoD7JhnLeZeDyPtn.Markierung:B 120:2443163": {
-      "value": null,
-      "checksum": "167e36fc209105d1ce0b8d10852ded66"
-    },
-    "SetClass:IfcBuildingElementProxy.3A8hY1UoD7JhnLeZeDyUIN.Parkplatz - 01 90:2500 x 5000:2440957": {
-      "value": null,
-      "checksum": "167e36fc209105d1ce0b8d10852ded66"
-    },
-    "SetClass:IfcBuildingElementProxy.3A8hY1UoD7JhnLeZeDyQto.Baum RPC - Laubbaum:Rotesche - 7,6 Meter:2455448": {
-      "value": null,
-      "checksum": "167e36fc209105d1ce0b8d10852ded66"
-    },
-    "SetClass:IfcBuildingElementProxy.3LJODRGPbDdfXHXShFL93W.Oberfl\u00e4che:2437789": {
-      "value": null,
-      "checksum": "167e36fc209105d1ce0b8d10852ded66"
-    },
-    "SetClass:IfcBuildingElementProxy.3A8hY1UoD7JhnLeZeDyRpb.E-Ladestation - 03:Typ1:2451087": {
-      "value": null,
-      "checksum": "167e36fc209105d1ce0b8d10852ded66"
-    },
-    "SetClass:IfcBuildingElementProxy.3A8hY1UoD7JhnLeZeDyPRy.Richtungspfeil - Abzweigung und geradeaus:Typ1:2444438": {
-      "value": null,
-      "checksum": "167e36fc209105d1ce0b8d10852ded66"
-    },
     "SetClass:IfcBuildingElementProxy.0P898JVsX6VQGfAj0lC8$w.Unterregion:2460265": {
       "value": null,
-      "checksum": "167e36fc209105d1ce0b8d10852ded66"
+      "checksum": "85a3eebb0c64c030d7c582827460205d"
     },
-    "SetClass:IfcBuildingElementProxy.3A8hY1UoD7JhnLeZeDyRPg.Radst\u00e4nder - 04:3000, 5 R\u00e4der:2452480": {
+    "SetClass:IfcBuildingElementProxy.0P898JVsX6VQGfAj0lC8w9.Baum RPC - Laubbaum:Rotesche - 7,6 Meter:2460442": {
       "value": null,
-      "checksum": "167e36fc209105d1ce0b8d10852ded66"
-    },
-    "SetClass:IfcBuildingElementProxy.3A8hY1UoD7JhnLeZeDyQXy.Fahrrad - Rennrad:Typ1:2454038": {
-      "value": null,
-      "checksum": "167e36fc209105d1ce0b8d10852ded66"
-    },
-    "SetClass:IfcBuildingElementProxy.3LJODRGPbDdfXHXShFL8ox.Plattenkante:Rechteckig_300x250:2436806": {
-      "value": null,
-      "checksum": "167e36fc209105d1ce0b8d10852ded66"
+      "checksum": "85a3eebb0c64c030d7c582827460205d"
     },
     "SetClass:IfcBuildingElementProxy.3A8hY1UoD7JhnLeZeDyOSj.PKW Verkehrsinsel Schranken Ein-Ausfahrt:Typ1:2448711": {
       "value": null,
-      "checksum": "167e36fc209105d1ce0b8d10852ded66"
+      "checksum": "85a3eebb0c64c030d7c582827460205d"
+    },
+    "SetClass:IfcBuildingElementProxy.3A8hY1UoD7JhnLeZeDyP82.Markierung:B 120:2443368": {
+      "value": null,
+      "checksum": "85a3eebb0c64c030d7c582827460205d"
+    },
+    "SetClass:IfcBuildingElementProxy.3A8hY1UoD7JhnLeZeDyPRy.Richtungspfeil - Abzweigung und geradeaus:Typ1:2444438": {
+      "value": null,
+      "checksum": "85a3eebb0c64c030d7c582827460205d"
+    },
+    "SetClass:IfcBuildingElementProxy.3A8hY1UoD7JhnLeZeDyQWN.Fahrrad - Rennrad:Typ1:2454141": {
+      "value": null,
+      "checksum": "85a3eebb0c64c030d7c582827460205d"
+    },
+    "SetClass:IfcBuildingElementProxy.3A8hY1UoD7JhnLeZeDyR$F.Anfahrschutz Rohr:1000 x 700:2450853": {
+      "value": null,
+      "checksum": "85a3eebb0c64c030d7c582827460205d"
+    },
+    "SetClass:IfcBuildingElementProxy.3A8hY1UoD7JhnLeZeDyR7S.Radst\u00e4nder - 04:3000, 5 R\u00e4der:2452406": {
+      "value": null,
+      "checksum": "85a3eebb0c64c030d7c582827460205d"
+    },
+    "SetClass:IfcBuildingElementProxy.3A8hY1UoD7JhnLeZeDyRbr.E-Ladestation - 03:Typ1:2450207": {
+      "value": null,
+      "checksum": "85a3eebb0c64c030d7c582827460205d"
+    },
+    "SetClass:IfcBuildingElementProxy.3A8hY1UoD7JhnLeZeDyU2I.Oberfl\u00e4che:2439928": {
+      "value": null,
+      "checksum": "85a3eebb0c64c030d7c582827460205d"
+    },
+    "SetClass:IfcBuildingElementProxy.3A8hY1UoD7JhnLeZeDyUGB.Parkplatz - 01 90:2500 x 5000:2440801": {
+      "value": null,
+      "checksum": "85a3eebb0c64c030d7c582827460205d"
+    },
+    "SetClass:IfcBuildingElementProxy.3LJODRGPbDdfXHXShFL8ox.Plattenkante:Rechteckig_300x250:2436806": {
+      "value": null,
+      "checksum": "85a3eebb0c64c030d7c582827460205d"
     },
     "IfcBuilding_1OVsTAdVr0zxMeLRosmk1X.year_of_construction": {
       "value": 2015,

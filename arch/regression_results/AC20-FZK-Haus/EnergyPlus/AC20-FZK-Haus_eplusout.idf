@@ -3744,7 +3744,7 @@ MATERIAL,
 
 WINDOWMATERIAL:SIMPLEGLAZINGSYSTEM,
     WM_Glas1995_2015AluoderStahlfensterWaermeschutzverglasungzweifach_0.024,    !- Name
-    1.2475377544320418,       !- UFactor
+    1.1308562197092082,       !- UFactor
     0.65;                     !- Solar Heat Gain Coefficient
 
 WINDOWMATERIAL:SIMPLEGLAZINGSYSTEM,
@@ -5347,12 +5347,12 @@ BUILDINGSURFACE:DETAILED,
     2.5;                      !- Vertex 4 Zcoordinate
 
 BUILDINGSURFACE:DETAILED,
-    3jXm$feiv78uMi6i8Y84qc,    !- Name
+    0CA7rh$K1AfwHzU5pwfFcr,    !- Name
     Floor,                    !- Surface Type
     BPS-InnerFloor_3_0.04_0.06_0.16,    !- Construction Name
     2dQFggKBb1fOc1CqZDIDlx,    !- Zone Name
     Surface,                  !- Outside Boundary Condition
-    2TWy$SMQTDxhjSYLkn5KFY,    !- Outside Boundary Condition Object
+    2D3Vr$qwr04wKAecZ86oMb,    !- Outside Boundary Condition Object
     NoSun,                    !- Sun Exposure
     NoWind,                   !- Wind Exposure
     autocalculate,            !- View Factor to Ground
@@ -5371,12 +5371,12 @@ BUILDINGSURFACE:DETAILED,
     2.7;                      !- Vertex 4 Zcoordinate
 
 BUILDINGSURFACE:DETAILED,
-    2TWy$SMQTDxhjSYLkn5KFY,    !- Name
+    2D3Vr$qwr04wKAecZ86oMb,    !- Name
     Ceiling,                  !- Surface Type
     BPS-InnerFloor_3_0.04_0.06_0.16,    !- Construction Name
     0Lt8gR_E9ESeGH5uY_g9e9,    !- Zone Name
     Surface,                  !- Outside Boundary Condition
-    3jXm$feiv78uMi6i8Y84qc,    !- Outside Boundary Condition Object
+    0CA7rh$K1AfwHzU5pwfFcr,    !- Outside Boundary Condition Object
     NoSun,                    !- Sun Exposure
     NoWind,                   !- Wind Exposure
     autocalculate,            !- View Factor to Ground
@@ -5395,12 +5395,12 @@ BUILDINGSURFACE:DETAILED,
     2.5;                      !- Vertex 4 Zcoordinate
 
 BUILDINGSURFACE:DETAILED,
-    0ntu87gy117u6rZXgVYMw_,    !- Name
+    3awR4MURzAIh879jq96s$m,    !- Name
     Ceiling,                  !- Surface Type
     BPS-InnerFloor_3_0.04_0.06_0.16,    !- Construction Name
     3$f2p7VyLB7eox67SA_zKE,    !- Zone Name
     Surface,                  !- Outside Boundary Condition
-    28RUXH521Dj9UZfQKiGyzN,    !- Outside Boundary Condition Object
+    0IMM0XdQvDyBRDroPYGGNq,    !- Outside Boundary Condition Object
     NoSun,                    !- Sun Exposure
     NoWind,                   !- Wind Exposure
     autocalculate,            !- View Factor to Ground
@@ -5419,12 +5419,12 @@ BUILDINGSURFACE:DETAILED,
     2.5;                      !- Vertex 4 Zcoordinate
 
 BUILDINGSURFACE:DETAILED,
-    28RUXH521Dj9UZfQKiGyzN,    !- Name
+    0IMM0XdQvDyBRDroPYGGNq,    !- Name
     Floor,                    !- Surface Type
     BPS-InnerFloor_3_0.04_0.06_0.16,    !- Construction Name
     2dQFggKBb1fOc1CqZDIDlx,    !- Zone Name
     Surface,                  !- Outside Boundary Condition
-    0ntu87gy117u6rZXgVYMw_,    !- Outside Boundary Condition Object
+    3awR4MURzAIh879jq96s$m,    !- Outside Boundary Condition Object
     NoSun,                    !- Sun Exposure
     NoWind,                   !- Wind Exposure
     autocalculate,            !- View Factor to Ground
@@ -5443,12 +5443,12 @@ BUILDINGSURFACE:DETAILED,
     2.7;                      !- Vertex 4 Zcoordinate
 
 BUILDINGSURFACE:DETAILED,
-    39snEGJNLD2gz1JGl79POb,    !- Name
+    12YBbkxZHAxwJOhwtXOKwB,    !- Name
     Ceiling,                  !- Surface Type
     BPS-InnerFloor_3_0.04_0.06_0.16,    !- Construction Name
     3$f2p7VyLB7eox67SA_zKE,    !- Zone Name
     Surface,                  !- Outside Boundary Condition
-    1MHSgtRULC5P4qzvBoHeyh,    !- Outside Boundary Condition Object
+    0HeQpkV2L6ZP_7qRdxdPt6,    !- Outside Boundary Condition Object
     NoSun,                    !- Sun Exposure
     NoWind,                   !- Wind Exposure
     autocalculate,            !- View Factor to Ground
@@ -5467,12 +5467,12 @@ BUILDINGSURFACE:DETAILED,
     2.5;                      !- Vertex 4 Zcoordinate
 
 BUILDINGSURFACE:DETAILED,
-    1MHSgtRULC5P4qzvBoHeyh,    !- Name
+    0HeQpkV2L6ZP_7qRdxdPt6,    !- Name
     Floor,                    !- Surface Type
     BPS-InnerFloor_3_0.04_0.06_0.16,    !- Construction Name
     2dQFggKBb1fOc1CqZDIDlx,    !- Zone Name
     Surface,                  !- Outside Boundary Condition
-    39snEGJNLD2gz1JGl79POb,    !- Outside Boundary Condition Object
+    12YBbkxZHAxwJOhwtXOKwB,    !- Outside Boundary Condition Object
     NoSun,                    !- Sun Exposure
     NoWind,                   !- Wind Exposure
     autocalculate,            !- View Factor to Ground
@@ -5491,7 +5491,7 @@ BUILDINGSURFACE:DETAILED,
     2.7;                      !- Vertex 4 Zcoordinate
 
 BUILDINGSURFACE:DETAILED,
-    1fKDDA$XXCpBAPq7RjNowj,    !- Name
+    3IpOck1Vz3UhKpSwacDKMy,    !- Name
     Floor,                    !- Surface Type
     BPS-GroundFloor_3_0.04_0.06_0.16,    !- Construction Name
     3$f2p7VyLB7eox67SA_zKE,    !- Zone Name
@@ -5515,7 +5515,7 @@ BUILDINGSURFACE:DETAILED,
     0;                        !- Vertex 4 Zcoordinate
 
 BUILDINGSURFACE:DETAILED,
-    0jxeXeW_19Gv$vcOf2qBYf,    !- Name
+    1kj8cemlrDfwyiRVmhpxVJ,    !- Name
     Floor,                    !- Surface Type
     BPS-GroundFloor_3_0.04_0.06_0.16,    !- Construction Name
     3$f2p7VyLB7eox67SA_zKE,    !- Zone Name
@@ -5539,7 +5539,7 @@ BUILDINGSURFACE:DETAILED,
     0;                        !- Vertex 4 Zcoordinate
 
 BUILDINGSURFACE:DETAILED,
-    0gqcVLmT59nBcytsAUIOki,    !- Name
+    031HtiDdP6LupJ1J0XCnZt,    !- Name
     Wall,                     !- Surface Type
     BPS-InnerWall_3_0.01_0.15_0.01,    !- Construction Name
     0Lt8gR_E9ESeGH5uY_g9e9,    !- Zone Name
@@ -5566,7 +5566,7 @@ BUILDINGSURFACE:DETAILED,
     2.5;                      !- Vertex 5 Zcoordinate
 
 BUILDINGSURFACE:DETAILED,
-    2_xMFFSGP3D8s168NAnk9Q,    !- Name
+    1$XBJA4N58ouAd4nm2O$Ct,    !- Name
     Wall,                     !- Surface Type
     BPS-InnerWall_3_0.01_0.15_0.01,    !- Construction Name
     3$f2p7VyLB7eox67SA_zKE,    !- Zone Name
@@ -5602,7 +5602,7 @@ BUILDINGSURFACE:DETAILED,
     2.5;                      !- Vertex 8 Zcoordinate
 
 BUILDINGSURFACE:DETAILED,
-    1EsTVzDWT8Iu671erLELcz,    !- Name
+    2rnh$gMNjB8h9GhEbHzY81,    !- Name
     Wall,                     !- Surface Type
     BPS-InnerWall_3_0.01_0.15_0.01,    !- Construction Name
     3$f2p7VyLB7eox67SA_zKE,    !- Zone Name
@@ -5626,7 +5626,7 @@ BUILDINGSURFACE:DETAILED,
     2.5;                      !- Vertex 4 Zcoordinate
 
 BUILDINGSURFACE:DETAILED,
-    0R0lb3L_f51xbLci6i5HDo,    !- Name
+    0OC196EkD4QBdLZ3_OUaSF,    !- Name
     Wall,                     !- Surface Type
     BPS-InnerWall_3_0.01_0.15_0.01,    !- Construction Name
     3$f2p7VyLB7eox67SA_zKE,    !- Zone Name
@@ -5662,7 +5662,7 @@ BUILDINGSURFACE:DETAILED,
     2.5;                      !- Vertex 8 Zcoordinate
 
 BUILDINGSURFACE:DETAILED,
-    1ESGA80yXFiQp6t6Rq9p9o,    !- Name
+    1hifvrO_bByRQsB7ppXkm8,    !- Name
     Wall,                     !- Surface Type
     BPS-InnerWall_3_0.01_0.15_0.01,    !- Construction Name
     347jFE2yX7IhCEIALmupEH,    !- Zone Name
@@ -5686,7 +5686,7 @@ BUILDINGSURFACE:DETAILED,
     2.5;                      !- Vertex 4 Zcoordinate
 
 BUILDINGSURFACE:DETAILED,
-    2ZuaW8VpXD4grr8vMSiUTx,    !- Name
+    0JJPKDxij1oOlWQifSohDO,    !- Name
     Floor,                    !- Surface Type
     BPS-InnerFloor_3_0.04_0.06_0.16,    !- Construction Name
     2dQFggKBb1fOc1CqZDIDlx,    !- Zone Name
@@ -5710,7 +5710,7 @@ BUILDINGSURFACE:DETAILED,
     2.7;                      !- Vertex 4 Zcoordinate
 
 BUILDINGSURFACE:DETAILED,
-    0BsLNxHg5Dd9urI00lrDWs,    !- Name
+    1XzkLiRt16uOnS8PvdihUy,    !- Name
     Floor,                    !- Surface Type
     BPS-InnerFloor_3_0.04_0.06_0.16,    !- Construction Name
     2dQFggKBb1fOc1CqZDIDlx,    !- Zone Name
@@ -5734,7 +5734,7 @@ BUILDINGSURFACE:DETAILED,
     2.7;                      !- Vertex 4 Zcoordinate
 
 BUILDINGSURFACE:DETAILED,
-    2G2vaojULCyOJ5$Q6nh2KS,    !- Name
+    3SNH6a9hvBnfrhnSWzUfUo,    !- Name
     Floor,                    !- Surface Type
     BPS-InnerFloor_3_0.04_0.06_0.16,    !- Construction Name
     2dQFggKBb1fOc1CqZDIDlx,    !- Zone Name
@@ -5758,7 +5758,7 @@ BUILDINGSURFACE:DETAILED,
     2.7;                      !- Vertex 4 Zcoordinate
 
 BUILDINGSURFACE:DETAILED,
-    3UYTBO6pn2h8F6XUITcALM,    !- Name
+    1BJJCul9X8lOyIHfS1cmgh,    !- Name
     Floor,                    !- Surface Type
     BPS-InnerFloor_3_0.04_0.06_0.16,    !- Construction Name
     2dQFggKBb1fOc1CqZDIDlx,    !- Zone Name
@@ -5782,7 +5782,7 @@ BUILDINGSURFACE:DETAILED,
     2.7;                      !- Vertex 4 Zcoordinate
 
 BUILDINGSURFACE:DETAILED,
-    2JICzSG8b9kuE1cRLK6oys,    !- Name
+    1pi65ET$j1dfFOSkbu14Hc,    !- Name
     Floor,                    !- Surface Type
     BPS-InnerFloor_3_0.04_0.06_0.16,    !- Construction Name
     2dQFggKBb1fOc1CqZDIDlx,    !- Zone Name
@@ -5806,7 +5806,7 @@ BUILDINGSURFACE:DETAILED,
     2.7;                      !- Vertex 4 Zcoordinate
 
 BUILDINGSURFACE:DETAILED,
-    06WKph9cP0lg8oS31KNlMR,    !- Name
+    2Q0FOWbmTDFvE5mR3siEzR,    !- Name
     Floor,                    !- Surface Type
     BPS-InnerFloor_3_0.04_0.06_0.16,    !- Construction Name
     2dQFggKBb1fOc1CqZDIDlx,    !- Zone Name
@@ -5830,7 +5830,7 @@ BUILDINGSURFACE:DETAILED,
     2.7;                      !- Vertex 4 Zcoordinate
 
 BUILDINGSURFACE:DETAILED,
-    129hgLhYzAaua7RiBczJFy,    !- Name
+    2Z61j30sj1KwGrJZApZLi9,    !- Name
     Floor,                    !- Surface Type
     BPS-InnerFloor_3_0.04_0.06_0.16,    !- Construction Name
     2dQFggKBb1fOc1CqZDIDlx,    !- Zone Name
@@ -5854,7 +5854,7 @@ BUILDINGSURFACE:DETAILED,
     2.7;                      !- Vertex 4 Zcoordinate
 
 BUILDINGSURFACE:DETAILED,
-    3vODZTwVv2wxgdBfkcrNJK,    !- Name
+    0MY$TbXL55mBAoIoRVd0Sn,    !- Name
     Floor,                    !- Surface Type
     BPS-InnerFloor_3_0.04_0.06_0.16,    !- Construction Name
     2dQFggKBb1fOc1CqZDIDlx,    !- Zone Name

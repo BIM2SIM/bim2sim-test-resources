@@ -4592,7 +4592,7 @@ MATERIAL,
 
 WINDOWMATERIAL:SIMPLEGLAZINGSYSTEM,
     WM_Glas1995_2015Waermeschutzverglasungdreifach_0.024,    !- Name
-    0.7993087059840138,       !- UFactor
+    0.7042253521126761,       !- UFactor
     0.5;                      !- Solar Heat Gain Coefficient
 
 WINDOWMATERIAL:SIMPLEGLAZINGSYSTEM,
