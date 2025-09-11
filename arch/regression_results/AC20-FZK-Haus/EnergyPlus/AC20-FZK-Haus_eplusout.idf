@@ -25,68 +25,19 @@ Building,
 Timestep,
     4;                        !- Number of Timesteps per Hour
 
-Site:Location,
-    DENVER_STAPLETON_CO_USA_WMO_724690,    !- Name
-    39.77,                    !- Latitude
-    -104.87,                  !- Longitude
-    -7,                       !- Time Zone
-    1611;                     !- Elevation
+SIZINGPERIOD:WEATHERFILECONDITIONTYPE,
+    Summer Design Day from Weather File,    !- Name
+    SummerTypical,            !- Period Selection
+    SummerDesignDay,          !- Day of Week for Start Day
+    Yes,                      !- Use Weather File Daylight Saving Period
+    Yes;                      !- Use Weather File Rain and Snow Indicators
 
-SizingPeriod:DesignDay,
-    DENVER_STAPLETON Ann Htg 99.6% Condns DB,    !- Name
-    12,                       !- Month
-    21,                       !- Day of Month
-    WinterDesignDay,          !- Day Type
-    -20,                      !- Maximum DryBulb Temperature
-    0,                        !- Daily DryBulb Temperature Range
-    ,                         !- DryBulb Temperature Range Modifier Type
-    ,                         !- DryBulb Temperature Range Modifier Day Schedule Name
-    Wetbulb,                  !- Humidity Condition Type
-    -20,                      !- Wetbulb or DewPoint at Maximum DryBulb
-    ,                         !- Humidity Condition Day Schedule Name
-    ,                         !- Humidity Ratio at Maximum DryBulb
-    ,                         !- Enthalpy at Maximum DryBulb
-    ,                         !- Daily WetBulb Temperature Range
-    83411,                    !- Barometric Pressure
-    2.3,                      !- Wind Speed
-    180,                      !- Wind Direction
-    No,                       !- Rain Indicator
-    No,                       !- Snow Indicator
-    No,                       !- Daylight Saving Time Indicator
-    ASHRAEClearSky,           !- Solar Model Indicator
-    ,                         !- Beam Solar Day Schedule Name
-    ,                         !- Diffuse Solar Day Schedule Name
-    ,                         !- ASHRAE Clear Sky Optical Depth for Beam Irradiance taub
-    ,                         !- ASHRAE Clear Sky Optical Depth for Diffuse Irradiance taud
-    0;                        !- Sky Clearness
-
-SizingPeriod:DesignDay,
-    DENVER_STAPLETON Ann Clg .4% Condns DB=>MWB,    !- Name
-    7,                        !- Month
-    21,                       !- Day of Month
-    SummerDesignDay,          !- Day Type
-    34.1,                     !- Maximum DryBulb Temperature
-    15.2,                     !- Daily DryBulb Temperature Range
-    ,                         !- DryBulb Temperature Range Modifier Type
-    ,                         !- DryBulb Temperature Range Modifier Day Schedule Name
-    Wetbulb,                  !- Humidity Condition Type
-    15.8,                     !- Wetbulb or DewPoint at Maximum DryBulb
-    ,                         !- Humidity Condition Day Schedule Name
-    ,                         !- Humidity Ratio at Maximum DryBulb
-    ,                         !- Enthalpy at Maximum DryBulb
-    ,                         !- Daily WetBulb Temperature Range
-    83411,                    !- Barometric Pressure
-    4,                        !- Wind Speed
-    120,                      !- Wind Direction
-    No,                       !- Rain Indicator
-    No,                       !- Snow Indicator
-    No,                       !- Daylight Saving Time Indicator
-    ASHRAEClearSky,           !- Solar Model Indicator
-    ,                         !- Beam Solar Day Schedule Name
-    ,                         !- Diffuse Solar Day Schedule Name
-    ,                         !- ASHRAE Clear Sky Optical Depth for Beam Irradiance taub
-    ,                         !- ASHRAE Clear Sky Optical Depth for Diffuse Irradiance taud
-    1;                        !- Sky Clearness
+SIZINGPERIOD:WEATHERFILECONDITIONTYPE,
+    Winter Design Day from Weather File,    !- Name
+    WinterTypical,            !- Period Selection
+    WinterDesignDay,          !- Day of Week for Start Day
+    Yes,                      !- Use Weather File Daylight Saving Period
+    Yes;                      !- Use Weather File Rain and Snow Indicators
 
 RunPeriod,
     Run Period 1,             !- Name
@@ -3940,36 +3891,58 @@ ZONE,
     Yes;                      !- Part of Total Floor Area
 
 ZONELIST,
-    All_Zones,                !- Name
+    Living,                   !- Name
     0Lt8gR_E9ESeGH5uY_g9e9,    !- Zone 1 Name
-    0e_hbkIQ5DMQlIJ$2V3j_m,    !- Zone 2 Name
-    17JZcMFrf5tOftUTidA0d3,    !- Zone 3 Name
-    2RSCzLOBz4FAK$_wE8VckM,    !- Zone 4 Name
-    2dQFggKBb1fOc1CqZDIDlx,    !- Zone 5 Name
-    3$f2p7VyLB7eox67SA_zKE,    !- Zone 6 Name
-    347jFE2yX7IhCEIALmupEH;    !- Zone 7 Name
+    2dQFggKBb1fOc1CqZDIDlx;    !- Zone 2 Name
 
 ZONELIST,
-    Dachgeschoss,             !- Name
-    2dQFggKBb1fOc1CqZDIDlx;    !- Zone 1 Name
+    WC and sanitary rooms in non-residential buildings,    !- Name
+    0e_hbkIQ5DMQlIJ$2V3j_m;    !- Zone 1 Name
 
 ZONELIST,
-    Erdgeschoss,              !- Name
-    0Lt8gR_E9ESeGH5uY_g9e9,    !- Zone 1 Name
-    0e_hbkIQ5DMQlIJ$2V3j_m,    !- Zone 2 Name
-    17JZcMFrf5tOftUTidA0d3,    !- Zone 3 Name
-    2RSCzLOBz4FAK$_wE8VckM,    !- Zone 4 Name
-    3$f2p7VyLB7eox67SA_zKE,    !- Zone 5 Name
-    347jFE2yX7IhCEIALmupEH;    !- Zone 6 Name
+    Kitchen in non-residential buildings,    !- Name
+    17JZcMFrf5tOftUTidA0d3;    !- Zone 1 Name
+
+ZONELIST,
+    Single office,            !- Name
+    2RSCzLOBz4FAK$_wE8VckM;    !- Zone 1 Name
+
+ZONELIST,
+    Traffic area,             !- Name
+    3$f2p7VyLB7eox67SA_zKE;    !- Zone 1 Name
+
+ZONELIST,
+    Bed room,                 !- Name
+    347jFE2yX7IhCEIALmupEH;    !- Zone 1 Name
 
 ZONEGROUP,
-    Dachgeschoss,             !- Name
-    Dachgeschoss,             !- Zone List Name
+    Living,                   !- Name
+    Living,                   !- Zone List Name
     1;                        !- Zone List Multiplier
 
 ZONEGROUP,
-    Erdgeschoss,              !- Name
-    Erdgeschoss,              !- Zone List Name
+    WC and sanitary rooms in non-residential buildings,    !- Name
+    WC and sanitary rooms in non-residential buildings,    !- Zone List Name
+    1;                        !- Zone List Multiplier
+
+ZONEGROUP,
+    Kitchen in non-residential buildings,    !- Name
+    Kitchen in non-residential buildings,    !- Zone List Name
+    1;                        !- Zone List Multiplier
+
+ZONEGROUP,
+    Single office,            !- Name
+    Single office,            !- Zone List Name
+    1;                        !- Zone List Multiplier
+
+ZONEGROUP,
+    Traffic area,             !- Name
+    Traffic area,             !- Zone List Name
+    1;                        !- Zone List Multiplier
+
+ZONEGROUP,
+    Bed room,                 !- Name
+    Bed room,                 !- Zone List Name
     1;                        !- Zone List Multiplier
 
 BUILDINGSURFACE:DETAILED,
@@ -5347,12 +5320,12 @@ BUILDINGSURFACE:DETAILED,
     2.5;                      !- Vertex 4 Zcoordinate
 
 BUILDINGSURFACE:DETAILED,
-    0CA7rh$K1AfwHzU5pwfFcr,    !- Name
+    2P$NGm$ArAF9Zi1TzKAPWo,    !- Name
     Floor,                    !- Surface Type
     BPS-InnerFloor_3_0.04_0.06_0.16,    !- Construction Name
     2dQFggKBb1fOc1CqZDIDlx,    !- Zone Name
     Surface,                  !- Outside Boundary Condition
-    2D3Vr$qwr04wKAecZ86oMb,    !- Outside Boundary Condition Object
+    11IEKe91n7Y9L9nwKnggBP,    !- Outside Boundary Condition Object
     NoSun,                    !- Sun Exposure
     NoWind,                   !- Wind Exposure
     autocalculate,            !- View Factor to Ground
@@ -5371,12 +5344,12 @@ BUILDINGSURFACE:DETAILED,
     2.7;                      !- Vertex 4 Zcoordinate
 
 BUILDINGSURFACE:DETAILED,
-    2D3Vr$qwr04wKAecZ86oMb,    !- Name
+    11IEKe91n7Y9L9nwKnggBP,    !- Name
     Ceiling,                  !- Surface Type
     BPS-InnerFloor_3_0.04_0.06_0.16,    !- Construction Name
     0Lt8gR_E9ESeGH5uY_g9e9,    !- Zone Name
     Surface,                  !- Outside Boundary Condition
-    0CA7rh$K1AfwHzU5pwfFcr,    !- Outside Boundary Condition Object
+    2P$NGm$ArAF9Zi1TzKAPWo,    !- Outside Boundary Condition Object
     NoSun,                    !- Sun Exposure
     NoWind,                   !- Wind Exposure
     autocalculate,            !- View Factor to Ground
@@ -5395,12 +5368,12 @@ BUILDINGSURFACE:DETAILED,
     2.5;                      !- Vertex 4 Zcoordinate
 
 BUILDINGSURFACE:DETAILED,
-    3awR4MURzAIh879jq96s$m,    !- Name
+    1mrDVm0uLA9gV2cXya201v,    !- Name
     Ceiling,                  !- Surface Type
     BPS-InnerFloor_3_0.04_0.06_0.16,    !- Construction Name
     3$f2p7VyLB7eox67SA_zKE,    !- Zone Name
     Surface,                  !- Outside Boundary Condition
-    0IMM0XdQvDyBRDroPYGGNq,    !- Outside Boundary Condition Object
+    0y5u5eiyf27Qy8kc_v_5mI,    !- Outside Boundary Condition Object
     NoSun,                    !- Sun Exposure
     NoWind,                   !- Wind Exposure
     autocalculate,            !- View Factor to Ground
@@ -5419,12 +5392,12 @@ BUILDINGSURFACE:DETAILED,
     2.5;                      !- Vertex 4 Zcoordinate
 
 BUILDINGSURFACE:DETAILED,
-    0IMM0XdQvDyBRDroPYGGNq,    !- Name
+    0y5u5eiyf27Qy8kc_v_5mI,    !- Name
     Floor,                    !- Surface Type
     BPS-InnerFloor_3_0.04_0.06_0.16,    !- Construction Name
     2dQFggKBb1fOc1CqZDIDlx,    !- Zone Name
     Surface,                  !- Outside Boundary Condition
-    3awR4MURzAIh879jq96s$m,    !- Outside Boundary Condition Object
+    1mrDVm0uLA9gV2cXya201v,    !- Outside Boundary Condition Object
     NoSun,                    !- Sun Exposure
     NoWind,                   !- Wind Exposure
     autocalculate,            !- View Factor to Ground
@@ -5443,12 +5416,12 @@ BUILDINGSURFACE:DETAILED,
     2.7;                      !- Vertex 4 Zcoordinate
 
 BUILDINGSURFACE:DETAILED,
-    12YBbkxZHAxwJOhwtXOKwB,    !- Name
+    2WZeo3AVnDfuQOEr0xXdq0,    !- Name
     Ceiling,                  !- Surface Type
     BPS-InnerFloor_3_0.04_0.06_0.16,    !- Construction Name
     3$f2p7VyLB7eox67SA_zKE,    !- Zone Name
     Surface,                  !- Outside Boundary Condition
-    0HeQpkV2L6ZP_7qRdxdPt6,    !- Outside Boundary Condition Object
+    0rcTRI3rf6POU$OU3Yp3ok,    !- Outside Boundary Condition Object
     NoSun,                    !- Sun Exposure
     NoWind,                   !- Wind Exposure
     autocalculate,            !- View Factor to Ground
@@ -5467,12 +5440,12 @@ BUILDINGSURFACE:DETAILED,
     2.5;                      !- Vertex 4 Zcoordinate
 
 BUILDINGSURFACE:DETAILED,
-    0HeQpkV2L6ZP_7qRdxdPt6,    !- Name
+    0rcTRI3rf6POU$OU3Yp3ok,    !- Name
     Floor,                    !- Surface Type
     BPS-InnerFloor_3_0.04_0.06_0.16,    !- Construction Name
     2dQFggKBb1fOc1CqZDIDlx,    !- Zone Name
     Surface,                  !- Outside Boundary Condition
-    12YBbkxZHAxwJOhwtXOKwB,    !- Outside Boundary Condition Object
+    2WZeo3AVnDfuQOEr0xXdq0,    !- Outside Boundary Condition Object
     NoSun,                    !- Sun Exposure
     NoWind,                   !- Wind Exposure
     autocalculate,            !- View Factor to Ground
@@ -5491,7 +5464,7 @@ BUILDINGSURFACE:DETAILED,
     2.7;                      !- Vertex 4 Zcoordinate
 
 BUILDINGSURFACE:DETAILED,
-    3IpOck1Vz3UhKpSwacDKMy,    !- Name
+    3vRcJNryzFiOdzDH5RbUni,    !- Name
     Floor,                    !- Surface Type
     BPS-GroundFloor_3_0.04_0.06_0.16,    !- Construction Name
     3$f2p7VyLB7eox67SA_zKE,    !- Zone Name
@@ -5515,7 +5488,7 @@ BUILDINGSURFACE:DETAILED,
     0;                        !- Vertex 4 Zcoordinate
 
 BUILDINGSURFACE:DETAILED,
-    1kj8cemlrDfwyiRVmhpxVJ,    !- Name
+    0nSAC0kKrAchEdHWaw0tzp,    !- Name
     Floor,                    !- Surface Type
     BPS-GroundFloor_3_0.04_0.06_0.16,    !- Construction Name
     3$f2p7VyLB7eox67SA_zKE,    !- Zone Name
@@ -5539,7 +5512,7 @@ BUILDINGSURFACE:DETAILED,
     0;                        !- Vertex 4 Zcoordinate
 
 BUILDINGSURFACE:DETAILED,
-    031HtiDdP6LupJ1J0XCnZt,    !- Name
+    0XOJz406f2nxFnarUdY_2a,    !- Name
     Wall,                     !- Surface Type
     BPS-InnerWall_3_0.01_0.15_0.01,    !- Construction Name
     0Lt8gR_E9ESeGH5uY_g9e9,    !- Zone Name
@@ -5566,7 +5539,7 @@ BUILDINGSURFACE:DETAILED,
     2.5;                      !- Vertex 5 Zcoordinate
 
 BUILDINGSURFACE:DETAILED,
-    1$XBJA4N58ouAd4nm2O$Ct,    !- Name
+    1CNKF2vGTCiQNFxs23HoCO,    !- Name
     Wall,                     !- Surface Type
     BPS-InnerWall_3_0.01_0.15_0.01,    !- Construction Name
     3$f2p7VyLB7eox67SA_zKE,    !- Zone Name
@@ -5602,7 +5575,7 @@ BUILDINGSURFACE:DETAILED,
     2.5;                      !- Vertex 8 Zcoordinate
 
 BUILDINGSURFACE:DETAILED,
-    2rnh$gMNjB8h9GhEbHzY81,    !- Name
+    1NkLcMPJT3J8dllH5zebjY,    !- Name
     Wall,                     !- Surface Type
     BPS-InnerWall_3_0.01_0.15_0.01,    !- Construction Name
     3$f2p7VyLB7eox67SA_zKE,    !- Zone Name
@@ -5626,7 +5599,7 @@ BUILDINGSURFACE:DETAILED,
     2.5;                      !- Vertex 4 Zcoordinate
 
 BUILDINGSURFACE:DETAILED,
-    0OC196EkD4QBdLZ3_OUaSF,    !- Name
+    3pBQuUXVb5whaTVmJrzRoC,    !- Name
     Wall,                     !- Surface Type
     BPS-InnerWall_3_0.01_0.15_0.01,    !- Construction Name
     3$f2p7VyLB7eox67SA_zKE,    !- Zone Name
@@ -5662,7 +5635,7 @@ BUILDINGSURFACE:DETAILED,
     2.5;                      !- Vertex 8 Zcoordinate
 
 BUILDINGSURFACE:DETAILED,
-    1hifvrO_bByRQsB7ppXkm8,    !- Name
+    1HWnyQ5urBD8Pkgr8eRjWN,    !- Name
     Wall,                     !- Surface Type
     BPS-InnerWall_3_0.01_0.15_0.01,    !- Construction Name
     347jFE2yX7IhCEIALmupEH,    !- Zone Name
@@ -5686,7 +5659,7 @@ BUILDINGSURFACE:DETAILED,
     2.5;                      !- Vertex 4 Zcoordinate
 
 BUILDINGSURFACE:DETAILED,
-    0JJPKDxij1oOlWQifSohDO,    !- Name
+    23dkSqKGP2C9kbE_0a_WaM,    !- Name
     Floor,                    !- Surface Type
     BPS-InnerFloor_3_0.04_0.06_0.16,    !- Construction Name
     2dQFggKBb1fOc1CqZDIDlx,    !- Zone Name
@@ -5710,7 +5683,7 @@ BUILDINGSURFACE:DETAILED,
     2.7;                      !- Vertex 4 Zcoordinate
 
 BUILDINGSURFACE:DETAILED,
-    1XzkLiRt16uOnS8PvdihUy,    !- Name
+    0kU0BPoTf3Vgon5ELWFF_h,    !- Name
     Floor,                    !- Surface Type
     BPS-InnerFloor_3_0.04_0.06_0.16,    !- Construction Name
     2dQFggKBb1fOc1CqZDIDlx,    !- Zone Name
@@ -5734,7 +5707,7 @@ BUILDINGSURFACE:DETAILED,
     2.7;                      !- Vertex 4 Zcoordinate
 
 BUILDINGSURFACE:DETAILED,
-    3SNH6a9hvBnfrhnSWzUfUo,    !- Name
+    1YDYxbtpT1sfjtv8XLuw0L,    !- Name
     Floor,                    !- Surface Type
     BPS-InnerFloor_3_0.04_0.06_0.16,    !- Construction Name
     2dQFggKBb1fOc1CqZDIDlx,    !- Zone Name
@@ -5758,7 +5731,7 @@ BUILDINGSURFACE:DETAILED,
     2.7;                      !- Vertex 4 Zcoordinate
 
 BUILDINGSURFACE:DETAILED,
-    1BJJCul9X8lOyIHfS1cmgh,    !- Name
+    27wr6TFa99v8Vv6tQzAQtV,    !- Name
     Floor,                    !- Surface Type
     BPS-InnerFloor_3_0.04_0.06_0.16,    !- Construction Name
     2dQFggKBb1fOc1CqZDIDlx,    !- Zone Name
@@ -5782,7 +5755,7 @@ BUILDINGSURFACE:DETAILED,
     2.7;                      !- Vertex 4 Zcoordinate
 
 BUILDINGSURFACE:DETAILED,
-    1pi65ET$j1dfFOSkbu14Hc,    !- Name
+    0$85iBiX56xhoq1jZqezkh,    !- Name
     Floor,                    !- Surface Type
     BPS-InnerFloor_3_0.04_0.06_0.16,    !- Construction Name
     2dQFggKBb1fOc1CqZDIDlx,    !- Zone Name
@@ -5806,7 +5779,7 @@ BUILDINGSURFACE:DETAILED,
     2.7;                      !- Vertex 4 Zcoordinate
 
 BUILDINGSURFACE:DETAILED,
-    2Q0FOWbmTDFvE5mR3siEzR,    !- Name
+    2S06HKuPPB0gesXXmWVTxU,    !- Name
     Floor,                    !- Surface Type
     BPS-InnerFloor_3_0.04_0.06_0.16,    !- Construction Name
     2dQFggKBb1fOc1CqZDIDlx,    !- Zone Name
@@ -5830,7 +5803,7 @@ BUILDINGSURFACE:DETAILED,
     2.7;                      !- Vertex 4 Zcoordinate
 
 BUILDINGSURFACE:DETAILED,
-    2Z61j30sj1KwGrJZApZLi9,    !- Name
+    20J5aw9bbA3PRYNNQdRJNb,    !- Name
     Floor,                    !- Surface Type
     BPS-InnerFloor_3_0.04_0.06_0.16,    !- Construction Name
     2dQFggKBb1fOc1CqZDIDlx,    !- Zone Name
@@ -5854,7 +5827,7 @@ BUILDINGSURFACE:DETAILED,
     2.7;                      !- Vertex 4 Zcoordinate
 
 BUILDINGSURFACE:DETAILED,
-    0MY$TbXL55mBAoIoRVd0Sn,    !- Name
+    1oTXXf0Dr9dBt3SQuj$XOG,    !- Name
     Floor,                    !- Surface Type
     BPS-InnerFloor_3_0.04_0.06_0.16,    !- Construction Name
     2dQFggKBb1fOc1CqZDIDlx,    !- Zone Name
@@ -7069,9 +7042,9 @@ HVACTEMPLATE:ZONE:IDEALLOADSAIRSYSTEM,
     NoLimit,                  !- Heating Limit
     ,                         !- Maximum Heating Air Flow Rate
     ,                         !- Maximum Sensible Heating Capacity
-    NoLimit,                  !- Cooling Limit
-    ,                         !- Maximum Cooling Air Flow Rate
-    ,                         !- Maximum Total Cooling Capacity
+    LimitFlowRateAndCapacity,    !- Cooling Limit
+    autosize,                 !- Maximum Cooling Air Flow Rate
+    autosize,                 !- Maximum Total Cooling Capacity
     On,                       !- Heating Availability Schedule Name
     On,                       !- Cooling Availability Schedule Name
     ConstantSensibleHeatRatio,    !- Dehumidification Control Type
@@ -7079,16 +7052,16 @@ HVACTEMPLATE:ZONE:IDEALLOADSAIRSYSTEM,
     60,                       !- Dehumidification Setpoint
     None,                     !- Humidification Control Type
     30,                       !- Humidification Setpoint
-    None,                     !- Outdoor Air Method
-    0.00944,                  !- Outdoor Air Flow Rate per Person
-    0.0,                      !- Outdoor Air Flow Rate per Zone Floor Area
+    Sum,                      !- Outdoor Air Method
+    0.007,                    !- Outdoor Air Flow Rate per Person
+    0.0007,                   !- Outdoor Air Flow Rate per Zone Floor Area
     0,                        !- Outdoor Air Flow Rate per Zone
     ,                         !- Design Specification Outdoor Air Object Name
     None,                     !- Demand Controlled Ventilation Type
     NoEconomizer,             !- Outdoor Air Economizer Type
-    None,                     !- Heat Recovery Type
-    0.70,                     !- Sensible Heat Recovery Effectiveness
-    0.65;                     !- Latent Heat Recovery Effectiveness
+    Enthalpy,                 !- Heat Recovery Type
+    0.8,                      !- Sensible Heat Recovery Effectiveness
+    0.7;                      !- Latent Heat Recovery Effectiveness
 
 HVACTEMPLATE:ZONE:IDEALLOADSAIRSYSTEM,
     0e_hbkIQ5DMQlIJ$2V3j_m,    !- Zone Name
@@ -7101,9 +7074,9 @@ HVACTEMPLATE:ZONE:IDEALLOADSAIRSYSTEM,
     NoLimit,                  !- Heating Limit
     ,                         !- Maximum Heating Air Flow Rate
     ,                         !- Maximum Sensible Heating Capacity
-    NoLimit,                  !- Cooling Limit
-    ,                         !- Maximum Cooling Air Flow Rate
-    ,                         !- Maximum Total Cooling Capacity
+    LimitFlowRateAndCapacity,    !- Cooling Limit
+    autosize,                 !- Maximum Cooling Air Flow Rate
+    autosize,                 !- Maximum Total Cooling Capacity
     On,                       !- Heating Availability Schedule Name
     On,                       !- Cooling Availability Schedule Name
     ConstantSensibleHeatRatio,    !- Dehumidification Control Type
@@ -7111,16 +7084,16 @@ HVACTEMPLATE:ZONE:IDEALLOADSAIRSYSTEM,
     60,                       !- Dehumidification Setpoint
     None,                     !- Humidification Control Type
     30,                       !- Humidification Setpoint
-    None,                     !- Outdoor Air Method
-    0.00944,                  !- Outdoor Air Flow Rate per Person
-    0.0,                      !- Outdoor Air Flow Rate per Zone Floor Area
+    Sum,                      !- Outdoor Air Method
+    0.007,                    !- Outdoor Air Flow Rate per Person
+    0.0007,                   !- Outdoor Air Flow Rate per Zone Floor Area
     0,                        !- Outdoor Air Flow Rate per Zone
     ,                         !- Design Specification Outdoor Air Object Name
     None,                     !- Demand Controlled Ventilation Type
     NoEconomizer,             !- Outdoor Air Economizer Type
-    None,                     !- Heat Recovery Type
-    0.70,                     !- Sensible Heat Recovery Effectiveness
-    0.65;                     !- Latent Heat Recovery Effectiveness
+    Enthalpy,                 !- Heat Recovery Type
+    0.8,                      !- Sensible Heat Recovery Effectiveness
+    0.7;                      !- Latent Heat Recovery Effectiveness
 
 HVACTEMPLATE:ZONE:IDEALLOADSAIRSYSTEM,
     17JZcMFrf5tOftUTidA0d3,    !- Zone Name
@@ -7133,9 +7106,9 @@ HVACTEMPLATE:ZONE:IDEALLOADSAIRSYSTEM,
     NoLimit,                  !- Heating Limit
     ,                         !- Maximum Heating Air Flow Rate
     ,                         !- Maximum Sensible Heating Capacity
-    NoLimit,                  !- Cooling Limit
-    ,                         !- Maximum Cooling Air Flow Rate
-    ,                         !- Maximum Total Cooling Capacity
+    LimitFlowRateAndCapacity,    !- Cooling Limit
+    autosize,                 !- Maximum Cooling Air Flow Rate
+    autosize,                 !- Maximum Total Cooling Capacity
     On,                       !- Heating Availability Schedule Name
     On,                       !- Cooling Availability Schedule Name
     ConstantSensibleHeatRatio,    !- Dehumidification Control Type
@@ -7143,16 +7116,16 @@ HVACTEMPLATE:ZONE:IDEALLOADSAIRSYSTEM,
     60,                       !- Dehumidification Setpoint
     None,                     !- Humidification Control Type
     30,                       !- Humidification Setpoint
-    None,                     !- Outdoor Air Method
-    0.00944,                  !- Outdoor Air Flow Rate per Person
-    0.0,                      !- Outdoor Air Flow Rate per Zone Floor Area
+    Sum,                      !- Outdoor Air Method
+    0.007,                    !- Outdoor Air Flow Rate per Person
+    0.0007,                   !- Outdoor Air Flow Rate per Zone Floor Area
     0,                        !- Outdoor Air Flow Rate per Zone
     ,                         !- Design Specification Outdoor Air Object Name
     None,                     !- Demand Controlled Ventilation Type
     NoEconomizer,             !- Outdoor Air Economizer Type
-    None,                     !- Heat Recovery Type
-    0.70,                     !- Sensible Heat Recovery Effectiveness
-    0.65;                     !- Latent Heat Recovery Effectiveness
+    Enthalpy,                 !- Heat Recovery Type
+    0.8,                      !- Sensible Heat Recovery Effectiveness
+    0.7;                      !- Latent Heat Recovery Effectiveness
 
 HVACTEMPLATE:ZONE:IDEALLOADSAIRSYSTEM,
     2RSCzLOBz4FAK$_wE8VckM,    !- Zone Name
@@ -7165,9 +7138,9 @@ HVACTEMPLATE:ZONE:IDEALLOADSAIRSYSTEM,
     NoLimit,                  !- Heating Limit
     ,                         !- Maximum Heating Air Flow Rate
     ,                         !- Maximum Sensible Heating Capacity
-    NoLimit,                  !- Cooling Limit
-    ,                         !- Maximum Cooling Air Flow Rate
-    ,                         !- Maximum Total Cooling Capacity
+    LimitFlowRateAndCapacity,    !- Cooling Limit
+    autosize,                 !- Maximum Cooling Air Flow Rate
+    autosize,                 !- Maximum Total Cooling Capacity
     On,                       !- Heating Availability Schedule Name
     On,                       !- Cooling Availability Schedule Name
     ConstantSensibleHeatRatio,    !- Dehumidification Control Type
@@ -7175,16 +7148,16 @@ HVACTEMPLATE:ZONE:IDEALLOADSAIRSYSTEM,
     60,                       !- Dehumidification Setpoint
     None,                     !- Humidification Control Type
     30,                       !- Humidification Setpoint
-    None,                     !- Outdoor Air Method
-    0.00944,                  !- Outdoor Air Flow Rate per Person
-    0.0,                      !- Outdoor Air Flow Rate per Zone Floor Area
+    Sum,                      !- Outdoor Air Method
+    0.007,                    !- Outdoor Air Flow Rate per Person
+    0.0007,                   !- Outdoor Air Flow Rate per Zone Floor Area
     0,                        !- Outdoor Air Flow Rate per Zone
     ,                         !- Design Specification Outdoor Air Object Name
     None,                     !- Demand Controlled Ventilation Type
     NoEconomizer,             !- Outdoor Air Economizer Type
-    None,                     !- Heat Recovery Type
-    0.70,                     !- Sensible Heat Recovery Effectiveness
-    0.65;                     !- Latent Heat Recovery Effectiveness
+    Enthalpy,                 !- Heat Recovery Type
+    0.8,                      !- Sensible Heat Recovery Effectiveness
+    0.7;                      !- Latent Heat Recovery Effectiveness
 
 HVACTEMPLATE:ZONE:IDEALLOADSAIRSYSTEM,
     2dQFggKBb1fOc1CqZDIDlx,    !- Zone Name
@@ -7197,9 +7170,9 @@ HVACTEMPLATE:ZONE:IDEALLOADSAIRSYSTEM,
     NoLimit,                  !- Heating Limit
     ,                         !- Maximum Heating Air Flow Rate
     ,                         !- Maximum Sensible Heating Capacity
-    NoLimit,                  !- Cooling Limit
-    ,                         !- Maximum Cooling Air Flow Rate
-    ,                         !- Maximum Total Cooling Capacity
+    LimitFlowRateAndCapacity,    !- Cooling Limit
+    autosize,                 !- Maximum Cooling Air Flow Rate
+    autosize,                 !- Maximum Total Cooling Capacity
     On,                       !- Heating Availability Schedule Name
     On,                       !- Cooling Availability Schedule Name
     ConstantSensibleHeatRatio,    !- Dehumidification Control Type
@@ -7207,16 +7180,16 @@ HVACTEMPLATE:ZONE:IDEALLOADSAIRSYSTEM,
     60,                       !- Dehumidification Setpoint
     None,                     !- Humidification Control Type
     30,                       !- Humidification Setpoint
-    None,                     !- Outdoor Air Method
-    0.00944,                  !- Outdoor Air Flow Rate per Person
-    0.0,                      !- Outdoor Air Flow Rate per Zone Floor Area
+    Sum,                      !- Outdoor Air Method
+    0.007,                    !- Outdoor Air Flow Rate per Person
+    0.0007,                   !- Outdoor Air Flow Rate per Zone Floor Area
     0,                        !- Outdoor Air Flow Rate per Zone
     ,                         !- Design Specification Outdoor Air Object Name
     None,                     !- Demand Controlled Ventilation Type
     NoEconomizer,             !- Outdoor Air Economizer Type
-    None,                     !- Heat Recovery Type
-    0.70,                     !- Sensible Heat Recovery Effectiveness
-    0.65;                     !- Latent Heat Recovery Effectiveness
+    Enthalpy,                 !- Heat Recovery Type
+    0.8,                      !- Sensible Heat Recovery Effectiveness
+    0.7;                      !- Latent Heat Recovery Effectiveness
 
 HVACTEMPLATE:ZONE:IDEALLOADSAIRSYSTEM,
     3$f2p7VyLB7eox67SA_zKE,    !- Zone Name
@@ -7229,9 +7202,9 @@ HVACTEMPLATE:ZONE:IDEALLOADSAIRSYSTEM,
     NoLimit,                  !- Heating Limit
     ,                         !- Maximum Heating Air Flow Rate
     ,                         !- Maximum Sensible Heating Capacity
-    NoLimit,                  !- Cooling Limit
-    ,                         !- Maximum Cooling Air Flow Rate
-    ,                         !- Maximum Total Cooling Capacity
+    LimitFlowRateAndCapacity,    !- Cooling Limit
+    autosize,                 !- Maximum Cooling Air Flow Rate
+    autosize,                 !- Maximum Total Cooling Capacity
     On,                       !- Heating Availability Schedule Name
     On,                       !- Cooling Availability Schedule Name
     ConstantSensibleHeatRatio,    !- Dehumidification Control Type
@@ -7239,16 +7212,16 @@ HVACTEMPLATE:ZONE:IDEALLOADSAIRSYSTEM,
     60,                       !- Dehumidification Setpoint
     None,                     !- Humidification Control Type
     30,                       !- Humidification Setpoint
-    None,                     !- Outdoor Air Method
-    0.00944,                  !- Outdoor Air Flow Rate per Person
-    0.0,                      !- Outdoor Air Flow Rate per Zone Floor Area
+    Sum,                      !- Outdoor Air Method
+    0.007,                    !- Outdoor Air Flow Rate per Person
+    0.0007,                   !- Outdoor Air Flow Rate per Zone Floor Area
     0,                        !- Outdoor Air Flow Rate per Zone
     ,                         !- Design Specification Outdoor Air Object Name
     None,                     !- Demand Controlled Ventilation Type
     NoEconomizer,             !- Outdoor Air Economizer Type
-    None,                     !- Heat Recovery Type
-    0.70,                     !- Sensible Heat Recovery Effectiveness
-    0.65;                     !- Latent Heat Recovery Effectiveness
+    Enthalpy,                 !- Heat Recovery Type
+    0.8,                      !- Sensible Heat Recovery Effectiveness
+    0.7;                      !- Latent Heat Recovery Effectiveness
 
 HVACTEMPLATE:ZONE:IDEALLOADSAIRSYSTEM,
     347jFE2yX7IhCEIALmupEH,    !- Zone Name
@@ -7261,9 +7234,9 @@ HVACTEMPLATE:ZONE:IDEALLOADSAIRSYSTEM,
     NoLimit,                  !- Heating Limit
     ,                         !- Maximum Heating Air Flow Rate
     ,                         !- Maximum Sensible Heating Capacity
-    NoLimit,                  !- Cooling Limit
-    ,                         !- Maximum Cooling Air Flow Rate
-    ,                         !- Maximum Total Cooling Capacity
+    LimitFlowRateAndCapacity,    !- Cooling Limit
+    autosize,                 !- Maximum Cooling Air Flow Rate
+    autosize,                 !- Maximum Total Cooling Capacity
     On,                       !- Heating Availability Schedule Name
     On,                       !- Cooling Availability Schedule Name
     ConstantSensibleHeatRatio,    !- Dehumidification Control Type
@@ -7271,16 +7244,16 @@ HVACTEMPLATE:ZONE:IDEALLOADSAIRSYSTEM,
     60,                       !- Dehumidification Setpoint
     None,                     !- Humidification Control Type
     30,                       !- Humidification Setpoint
-    None,                     !- Outdoor Air Method
-    0.00944,                  !- Outdoor Air Flow Rate per Person
-    0.0,                      !- Outdoor Air Flow Rate per Zone Floor Area
+    Sum,                      !- Outdoor Air Method
+    0.007,                    !- Outdoor Air Flow Rate per Person
+    0.0007,                   !- Outdoor Air Flow Rate per Zone Floor Area
     0,                        !- Outdoor Air Flow Rate per Zone
     ,                         !- Design Specification Outdoor Air Object Name
     None,                     !- Demand Controlled Ventilation Type
     NoEconomizer,             !- Outdoor Air Economizer Type
-    None,                     !- Heat Recovery Type
-    0.70,                     !- Sensible Heat Recovery Effectiveness
-    0.65;                     !- Latent Heat Recovery Effectiveness
+    Enthalpy,                 !- Heat Recovery Type
+    0.8,                      !- Sensible Heat Recovery Effectiveness
+    0.7;                      !- Latent Heat Recovery Effectiveness
 
 Output:VariableDictionary,
     Regular;                  !- Key Field
@@ -7364,22 +7337,32 @@ OUTPUT:VARIABLE,
 
 OUTPUT:VARIABLE,
     *,                        !- Key Value
-    Zone Ideal Loads Zone Total Cooling Rate,    !- Variable Name
+    Zone Ideal Loads Supply Air Total Heating Energy,    !- Variable Name
     Hourly;                   !- Reporting Frequency
 
 OUTPUT:VARIABLE,
     *,                        !- Key Value
-    Zone Ideal Loads Zone Total Heating Rate,    !- Variable Name
+    Zone Ideal Loads Supply Air Total Cooling Energy,    !- Variable Name
     Hourly;                   !- Reporting Frequency
 
 OUTPUT:VARIABLE,
     *,                        !- Key Value
-    Zone Ideal Loads Zone Total Heating Energy,    !- Variable Name
+    Zone Ideal Loads Outdoor Air Total Cooling Rate,    !- Variable Name
     Hourly;                   !- Reporting Frequency
 
 OUTPUT:VARIABLE,
     *,                        !- Key Value
-    Zone Ideal Loads Zone Total Cooling Energy,    !- Variable Name
+    Zone Ideal Loads Outdoor Air Total Heating Rate,    !- Variable Name
+    Hourly;                   !- Reporting Frequency
+
+OUTPUT:VARIABLE,
+    *,                        !- Key Value
+    Zone Ideal Loads Supply Air Total Cooling Rate,    !- Variable Name
+    Hourly;                   !- Reporting Frequency
+
+OUTPUT:VARIABLE,
+    *,                        !- Key Value
+    Zone Ideal Loads Supply Air Total Heating Rate,    !- Variable Name
     Hourly;                   !- Reporting Frequency
 
 OUTPUT:VARIABLE,
@@ -7395,16 +7378,6 @@ OUTPUT:VARIABLE,
 OUTPUT:VARIABLE,
     *,                        !- Key Value
     Zone Windows Total Transmitted Solar Radiation Energy,    !- Variable Name
-    Hourly;                   !- Reporting Frequency
-
-OUTPUT:VARIABLE,
-    *,                        !- Key Value
-    Zone Air System Sensible Heating Energy,    !- Variable Name
-    Hourly;                   !- Reporting Frequency
-
-OUTPUT:VARIABLE,
-    *,                        !- Key Value
-    Zone Air System Sensible Cooling Energy,    !- Variable Name
     Hourly;                   !- Reporting Frequency
 
 OUTPUT:VARIABLE,
@@ -7442,12 +7415,30 @@ OUTPUT:VARIABLE,
     Zone Ventilation Total Heat Loss Energy,    !- Variable Name
     Hourly;                   !- Reporting Frequency
 
+OUTPUT:VARIABLE,
+    *,                        !- Key Value
+    Zone Mechanical Ventilation Air Changes per Hour,    !- Variable Name
+    Hourly;                   !- Reporting Frequency
+
+OUTPUT:VARIABLE,
+    *,                        !- Key Value
+    Zone Mechanical Ventilation Standard Density Volume Flow Rate,    !- Variable Name
+    Hourly;                   !- Reporting Frequency
+
 OUTPUT:METER,
     Heating:EnergyTransfer,    !- Key Name
     Hourly;                   !- Reporting Frequency
 
 OUTPUT:METER,
     Cooling:EnergyTransfer,    !- Key Name
+    Hourly;                   !- Reporting Frequency
+
+OUTPUT:METER,
+    DistrictHeating:HVAC,     !- Key Name
+    Hourly;                   !- Reporting Frequency
+
+OUTPUT:METER,
+    DistrictCooling:HVAC,     !- Key Name
     Hourly;                   !- Reporting Frequency
 
 OUTPUT:DIAGNOSTICS,
