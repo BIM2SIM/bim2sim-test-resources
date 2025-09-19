@@ -25,68 +25,19 @@ Building,
 Timestep,
     4;                        !- Number of Timesteps per Hour
 
-Site:Location,
-    DENVER_STAPLETON_CO_USA_WMO_724690,    !- Name
-    39.77,                    !- Latitude
-    -104.87,                  !- Longitude
-    -7,                       !- Time Zone
-    1611;                     !- Elevation
+SIZINGPERIOD:WEATHERFILECONDITIONTYPE,
+    Summer Design Day from Weather File,    !- Name
+    SummerTypical,            !- Period Selection
+    SummerDesignDay,          !- Day of Week for Start Day
+    Yes,                      !- Use Weather File Daylight Saving Period
+    Yes;                      !- Use Weather File Rain and Snow Indicators
 
-SizingPeriod:DesignDay,
-    DENVER_STAPLETON Ann Htg 99.6% Condns DB,    !- Name
-    12,                       !- Month
-    21,                       !- Day of Month
-    WinterDesignDay,          !- Day Type
-    -20,                      !- Maximum DryBulb Temperature
-    0,                        !- Daily DryBulb Temperature Range
-    ,                         !- DryBulb Temperature Range Modifier Type
-    ,                         !- DryBulb Temperature Range Modifier Day Schedule Name
-    Wetbulb,                  !- Humidity Condition Type
-    -20,                      !- Wetbulb or DewPoint at Maximum DryBulb
-    ,                         !- Humidity Condition Day Schedule Name
-    ,                         !- Humidity Ratio at Maximum DryBulb
-    ,                         !- Enthalpy at Maximum DryBulb
-    ,                         !- Daily WetBulb Temperature Range
-    83411,                    !- Barometric Pressure
-    2.3,                      !- Wind Speed
-    180,                      !- Wind Direction
-    No,                       !- Rain Indicator
-    No,                       !- Snow Indicator
-    No,                       !- Daylight Saving Time Indicator
-    ASHRAEClearSky,           !- Solar Model Indicator
-    ,                         !- Beam Solar Day Schedule Name
-    ,                         !- Diffuse Solar Day Schedule Name
-    ,                         !- ASHRAE Clear Sky Optical Depth for Beam Irradiance taub
-    ,                         !- ASHRAE Clear Sky Optical Depth for Diffuse Irradiance taud
-    0;                        !- Sky Clearness
-
-SizingPeriod:DesignDay,
-    DENVER_STAPLETON Ann Clg .4% Condns DB=>MWB,    !- Name
-    7,                        !- Month
-    21,                       !- Day of Month
-    SummerDesignDay,          !- Day Type
-    34.1,                     !- Maximum DryBulb Temperature
-    15.2,                     !- Daily DryBulb Temperature Range
-    ,                         !- DryBulb Temperature Range Modifier Type
-    ,                         !- DryBulb Temperature Range Modifier Day Schedule Name
-    Wetbulb,                  !- Humidity Condition Type
-    15.8,                     !- Wetbulb or DewPoint at Maximum DryBulb
-    ,                         !- Humidity Condition Day Schedule Name
-    ,                         !- Humidity Ratio at Maximum DryBulb
-    ,                         !- Enthalpy at Maximum DryBulb
-    ,                         !- Daily WetBulb Temperature Range
-    83411,                    !- Barometric Pressure
-    4,                        !- Wind Speed
-    120,                      !- Wind Direction
-    No,                       !- Rain Indicator
-    No,                       !- Snow Indicator
-    No,                       !- Daylight Saving Time Indicator
-    ASHRAEClearSky,           !- Solar Model Indicator
-    ,                         !- Beam Solar Day Schedule Name
-    ,                         !- Diffuse Solar Day Schedule Name
-    ,                         !- ASHRAE Clear Sky Optical Depth for Beam Irradiance taub
-    ,                         !- ASHRAE Clear Sky Optical Depth for Diffuse Irradiance taud
-    1;                        !- Sky Clearness
+SIZINGPERIOD:WEATHERFILECONDITIONTYPE,
+    Winter Design Day from Weather File,    !- Name
+    WinterTypical,            !- Period Selection
+    WinterDesignDay,          !- Day of Week for Start Day
+    Yes,                      !- Use Weather File Daylight Saving Period
+    Yes;                      !- Use Weather File Rain and Snow Indicators
 
 RunPeriod,
     Run Period 1,             !- Name
@@ -1014,30 +965,30 @@ SCHEDULE:DAY:HOURLY,
 SCHEDULE:DAY:HOURLY,
     Default_Air_Velocity_Schedule,    !- Name
     Any Number,               !- Schedule Type Limits Name
-    0,                        !- Hour 1
-    0,                        !- Hour 2
-    0,                        !- Hour 3
-    0,                        !- Hour 4
-    0,                        !- Hour 5
-    0,                        !- Hour 6
-    0,                        !- Hour 7
-    0,                        !- Hour 8
-    0,                        !- Hour 9
-    0,                        !- Hour 10
-    0,                        !- Hour 11
-    0,                        !- Hour 12
-    0,                        !- Hour 13
-    0,                        !- Hour 14
-    0,                        !- Hour 15
-    0,                        !- Hour 16
-    0,                        !- Hour 17
-    0,                        !- Hour 18
-    0,                        !- Hour 19
-    0,                        !- Hour 20
-    0,                        !- Hour 21
-    0,                        !- Hour 22
-    0,                        !- Hour 23
-    0;                        !- Hour 24
+    0.1,                      !- Hour 1
+    0.1,                      !- Hour 2
+    0.1,                      !- Hour 3
+    0.1,                      !- Hour 4
+    0.1,                      !- Hour 5
+    0.1,                      !- Hour 6
+    0.1,                      !- Hour 7
+    0.1,                      !- Hour 8
+    0.1,                      !- Hour 9
+    0.1,                      !- Hour 10
+    0.1,                      !- Hour 11
+    0.1,                      !- Hour 12
+    0.1,                      !- Hour 13
+    0.1,                      !- Hour 14
+    0.1,                      !- Hour 15
+    0.1,                      !- Hour 16
+    0.1,                      !- Hour 17
+    0.1,                      !- Hour 18
+    0.1,                      !- Hour 19
+    0.1,                      !- Hour 20
+    0.1,                      !- Hour 21
+    0.1,                      !- Hour 22
+    0.1,                      !- Hour 23
+    0.1;                      !- Hour 24
 
 SCHEDULE:DAY:HOURLY,
     Default_Work_Efficiency_Schedule,    !- Name
@@ -1434,30 +1385,30 @@ SCHEDULE:DAY:HOURLY,
 SCHEDULE:DAY:HOURLY,
     Air_Velocity_Schedule_Traffic area,    !- Name
     Any Number,               !- Schedule Type Limits Name
-    0.2,                      !- Hour 1
-    0.2,                      !- Hour 2
-    0.2,                      !- Hour 3
-    0.2,                      !- Hour 4
-    0.2,                      !- Hour 5
-    0.2,                      !- Hour 6
-    0.2,                      !- Hour 7
-    0.2,                      !- Hour 8
-    0.2,                      !- Hour 9
-    0.2,                      !- Hour 10
-    0.2,                      !- Hour 11
-    0.2,                      !- Hour 12
-    0.2,                      !- Hour 13
-    0.2,                      !- Hour 14
-    0.2,                      !- Hour 15
-    0.2,                      !- Hour 16
-    0.2,                      !- Hour 17
-    0.2,                      !- Hour 18
-    0.2,                      !- Hour 19
-    0.2,                      !- Hour 20
-    0.2,                      !- Hour 21
-    0.2,                      !- Hour 22
-    0.2,                      !- Hour 23
-    0.2;                      !- Hour 24
+    0.1,                      !- Hour 1
+    0.1,                      !- Hour 2
+    0.1,                      !- Hour 3
+    0.1,                      !- Hour 4
+    0.1,                      !- Hour 5
+    0.1,                      !- Hour 6
+    0.1,                      !- Hour 7
+    0.1,                      !- Hour 8
+    0.1,                      !- Hour 9
+    0.1,                      !- Hour 10
+    0.1,                      !- Hour 11
+    0.1,                      !- Hour 12
+    0.1,                      !- Hour 13
+    0.1,                      !- Hour 14
+    0.1,                      !- Hour 15
+    0.1,                      !- Hour 16
+    0.1,                      !- Hour 17
+    0.1,                      !- Hour 18
+    0.1,                      !- Hour 19
+    0.1,                      !- Hour 20
+    0.1,                      !- Hour 21
+    0.1,                      !- Hour 22
+    0.1,                      !- Hour 23
+    0.1;                      !- Hour 24
 
 SCHEDULE:DAY:HOURLY,
     Work_Efficiency_Schedule_Traffic area,    !- Name
@@ -4884,36 +4835,58 @@ ZONE,
     Yes;                      !- Part of Total Floor Area
 
 ZONELIST,
-    All_Zones,                !- Name
+    Living,                   !- Name
     0Lt8gR_E9ESeGH5uY_g9e9,    !- Zone 1 Name
-    0e_hbkIQ5DMQlIJ$2V3j_m,    !- Zone 2 Name
-    17JZcMFrf5tOftUTidA0d3,    !- Zone 3 Name
-    2RSCzLOBz4FAK$_wE8VckM,    !- Zone 4 Name
-    2dQFggKBb1fOc1CqZDIDlx,    !- Zone 5 Name
-    3$f2p7VyLB7eox67SA_zKE,    !- Zone 6 Name
-    347jFE2yX7IhCEIALmupEH;    !- Zone 7 Name
+    2dQFggKBb1fOc1CqZDIDlx;    !- Zone 2 Name
 
 ZONELIST,
-    Dachgeschoss,             !- Name
-    2dQFggKBb1fOc1CqZDIDlx;    !- Zone 1 Name
+    WC and sanitary rooms in non-residential buildings,    !- Name
+    0e_hbkIQ5DMQlIJ$2V3j_m;    !- Zone 1 Name
 
 ZONELIST,
-    Erdgeschoss,              !- Name
-    0Lt8gR_E9ESeGH5uY_g9e9,    !- Zone 1 Name
-    0e_hbkIQ5DMQlIJ$2V3j_m,    !- Zone 2 Name
-    17JZcMFrf5tOftUTidA0d3,    !- Zone 3 Name
-    2RSCzLOBz4FAK$_wE8VckM,    !- Zone 4 Name
-    3$f2p7VyLB7eox67SA_zKE,    !- Zone 5 Name
-    347jFE2yX7IhCEIALmupEH;    !- Zone 6 Name
+    Kitchen in non-residential buildings,    !- Name
+    17JZcMFrf5tOftUTidA0d3;    !- Zone 1 Name
+
+ZONELIST,
+    Single office,            !- Name
+    2RSCzLOBz4FAK$_wE8VckM;    !- Zone 1 Name
+
+ZONELIST,
+    Traffic area,             !- Name
+    3$f2p7VyLB7eox67SA_zKE;    !- Zone 1 Name
+
+ZONELIST,
+    Bed room,                 !- Name
+    347jFE2yX7IhCEIALmupEH;    !- Zone 1 Name
 
 ZONEGROUP,
-    Dachgeschoss,             !- Name
-    Dachgeschoss,             !- Zone List Name
+    Living,                   !- Name
+    Living,                   !- Zone List Name
     1;                        !- Zone List Multiplier
 
 ZONEGROUP,
-    Erdgeschoss,              !- Name
-    Erdgeschoss,              !- Zone List Name
+    WC and sanitary rooms in non-residential buildings,    !- Name
+    WC and sanitary rooms in non-residential buildings,    !- Zone List Name
+    1;                        !- Zone List Multiplier
+
+ZONEGROUP,
+    Kitchen in non-residential buildings,    !- Name
+    Kitchen in non-residential buildings,    !- Zone List Name
+    1;                        !- Zone List Multiplier
+
+ZONEGROUP,
+    Single office,            !- Name
+    Single office,            !- Zone List Name
+    1;                        !- Zone List Multiplier
+
+ZONEGROUP,
+    Traffic area,             !- Name
+    Traffic area,             !- Zone List Name
+    1;                        !- Zone List Multiplier
+
+ZONEGROUP,
+    Bed room,                 !- Name
+    Bed room,                 !- Zone List Name
     1;                        !- Zone List Multiplier
 
 BUILDINGSURFACE:DETAILED,
@@ -6435,7 +6408,7 @@ BUILDINGSURFACE:DETAILED,
     2.5;                      !- Vertex 4 Zcoordinate
 
 BUILDINGSURFACE:DETAILED,
-    2xcYROmyTB8hG5n2YkiXv9,    !- Name
+    3F8vzaDPL3kBQTvESC3RQt,    !- Name
     Wall,                     !- Surface Type
     BPS-InnerWall_3_0.01_0.15_0.01,    !- Construction Name
     0Lt8gR_E9ESeGH5uY_g9e9,    !- Zone Name
@@ -6462,7 +6435,7 @@ BUILDINGSURFACE:DETAILED,
     2.5;                      !- Vertex 5 Zcoordinate
 
 BUILDINGSURFACE:DETAILED,
-    3HY3KyrV12IBsv6uPD0a_N,    !- Name
+    2xUkM$LSL2zemSr1Prh4TH,    !- Name
     Floor,                    !- Surface Type
     BPS-InnerFloor_3_0.04_0.06_0.16,    !- Construction Name
     2dQFggKBb1fOc1CqZDIDlx,    !- Zone Name
@@ -6531,7 +6504,7 @@ BUILDINGSURFACE:DETAILED,
     2.7;                      !- Vertex 19 Zcoordinate
 
 BUILDINGSURFACE:DETAILED,
-    2s7RzJeqP2PRnuOv2mNUjo,    !- Name
+    2r3JIJQ8b6Fuwek0bXCLMI,    !- Name
     Floor,                    !- Surface Type
     BPS-InnerFloor_3_0.04_0.06_0.16,    !- Construction Name
     2dQFggKBb1fOc1CqZDIDlx,    !- Zone Name
@@ -6567,7 +6540,7 @@ BUILDINGSURFACE:DETAILED,
     2.7;                      !- Vertex 8 Zcoordinate
 
 BUILDINGSURFACE:DETAILED,
-    1VkvZs0B5B594LZomtL5yZ,    !- Name
+    22W0ZiYF99RORO8XDiez0M,    !- Name
     Wall,                     !- Surface Type
     BPS-InnerWall_3_0.01_0.15_0.01,    !- Construction Name
     3$f2p7VyLB7eox67SA_zKE,    !- Zone Name
@@ -6603,7 +6576,7 @@ BUILDINGSURFACE:DETAILED,
     2.5;                      !- Vertex 8 Zcoordinate
 
 BUILDINGSURFACE:DETAILED,
-    07qw1AuV54AhQG8JQoxnNp,    !- Name
+    3yNKUEydXBKwWfXXfNEFRj,    !- Name
     Wall,                     !- Surface Type
     BPS-InnerWall_3_0.01_0.15_0.01,    !- Construction Name
     3$f2p7VyLB7eox67SA_zKE,    !- Zone Name
@@ -6627,7 +6600,7 @@ BUILDINGSURFACE:DETAILED,
     2.5;                      !- Vertex 4 Zcoordinate
 
 BUILDINGSURFACE:DETAILED,
-    1FYdPMSSn7bAwZCptJ4EAX,    !- Name
+    1pGX25_p1CqfsdgKIGpvw6,    !- Name
     Wall,                     !- Surface Type
     BPS-InnerWall_3_0.01_0.15_0.01,    !- Construction Name
     3$f2p7VyLB7eox67SA_zKE,    !- Zone Name
@@ -6663,7 +6636,7 @@ BUILDINGSURFACE:DETAILED,
     2.5;                      !- Vertex 8 Zcoordinate
 
 BUILDINGSURFACE:DETAILED,
-    0N7a1zX09EnOTFds2I_gVD,    !- Name
+    0nEiecWrHEsP4lRbqZmnXo,    !- Name
     Wall,                     !- Surface Type
     BPS-InnerWall_3_0.01_0.15_0.01,    !- Construction Name
     347jFE2yX7IhCEIALmupEH,    !- Zone Name
@@ -7403,15 +7376,15 @@ WINDOWSHADINGCONTROL,
     1,                        !- Shading Control Sequence Number
     ExteriorShade,            !- Shading Type
     Window_WM_Glas1995_2015AluoderStahlfensterWaermeschutzverglasungzweifach_0.024_Exterior,    !- Construction with Shading Name
-    OnIfHighOutdoorAirTempAndHighSolarOnWindow,    !- Shading Control Type
+    OnIfHighZoneAirTempAndHighSolarOnWindow,    !- Shading Control Type
     ,                         !- Schedule Name
-    22,                       !- Setpoint
+    23,                       !- Setpoint
     No,                       !- Shading Control Is Scheduled
     No,                       !- Glare Control Is Active
     ,                         !- Shading Device Material Name
     FixedSlatAngle,           !- Type of Slat Angle Control for Blinds
     ,                         !- Slat Angle Schedule Name
-    40,                       !- Setpoint 2
+    150,                      !- Setpoint 2
     ,                         !- Daylighting Control Object Name
     Group,                    !- Multiple Surface Control Type
     0FWbZIejPKahknBHiA9eM7,    !- Fenestration Surface 1 Name
@@ -7423,15 +7396,15 @@ WINDOWSHADINGCONTROL,
     1,                        !- Shading Control Sequence Number
     ExteriorShade,            !- Shading Type
     Window_WM_Glas1995_2015AluoderStahlfensterWaermeschutzverglasungzweifach_0.024_Exterior,    !- Construction with Shading Name
-    OnIfHighOutdoorAirTempAndHighSolarOnWindow,    !- Shading Control Type
+    OnIfHighZoneAirTempAndHighSolarOnWindow,    !- Shading Control Type
     ,                         !- Schedule Name
-    22,                       !- Setpoint
+    23,                       !- Setpoint
     No,                       !- Shading Control Is Scheduled
     No,                       !- Glare Control Is Active
     ,                         !- Shading Device Material Name
     FixedSlatAngle,           !- Type of Slat Angle Control for Blinds
     ,                         !- Slat Angle Schedule Name
-    40,                       !- Setpoint 2
+    150,                      !- Setpoint 2
     ,                         !- Daylighting Control Object Name
     Group,                    !- Multiple Surface Control Type
     13LAIDfs3_zx2GBuk7UTGf;    !- Fenestration Surface 1 Name
@@ -7442,15 +7415,15 @@ WINDOWSHADINGCONTROL,
     1,                        !- Shading Control Sequence Number
     ExteriorShade,            !- Shading Type
     Window_WM_Glas1995_2015AluoderStahlfensterWaermeschutzverglasungzweifach_0.024_Exterior,    !- Construction with Shading Name
-    OnIfHighOutdoorAirTempAndHighSolarOnWindow,    !- Shading Control Type
+    OnIfHighZoneAirTempAndHighSolarOnWindow,    !- Shading Control Type
     ,                         !- Schedule Name
-    22,                       !- Setpoint
+    23,                       !- Setpoint
     No,                       !- Shading Control Is Scheduled
     No,                       !- Glare Control Is Active
     ,                         !- Shading Device Material Name
     FixedSlatAngle,           !- Type of Slat Angle Control for Blinds
     ,                         !- Slat Angle Schedule Name
-    40,                       !- Setpoint 2
+    150,                      !- Setpoint 2
     ,                         !- Daylighting Control Object Name
     Group,                    !- Multiple Surface Control Type
     3lpOH7mLadXtGe9occKExH,    !- Fenestration Surface 1 Name
@@ -7462,15 +7435,15 @@ WINDOWSHADINGCONTROL,
     1,                        !- Shading Control Sequence Number
     ExteriorShade,            !- Shading Type
     Window_WM_Glas1995_2015AluoderStahlfensterWaermeschutzverglasungzweifach_0.024_Exterior,    !- Construction with Shading Name
-    OnIfHighOutdoorAirTempAndHighSolarOnWindow,    !- Shading Control Type
+    OnIfHighZoneAirTempAndHighSolarOnWindow,    !- Shading Control Type
     ,                         !- Schedule Name
-    22,                       !- Setpoint
+    23,                       !- Setpoint
     No,                       !- Shading Control Is Scheduled
     No,                       !- Glare Control Is Active
     ,                         !- Shading Device Material Name
     FixedSlatAngle,           !- Type of Slat Angle Control for Blinds
     ,                         !- Slat Angle Schedule Name
-    40,                       !- Setpoint 2
+    150,                      !- Setpoint 2
     ,                         !- Daylighting Control Object Name
     Group,                    !- Multiple Surface Control Type
     2CVWUzpEdesdJARzpmJYC8,    !- Fenestration Surface 1 Name
@@ -7482,15 +7455,15 @@ WINDOWSHADINGCONTROL,
     1,                        !- Shading Control Sequence Number
     ExteriorShade,            !- Shading Type
     Window_WM_Glas1995_2015AluoderStahlfensterWaermeschutzverglasungzweifach_0.024_Exterior,    !- Construction with Shading Name
-    OnIfHighOutdoorAirTempAndHighSolarOnWindow,    !- Shading Control Type
+    OnIfHighZoneAirTempAndHighSolarOnWindow,    !- Shading Control Type
     ,                         !- Schedule Name
-    22,                       !- Setpoint
+    24,                       !- Setpoint
     No,                       !- Shading Control Is Scheduled
     No,                       !- Glare Control Is Active
     ,                         !- Shading Device Material Name
     FixedSlatAngle,           !- Type of Slat Angle Control for Blinds
     ,                         !- Slat Angle Schedule Name
-    40,                       !- Setpoint 2
+    150,                      !- Setpoint 2
     ,                         !- Daylighting Control Object Name
     Group,                    !- Multiple Surface Control Type
     2p0NCF3QqHLr$KfWlmVsDQ,    !- Fenestration Surface 1 Name
@@ -7527,7 +7500,7 @@ PEOPLE,
     Schedule People WC and sanitary rooms in non-residential buildings,    !- Number of People Schedule Name
     People/Area,              !- Number of People Calculation Method
     ,                         !- Number of People
-    0,                        !- People per Zone Floor Area
+    0.1,                      !- People per Zone Floor Area
     ,                         !- Zone Floor Area per Person
     0.5,                      !- Fraction Radiant
     autocalculate,            !- Sensible Heat Fraction
@@ -7627,7 +7600,7 @@ PEOPLE,
     Schedule People Traffic area,    !- Number of People Schedule Name
     People/Area,              !- Number of People Calculation Method
     ,                         !- Number of People
-    0,                        !- People per Zone Floor Area
+    0.1,                      !- People per Zone Floor Area
     ,                         !- Zone Floor Area per Person
     0.5,                      !- Fraction Radiant
     autocalculate,            !- Sensible Heat Fraction
@@ -8615,8 +8588,8 @@ HVACTEMPLATE:ZONE:IDEALLOADSAIRSYSTEM,
     ,                         !- Maximum Heating Air Flow Rate
     ,                         !- Maximum Sensible Heating Capacity
     NoLimit,                  !- Cooling Limit
-    ,                         !- Maximum Cooling Air Flow Rate
-    ,                         !- Maximum Total Cooling Capacity
+    autosize,                 !- Maximum Cooling Air Flow Rate
+    autosize,                 !- Maximum Total Cooling Capacity
     On,                       !- Heating Availability Schedule Name
     Off,                      !- Cooling Availability Schedule Name
     ConstantSensibleHeatRatio,    !- Dehumidification Control Type
@@ -8625,15 +8598,15 @@ HVACTEMPLATE:ZONE:IDEALLOADSAIRSYSTEM,
     None,                     !- Humidification Control Type
     30,                       !- Humidification Setpoint
     None,                     !- Outdoor Air Method
-    0.00944,                  !- Outdoor Air Flow Rate per Person
-    0.0,                      !- Outdoor Air Flow Rate per Zone Floor Area
+    0.007,                    !- Outdoor Air Flow Rate per Person
+    0.0007,                   !- Outdoor Air Flow Rate per Zone Floor Area
     0,                        !- Outdoor Air Flow Rate per Zone
     ,                         !- Design Specification Outdoor Air Object Name
     None,                     !- Demand Controlled Ventilation Type
     NoEconomizer,             !- Outdoor Air Economizer Type
     None,                     !- Heat Recovery Type
-    0.70,                     !- Sensible Heat Recovery Effectiveness
-    0.65;                     !- Latent Heat Recovery Effectiveness
+    0.8,                      !- Sensible Heat Recovery Effectiveness
+    0.7;                      !- Latent Heat Recovery Effectiveness
 
 HVACTEMPLATE:ZONE:IDEALLOADSAIRSYSTEM,
     0e_hbkIQ5DMQlIJ$2V3j_m,    !- Zone Name
@@ -8647,8 +8620,8 @@ HVACTEMPLATE:ZONE:IDEALLOADSAIRSYSTEM,
     ,                         !- Maximum Heating Air Flow Rate
     ,                         !- Maximum Sensible Heating Capacity
     NoLimit,                  !- Cooling Limit
-    ,                         !- Maximum Cooling Air Flow Rate
-    ,                         !- Maximum Total Cooling Capacity
+    autosize,                 !- Maximum Cooling Air Flow Rate
+    autosize,                 !- Maximum Total Cooling Capacity
     On,                       !- Heating Availability Schedule Name
     Off,                      !- Cooling Availability Schedule Name
     ConstantSensibleHeatRatio,    !- Dehumidification Control Type
@@ -8657,15 +8630,15 @@ HVACTEMPLATE:ZONE:IDEALLOADSAIRSYSTEM,
     None,                     !- Humidification Control Type
     30,                       !- Humidification Setpoint
     None,                     !- Outdoor Air Method
-    0.00944,                  !- Outdoor Air Flow Rate per Person
-    0.0,                      !- Outdoor Air Flow Rate per Zone Floor Area
+    0.007,                    !- Outdoor Air Flow Rate per Person
+    0.0007,                   !- Outdoor Air Flow Rate per Zone Floor Area
     0,                        !- Outdoor Air Flow Rate per Zone
     ,                         !- Design Specification Outdoor Air Object Name
     None,                     !- Demand Controlled Ventilation Type
     NoEconomizer,             !- Outdoor Air Economizer Type
     None,                     !- Heat Recovery Type
-    0.70,                     !- Sensible Heat Recovery Effectiveness
-    0.65;                     !- Latent Heat Recovery Effectiveness
+    0.8,                      !- Sensible Heat Recovery Effectiveness
+    0.7;                      !- Latent Heat Recovery Effectiveness
 
 HVACTEMPLATE:ZONE:IDEALLOADSAIRSYSTEM,
     17JZcMFrf5tOftUTidA0d3,    !- Zone Name
@@ -8679,8 +8652,8 @@ HVACTEMPLATE:ZONE:IDEALLOADSAIRSYSTEM,
     ,                         !- Maximum Heating Air Flow Rate
     ,                         !- Maximum Sensible Heating Capacity
     NoLimit,                  !- Cooling Limit
-    ,                         !- Maximum Cooling Air Flow Rate
-    ,                         !- Maximum Total Cooling Capacity
+    autosize,                 !- Maximum Cooling Air Flow Rate
+    autosize,                 !- Maximum Total Cooling Capacity
     On,                       !- Heating Availability Schedule Name
     Off,                      !- Cooling Availability Schedule Name
     ConstantSensibleHeatRatio,    !- Dehumidification Control Type
@@ -8689,15 +8662,15 @@ HVACTEMPLATE:ZONE:IDEALLOADSAIRSYSTEM,
     None,                     !- Humidification Control Type
     30,                       !- Humidification Setpoint
     None,                     !- Outdoor Air Method
-    0.00944,                  !- Outdoor Air Flow Rate per Person
-    0.0,                      !- Outdoor Air Flow Rate per Zone Floor Area
+    0.007,                    !- Outdoor Air Flow Rate per Person
+    0.0007,                   !- Outdoor Air Flow Rate per Zone Floor Area
     0,                        !- Outdoor Air Flow Rate per Zone
     ,                         !- Design Specification Outdoor Air Object Name
     None,                     !- Demand Controlled Ventilation Type
     NoEconomizer,             !- Outdoor Air Economizer Type
     None,                     !- Heat Recovery Type
-    0.70,                     !- Sensible Heat Recovery Effectiveness
-    0.65;                     !- Latent Heat Recovery Effectiveness
+    0.8,                      !- Sensible Heat Recovery Effectiveness
+    0.7;                      !- Latent Heat Recovery Effectiveness
 
 HVACTEMPLATE:ZONE:IDEALLOADSAIRSYSTEM,
     2RSCzLOBz4FAK$_wE8VckM,    !- Zone Name
@@ -8711,8 +8684,8 @@ HVACTEMPLATE:ZONE:IDEALLOADSAIRSYSTEM,
     ,                         !- Maximum Heating Air Flow Rate
     ,                         !- Maximum Sensible Heating Capacity
     NoLimit,                  !- Cooling Limit
-    ,                         !- Maximum Cooling Air Flow Rate
-    ,                         !- Maximum Total Cooling Capacity
+    autosize,                 !- Maximum Cooling Air Flow Rate
+    autosize,                 !- Maximum Total Cooling Capacity
     On,                       !- Heating Availability Schedule Name
     Off,                      !- Cooling Availability Schedule Name
     ConstantSensibleHeatRatio,    !- Dehumidification Control Type
@@ -8721,15 +8694,15 @@ HVACTEMPLATE:ZONE:IDEALLOADSAIRSYSTEM,
     None,                     !- Humidification Control Type
     30,                       !- Humidification Setpoint
     None,                     !- Outdoor Air Method
-    0.00944,                  !- Outdoor Air Flow Rate per Person
-    0.0,                      !- Outdoor Air Flow Rate per Zone Floor Area
+    0.007,                    !- Outdoor Air Flow Rate per Person
+    0.0007,                   !- Outdoor Air Flow Rate per Zone Floor Area
     0,                        !- Outdoor Air Flow Rate per Zone
     ,                         !- Design Specification Outdoor Air Object Name
     None,                     !- Demand Controlled Ventilation Type
     NoEconomizer,             !- Outdoor Air Economizer Type
     None,                     !- Heat Recovery Type
-    0.70,                     !- Sensible Heat Recovery Effectiveness
-    0.65;                     !- Latent Heat Recovery Effectiveness
+    0.8,                      !- Sensible Heat Recovery Effectiveness
+    0.7;                      !- Latent Heat Recovery Effectiveness
 
 HVACTEMPLATE:ZONE:IDEALLOADSAIRSYSTEM,
     2dQFggKBb1fOc1CqZDIDlx,    !- Zone Name
@@ -8743,8 +8716,8 @@ HVACTEMPLATE:ZONE:IDEALLOADSAIRSYSTEM,
     ,                         !- Maximum Heating Air Flow Rate
     ,                         !- Maximum Sensible Heating Capacity
     NoLimit,                  !- Cooling Limit
-    ,                         !- Maximum Cooling Air Flow Rate
-    ,                         !- Maximum Total Cooling Capacity
+    autosize,                 !- Maximum Cooling Air Flow Rate
+    autosize,                 !- Maximum Total Cooling Capacity
     On,                       !- Heating Availability Schedule Name
     Off,                      !- Cooling Availability Schedule Name
     ConstantSensibleHeatRatio,    !- Dehumidification Control Type
@@ -8753,15 +8726,15 @@ HVACTEMPLATE:ZONE:IDEALLOADSAIRSYSTEM,
     None,                     !- Humidification Control Type
     30,                       !- Humidification Setpoint
     None,                     !- Outdoor Air Method
-    0.00944,                  !- Outdoor Air Flow Rate per Person
-    0.0,                      !- Outdoor Air Flow Rate per Zone Floor Area
+    0.007,                    !- Outdoor Air Flow Rate per Person
+    0.0007,                   !- Outdoor Air Flow Rate per Zone Floor Area
     0,                        !- Outdoor Air Flow Rate per Zone
     ,                         !- Design Specification Outdoor Air Object Name
     None,                     !- Demand Controlled Ventilation Type
     NoEconomizer,             !- Outdoor Air Economizer Type
     None,                     !- Heat Recovery Type
-    0.70,                     !- Sensible Heat Recovery Effectiveness
-    0.65;                     !- Latent Heat Recovery Effectiveness
+    0.8,                      !- Sensible Heat Recovery Effectiveness
+    0.7;                      !- Latent Heat Recovery Effectiveness
 
 HVACTEMPLATE:ZONE:IDEALLOADSAIRSYSTEM,
     3$f2p7VyLB7eox67SA_zKE,    !- Zone Name
@@ -8775,8 +8748,8 @@ HVACTEMPLATE:ZONE:IDEALLOADSAIRSYSTEM,
     ,                         !- Maximum Heating Air Flow Rate
     ,                         !- Maximum Sensible Heating Capacity
     NoLimit,                  !- Cooling Limit
-    ,                         !- Maximum Cooling Air Flow Rate
-    ,                         !- Maximum Total Cooling Capacity
+    autosize,                 !- Maximum Cooling Air Flow Rate
+    autosize,                 !- Maximum Total Cooling Capacity
     On,                       !- Heating Availability Schedule Name
     Off,                      !- Cooling Availability Schedule Name
     ConstantSensibleHeatRatio,    !- Dehumidification Control Type
@@ -8785,15 +8758,15 @@ HVACTEMPLATE:ZONE:IDEALLOADSAIRSYSTEM,
     None,                     !- Humidification Control Type
     30,                       !- Humidification Setpoint
     None,                     !- Outdoor Air Method
-    0.00944,                  !- Outdoor Air Flow Rate per Person
-    0.0,                      !- Outdoor Air Flow Rate per Zone Floor Area
+    0.007,                    !- Outdoor Air Flow Rate per Person
+    0.0007,                   !- Outdoor Air Flow Rate per Zone Floor Area
     0,                        !- Outdoor Air Flow Rate per Zone
     ,                         !- Design Specification Outdoor Air Object Name
     None,                     !- Demand Controlled Ventilation Type
     NoEconomizer,             !- Outdoor Air Economizer Type
     None,                     !- Heat Recovery Type
-    0.70,                     !- Sensible Heat Recovery Effectiveness
-    0.65;                     !- Latent Heat Recovery Effectiveness
+    0.8,                      !- Sensible Heat Recovery Effectiveness
+    0.7;                      !- Latent Heat Recovery Effectiveness
 
 HVACTEMPLATE:ZONE:IDEALLOADSAIRSYSTEM,
     347jFE2yX7IhCEIALmupEH,    !- Zone Name
@@ -8807,8 +8780,8 @@ HVACTEMPLATE:ZONE:IDEALLOADSAIRSYSTEM,
     ,                         !- Maximum Heating Air Flow Rate
     ,                         !- Maximum Sensible Heating Capacity
     NoLimit,                  !- Cooling Limit
-    ,                         !- Maximum Cooling Air Flow Rate
-    ,                         !- Maximum Total Cooling Capacity
+    autosize,                 !- Maximum Cooling Air Flow Rate
+    autosize,                 !- Maximum Total Cooling Capacity
     On,                       !- Heating Availability Schedule Name
     Off,                      !- Cooling Availability Schedule Name
     ConstantSensibleHeatRatio,    !- Dehumidification Control Type
@@ -8817,15 +8790,15 @@ HVACTEMPLATE:ZONE:IDEALLOADSAIRSYSTEM,
     None,                     !- Humidification Control Type
     30,                       !- Humidification Setpoint
     None,                     !- Outdoor Air Method
-    0.00944,                  !- Outdoor Air Flow Rate per Person
-    0.0,                      !- Outdoor Air Flow Rate per Zone Floor Area
+    0.007,                    !- Outdoor Air Flow Rate per Person
+    0.0007,                   !- Outdoor Air Flow Rate per Zone Floor Area
     0,                        !- Outdoor Air Flow Rate per Zone
     ,                         !- Design Specification Outdoor Air Object Name
     None,                     !- Demand Controlled Ventilation Type
     NoEconomizer,             !- Outdoor Air Economizer Type
     None,                     !- Heat Recovery Type
-    0.70,                     !- Sensible Heat Recovery Effectiveness
-    0.65;                     !- Latent Heat Recovery Effectiveness
+    0.8,                      !- Sensible Heat Recovery Effectiveness
+    0.7;                      !- Latent Heat Recovery Effectiveness
 
 Output:VariableDictionary,
     Regular;                  !- Key Field
@@ -8909,22 +8882,32 @@ OUTPUT:VARIABLE,
 
 OUTPUT:VARIABLE,
     *,                        !- Key Value
-    Zone Ideal Loads Zone Total Cooling Rate,    !- Variable Name
+    Zone Ideal Loads Supply Air Total Heating Energy,    !- Variable Name
     Hourly;                   !- Reporting Frequency
 
 OUTPUT:VARIABLE,
     *,                        !- Key Value
-    Zone Ideal Loads Zone Total Heating Rate,    !- Variable Name
+    Zone Ideal Loads Supply Air Total Cooling Energy,    !- Variable Name
     Hourly;                   !- Reporting Frequency
 
 OUTPUT:VARIABLE,
     *,                        !- Key Value
-    Zone Ideal Loads Zone Total Heating Energy,    !- Variable Name
+    Zone Ideal Loads Outdoor Air Total Cooling Rate,    !- Variable Name
     Hourly;                   !- Reporting Frequency
 
 OUTPUT:VARIABLE,
     *,                        !- Key Value
-    Zone Ideal Loads Zone Total Cooling Energy,    !- Variable Name
+    Zone Ideal Loads Outdoor Air Total Heating Rate,    !- Variable Name
+    Hourly;                   !- Reporting Frequency
+
+OUTPUT:VARIABLE,
+    *,                        !- Key Value
+    Zone Ideal Loads Supply Air Total Cooling Rate,    !- Variable Name
+    Hourly;                   !- Reporting Frequency
+
+OUTPUT:VARIABLE,
+    *,                        !- Key Value
+    Zone Ideal Loads Supply Air Total Heating Rate,    !- Variable Name
     Hourly;                   !- Reporting Frequency
 
 OUTPUT:VARIABLE,
@@ -8940,16 +8923,6 @@ OUTPUT:VARIABLE,
 OUTPUT:VARIABLE,
     *,                        !- Key Value
     Zone Windows Total Transmitted Solar Radiation Energy,    !- Variable Name
-    Hourly;                   !- Reporting Frequency
-
-OUTPUT:VARIABLE,
-    *,                        !- Key Value
-    Zone Air System Sensible Heating Energy,    !- Variable Name
-    Hourly;                   !- Reporting Frequency
-
-OUTPUT:VARIABLE,
-    *,                        !- Key Value
-    Zone Air System Sensible Cooling Energy,    !- Variable Name
     Hourly;                   !- Reporting Frequency
 
 OUTPUT:VARIABLE,
@@ -8985,6 +8958,16 @@ OUTPUT:VARIABLE,
 OUTPUT:VARIABLE,
     *,                        !- Key Value
     Zone Ventilation Total Heat Loss Energy,    !- Variable Name
+    Hourly;                   !- Reporting Frequency
+
+OUTPUT:VARIABLE,
+    *,                        !- Key Value
+    Zone Mechanical Ventilation Air Changes per Hour,    !- Variable Name
+    Hourly;                   !- Reporting Frequency
+
+OUTPUT:VARIABLE,
+    *,                        !- Key Value
+    Zone Mechanical Ventilation Standard Density Volume Flow Rate,    !- Variable Name
     Hourly;                   !- Reporting Frequency
 
 OUTPUT:VARIABLE,
@@ -9063,6 +9046,14 @@ OUTPUT:METER,
 
 OUTPUT:METER,
     Cooling:EnergyTransfer,    !- Key Name
+    Hourly;                   !- Reporting Frequency
+
+OUTPUT:METER,
+    DistrictHeating:HVAC,     !- Key Name
+    Hourly;                   !- Reporting Frequency
+
+OUTPUT:METER,
+    DistrictCooling:HVAC,     !- Key Name
     Hourly;                   !- Reporting Frequency
 
 OUTPUT:DIAGNOSTICS,

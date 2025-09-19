@@ -12,6 +12,11 @@ correct_space_boundaries = False
 close_space_boundary_gaps = False
 stories_to_load_guids = []
 
+[PlantSimSettings]
+aggregations = ['UnderfloorHeating', 'PipeStrand', 'Consumer', 'ParallelPump', 'ConsumerHeatingDistributorModule', 'GeneratorOneFluid']
+tolerance_connect_by_position = 10
+verify_connection_by_position = True
+
 [BuildingSimSettings]
 layers_and_materials = LOD.low
 year_of_construction_overwrite = None
@@ -48,11 +53,6 @@ ahu_heat_recovery_efficiency_overwrite = None
 use_constant_infiltration_overwrite = None
 base_infiltration_rate_overwrite = None
 
-[PlantSimSettings]
-aggregations = ['UnderfloorHeating', 'PipeStrand', 'Consumer', 'ParallelPump', 'ConsumerHeatingDistributorModule', 'GeneratorOneFluid']
-tolerance_connect_by_position = 10
-verify_connection_by_position = True
-
 [EnergyPlusSimSettings]
 cfd_export = False
 split_bounds = False
@@ -64,6 +64,9 @@ ep_install_path = \usr\local\EnergyPlus-9-4-0
 system_sizing = True
 run_for_sizing_periods = False
 run_for_weather_period = True
+system_weather_sizing = Typical
+weather_file_for_sizing = None
+enforce_system_sizing = False
 solar_distribution = FullExterior
 add_window_shading = None
 output_format = CommaAndHTML
@@ -72,6 +75,17 @@ output_keys = ['output_outdoor_conditions', 'output_zone_temperature', 'output_z
 correct_space_boundaries = True
 close_space_boundary_gaps = True
 add_natural_ventilation = True
+hvac_off_at_night = False
+control_operative_temperature = False
+ventilation_demand_control = None
+outdoor_air_economizer = NoEconomizer
+heat_recovery_type = Enthalpy
+heat_recovery_sensible = 0.8
+heat_recovery_latent = 0.7
+outdoor_air_per_person = 7
+outdoor_air_per_area = 0.7
+residential = False
+natural_ventilation_approach = Simple
 
 [Backend]
 use = energyplus
