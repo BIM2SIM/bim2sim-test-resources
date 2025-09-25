@@ -1,0 +1,275 @@
+/*--------------------------------*- C++ -*----------------------------------*\
+| =========                 |                                                 |
+| \\      /  F ield         | OpenFOAM: The Open Source CFD Toolbox           |
+|  \\    /   O peration     | Version:  v1706+                                |
+|   \\  /    A nd           | Web:      www.OpenFOAM.org                      |
+|    \\/     M anipulation  |                                                 |
+\*---------------------------------------------------------------------------*/
+/* Butterfly 0.0.5                https://github.com/ladybug-tools/butterfly *\
+\*---------------------------------------------------------------------------*/
+FoamFile
+{
+	version		4.0;
+	format		ascii;
+	class		volScalarField;
+	location	"0";
+	object		omega;
+}
+
+dimensions		[0 0 -1 0 0 0 0];
+
+internalField		uniform 0.01;
+
+boundaryField
+{
+
+    InnerFloor_3YmTTmFtbDPRDphiCy399_
+    {
+
+        type		omegaWallFunction;
+
+        value		uniform 0.01;
+
+    }
+
+    InnerFloor_14KVjb4bn2zOxEfCwOWKb_
+    {
+
+        type		omegaWallFunction;
+
+        value		uniform 0.01;
+
+    }
+
+    InnerWall_0EYBE3lWP5OQPgfymh45fT
+    {
+
+        type		omegaWallFunction;
+
+        value		uniform 0.01;
+
+    }
+
+    InnerWall_10NUX___CcjBcRRxCQJh2Suf
+    {
+
+        type		omegaWallFunction;
+
+        value		uniform 0.01;
+
+    }
+
+    Roof_174xOdW7H4iw488r9lVn33
+    {
+
+        type		omegaWallFunction;
+
+        value		uniform 0.01;
+
+    }
+
+    InnerDoor_0aGOY_OOT9fva8zh0hPM___t
+    {
+
+        type		omegaWallFunction;
+
+        value		uniform 0.01;
+
+    }
+
+    InnerWall_1r3PHt9bbCOPWBJytLgNNf
+    {
+
+        type		omegaWallFunction;
+
+        value		uniform 0.01;
+
+    }
+
+    InnerWall_0poZkiU6nAzQsz___5j1tEEO
+    {
+
+        type		omegaWallFunction;
+
+        value		uniform 0.01;
+
+    }
+
+    InnerWall_18dtnPzhbDfA93nuFIFIQD
+    {
+
+        type		omegaWallFunction;
+
+        value		uniform 0.01;
+
+    }
+
+    OuterWall_3eJjh1rC9D6u9xQvTJvVV1
+    {
+
+        type		omegaWallFunction;
+
+        value		uniform 0.01;
+
+    }
+
+    OuterWall_1Rq56ElXP9mOLKW7Xhapuj
+    {
+
+        type		omegaWallFunction;
+
+        value		uniform 0.01;
+
+    }
+
+    Window_3YwbLt4uL17hwYjrGkpnG2
+    {
+
+        type		omegaWallFunction;
+
+        value		uniform 0.01;
+
+    }
+
+    OuterWall_1T2XvptoT41wqhpFAnaD97
+    {
+
+        type		omegaWallFunction;
+
+        value		uniform 0.01;
+
+    }
+
+    OuterWall_0An_qycgfB5RACnBVc2erc
+    {
+
+        type		omegaWallFunction;
+
+        value		uniform 0.01;
+
+    }
+
+    Window_3tw6evsPf4cOKvenfxmdSF
+    {
+
+        type		omegaWallFunction;
+
+        value		uniform 0.01;
+
+    }
+
+    heater0_surface
+    {
+
+        type		omegaWallFunction;
+
+        value		uniform 0.01;
+
+    }
+
+    heater1_surface
+    {
+
+        type		omegaWallFunction;
+
+        value		uniform 0.01;
+
+    }
+
+    inlet_diffuser
+    {
+
+        type		omegaWallFunction;
+
+        value		uniform 0.01;
+
+    }
+
+    inlet_source_sink
+    {
+
+        type		turbulentMixingLengthFrequencyInlet;
+
+        mixingLength		0.1;
+
+        k		k;
+
+        value		uniform 0.01;
+
+    }
+
+    inlet_box
+    {
+
+        type		omegaWallFunction;
+
+        value		uniform 0.01;
+
+    }
+
+    outlet_diffuser
+    {
+
+        type		omegaWallFunction;
+
+        value		uniform 0.01;
+
+    }
+
+    outlet_source_sink
+    {
+
+        type		inletOutlet;
+
+        inletValue		uniform 0.01;
+
+        value		uniform 0.01;
+
+    }
+
+    outlet_box
+    {
+
+        type		omegaWallFunction;
+
+        value		uniform 0.01;
+
+    }
+
+    furniture_Tab0_Chair0
+    {
+
+        type		omegaWallFunction;
+
+        value		uniform 0.01;
+
+    }
+
+    furniture_Desk0
+    {
+
+        type		omegaWallFunction;
+
+        value		uniform 0.01;
+
+    }
+
+    person_Person0_FullBody
+    {
+
+        type		omegaWallFunction;
+
+        value		uniform 0.01;
+
+    }
+
+    boundingbox
+    {
+
+        type		omegaWallFunction;
+
+        value		uniform 0.01;
+
+    }
+
+}

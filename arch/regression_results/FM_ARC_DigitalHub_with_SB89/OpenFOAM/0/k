@@ -1,0 +1,273 @@
+/*--------------------------------*- C++ -*----------------------------------*\
+| =========                 |                                                 |
+| \\      /  F ield         | OpenFOAM: The Open Source CFD Toolbox           |
+|  \\    /   O peration     | Version:  v1706+                                |
+|   \\  /    A nd           | Web:      www.OpenFOAM.org                      |
+|    \\/     M anipulation  |                                                 |
+\*---------------------------------------------------------------------------*/
+/* Butterfly 0.0.5                https://github.com/ladybug-tools/butterfly *\
+\*---------------------------------------------------------------------------*/
+FoamFile
+{
+	version		4.0;
+	format		ascii;
+	class		volScalarField;
+	location	"0";
+	object		k;
+}
+
+dimensions		[0 2 -2 0 0 0 0];
+
+internalField		uniform 0.1;
+
+boundaryField
+{
+
+    InnerFloor_3YmTTmFtbDPRDphiCy399_
+    {
+
+        type		kqRWallFunction;
+
+        value		uniform 0.1;
+
+    }
+
+    InnerFloor_14KVjb4bn2zOxEfCwOWKb_
+    {
+
+        type		kqRWallFunction;
+
+        value		uniform 0.1;
+
+    }
+
+    InnerWall_0EYBE3lWP5OQPgfymh45fT
+    {
+
+        type		kqRWallFunction;
+
+        value		uniform 0.1;
+
+    }
+
+    InnerWall_10NUX___CcjBcRRxCQJh2Suf
+    {
+
+        type		kqRWallFunction;
+
+        value		uniform 0.1;
+
+    }
+
+    Roof_174xOdW7H4iw488r9lVn33
+    {
+
+        type		kqRWallFunction;
+
+        value		uniform 0.1;
+
+    }
+
+    InnerDoor_0aGOY_OOT9fva8zh0hPM___t
+    {
+
+        type		kqRWallFunction;
+
+        value		uniform 0.1;
+
+    }
+
+    InnerWall_1r3PHt9bbCOPWBJytLgNNf
+    {
+
+        type		kqRWallFunction;
+
+        value		uniform 0.1;
+
+    }
+
+    InnerWall_0poZkiU6nAzQsz___5j1tEEO
+    {
+
+        type		kqRWallFunction;
+
+        value		uniform 0.1;
+
+    }
+
+    InnerWall_18dtnPzhbDfA93nuFIFIQD
+    {
+
+        type		kqRWallFunction;
+
+        value		uniform 0.1;
+
+    }
+
+    OuterWall_3eJjh1rC9D6u9xQvTJvVV1
+    {
+
+        type		kqRWallFunction;
+
+        value		uniform 0.1;
+
+    }
+
+    OuterWall_1Rq56ElXP9mOLKW7Xhapuj
+    {
+
+        type		kqRWallFunction;
+
+        value		uniform 0.1;
+
+    }
+
+    Window_3YwbLt4uL17hwYjrGkpnG2
+    {
+
+        type		kqRWallFunction;
+
+        value		uniform 0.1;
+
+    }
+
+    OuterWall_1T2XvptoT41wqhpFAnaD97
+    {
+
+        type		kqRWallFunction;
+
+        value		uniform 0.1;
+
+    }
+
+    OuterWall_0An_qycgfB5RACnBVc2erc
+    {
+
+        type		kqRWallFunction;
+
+        value		uniform 0.1;
+
+    }
+
+    Window_3tw6evsPf4cOKvenfxmdSF
+    {
+
+        type		kqRWallFunction;
+
+        value		uniform 0.1;
+
+    }
+
+    heater0_surface
+    {
+
+        type		kqRWallFunction;
+
+        value		uniform 0.1;
+
+    }
+
+    heater1_surface
+    {
+
+        type		kqRWallFunction;
+
+        value		uniform 0.1;
+
+    }
+
+    inlet_diffuser
+    {
+
+        type		kqRWallFunction;
+
+        value		uniform 0.1;
+
+    }
+
+    inlet_source_sink
+    {
+
+        type		turbulentIntensityKineticEnergyInlet;
+
+        intensity		0.02;
+
+        value		uniform 1;
+
+    }
+
+    inlet_box
+    {
+
+        type		kqRWallFunction;
+
+        value		uniform 0.1;
+
+    }
+
+    outlet_diffuser
+    {
+
+        type		kqRWallFunction;
+
+        value		uniform 0.1;
+
+    }
+
+    outlet_source_sink
+    {
+
+        type		inletOutlet;
+
+        inletValue		uniform 0.1;
+
+        value		uniform 0.1;
+
+    }
+
+    outlet_box
+    {
+
+        type		kqRWallFunction;
+
+        value		uniform 0.1;
+
+    }
+
+    furniture_Tab0_Chair0
+    {
+
+        type		kqRWallFunction;
+
+        value		uniform 0.1;
+
+    }
+
+    furniture_Desk0
+    {
+
+        type		kqRWallFunction;
+
+        value		uniform 0.1;
+
+    }
+
+    person_Person0_FullBody
+    {
+
+        type		kqRWallFunction;
+
+        value		uniform 0.1;
+
+    }
+
+    boundingbox
+    {
+
+        type		kqRWallFunction;
+
+        value		uniform 0.1;
+
+    }
+
+}

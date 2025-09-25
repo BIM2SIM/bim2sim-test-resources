@@ -1,0 +1,167 @@
+/*--------------------------------*- C++ -*----------------------------------*\
+| =========                 |                                                 |
+| \\      /  F ield         | OpenFOAM: The Open Source CFD Toolbox           |
+|  \\    /   O peration     | Version:  v1706+                                |
+|   \\  /    A nd           | Web:      www.OpenFOAM.org                      |
+|    \\/     M anipulation  |                                                 |
+\*---------------------------------------------------------------------------*/
+/* Butterfly 0.0.5                https://github.com/ladybug-tools/butterfly *\
+\*---------------------------------------------------------------------------*/
+FoamFile
+{
+	version		4.0;
+	format		ascii;
+	class		volVectorField;
+	location	"0";
+	object		U;
+}
+
+dimensions		[0 1 -1 0 0 0 0];
+
+internalField		uniform (0 0 0);
+
+boundaryField
+{
+
+    InnerWall_3S62uZocO66ngdmMaRS2M9
+    {
+
+        type		fixedValue;
+
+        value		uniform (0.000 0.000 0.000);
+
+    }
+
+    Ceiling_14TeGe_aGDXLMTt8fX0vQP
+    {
+
+        type		fixedValue;
+
+        value		uniform (0.000 0.000 0.000);
+
+    }
+
+    InnerWall_1zvtHpRHFWSVHgO9MXUL0M
+    {
+
+        type		fixedValue;
+
+        value		uniform (0.000 0.000 0.000);
+
+    }
+
+    InnerDoor_1aGihCk9trZ___gjiWxX___Jdv
+    {
+
+        type		fixedValue;
+
+        value		uniform (0.000 0.000 0.000);
+
+    }
+
+    GroundFloor_2Sn7uAlFxA___POrax5b6wqo
+    {
+
+        type		fixedValue;
+
+        value		uniform (0.000 0.000 0.000);
+
+    }
+
+    OuterWall_3XYW9SWB7YBTXnJuv3X___K5
+    {
+
+        type		fixedValue;
+
+        value		uniform (0.000 0.000 0.000);
+
+    }
+
+    OuterWall_3XTF9VnRG___5_FyP6rRZVuw
+    {
+
+        type		fixedValue;
+
+        value		uniform (0.000 0.000 0.000);
+
+    }
+
+    Window_2CVWUzpEdesdJARzpmJYC8
+    {
+
+        type		fixedValue;
+
+        value		uniform (0.000 0.000 0.000);
+
+    }
+
+    Window_2NviMh_1vArANYae7v_22c
+    {
+
+        type		fixedValue;
+
+        value		uniform (0.000 0.000 0.000);
+
+    }
+
+    heater0_surface
+    {
+
+        type		fixedValue;
+
+        value		uniform (0.000 0.000 0.000);
+
+    }
+
+    inlet_diffuser
+    {
+
+        type		fixedValue;
+
+        value		uniform (0.000 0.000 0.000);
+
+    }
+
+    inlet_source_sink
+    {
+
+        type		flowRateInletVelocity;
+
+        flowRate		volumetricFlowRate;
+
+        volumetricFlowRate		constant 0.0251909;
+
+        value		uniform (0.000 0.000 0.000);
+
+    }
+
+    outlet_diffuser
+    {
+
+        type		fixedValue;
+
+        value		uniform (0.000 0.000 0.000);
+
+    }
+
+    outlet_source_sink
+    {
+
+        type		inletOutlet;
+
+        inletValue		uniform (0.000 0.000 0.000);
+
+        value		uniform (0.000 0.000 0.000);
+
+    }
+
+    boundingbox
+    {
+
+        type		fixedValue;
+
+        value		uniform (0.000 0.000 0.000);
+
+    }
+
+}

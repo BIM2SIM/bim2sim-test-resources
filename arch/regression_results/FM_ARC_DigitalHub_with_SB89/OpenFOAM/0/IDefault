@@ -1,0 +1,323 @@
+/*--------------------------------*- C++ -*----------------------------------*\
+| =========                 |                                                 |
+| \\      /  F ield         | OpenFOAM: The Open Source CFD Toolbox           |
+|  \\    /   O peration     | Version:  v1706+                                |
+|   \\  /    A nd           | Web:      www.OpenFOAM.org                      |
+|    \\/     M anipulation  |                                                 |
+\*---------------------------------------------------------------------------*/
+/* Butterfly 0.0.5                https://github.com/ladybug-tools/butterfly *\
+\*---------------------------------------------------------------------------*/
+FoamFile
+{
+	version		4.0;
+	format		ascii;
+	class		volScalarField;
+	location	"0";
+	object		IDefault;
+}
+
+dimensions		[1 0 -3 0 0 0 0];
+
+internalField		uniform 0;
+
+boundaryField
+{
+
+    InnerFloor_3YmTTmFtbDPRDphiCy399_
+    {
+
+        type		greyDiffusiveRadiation;
+
+        T		T;
+
+        value		uniform 0;
+
+    }
+
+    InnerFloor_14KVjb4bn2zOxEfCwOWKb_
+    {
+
+        type		greyDiffusiveRadiation;
+
+        T		T;
+
+        value		uniform 0;
+
+    }
+
+    InnerWall_0EYBE3lWP5OQPgfymh45fT
+    {
+
+        type		greyDiffusiveRadiation;
+
+        T		T;
+
+        value		uniform 0;
+
+    }
+
+    InnerWall_10NUX___CcjBcRRxCQJh2Suf
+    {
+
+        type		greyDiffusiveRadiation;
+
+        T		T;
+
+        value		uniform 0;
+
+    }
+
+    Roof_174xOdW7H4iw488r9lVn33
+    {
+
+        type		greyDiffusiveRadiation;
+
+        T		T;
+
+        value		uniform 0;
+
+    }
+
+    InnerDoor_0aGOY_OOT9fva8zh0hPM___t
+    {
+
+        type		greyDiffusiveRadiation;
+
+        T		T;
+
+        value		uniform 0;
+
+    }
+
+    InnerWall_1r3PHt9bbCOPWBJytLgNNf
+    {
+
+        type		greyDiffusiveRadiation;
+
+        T		T;
+
+        value		uniform 0;
+
+    }
+
+    InnerWall_0poZkiU6nAzQsz___5j1tEEO
+    {
+
+        type		greyDiffusiveRadiation;
+
+        T		T;
+
+        value		uniform 0;
+
+    }
+
+    InnerWall_18dtnPzhbDfA93nuFIFIQD
+    {
+
+        type		greyDiffusiveRadiation;
+
+        T		T;
+
+        value		uniform 0;
+
+    }
+
+    OuterWall_3eJjh1rC9D6u9xQvTJvVV1
+    {
+
+        type		greyDiffusiveRadiation;
+
+        T		T;
+
+        value		uniform 0;
+
+    }
+
+    OuterWall_1Rq56ElXP9mOLKW7Xhapuj
+    {
+
+        type		greyDiffusiveRadiation;
+
+        T		T;
+
+        value		uniform 0;
+
+    }
+
+    Window_3YwbLt4uL17hwYjrGkpnG2
+    {
+
+        type		greyDiffusiveRadiation;
+
+        T		T;
+
+        value		uniform 0;
+
+    }
+
+    OuterWall_1T2XvptoT41wqhpFAnaD97
+    {
+
+        type		greyDiffusiveRadiation;
+
+        T		T;
+
+        value		uniform 0;
+
+    }
+
+    OuterWall_0An_qycgfB5RACnBVc2erc
+    {
+
+        type		greyDiffusiveRadiation;
+
+        T		T;
+
+        value		uniform 0;
+
+    }
+
+    Window_3tw6evsPf4cOKvenfxmdSF
+    {
+
+        type		greyDiffusiveRadiation;
+
+        T		T;
+
+        value		uniform 0;
+
+    }
+
+    heater0_surface
+    {
+
+        type		greyDiffusiveRadiation;
+
+        T		T;
+
+        value		uniform 0;
+
+    }
+
+    heater1_surface
+    {
+
+        type		greyDiffusiveRadiation;
+
+        T		T;
+
+        value		uniform 0;
+
+    }
+
+    inlet_diffuser
+    {
+
+        type		greyDiffusiveRadiation;
+
+        T		T;
+
+        value		uniform 0;
+
+    }
+
+    inlet_source_sink
+    {
+
+        type		greyDiffusiveRadiation;
+
+        T		T;
+
+        value		uniform 0;
+
+    }
+
+    inlet_box
+    {
+
+        type		greyDiffusiveRadiation;
+
+        T		T;
+
+        value		uniform 0;
+
+    }
+
+    outlet_diffuser
+    {
+
+        type		greyDiffusiveRadiation;
+
+        T		T;
+
+        value		uniform 0;
+
+    }
+
+    outlet_source_sink
+    {
+
+        type		greyDiffusiveRadiation;
+
+        T		T;
+
+        value		uniform 0;
+
+    }
+
+    outlet_box
+    {
+
+        type		greyDiffusiveRadiation;
+
+        T		T;
+
+        value		uniform 0;
+
+    }
+
+    furniture_Tab0_Chair0
+    {
+
+        type		greyDiffusiveRadiation;
+
+        T		T;
+
+        value		uniform 0;
+
+    }
+
+    furniture_Desk0
+    {
+
+        type		greyDiffusiveRadiation;
+
+        T		T;
+
+        value		uniform 0;
+
+    }
+
+    person_Person0_FullBody
+    {
+
+        type		greyDiffusiveRadiation;
+
+        T		T;
+
+        value		uniform 0;
+
+    }
+
+    boundingbox
+    {
+
+        type		greyDiffusiveRadiation;
+
+        T		T;
+
+        value		uniform 0;
+
+    }
+
+}

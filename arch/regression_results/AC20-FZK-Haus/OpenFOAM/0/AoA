@@ -1,0 +1,137 @@
+/*--------------------------------*- C++ -*----------------------------------*\
+| =========                 |                                                 |
+| \\      /  F ield         | OpenFOAM: The Open Source CFD Toolbox           |
+|  \\    /   O peration     | Version:  v1706+                                |
+|   \\  /    A nd           | Web:      www.OpenFOAM.org                      |
+|    \\/     M anipulation  |                                                 |
+\*---------------------------------------------------------------------------*/
+/* Butterfly 0.0.5                https://github.com/ladybug-tools/butterfly *\
+\*---------------------------------------------------------------------------*/
+FoamFile
+{
+	version		4.0;
+	format		ascii;
+	class		volScalarField;
+	location	"0";
+	object		AoA;
+}
+
+dimensions		[0 0 0 1 0 0 0];
+
+internalField		uniform 0;
+
+boundaryField
+{
+
+    InnerWall_3S62uZocO66ngdmMaRS2M9
+    {
+
+        type		zeroGradient;
+
+    }
+
+    Ceiling_14TeGe_aGDXLMTt8fX0vQP
+    {
+
+        type		zeroGradient;
+
+    }
+
+    InnerWall_1zvtHpRHFWSVHgO9MXUL0M
+    {
+
+        type		zeroGradient;
+
+    }
+
+    InnerDoor_1aGihCk9trZ___gjiWxX___Jdv
+    {
+
+        type		zeroGradient;
+
+    }
+
+    GroundFloor_2Sn7uAlFxA___POrax5b6wqo
+    {
+
+        type		zeroGradient;
+
+    }
+
+    OuterWall_3XYW9SWB7YBTXnJuv3X___K5
+    {
+
+        type		zeroGradient;
+
+    }
+
+    OuterWall_3XTF9VnRG___5_FyP6rRZVuw
+    {
+
+        type		zeroGradient;
+
+    }
+
+    Window_2CVWUzpEdesdJARzpmJYC8
+    {
+
+        type		zeroGradient;
+
+    }
+
+    Window_2NviMh_1vArANYae7v_22c
+    {
+
+        type		zeroGradient;
+
+    }
+
+    heater0_surface
+    {
+
+        type		zeroGradient;
+
+    }
+
+    inlet_diffuser
+    {
+
+        type		zeroGradient;
+
+    }
+
+    inlet_source_sink
+    {
+
+        type		fixedValue;
+
+        value		uniform 0;
+
+    }
+
+    outlet_diffuser
+    {
+
+        type		zeroGradient;
+
+    }
+
+    outlet_source_sink
+    {
+
+        type		inletOutlet;
+
+        inletValue		uniform 0;
+
+        value		uniform 0;
+
+    }
+
+    boundingbox
+    {
+
+        type		zeroGradient;
+
+    }
+
+}

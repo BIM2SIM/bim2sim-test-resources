@@ -1,0 +1,161 @@
+/*--------------------------------*- C++ -*----------------------------------*\
+| =========                 |                                                 |
+| \\      /  F ield         | OpenFOAM: The Open Source CFD Toolbox           |
+|  \\    /   O peration     | Version:  v1706+                                |
+|   \\  /    A nd           | Web:      www.OpenFOAM.org                      |
+|    \\/     M anipulation  |                                                 |
+\*---------------------------------------------------------------------------*/
+/* Butterfly 0.0.5                https://github.com/ladybug-tools/butterfly *\
+\*---------------------------------------------------------------------------*/
+FoamFile
+{
+	version		4.0;
+	format		ascii;
+	class		volScalarField;
+	location	"0";
+	object		nut;
+}
+
+dimensions		[0 2 -1 0 0 0 0];
+
+internalField		uniform 0;
+
+boundaryField
+{
+
+    InnerWall_3S62uZocO66ngdmMaRS2M9
+    {
+
+        type		nutkWallFunction;
+
+        value		uniform 0;
+
+    }
+
+    Ceiling_14TeGe_aGDXLMTt8fX0vQP
+    {
+
+        type		nutkWallFunction;
+
+        value		uniform 0;
+
+    }
+
+    InnerWall_1zvtHpRHFWSVHgO9MXUL0M
+    {
+
+        type		nutkWallFunction;
+
+        value		uniform 0;
+
+    }
+
+    InnerDoor_1aGihCk9trZ___gjiWxX___Jdv
+    {
+
+        type		nutkWallFunction;
+
+        value		uniform 0;
+
+    }
+
+    GroundFloor_2Sn7uAlFxA___POrax5b6wqo
+    {
+
+        type		nutkWallFunction;
+
+        value		uniform 0;
+
+    }
+
+    OuterWall_3XYW9SWB7YBTXnJuv3X___K5
+    {
+
+        type		nutkWallFunction;
+
+        value		uniform 0;
+
+    }
+
+    OuterWall_3XTF9VnRG___5_FyP6rRZVuw
+    {
+
+        type		nutkWallFunction;
+
+        value		uniform 0;
+
+    }
+
+    Window_2CVWUzpEdesdJARzpmJYC8
+    {
+
+        type		nutkWallFunction;
+
+        value		uniform 0;
+
+    }
+
+    Window_2NviMh_1vArANYae7v_22c
+    {
+
+        type		nutkWallFunction;
+
+        value		uniform 0;
+
+    }
+
+    heater0_surface
+    {
+
+        type		nutkWallFunction;
+
+        value		uniform 0;
+
+    }
+
+    inlet_diffuser
+    {
+
+        type		nutkWallFunction;
+
+        value		uniform 0;
+
+    }
+
+    inlet_source_sink
+    {
+
+        type		calculated;
+
+        value		uniform 0;
+
+    }
+
+    outlet_diffuser
+    {
+
+        type		nutkWallFunction;
+
+        value		uniform 0;
+
+    }
+
+    outlet_source_sink
+    {
+
+        type		calculated;
+
+        value		uniform 0;
+
+    }
+
+    boundingbox
+    {
+
+        type		nutkWallFunction;
+
+        value		uniform 0;
+
+    }
+
+}

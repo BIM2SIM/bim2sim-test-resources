@@ -1,0 +1,397 @@
+/*--------------------------------*- C++ -*----------------------------------*\
+| =========                 |                                                 |
+| \\      /  F ield         | OpenFOAM: The Open Source CFD Toolbox           |
+|  \\    /   O peration     | Version:  v1706+                                |
+|   \\  /    A nd           | Web:      www.OpenFOAM.org                      |
+|    \\/     M anipulation  |                                                 |
+\*---------------------------------------------------------------------------*/
+/* Butterfly 0.0.5                https://github.com/ladybug-tools/butterfly *\
+\*---------------------------------------------------------------------------*/
+FoamFile
+{
+	version		4.0;
+	format		ascii;
+	class		volScalarField;
+	location	"0";
+	object		T;
+}
+
+dimensions		[0 0 0 1 0 0 0];
+
+internalField		uniform 297.1726722625087;
+
+boundaryField
+{
+
+    InnerFloor_3YmTTmFtbDPRDphiCy399_
+    {
+
+        type		fixedValue;
+
+        value		uniform 298.70814479590774;
+
+    }
+
+    InnerFloor_14KVjb4bn2zOxEfCwOWKb_
+    {
+
+        type		fixedValue;
+
+        value		uniform 298.64714395815275;
+
+    }
+
+    InnerWall_0EYBE3lWP5OQPgfymh45fT
+    {
+
+        type		fixedValue;
+
+        value		uniform 294.5798388652507;
+
+    }
+
+    InnerWall_10NUX___CcjBcRRxCQJh2Suf
+    {
+
+        type		fixedValue;
+
+        value		uniform 297.44504297662894;
+
+    }
+
+    Roof_174xOdW7H4iw488r9lVn33
+    {
+
+        type		externalWallHeatFluxTemperature;
+
+        mode		power;
+
+        qr		qr;
+
+        Q		uniform -1040.907926840826;
+
+        qrRelaxation		0.003;
+
+        relaxation		1.0;
+
+        kappaMethod		fluidThermo;
+
+        kappa		fluidThermo;
+
+        value		uniform 295.54336133632177;
+
+    }
+
+    InnerDoor_0aGOY_OOT9fva8zh0hPM___t
+    {
+
+        type		fixedValue;
+
+        value		uniform 297.6221415612713;
+
+    }
+
+    InnerWall_1r3PHt9bbCOPWBJytLgNNf
+    {
+
+        type		fixedValue;
+
+        value		uniform 297.4232367079122;
+
+    }
+
+    InnerWall_0poZkiU6nAzQsz___5j1tEEO
+    {
+
+        type		fixedValue;
+
+        value		uniform 297.26015618779667;
+
+    }
+
+    InnerWall_18dtnPzhbDfA93nuFIFIQD
+    {
+
+        type		fixedValue;
+
+        value		uniform 297.22417657780403;
+
+    }
+
+    OuterWall_3eJjh1rC9D6u9xQvTJvVV1
+    {
+
+        type		externalWallHeatFluxTemperature;
+
+        mode		power;
+
+        qr		qr;
+
+        Q		uniform -301.8247761612127;
+
+        qrRelaxation		0.003;
+
+        relaxation		1.0;
+
+        kappaMethod		fluidThermo;
+
+        kappa		fluidThermo;
+
+        value		uniform 295.48549950230444;
+
+    }
+
+    OuterWall_1Rq56ElXP9mOLKW7Xhapuj
+    {
+
+        type		externalWallHeatFluxTemperature;
+
+        mode		power;
+
+        qr		qr;
+
+        Q		uniform -0.3124166938640766;
+
+        qrRelaxation		0.003;
+
+        relaxation		1.0;
+
+        kappaMethod		fluidThermo;
+
+        kappa		fluidThermo;
+
+        value		uniform 296.92916717468336;
+
+    }
+
+    Window_3YwbLt4uL17hwYjrGkpnG2
+    {
+
+        type		externalWallHeatFluxTemperature;
+
+        mode		power;
+
+        qr		qr;
+
+        Q		uniform 2474.641953638769;
+
+        qrRelaxation		0.003;
+
+        relaxation		1.0;
+
+        kappaMethod		fluidThermo;
+
+        kappa		fluidThermo;
+
+        value		uniform 300.4268077031973;
+
+    }
+
+    OuterWall_1T2XvptoT41wqhpFAnaD97
+    {
+
+        type		externalWallHeatFluxTemperature;
+
+        mode		power;
+
+        qr		qr;
+
+        Q		uniform -314.51335011267736;
+
+        qrRelaxation		0.003;
+
+        relaxation		1.0;
+
+        kappaMethod		fluidThermo;
+
+        kappa		fluidThermo;
+
+        value		uniform 295.38598500814356;
+
+    }
+
+    OuterWall_0An_qycgfB5RACnBVc2erc
+    {
+
+        type		externalWallHeatFluxTemperature;
+
+        mode		power;
+
+        qr		qr;
+
+        Q		uniform -0.2347094009128773;
+
+        qrRelaxation		0.003;
+
+        relaxation		1.0;
+
+        kappaMethod		fluidThermo;
+
+        kappa		fluidThermo;
+
+        value		uniform 297.0269208010881;
+
+    }
+
+    Window_3tw6evsPf4cOKvenfxmdSF
+    {
+
+        type		externalWallHeatFluxTemperature;
+
+        mode		power;
+
+        qr		qr;
+
+        Q		uniform 1167.4519814239648;
+
+        qrRelaxation		0.003;
+
+        relaxation		1.0;
+
+        kappaMethod		fluidThermo;
+
+        kappa		fluidThermo;
+
+        value		uniform 299.3574372383723;
+
+    }
+
+    heater0_surface
+    {
+
+        type		externalWallHeatFluxTemperature;
+
+        mode		power;
+
+        qr		qr;
+
+        Q		0.0;
+
+        qrRelaxation		0.003;
+
+        relaxation		1.0;
+
+        kappaMethod		fluidThermo;
+
+        kappa		fluidThermo;
+
+        value		uniform 313.15;
+
+    }
+
+    heater1_surface
+    {
+
+        type		externalWallHeatFluxTemperature;
+
+        mode		power;
+
+        qr		qr;
+
+        Q		0.0;
+
+        qrRelaxation		0.003;
+
+        relaxation		1.0;
+
+        kappaMethod		fluidThermo;
+
+        kappa		fluidThermo;
+
+        value		uniform 313.15;
+
+    }
+
+    inlet_diffuser
+    {
+
+        type		zeroGradient;
+
+    }
+
+    inlet_source_sink
+    {
+
+        type		fixedValue;
+
+        value		uniform 296.4401074836633;
+
+    }
+
+    inlet_box
+    {
+
+        type		zeroGradient;
+
+    }
+
+    outlet_diffuser
+    {
+
+        type		zeroGradient;
+
+    }
+
+    outlet_source_sink
+    {
+
+        type		inletOutlet;
+
+        inletValue		$internalField;
+
+        value		$internalField;
+
+    }
+
+    outlet_box
+    {
+
+        type		zeroGradient;
+
+    }
+
+    furniture_Tab0_Chair0
+    {
+
+        type		zeroGradient;
+
+    }
+
+    furniture_Desk0
+    {
+
+        type		zeroGradient;
+
+    }
+
+    person_Person0_FullBody
+    {
+
+        type		externalWallHeatFluxTemperature;
+
+        mode		power;
+
+        qr		qr;
+
+        Q		125.0;
+
+        qrRelaxation		0.003;
+
+        relaxation		1.0;
+
+        kappaMethod		fluidThermo;
+
+        kappa		fluidThermo;
+
+        value		uniform 305.15;
+
+    }
+
+    boundingbox
+    {
+
+        type		zeroGradient;
+
+    }
+
+}

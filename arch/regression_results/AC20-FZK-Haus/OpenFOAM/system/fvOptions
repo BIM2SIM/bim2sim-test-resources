@@ -1,0 +1,44 @@
+/*--------------------------------*- C++ -*----------------------------------*\
+| =========                 |                                                 |
+| \\      /  F ield         | OpenFOAM: The Open Source CFD Toolbox           |
+|  \\    /   O peration     | Version:  v1706+                                |
+|   \\  /    A nd           | Web:      www.OpenFOAM.org                      |
+|    \\/     M anipulation  |                                                 |
+\*---------------------------------------------------------------------------*/
+/* Butterfly 0.0.5                https://github.com/ladybug-tools/butterfly *\
+\*---------------------------------------------------------------------------*/
+FoamFile
+{
+	version		4.0;
+	format		ascii;
+	class		dictionary;
+	location	"system";
+	object		fvOptions;
+}
+
+heater0_porous_media_ScalarSemiImplicitSource
+{
+
+    type		scalarSemiImplicitSource;
+
+    scalarSemiImplicitSourceCoeffs
+    {
+
+        mode		uniform;
+
+        selectionMode		cellZone;
+
+        volumeMode		absolute;
+
+        cellZone		heater0_porous_media;
+
+        injectionRateSuSp
+        {
+
+            h		(52.216103926992744 0);
+
+        }
+
+    }
+
+}

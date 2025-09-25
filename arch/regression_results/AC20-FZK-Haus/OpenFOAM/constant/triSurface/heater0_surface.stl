@@ -1,0 +1,58 @@
+solid heater0_surface
+facet normal -0.026475 -0.013238 -0.000000
+  outer loop
+    vertex 0.108040 8.583626 0.119900
+    vertex 0.072261 8.655179 -0.250100
+    vertex 0.108040 8.583626 -0.250100
+  endloop
+endfacet
+facet normal -0.026475 -0.013238 0.000000
+  outer loop
+    vertex 0.108040 8.583626 0.119900
+    vertex 0.072261 8.655179 0.119900
+    vertex 0.072261 8.655179 -0.250100
+  endloop
+endfacet
+facet normal -0.026474 -0.013238 -0.000000
+  outer loop
+    vertex 4.108240 10.583830 0.119900
+    vertex 4.072462 10.655380 -0.250100
+    vertex 4.108240 10.583830 -0.250100
+  endloop
+endfacet
+facet normal -0.026474 -0.013238 0.000000
+  outer loop
+    vertex 4.108240 10.583830 0.119900
+    vertex 4.072462 10.655380 0.119900
+    vertex 4.072462 10.655380 -0.250100
+  endloop
+endfacet
+facet normal -0.740076 1.480074 0.000000
+  outer loop
+    vertex 4.108240 10.583830 -0.250100
+    vertex 0.108040 8.583626 0.119900
+    vertex 4.108240 10.583830 0.119900
+  endloop
+endfacet
+facet normal -0.740076 1.480074 0.000000
+  outer loop
+    vertex 4.108240 10.583830 -0.250100
+    vertex 0.108040 8.583626 -0.250100
+    vertex 0.108040 8.583626 0.119900
+  endloop
+endfacet
+facet normal -0.740074 1.480074 0.000000
+  outer loop
+    vertex 4.072462 10.655380 -0.250100
+    vertex 0.072262 8.655179 0.119900
+    vertex 4.072462 10.655380 0.119900
+  endloop
+endfacet
+facet normal -0.740074 1.480074 0.000000
+  outer loop
+    vertex 4.072462 10.655380 -0.250100
+    vertex 0.072262 8.655179 -0.250100
+    vertex 0.072262 8.655179 0.119900
+  endloop
+endfacet
+endsolid heater0_surface
