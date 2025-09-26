@@ -176,7 +176,7 @@ boundaryField
 
     }
 
-    inlet_diffuser
+    inlet_0_diffuser
     {
 
         type		omegaWallFunction;
@@ -185,7 +185,7 @@ boundaryField
 
     }
 
-    inlet_source_sink
+    inlet_0_source_sink
     {
 
         type		turbulentMixingLengthFrequencyInlet;
@@ -198,7 +198,7 @@ boundaryField
 
     }
 
-    inlet_box
+    inlet_0_box
     {
 
         type		omegaWallFunction;
@@ -207,30 +207,12 @@ boundaryField
 
     }
 
-    outlet_diffuser
-    {
-
-        type		omegaWallFunction;
-
-        value		uniform 0.01;
-
-    }
-
-    outlet_source_sink
+    outlet_overflow_0_source_sink
     {
 
         type		inletOutlet;
 
         inletValue		uniform 0.01;
-
-        value		uniform 0.01;
-
-    }
-
-    outlet_box
-    {
-
-        type		omegaWallFunction;
 
         value		uniform 0.01;
 
@@ -254,7 +236,88 @@ boundaryField
 
     }
 
+    furniture_Tab1_Chair0
+    {
+
+        type		omegaWallFunction;
+
+        value		uniform 0.01;
+
+    }
+
+    furniture_Desk1
+    {
+
+        type		omegaWallFunction;
+
+        value		uniform 0.01;
+
+    }
+
+    furniture_Tab2_Chair0
+    {
+
+        type		omegaWallFunction;
+
+        value		uniform 0.01;
+
+    }
+
+    furniture_Desk2
+    {
+
+        type		omegaWallFunction;
+
+        value		uniform 0.01;
+
+    }
+
+    furniture_Tab3_Chair0
+    {
+
+        type		omegaWallFunction;
+
+        value		uniform 0.01;
+
+    }
+
+    furniture_Desk3
+    {
+
+        type		omegaWallFunction;
+
+        value		uniform 0.01;
+
+    }
+
     person_Person0_FullBody
+    {
+
+        type		omegaWallFunction;
+
+        value		uniform 0.01;
+
+    }
+
+    person_Person1_FullBody
+    {
+
+        type		omegaWallFunction;
+
+        value		uniform 0.01;
+
+    }
+
+    person_Person2_FullBody
+    {
+
+        type		omegaWallFunction;
+
+        value		uniform 0.01;
+
+    }
+
+    person_Person3_FullBody
     {
 
         type		omegaWallFunction;

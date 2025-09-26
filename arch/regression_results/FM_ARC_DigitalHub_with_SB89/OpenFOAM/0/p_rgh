@@ -176,7 +176,7 @@ boundaryField
 
     }
 
-    inlet_diffuser
+    inlet_0_diffuser
     {
 
         type		fixedFluxPressure;
@@ -185,7 +185,7 @@ boundaryField
 
     }
 
-    inlet_source_sink
+    inlet_0_source_sink
     {
 
         type		fixedFluxPressure;
@@ -194,7 +194,7 @@ boundaryField
 
     }
 
-    inlet_box
+    inlet_0_box
     {
 
         type		fixedFluxPressure;
@@ -203,28 +203,10 @@ boundaryField
 
     }
 
-    outlet_diffuser
-    {
-
-        type		fixedFluxPressure;
-
-        value		uniform 101325;
-
-    }
-
-    outlet_source_sink
+    outlet_overflow_0_source_sink
     {
 
         type		fixedValue;
-
-        value		uniform 101325;
-
-    }
-
-    outlet_box
-    {
-
-        type		fixedFluxPressure;
 
         value		uniform 101325;
 
@@ -248,7 +230,88 @@ boundaryField
 
     }
 
+    furniture_Tab1_Chair0
+    {
+
+        type		fixedFluxPressure;
+
+        value		uniform 101325;
+
+    }
+
+    furniture_Desk1
+    {
+
+        type		fixedFluxPressure;
+
+        value		uniform 101325;
+
+    }
+
+    furniture_Tab2_Chair0
+    {
+
+        type		fixedFluxPressure;
+
+        value		uniform 101325;
+
+    }
+
+    furniture_Desk2
+    {
+
+        type		fixedFluxPressure;
+
+        value		uniform 101325;
+
+    }
+
+    furniture_Tab3_Chair0
+    {
+
+        type		fixedFluxPressure;
+
+        value		uniform 101325;
+
+    }
+
+    furniture_Desk3
+    {
+
+        type		fixedFluxPressure;
+
+        value		uniform 101325;
+
+    }
+
     person_Person0_FullBody
+    {
+
+        type		fixedFluxPressure;
+
+        value		uniform 101325;
+
+    }
+
+    person_Person1_FullBody
+    {
+
+        type		fixedFluxPressure;
+
+        value		uniform 101325;
+
+    }
+
+    person_Person2_FullBody
+    {
+
+        type		fixedFluxPressure;
+
+        value		uniform 101325;
+
+    }
+
+    person_Person3_FullBody
     {
 
         type		fixedFluxPressure;

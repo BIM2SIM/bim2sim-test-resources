@@ -176,7 +176,7 @@ boundaryField
 
     }
 
-    inlet_diffuser
+    inlet_0_diffuser
     {
 
         type		kqRWallFunction;
@@ -185,7 +185,7 @@ boundaryField
 
     }
 
-    inlet_source_sink
+    inlet_0_source_sink
     {
 
         type		turbulentIntensityKineticEnergyInlet;
@@ -196,7 +196,7 @@ boundaryField
 
     }
 
-    inlet_box
+    inlet_0_box
     {
 
         type		kqRWallFunction;
@@ -205,30 +205,12 @@ boundaryField
 
     }
 
-    outlet_diffuser
-    {
-
-        type		kqRWallFunction;
-
-        value		uniform 0.1;
-
-    }
-
-    outlet_source_sink
+    outlet_overflow_0_source_sink
     {
 
         type		inletOutlet;
 
         inletValue		uniform 0.1;
-
-        value		uniform 0.1;
-
-    }
-
-    outlet_box
-    {
-
-        type		kqRWallFunction;
 
         value		uniform 0.1;
 
@@ -252,7 +234,88 @@ boundaryField
 
     }
 
+    furniture_Tab1_Chair0
+    {
+
+        type		kqRWallFunction;
+
+        value		uniform 0.1;
+
+    }
+
+    furniture_Desk1
+    {
+
+        type		kqRWallFunction;
+
+        value		uniform 0.1;
+
+    }
+
+    furniture_Tab2_Chair0
+    {
+
+        type		kqRWallFunction;
+
+        value		uniform 0.1;
+
+    }
+
+    furniture_Desk2
+    {
+
+        type		kqRWallFunction;
+
+        value		uniform 0.1;
+
+    }
+
+    furniture_Tab3_Chair0
+    {
+
+        type		kqRWallFunction;
+
+        value		uniform 0.1;
+
+    }
+
+    furniture_Desk3
+    {
+
+        type		kqRWallFunction;
+
+        value		uniform 0.1;
+
+    }
+
     person_Person0_FullBody
+    {
+
+        type		kqRWallFunction;
+
+        value		uniform 0.1;
+
+    }
+
+    person_Person1_FullBody
+    {
+
+        type		kqRWallFunction;
+
+        value		uniform 0.1;
+
+    }
+
+    person_Person2_FullBody
+    {
+
+        type		kqRWallFunction;
+
+        value		uniform 0.1;
+
+    }
+
+    person_Person3_FullBody
     {
 
         type		kqRWallFunction;

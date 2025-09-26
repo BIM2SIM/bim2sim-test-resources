@@ -18,7 +18,7 @@ FoamFile
 
 dimensions		[0 0 0 1 0 0 0];
 
-internalField		uniform 297.1726722625087;
+internalField		uniform 297.172672262513;
 
 boundaryField
 {
@@ -28,7 +28,7 @@ boundaryField
 
         type		fixedValue;
 
-        value		uniform 298.70814479590774;
+        value		uniform 298.70814479591377;
 
     }
 
@@ -37,7 +37,7 @@ boundaryField
 
         type		fixedValue;
 
-        value		uniform 298.64714395815275;
+        value		uniform 298.64714395815696;
 
     }
 
@@ -46,7 +46,7 @@ boundaryField
 
         type		fixedValue;
 
-        value		uniform 294.5798388652507;
+        value		uniform 294.5798388652535;
 
     }
 
@@ -55,7 +55,7 @@ boundaryField
 
         type		fixedValue;
 
-        value		uniform 297.44504297662894;
+        value		uniform 297.4450429766324;
 
     }
 
@@ -68,7 +68,7 @@ boundaryField
 
         qr		qr;
 
-        Q		uniform -1040.907926840826;
+        Q		uniform -1040.907926840385;
 
         qrRelaxation		0.003;
 
@@ -78,7 +78,7 @@ boundaryField
 
         kappa		fluidThermo;
 
-        value		uniform 295.54336133632177;
+        value		uniform 295.5433613363277;
 
     }
 
@@ -87,7 +87,7 @@ boundaryField
 
         type		fixedValue;
 
-        value		uniform 297.6221415612713;
+        value		uniform 297.62214156127493;
 
     }
 
@@ -96,7 +96,7 @@ boundaryField
 
         type		fixedValue;
 
-        value		uniform 297.4232367079122;
+        value		uniform 297.42323670791734;
 
     }
 
@@ -105,7 +105,7 @@ boundaryField
 
         type		fixedValue;
 
-        value		uniform 297.26015618779667;
+        value		uniform 297.2601561878041;
 
     }
 
@@ -114,7 +114,7 @@ boundaryField
 
         type		fixedValue;
 
-        value		uniform 297.22417657780403;
+        value		uniform 297.22417657781034;
 
     }
 
@@ -127,7 +127,7 @@ boundaryField
 
         qr		qr;
 
-        Q		uniform -301.8247761612127;
+        Q		uniform -301.82477616131;
 
         qrRelaxation		0.003;
 
@@ -137,7 +137,7 @@ boundaryField
 
         kappa		fluidThermo;
 
-        value		uniform 295.48549950230444;
+        value		uniform 295.4854995023083;
 
     }
 
@@ -150,7 +150,7 @@ boundaryField
 
         qr		qr;
 
-        Q		uniform -0.3124166938640766;
+        Q		uniform -0.3124166938644058;
 
         qrRelaxation		0.003;
 
@@ -160,7 +160,7 @@ boundaryField
 
         kappa		fluidThermo;
 
-        value		uniform 296.92916717468336;
+        value		uniform 296.92916717468637;
 
     }
 
@@ -173,7 +173,7 @@ boundaryField
 
         qr		qr;
 
-        Q		uniform 2474.641953638769;
+        Q		uniform 2474.6419536387402;
 
         qrRelaxation		0.003;
 
@@ -183,7 +183,7 @@ boundaryField
 
         kappa		fluidThermo;
 
-        value		uniform 300.4268077031973;
+        value		uniform 300.42680770320135;
 
     }
 
@@ -196,7 +196,7 @@ boundaryField
 
         qr		qr;
 
-        Q		uniform -314.51335011267736;
+        Q		uniform -314.51335011280287;
 
         qrRelaxation		0.003;
 
@@ -206,7 +206,7 @@ boundaryField
 
         kappa		fluidThermo;
 
-        value		uniform 295.38598500814356;
+        value		uniform 295.38598500814703;
 
     }
 
@@ -219,7 +219,7 @@ boundaryField
 
         qr		qr;
 
-        Q		uniform -0.2347094009128773;
+        Q		uniform -0.2347094009130375;
 
         qrRelaxation		0.003;
 
@@ -229,7 +229,7 @@ boundaryField
 
         kappa		fluidThermo;
 
-        value		uniform 297.0269208010881;
+        value		uniform 297.02692080109153;
 
     }
 
@@ -242,7 +242,7 @@ boundaryField
 
         qr		qr;
 
-        Q		uniform 1167.4519814239648;
+        Q		uniform 1167.451981423947;
 
         qrRelaxation		0.003;
 
@@ -252,7 +252,7 @@ boundaryField
 
         kappa		fluidThermo;
 
-        value		uniform 299.3574372383723;
+        value		uniform 299.3574372383764;
 
     }
 
@@ -302,37 +302,30 @@ boundaryField
 
     }
 
-    inlet_diffuser
+    inlet_0_diffuser
     {
 
         type		zeroGradient;
 
     }
 
-    inlet_source_sink
+    inlet_0_source_sink
     {
 
         type		fixedValue;
 
-        value		uniform 296.4401074836633;
+        value		uniform 293.5762417117399;
 
     }
 
-    inlet_box
+    inlet_0_box
     {
 
         type		zeroGradient;
 
     }
 
-    outlet_diffuser
-    {
-
-        type		zeroGradient;
-
-    }
-
-    outlet_source_sink
+    outlet_overflow_0_source_sink
     {
 
         type		inletOutlet;
@@ -340,13 +333,6 @@ boundaryField
         inletValue		$internalField;
 
         value		$internalField;
-
-    }
-
-    outlet_box
-    {
-
-        type		zeroGradient;
 
     }
 
@@ -364,7 +350,118 @@ boundaryField
 
     }
 
+    furniture_Tab1_Chair0
+    {
+
+        type		zeroGradient;
+
+    }
+
+    furniture_Desk1
+    {
+
+        type		zeroGradient;
+
+    }
+
+    furniture_Tab2_Chair0
+    {
+
+        type		zeroGradient;
+
+    }
+
+    furniture_Desk2
+    {
+
+        type		zeroGradient;
+
+    }
+
+    furniture_Tab3_Chair0
+    {
+
+        type		zeroGradient;
+
+    }
+
+    furniture_Desk3
+    {
+
+        type		zeroGradient;
+
+    }
+
     person_Person0_FullBody
+    {
+
+        type		externalWallHeatFluxTemperature;
+
+        mode		power;
+
+        qr		qr;
+
+        Q		125.0;
+
+        qrRelaxation		0.003;
+
+        relaxation		1.0;
+
+        kappaMethod		fluidThermo;
+
+        kappa		fluidThermo;
+
+        value		uniform 305.15;
+
+    }
+
+    person_Person1_FullBody
+    {
+
+        type		externalWallHeatFluxTemperature;
+
+        mode		power;
+
+        qr		qr;
+
+        Q		125.0;
+
+        qrRelaxation		0.003;
+
+        relaxation		1.0;
+
+        kappaMethod		fluidThermo;
+
+        kappa		fluidThermo;
+
+        value		uniform 305.15;
+
+    }
+
+    person_Person2_FullBody
+    {
+
+        type		externalWallHeatFluxTemperature;
+
+        mode		power;
+
+        qr		qr;
+
+        Q		125.0;
+
+        qrRelaxation		0.003;
+
+        relaxation		1.0;
+
+        kappaMethod		fluidThermo;
+
+        kappa		fluidThermo;
+
+        value		uniform 305.15;
+
+    }
+
+    person_Person3_FullBody
     {
 
         type		externalWallHeatFluxTemperature;

@@ -1,0 +1,16 @@
+solid outlet_overflow_0_source_sink
+facet normal 0.000000 -0.021800 0.000000
+  outer loop
+    vertex 63.163799 12.627520 3.900000
+    vertex 64.253799 12.627520 3.900000
+    vertex 64.253799 12.627520 3.920000
+  endloop
+endfacet
+facet normal 0.000000 -0.021800 0.000000
+  outer loop
+    vertex 63.163799 12.627520 3.900000
+    vertex 64.253799 12.627520 3.920000
+    vertex 63.163799 12.627520 3.920000
+  endloop
+endfacet
+endsolid outlet_overflow_0_source_sink

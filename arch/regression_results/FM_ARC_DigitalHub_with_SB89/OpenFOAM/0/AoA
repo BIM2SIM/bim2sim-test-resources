@@ -142,14 +142,14 @@ boundaryField
 
     }
 
-    inlet_diffuser
+    inlet_0_diffuser
     {
 
         type		zeroGradient;
 
     }
 
-    inlet_source_sink
+    inlet_0_source_sink
     {
 
         type		fixedValue;
@@ -158,21 +158,14 @@ boundaryField
 
     }
 
-    inlet_box
+    inlet_0_box
     {
 
         type		zeroGradient;
 
     }
 
-    outlet_diffuser
-    {
-
-        type		zeroGradient;
-
-    }
-
-    outlet_source_sink
+    outlet_overflow_0_source_sink
     {
 
         type		inletOutlet;
@@ -180,13 +173,6 @@ boundaryField
         inletValue		uniform 0;
 
         value		uniform 0;
-
-    }
-
-    outlet_box
-    {
-
-        type		zeroGradient;
 
     }
 
@@ -204,7 +190,70 @@ boundaryField
 
     }
 
+    furniture_Tab1_Chair0
+    {
+
+        type		zeroGradient;
+
+    }
+
+    furniture_Desk1
+    {
+
+        type		zeroGradient;
+
+    }
+
+    furniture_Tab2_Chair0
+    {
+
+        type		zeroGradient;
+
+    }
+
+    furniture_Desk2
+    {
+
+        type		zeroGradient;
+
+    }
+
+    furniture_Tab3_Chair0
+    {
+
+        type		zeroGradient;
+
+    }
+
+    furniture_Desk3
+    {
+
+        type		zeroGradient;
+
+    }
+
     person_Person0_FullBody
+    {
+
+        type		zeroGradient;
+
+    }
+
+    person_Person1_FullBody
+    {
+
+        type		zeroGradient;
+
+    }
+
+    person_Person2_FullBody
+    {
+
+        type		zeroGradient;
+
+    }
+
+    person_Person3_FullBody
     {
 
         type		zeroGradient;

@@ -210,7 +210,7 @@ boundaryField
 
     }
 
-    inlet_diffuser
+    inlet_0_diffuser
     {
 
         type		greyDiffusiveRadiation;
@@ -221,7 +221,7 @@ boundaryField
 
     }
 
-    inlet_source_sink
+    inlet_0_source_sink
     {
 
         type		greyDiffusiveRadiation;
@@ -232,7 +232,7 @@ boundaryField
 
     }
 
-    inlet_box
+    inlet_0_box
     {
 
         type		greyDiffusiveRadiation;
@@ -243,29 +243,7 @@ boundaryField
 
     }
 
-    outlet_diffuser
-    {
-
-        type		greyDiffusiveRadiation;
-
-        T		T;
-
-        value		uniform 0;
-
-    }
-
-    outlet_source_sink
-    {
-
-        type		greyDiffusiveRadiation;
-
-        T		T;
-
-        value		uniform 0;
-
-    }
-
-    outlet_box
+    outlet_overflow_0_source_sink
     {
 
         type		greyDiffusiveRadiation;
@@ -298,7 +276,106 @@ boundaryField
 
     }
 
+    furniture_Tab1_Chair0
+    {
+
+        type		greyDiffusiveRadiation;
+
+        T		T;
+
+        value		uniform 0;
+
+    }
+
+    furniture_Desk1
+    {
+
+        type		greyDiffusiveRadiation;
+
+        T		T;
+
+        value		uniform 0;
+
+    }
+
+    furniture_Tab2_Chair0
+    {
+
+        type		greyDiffusiveRadiation;
+
+        T		T;
+
+        value		uniform 0;
+
+    }
+
+    furniture_Desk2
+    {
+
+        type		greyDiffusiveRadiation;
+
+        T		T;
+
+        value		uniform 0;
+
+    }
+
+    furniture_Tab3_Chair0
+    {
+
+        type		greyDiffusiveRadiation;
+
+        T		T;
+
+        value		uniform 0;
+
+    }
+
+    furniture_Desk3
+    {
+
+        type		greyDiffusiveRadiation;
+
+        T		T;
+
+        value		uniform 0;
+
+    }
+
     person_Person0_FullBody
+    {
+
+        type		greyDiffusiveRadiation;
+
+        T		T;
+
+        value		uniform 0;
+
+    }
+
+    person_Person1_FullBody
+    {
+
+        type		greyDiffusiveRadiation;
+
+        T		T;
+
+        value		uniform 0;
+
+    }
+
+    person_Person2_FullBody
+    {
+
+        type		greyDiffusiveRadiation;
+
+        T		T;
+
+        value		uniform 0;
+
+    }
+
+    person_Person3_FullBody
     {
 
         type		greyDiffusiveRadiation;

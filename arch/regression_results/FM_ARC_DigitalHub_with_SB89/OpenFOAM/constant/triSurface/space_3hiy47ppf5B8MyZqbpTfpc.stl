@@ -79,18 +79,18 @@ facet normal 0.000000 0.000000 37.478920
 endfacet
 endsolid Roof_174xOdW7H4iw488r9lVn33
 solid InnerDoor_0aGOY_OOT9fva8zh0hPM___t
-facet normal 0.000000 2.229050 0.000000
+facet normal 0.000000 2.207250 0.000000
   outer loop
-    vertex 64.253799 12.627520 5.945000
-    vertex 63.163799 12.627520 3.900000
     vertex 63.163799 12.627520 5.945000
+    vertex 64.253799 12.627520 3.920000
+    vertex 63.163799 12.627520 3.920000
   endloop
 endfacet
-facet normal 0.000000 2.229050 0.000000
+facet normal 0.000000 2.207250 0.000000
   outer loop
     vertex 64.253799 12.627520 5.945000
-    vertex 64.253799 12.627520 3.900000
-    vertex 63.163799 12.627520 3.900000
+    vertex 64.253799 12.627520 3.920000
+    vertex 63.163799 12.627520 5.945000
   endloop
 endfacet
 endsolid InnerDoor_0aGOY_OOT9fva8zh0hPM___t

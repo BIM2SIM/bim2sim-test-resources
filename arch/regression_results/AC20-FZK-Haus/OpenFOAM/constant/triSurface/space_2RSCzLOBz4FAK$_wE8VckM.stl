@@ -15,18 +15,102 @@ facet normal 9.275000 0.000000 0.000000
 endfacet
 endsolid InnerWall_3S62uZocO66ngdmMaRS2M9
 solid Ceiling_14TeGe_aGDXLMTt8fX0vQP
-facet normal 0.000000 0.000000 12.985001
+facet normal 0.000000 0.000000 0.375813
+  outer loop
+    vertex 1.751000 9.071550 2.500000
+    vertex 2.349000 9.071550 2.500000
+    vertex 3.800000 9.700000 2.500000
+  endloop
+endfacet
+facet normal 0.000000 0.000000 0.867699
+  outer loop
+    vertex 2.349000 8.473550 2.500000
+    vertex 3.800000 9.700000 2.500000
+    vertex 2.349000 9.071550 2.500000
+  endloop
+endfacet
+facet normal 0.000000 0.000000 0.867699
+  outer loop
+    vertex 0.300000 9.700000 2.500000
+    vertex 1.751000 8.473550 2.500000
+    vertex 1.751000 9.071550 2.500000
+  endloop
+endfacet
+facet normal -0.000000 0.000000 2.199573
+  outer loop
+    vertex 0.300000 9.700000 2.500000
+    vertex 1.751000 9.071550 2.500000
+    vertex 3.800000 9.700000 2.500000
+  endloop
+endfacet
+facet normal -0.000000 0.000000 5.383210
+  outer loop
+    vertex 2.349000 7.216450 2.500000
+    vertex 3.800000 5.990000 2.500000
+    vertex 3.800000 9.700000 2.500000
+  endloop
+endfacet
+facet normal 0.000000 0.000000 1.824051
+  outer loop
+    vertex 2.349000 7.216450 2.500000
+    vertex 3.800000 9.700000 2.500000
+    vertex 2.349000 8.473550 2.500000
+  endloop
+endfacet
+facet normal 0.000000 0.000000 0.751745
+  outer loop
+    vertex 1.751000 7.216450 2.500000
+    vertex 2.349000 8.473550 2.500000
+    vertex 1.751000 8.473550 2.500000
+  endloop
+endfacet
+facet normal 0.000000 0.000000 0.751745
+  outer loop
+    vertex 1.751000 7.216450 2.500000
+    vertex 2.349000 7.216450 2.500000
+    vertex 2.349000 8.473550 2.500000
+  endloop
+endfacet
+facet normal -0.000000 0.000000 0.867698
+  outer loop
+    vertex 2.349000 6.618450 2.500000
+    vertex 3.800000 5.990000 2.500000
+    vertex 2.349000 7.216450 2.500000
+  endloop
+endfacet
+facet normal -0.000000 0.000000 0.375813
+  outer loop
+    vertex 1.751000 6.618450 2.500000
+    vertex 3.800000 5.990000 2.500000
+    vertex 2.349000 6.618450 2.500000
+  endloop
+endfacet
+facet normal 0.000000 0.000000 0.867698
   outer loop
     vertex 0.300000 5.990000 2.500000
-    vertex 3.800000 9.700000 2.500000
+    vertex 1.751000 6.618450 2.500000
+    vertex 1.751000 7.216450 2.500000
+  endloop
+endfacet
+facet normal 0.000000 0.000000 5.383211
+  outer loop
+    vertex 0.300000 5.990000 2.500000
+    vertex 1.751000 8.473550 2.500000
     vertex 0.300000 9.700000 2.500000
   endloop
 endfacet
-facet normal 0.000000 0.000000 12.985001
+facet normal 0.000000 0.000000 1.824052
+  outer loop
+    vertex 0.300000 5.990000 2.500000
+    vertex 1.751000 7.216450 2.500000
+    vertex 1.751000 8.473550 2.500000
+  endloop
+endfacet
+facet normal 0.000000 0.000000 2.199576
   outer loop
     vertex 0.300000 5.990000 2.500000
     vertex 3.800000 5.990000 2.500000
-    vertex 3.800000 9.700000 2.500000
+    vertex 1.751000 6.618450 2.500000
   endloop
 endfacet
 endsolid Ceiling_14TeGe_aGDXLMTt8fX0vQP

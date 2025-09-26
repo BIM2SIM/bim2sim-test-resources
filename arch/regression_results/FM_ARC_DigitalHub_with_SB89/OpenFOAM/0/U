@@ -176,7 +176,7 @@ boundaryField
 
     }
 
-    inlet_diffuser
+    inlet_0_diffuser
     {
 
         type		fixedValue;
@@ -185,20 +185,20 @@ boundaryField
 
     }
 
-    inlet_source_sink
+    inlet_0_source_sink
     {
 
         type		flowRateInletVelocity;
 
         flowRate		volumetricFlowRate;
 
-        volumetricFlowRate		constant 0.08195999999999999;
+        volumetricFlowRate		constant 0.10296;
 
         value		uniform (0.000 0.000 0.000);
 
     }
 
-    inlet_box
+    inlet_0_box
     {
 
         type		fixedValue;
@@ -207,30 +207,12 @@ boundaryField
 
     }
 
-    outlet_diffuser
-    {
-
-        type		fixedValue;
-
-        value		uniform (0.000 0.000 0.000);
-
-    }
-
-    outlet_source_sink
+    outlet_overflow_0_source_sink
     {
 
         type		inletOutlet;
 
         inletValue		uniform (0.000 0.000 0.000);
-
-        value		uniform (0.000 0.000 0.000);
-
-    }
-
-    outlet_box
-    {
-
-        type		fixedValue;
 
         value		uniform (0.000 0.000 0.000);
 
@@ -254,7 +236,88 @@ boundaryField
 
     }
 
+    furniture_Tab1_Chair0
+    {
+
+        type		fixedValue;
+
+        value		uniform (0.000 0.000 0.000);
+
+    }
+
+    furniture_Desk1
+    {
+
+        type		fixedValue;
+
+        value		uniform (0.000 0.000 0.000);
+
+    }
+
+    furniture_Tab2_Chair0
+    {
+
+        type		fixedValue;
+
+        value		uniform (0.000 0.000 0.000);
+
+    }
+
+    furniture_Desk2
+    {
+
+        type		fixedValue;
+
+        value		uniform (0.000 0.000 0.000);
+
+    }
+
+    furniture_Tab3_Chair0
+    {
+
+        type		fixedValue;
+
+        value		uniform (0.000 0.000 0.000);
+
+    }
+
+    furniture_Desk3
+    {
+
+        type		fixedValue;
+
+        value		uniform (0.000 0.000 0.000);
+
+    }
+
     person_Person0_FullBody
+    {
+
+        type		fixedValue;
+
+        value		uniform (0.000 0.000 0.000);
+
+    }
+
+    person_Person1_FullBody
+    {
+
+        type		fixedValue;
+
+        value		uniform (0.000 0.000 0.000);
+
+    }
+
+    person_Person2_FullBody
+    {
+
+        type		fixedValue;
+
+        value		uniform (0.000 0.000 0.000);
+
+    }
+
+    person_Person3_FullBody
     {
 
         type		fixedValue;

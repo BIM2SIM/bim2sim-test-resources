@@ -210,7 +210,7 @@ boundaryField
 
     }
 
-    inlet_diffuser
+    inlet_0_diffuser
     {
 
         type		compressible::alphatJayatillekeWallFunction;
@@ -221,7 +221,7 @@ boundaryField
 
     }
 
-    inlet_source_sink
+    inlet_0_source_sink
     {
 
         type		calculated;
@@ -230,7 +230,7 @@ boundaryField
 
     }
 
-    inlet_box
+    inlet_0_box
     {
 
         type		compressible::alphatJayatillekeWallFunction;
@@ -241,32 +241,10 @@ boundaryField
 
     }
 
-    outlet_diffuser
-    {
-
-        type		compressible::alphatJayatillekeWallFunction;
-
-        Prt		0.85;
-
-        value		uniform 0;
-
-    }
-
-    outlet_source_sink
+    outlet_overflow_0_source_sink
     {
 
         type		calculated;
-
-        value		uniform 0;
-
-    }
-
-    outlet_box
-    {
-
-        type		compressible::alphatJayatillekeWallFunction;
-
-        Prt		0.85;
 
         value		uniform 0;
 
@@ -294,7 +272,106 @@ boundaryField
 
     }
 
+    furniture_Tab1_Chair0
+    {
+
+        type		compressible::alphatJayatillekeWallFunction;
+
+        Prt		0.85;
+
+        value		uniform 0;
+
+    }
+
+    furniture_Desk1
+    {
+
+        type		compressible::alphatJayatillekeWallFunction;
+
+        Prt		0.85;
+
+        value		uniform 0;
+
+    }
+
+    furniture_Tab2_Chair0
+    {
+
+        type		compressible::alphatJayatillekeWallFunction;
+
+        Prt		0.85;
+
+        value		uniform 0;
+
+    }
+
+    furniture_Desk2
+    {
+
+        type		compressible::alphatJayatillekeWallFunction;
+
+        Prt		0.85;
+
+        value		uniform 0;
+
+    }
+
+    furniture_Tab3_Chair0
+    {
+
+        type		compressible::alphatJayatillekeWallFunction;
+
+        Prt		0.85;
+
+        value		uniform 0;
+
+    }
+
+    furniture_Desk3
+    {
+
+        type		compressible::alphatJayatillekeWallFunction;
+
+        Prt		0.85;
+
+        value		uniform 0;
+
+    }
+
     person_Person0_FullBody
+    {
+
+        type		compressible::alphatJayatillekeWallFunction;
+
+        Prt		0.85;
+
+        value		uniform 0;
+
+    }
+
+    person_Person1_FullBody
+    {
+
+        type		compressible::alphatJayatillekeWallFunction;
+
+        Prt		0.85;
+
+        value		uniform 0;
+
+    }
+
+    person_Person2_FullBody
+    {
+
+        type		compressible::alphatJayatillekeWallFunction;
+
+        Prt		0.85;
+
+        value		uniform 0;
+
+    }
+
+    person_Person3_FullBody
     {
 
         type		compressible::alphatJayatillekeWallFunction;

@@ -170,9 +170,9 @@ geometry
 
         type		searchableBox;
 
-        min		(68.76595450859563 7.21753392881988 2.919999801060966);
+        min		(69.76595450859561 8.217533928819867 3.9199998010609516);
 
-        max		(70.82595490723662 10.307534326054219 5.60000020534058);
+        max		(69.82595490723664 9.307534326054233 4.600000205340594);
 
     }
 
@@ -202,26 +202,26 @@ geometry
 
         type		searchableBox;
 
-        min		(64.5099545411159 6.1843402906741 2.9199998010609667);
+        min		(65.50995454111589 7.184340290674085 3.919999801060953);
 
-        max		(68.39995490506699 8.244340693856987 5.600000205340581);
+        max		(67.399954905067 7.244340693857002 4.600000205340595);
 
     }
 
-    inlet_diffuser.stl
+    inlet_0_diffuser.stl
     {
 
         type		triSurfaceMesh;
 
-        name		inlet_diffuser;
+        name		inlet_0_diffuser;
 
         regions
         {
 
-            inlet_diffuser
+            inlet_0_diffuser
             {
 
-                name		inlet_diffuser;
+                name		inlet_0_diffuser;
 
             }
 
@@ -229,20 +229,20 @@ geometry
 
     }
 
-    inlet_source_sink.stl
+    inlet_0_source_sink.stl
     {
 
         type		triSurfaceMesh;
 
-        name		inlet_source_sink;
+        name		inlet_0_source_sink;
 
         regions
         {
 
-            inlet_source_sink
+            inlet_0_source_sink
             {
 
-                name		inlet_source_sink;
+                name		inlet_0_source_sink;
 
             }
 
@@ -250,20 +250,20 @@ geometry
 
     }
 
-    inlet_box.stl
+    inlet_0_box.stl
     {
 
         type		triSurfaceMesh;
 
-        name		inlet_box;
+        name		inlet_0_box;
 
         regions
         {
 
-            inlet_box
+            inlet_0_box
             {
 
-                name		inlet_box;
+                name		inlet_0_box;
 
             }
 
@@ -271,42 +271,42 @@ geometry
 
     }
 
-    inlet_refinement_small
+    inlet_0_refinement_small
     {
 
         type		searchableBox;
 
-        min		(64.01660754493307 9.62626881312869 6.279999900000001);
+        min		(65.79995430506702 9.678023467657846 6.7999999);
 
-        max		(64.51660794493304 10.126269213128689 6.695919300000001);
+        max		(67.199955105067 9.996024267657846 7.21657505172875);
 
     }
 
-    inlet_refinement_large
+    inlet_0_refinement_large
     {
 
         type		searchableBox;
 
-        min		(63.91660754493306 9.52626881312869 6.1799999);
+        min		(65.69995430506701 9.578023467657847 6.6999999);
 
-        max		(64.61660794493305 10.226269213128688 6.795919300000001);
+        max		(67.29995510506701 10.096024267657846 7.3165750517287504);
 
     }
 
-    outlet_diffuser.stl
+    outlet_overflow_0_source_sink.stl
     {
 
         type		triSurfaceMesh;
 
-        name		outlet_diffuser;
+        name		outlet_overflow_0_source_sink;
 
         regions
         {
 
-            outlet_diffuser
+            outlet_overflow_0_source_sink
             {
 
-                name		outlet_diffuser;
+                name		outlet_overflow_0_source_sink;
 
             }
 
@@ -314,67 +314,25 @@ geometry
 
     }
 
-    outlet_source_sink.stl
-    {
-
-        type		triSurfaceMesh;
-
-        name		outlet_source_sink;
-
-        regions
-        {
-
-            outlet_source_sink
-            {
-
-                name		outlet_source_sink;
-
-            }
-
-        }
-
-    }
-
-    outlet_box.stl
-    {
-
-        type		triSurfaceMesh;
-
-        name		outlet_box;
-
-        regions
-        {
-
-            outlet_box
-            {
-
-                name		outlet_box;
-
-            }
-
-        }
-
-    }
-
-    outlet_refinement_small
+    outlet_overflow_0_refinement_small
     {
 
         type		searchableBox;
 
-        min		(64.01660754493307 9.62626881312869 8.2800001);
+        min		(63.0637950115997 12.527518729795345 3.7999997166666546);
 
-        max		(64.51660794493304 10.126269213128689 8.695919499999999);
+        max		(64.3537955782664 12.727519296462033 4.020000083333331);
 
     }
 
-    outlet_refinement_large
+    outlet_overflow_0_refinement_large
     {
 
         type		searchableBox;
 
-        min		(63.91660754493306 9.52626881312869 8.1800001);
+        min		(62.9637950115997 12.427518729795345 3.6999997166666545);
 
-        max		(64.61660794493305 10.226269213128688 8.795919499999998);
+        max		(64.45379557826641 12.827519296462032 4.1200000833333315);
 
     }
 
@@ -420,6 +378,132 @@ geometry
 
     }
 
+    furniture_Tab1_Chair0.stl
+    {
+
+        type		triSurfaceMesh;
+
+        name		furniture_Tab1_Chair0;
+
+        regions
+        {
+
+            furniture_Tab1_Chair0
+            {
+
+                name		furniture_Tab1_Chair0;
+
+            }
+
+        }
+
+    }
+
+    furniture_Desk1.stl
+    {
+
+        type		triSurfaceMesh;
+
+        name		furniture_Desk1;
+
+        regions
+        {
+
+            furniture_Desk1
+            {
+
+                name		furniture_Desk1;
+
+            }
+
+        }
+
+    }
+
+    furniture_Tab2_Chair0.stl
+    {
+
+        type		triSurfaceMesh;
+
+        name		furniture_Tab2_Chair0;
+
+        regions
+        {
+
+            furniture_Tab2_Chair0
+            {
+
+                name		furniture_Tab2_Chair0;
+
+            }
+
+        }
+
+    }
+
+    furniture_Desk2.stl
+    {
+
+        type		triSurfaceMesh;
+
+        name		furniture_Desk2;
+
+        regions
+        {
+
+            furniture_Desk2
+            {
+
+                name		furniture_Desk2;
+
+            }
+
+        }
+
+    }
+
+    furniture_Tab3_Chair0.stl
+    {
+
+        type		triSurfaceMesh;
+
+        name		furniture_Tab3_Chair0;
+
+        regions
+        {
+
+            furniture_Tab3_Chair0
+            {
+
+                name		furniture_Tab3_Chair0;
+
+            }
+
+        }
+
+    }
+
+    furniture_Desk3.stl
+    {
+
+        type		triSurfaceMesh;
+
+        name		furniture_Desk3;
+
+        regions
+        {
+
+            furniture_Desk3
+            {
+
+                name		furniture_Desk3;
+
+            }
+
+        }
+
+    }
+
     person_Person0_FullBody.stl
     {
 
@@ -434,6 +518,69 @@ geometry
             {
 
                 name		person_Person0_FullBody;
+
+            }
+
+        }
+
+    }
+
+    person_Person1_FullBody.stl
+    {
+
+        type		triSurfaceMesh;
+
+        name		person_Person1_FullBody;
+
+        regions
+        {
+
+            person_Person1_FullBody
+            {
+
+                name		person_Person1_FullBody;
+
+            }
+
+        }
+
+    }
+
+    person_Person2_FullBody.stl
+    {
+
+        type		triSurfaceMesh;
+
+        name		person_Person2_FullBody;
+
+        regions
+        {
+
+            person_Person2_FullBody
+            {
+
+                name		person_Person2_FullBody;
+
+            }
+
+        }
+
+    }
+
+    person_Person3_FullBody.stl
+    {
+
+        type		triSurfaceMesh;
+
+        name		person_Person3_FullBody;
+
+        regions
+        {
+
+            person_Person3_FullBody
+            {
+
+                name		person_Person3_FullBody;
 
             }
 
@@ -735,7 +882,7 @@ castellatedMeshControls
 
         }
 
-        inlet_diffuser
+        inlet_0_diffuser
         {
 
             level		(2 5);
@@ -743,7 +890,7 @@ castellatedMeshControls
             regions
             {
 
-                inlet_diffuser
+                inlet_0_diffuser
                 {
 
                     level		(2 5);
@@ -761,7 +908,7 @@ castellatedMeshControls
 
         }
 
-        inlet_source_sink
+        inlet_0_source_sink
         {
 
             level		(1 2);
@@ -769,7 +916,7 @@ castellatedMeshControls
             regions
             {
 
-                inlet_source_sink
+                inlet_0_source_sink
                 {
 
                     level		(2 5);
@@ -777,7 +924,7 @@ castellatedMeshControls
                     patchInfo
                     {
 
-                        type		inlet;
+                        type		inlet_0;
 
                     }
 
@@ -787,7 +934,7 @@ castellatedMeshControls
 
         }
 
-        inlet_box
+        inlet_0_box
         {
 
             level		(1 2);
@@ -795,7 +942,7 @@ castellatedMeshControls
             regions
             {
 
-                inlet_box
+                inlet_0_box
                 {
 
                     level		(1 3);
@@ -813,15 +960,15 @@ castellatedMeshControls
 
         }
 
-        outlet_diffuser
+        outlet_overflow_0_source_sink
         {
 
-            level		(2 5);
+            level		(1 2);
 
             regions
             {
 
-                outlet_diffuser
+                outlet_overflow_0_source_sink
                 {
 
                     level		(2 5);
@@ -829,7 +976,7 @@ castellatedMeshControls
                     patchInfo
                     {
 
-                        type		wall;
+                        type		outlet_overflow_0;
 
                     }
 
@@ -839,7 +986,7 @@ castellatedMeshControls
 
         }
 
-        outlet_source_sink
+        null
         {
 
             level		(1 2);
@@ -847,33 +994,7 @@ castellatedMeshControls
             regions
             {
 
-                outlet_source_sink
-                {
-
-                    level		(2 5);
-
-                    patchInfo
-                    {
-
-                        type		outlet;
-
-                    }
-
-                }
-
-            }
-
-        }
-
-        outlet_box
-        {
-
-            level		(1 2);
-
-            regions
-            {
-
-                outlet_box
+                null
                 {
 
                     level		(1 3);
@@ -943,6 +1064,162 @@ castellatedMeshControls
 
         }
 
+        furniture_Tab1_Chair0
+        {
+
+            level		(1 2);
+
+            regions
+            {
+
+                furniture_Tab1_Chair0
+                {
+
+                    level		(2 3);
+
+                    patchInfo
+                    {
+
+                        type		wall;
+
+                    }
+
+                }
+
+            }
+
+        }
+
+        furniture_Desk1
+        {
+
+            level		(1 2);
+
+            regions
+            {
+
+                furniture_Desk1
+                {
+
+                    level		(2 3);
+
+                    patchInfo
+                    {
+
+                        type		wall;
+
+                    }
+
+                }
+
+            }
+
+        }
+
+        furniture_Tab2_Chair0
+        {
+
+            level		(1 2);
+
+            regions
+            {
+
+                furniture_Tab2_Chair0
+                {
+
+                    level		(2 3);
+
+                    patchInfo
+                    {
+
+                        type		wall;
+
+                    }
+
+                }
+
+            }
+
+        }
+
+        furniture_Desk2
+        {
+
+            level		(1 2);
+
+            regions
+            {
+
+                furniture_Desk2
+                {
+
+                    level		(2 3);
+
+                    patchInfo
+                    {
+
+                        type		wall;
+
+                    }
+
+                }
+
+            }
+
+        }
+
+        furniture_Tab3_Chair0
+        {
+
+            level		(1 2);
+
+            regions
+            {
+
+                furniture_Tab3_Chair0
+                {
+
+                    level		(2 3);
+
+                    patchInfo
+                    {
+
+                        type		wall;
+
+                    }
+
+                }
+
+            }
+
+        }
+
+        furniture_Desk3
+        {
+
+            level		(1 2);
+
+            regions
+            {
+
+                furniture_Desk3
+                {
+
+                    level		(2 3);
+
+                    patchInfo
+                    {
+
+                        type		wall;
+
+                    }
+
+                }
+
+            }
+
+        }
+
         person_Person0_FullBody
         {
 
@@ -952,6 +1229,84 @@ castellatedMeshControls
             {
 
                 person_Person0_FullBody
+                {
+
+                    level		(4 4);
+
+                    patchInfo
+                    {
+
+                        type		wall;
+
+                    }
+
+                }
+
+            }
+
+        }
+
+        person_Person1_FullBody
+        {
+
+            level		(1 2);
+
+            regions
+            {
+
+                person_Person1_FullBody
+                {
+
+                    level		(4 4);
+
+                    patchInfo
+                    {
+
+                        type		wall;
+
+                    }
+
+                }
+
+            }
+
+        }
+
+        person_Person2_FullBody
+        {
+
+            level		(1 2);
+
+            regions
+            {
+
+                person_Person2_FullBody
+                {
+
+                    level		(4 4);
+
+                    patchInfo
+                    {
+
+                        type		wall;
+
+                    }
+
+                }
+
+            }
+
+        }
+
+        person_Person3_FullBody
+        {
+
+            level		(1 2);
+
+            regions
+            {
+
+                person_Person3_FullBody
                 {
 
                     level		(4 4);
@@ -1012,7 +1367,7 @@ castellatedMeshControls
 
         }
 
-        inlet_source_sink
+        inlet_0_source_sink
         {
 
             mode		distance;
@@ -1021,7 +1376,7 @@ castellatedMeshControls
 
         }
 
-        inlet_diffuser
+        inlet_0_diffuser
         {
 
             mode		distance;
@@ -1030,7 +1385,7 @@ castellatedMeshControls
 
         }
 
-        outlet_source_sink
+        outlet_overflow_0_source_sink
         {
 
             mode		distance;
@@ -1039,7 +1394,7 @@ castellatedMeshControls
 
         }
 
-        outlet_diffuser
+        null
         {
 
             mode		distance;
@@ -1066,7 +1421,88 @@ castellatedMeshControls
 
         }
 
+        furniture_Tab1_Chair0
+        {
+
+            mode		distance;
+
+            levels		((0.03 3)(0.06 2));
+
+        }
+
+        furniture_Desk1
+        {
+
+            mode		distance;
+
+            levels		((0.03 3)(0.06 2));
+
+        }
+
+        furniture_Tab2_Chair0
+        {
+
+            mode		distance;
+
+            levels		((0.03 3)(0.06 2));
+
+        }
+
+        furniture_Desk2
+        {
+
+            mode		distance;
+
+            levels		((0.03 3)(0.06 2));
+
+        }
+
+        furniture_Tab3_Chair0
+        {
+
+            mode		distance;
+
+            levels		((0.03 3)(0.06 2));
+
+        }
+
+        furniture_Desk3
+        {
+
+            mode		distance;
+
+            levels		((0.03 3)(0.06 2));
+
+        }
+
         person_Person0_FullBody
+        {
+
+            mode		distance;
+
+            levels		((0.05 4)(0.1 3));
+
+        }
+
+        person_Person1_FullBody
+        {
+
+            mode		distance;
+
+            levels		((0.05 4)(0.1 3));
+
+        }
+
+        person_Person2_FullBody
+        {
+
+            mode		distance;
+
+            levels		((0.05 4)(0.1 3));
+
+        }
+
+        person_Person3_FullBody
         {
 
             mode		distance;

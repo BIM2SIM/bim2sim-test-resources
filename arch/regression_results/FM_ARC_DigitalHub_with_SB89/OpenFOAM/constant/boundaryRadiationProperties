@@ -241,7 +241,7 @@ heater1_surface
 
 }
 
-inlet_diffuser
+inlet_0_diffuser
 {
 
     type		lookup;
@@ -254,7 +254,7 @@ inlet_diffuser
 
 }
 
-inlet_source_sink
+inlet_0_source_sink
 {
 
     type		lookup;
@@ -267,7 +267,7 @@ inlet_source_sink
 
 }
 
-inlet_box
+inlet_0_box
 {
 
     type		lookup;
@@ -280,33 +280,7 @@ inlet_box
 
 }
 
-outlet_diffuser
-{
-
-    type		lookup;
-
-    emissivity		0.90;
-
-    absorptivity		0.90;
-
-    transmissivity		0;
-
-}
-
-outlet_source_sink
-{
-
-    type		lookup;
-
-    emissivity		0.90;
-
-    absorptivity		0.90;
-
-    transmissivity		0;
-
-}
-
-outlet_box
+outlet_overflow_0_source_sink
 {
 
     type		lookup;
@@ -345,7 +319,124 @@ furniture_Desk0
 
 }
 
+furniture_Tab1_Chair0
+{
+
+    type		lookup;
+
+    emissivity		0.90;
+
+    absorptivity		0.90;
+
+    transmissivity		0;
+
+}
+
+furniture_Desk1
+{
+
+    type		lookup;
+
+    emissivity		0.90;
+
+    absorptivity		0.90;
+
+    transmissivity		0;
+
+}
+
+furniture_Tab2_Chair0
+{
+
+    type		lookup;
+
+    emissivity		0.90;
+
+    absorptivity		0.90;
+
+    transmissivity		0;
+
+}
+
+furniture_Desk2
+{
+
+    type		lookup;
+
+    emissivity		0.90;
+
+    absorptivity		0.90;
+
+    transmissivity		0;
+
+}
+
+furniture_Tab3_Chair0
+{
+
+    type		lookup;
+
+    emissivity		0.90;
+
+    absorptivity		0.90;
+
+    transmissivity		0;
+
+}
+
+furniture_Desk3
+{
+
+    type		lookup;
+
+    emissivity		0.90;
+
+    absorptivity		0.90;
+
+    transmissivity		0;
+
+}
+
 person_Person0_FullBody
+{
+
+    type		lookup;
+
+    emissivity		0.90;
+
+    absorptivity		0.90;
+
+    transmissivity		0;
+
+}
+
+person_Person1_FullBody
+{
+
+    type		lookup;
+
+    emissivity		0.90;
+
+    absorptivity		0.90;
+
+    transmissivity		0;
+
+}
+
+person_Person2_FullBody
+{
+
+    type		lookup;
+
+    emissivity		0.90;
+
+    absorptivity		0.90;
+
+    transmissivity		0;
+
+}
+
+person_Person3_FullBody
 {
 
     type		lookup;
