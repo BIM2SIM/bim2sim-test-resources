@@ -1,0 +1,216 @@
+/*--------------------------------*- C++ -*----------------------------------*\
+| =========                 |                                                 |
+| \\      /  F ield         | OpenFOAM: The Open Source CFD Toolbox           |
+|  \\    /   O peration     | Version:  v1706+                                |
+|   \\  /    A nd           | Web:      www.OpenFOAM.org                      |
+|    \\/     M anipulation  |                                                 |
+\*---------------------------------------------------------------------------*/
+/* Butterfly 0.0.5                https://github.com/ladybug-tools/butterfly *\
+\*---------------------------------------------------------------------------*/
+FoamFile
+{
+	version		4.0;
+	format		ascii;
+	class		dictionary;
+	location	"constant";
+	object		boundaryRadiationProperties;
+}
+
+dimensions		[0 0 0 0 0 0 0];
+
+internalField		uniform 0;
+
+InnerWall_3S62uZocO66ngdmMaRS2M9
+{
+
+    type		lookup;
+
+    emissivity		0.90;
+
+    absorptivity		0.90;
+
+    transmissivity		0;
+
+}
+
+Ceiling_14TeGe_aGDXLMTt8fX0vQP
+{
+
+    type		lookup;
+
+    emissivity		0.90;
+
+    absorptivity		0.90;
+
+    transmissivity		0;
+
+}
+
+InnerWall_1zvtHpRHFWSVHgO9MXUL0M
+{
+
+    type		lookup;
+
+    emissivity		0.90;
+
+    absorptivity		0.90;
+
+    transmissivity		0;
+
+}
+
+InnerDoor_1aGihCk9trZ___gjiWxX___Jdv
+{
+
+    type		lookup;
+
+    emissivity		0.90;
+
+    absorptivity		0.90;
+
+    transmissivity		0;
+
+}
+
+GroundFloor_2Sn7uAlFxA___POrax5b6wqo
+{
+
+    type		lookup;
+
+    emissivity		0.90;
+
+    absorptivity		0.90;
+
+    transmissivity		0;
+
+}
+
+OuterWall_3XYW9SWB7YBTXnJuv3X___K5
+{
+
+    type		lookup;
+
+    emissivity		0.90;
+
+    absorptivity		0.90;
+
+    transmissivity		0;
+
+}
+
+OuterWall_3XTF9VnRG___5_FyP6rRZVuw
+{
+
+    type		lookup;
+
+    emissivity		0.90;
+
+    absorptivity		0.90;
+
+    transmissivity		0;
+
+}
+
+Window_2CVWUzpEdesdJARzpmJYC8
+{
+
+    type		lookup;
+
+    emissivity		0.90;
+
+    absorptivity		0.90;
+
+    transmissivity		0;
+
+}
+
+Window_2NviMh_1vArANYae7v_22c
+{
+
+    type		lookup;
+
+    emissivity		0.90;
+
+    absorptivity		0.90;
+
+    transmissivity		0;
+
+}
+
+heater0_surface
+{
+
+    type		lookup;
+
+    emissivity		0.90;
+
+    absorptivity		0.90;
+
+    transmissivity		0;
+
+}
+
+inlet_diffuser
+{
+
+    type		lookup;
+
+    emissivity		0.90;
+
+    absorptivity		0.90;
+
+    transmissivity		0;
+
+}
+
+inlet_source_sink
+{
+
+    type		lookup;
+
+    emissivity		0.90;
+
+    absorptivity		0.90;
+
+    transmissivity		0;
+
+}
+
+outlet_diffuser
+{
+
+    type		lookup;
+
+    emissivity		0.90;
+
+    absorptivity		0.90;
+
+    transmissivity		0;
+
+}
+
+outlet_source_sink
+{
+
+    type		lookup;
+
+    emissivity		0.90;
+
+    absorptivity		0.90;
+
+    transmissivity		0;
+
+}
+
+boundingbox
+{
+
+    type		lookup;
+
+    emissivity		0.90;
+
+    absorptivity		0.90;
+
+    transmissivity		0;
+
+}

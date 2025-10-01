@@ -1,0 +1,332 @@
+/*--------------------------------*- C++ -*----------------------------------*\
+| =========                 |                                                 |
+| \\      /  F ield         | OpenFOAM: The Open Source CFD Toolbox           |
+|  \\    /   O peration     | Version:  v1706+                                |
+|   \\  /    A nd           | Web:      www.OpenFOAM.org                      |
+|    \\/     M anipulation  |                                                 |
+\*---------------------------------------------------------------------------*/
+/* Butterfly 0.0.5                https://github.com/ladybug-tools/butterfly *\
+\*---------------------------------------------------------------------------*/
+FoamFile
+{
+	version		4.0;
+	format		ascii;
+	class		volScalarField;
+	location	"0";
+	object		p;
+}
+
+dimensions		[1 -1 -2 0 0 0 0];
+
+internalField		uniform 101325;
+
+boundaryField
+{
+
+    InnerFloor_3YmTTmFtbDPRDphiCy399_
+    {
+
+        type		calculated;
+
+        value		uniform 101325;
+
+    }
+
+    InnerFloor_14KVjb4bn2zOxEfCwOWKb_
+    {
+
+        type		calculated;
+
+        value		uniform 101325;
+
+    }
+
+    InnerWall_0EYBE3lWP5OQPgfymh45fT
+    {
+
+        type		calculated;
+
+        value		uniform 101325;
+
+    }
+
+    InnerWall_10NUX___CcjBcRRxCQJh2Suf
+    {
+
+        type		calculated;
+
+        value		uniform 101325;
+
+    }
+
+    Roof_174xOdW7H4iw488r9lVn33
+    {
+
+        type		calculated;
+
+        value		uniform 101325;
+
+    }
+
+    InnerDoor_0aGOY_OOT9fva8zh0hPM___t
+    {
+
+        type		calculated;
+
+        value		uniform 101325;
+
+    }
+
+    InnerWall_1r3PHt9bbCOPWBJytLgNNf
+    {
+
+        type		calculated;
+
+        value		uniform 101325;
+
+    }
+
+    InnerWall_0poZkiU6nAzQsz___5j1tEEO
+    {
+
+        type		calculated;
+
+        value		uniform 101325;
+
+    }
+
+    InnerWall_18dtnPzhbDfA93nuFIFIQD
+    {
+
+        type		calculated;
+
+        value		uniform 101325;
+
+    }
+
+    OuterWall_3eJjh1rC9D6u9xQvTJvVV1
+    {
+
+        type		calculated;
+
+        value		uniform 101325;
+
+    }
+
+    OuterWall_1Rq56ElXP9mOLKW7Xhapuj
+    {
+
+        type		calculated;
+
+        value		uniform 101325;
+
+    }
+
+    Window_3YwbLt4uL17hwYjrGkpnG2
+    {
+
+        type		calculated;
+
+        value		uniform 101325;
+
+    }
+
+    OuterWall_1T2XvptoT41wqhpFAnaD97
+    {
+
+        type		calculated;
+
+        value		uniform 101325;
+
+    }
+
+    OuterWall_0An_qycgfB5RACnBVc2erc
+    {
+
+        type		calculated;
+
+        value		uniform 101325;
+
+    }
+
+    Window_3tw6evsPf4cOKvenfxmdSF
+    {
+
+        type		calculated;
+
+        value		uniform 101325;
+
+    }
+
+    heater0_surface
+    {
+
+        type		calculated;
+
+        value		uniform 101325;
+
+    }
+
+    heater1_surface
+    {
+
+        type		calculated;
+
+        value		uniform 101325;
+
+    }
+
+    inlet_0_diffuser
+    {
+
+        type		calculated;
+
+        value		uniform 101325;
+
+    }
+
+    inlet_0_source_sink
+    {
+
+        type		calculated;
+
+        value		uniform 101325;
+
+    }
+
+    inlet_0_box
+    {
+
+        type		calculated;
+
+        value		uniform 101325;
+
+    }
+
+    outlet_overflow_0_source_sink
+    {
+
+        type		calculated;
+
+        value		uniform 101325;
+
+    }
+
+    furniture_Tab0_Chair0
+    {
+
+        type		calculated;
+
+        value		uniform 101325;
+
+    }
+
+    furniture_Desk0
+    {
+
+        type		calculated;
+
+        value		uniform 101325;
+
+    }
+
+    furniture_Tab1_Chair0
+    {
+
+        type		calculated;
+
+        value		uniform 101325;
+
+    }
+
+    furniture_Desk1
+    {
+
+        type		calculated;
+
+        value		uniform 101325;
+
+    }
+
+    furniture_Tab2_Chair0
+    {
+
+        type		calculated;
+
+        value		uniform 101325;
+
+    }
+
+    furniture_Desk2
+    {
+
+        type		calculated;
+
+        value		uniform 101325;
+
+    }
+
+    furniture_Tab3_Chair0
+    {
+
+        type		calculated;
+
+        value		uniform 101325;
+
+    }
+
+    furniture_Desk3
+    {
+
+        type		calculated;
+
+        value		uniform 101325;
+
+    }
+
+    person_Person0_FullBody
+    {
+
+        type		calculated;
+
+        value		uniform 101325;
+
+    }
+
+    person_Person1_FullBody
+    {
+
+        type		calculated;
+
+        value		uniform 101325;
+
+    }
+
+    person_Person2_FullBody
+    {
+
+        type		calculated;
+
+        value		uniform 101325;
+
+    }
+
+    person_Person3_FullBody
+    {
+
+        type		calculated;
+
+        value		uniform 101325;
+
+    }
+
+    boundingbox
+    {
+
+        type		calculated;
+
+        value		uniform 101325;
+
+    }
+
+}

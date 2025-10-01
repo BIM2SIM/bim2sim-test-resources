@@ -1,0 +1,270 @@
+/*--------------------------------*- C++ -*----------------------------------*\
+| =========                 |                                                 |
+| \\      /  F ield         | OpenFOAM: The Open Source CFD Toolbox           |
+|  \\    /   O peration     | Version:  v1706+                                |
+|   \\  /    A nd           | Web:      www.OpenFOAM.org                      |
+|    \\/     M anipulation  |                                                 |
+\*---------------------------------------------------------------------------*/
+/* Butterfly 0.0.5                https://github.com/ladybug-tools/butterfly *\
+\*---------------------------------------------------------------------------*/
+FoamFile
+{
+	version		4.0;
+	format		ascii;
+	class		volScalarField;
+	location	"0";
+	object		AoA;
+}
+
+dimensions		[0 0 0 1 0 0 0];
+
+internalField		uniform 0;
+
+boundaryField
+{
+
+    InnerFloor_3YmTTmFtbDPRDphiCy399_
+    {
+
+        type		zeroGradient;
+
+    }
+
+    InnerFloor_14KVjb4bn2zOxEfCwOWKb_
+    {
+
+        type		zeroGradient;
+
+    }
+
+    InnerWall_0EYBE3lWP5OQPgfymh45fT
+    {
+
+        type		zeroGradient;
+
+    }
+
+    InnerWall_10NUX___CcjBcRRxCQJh2Suf
+    {
+
+        type		zeroGradient;
+
+    }
+
+    Roof_174xOdW7H4iw488r9lVn33
+    {
+
+        type		zeroGradient;
+
+    }
+
+    InnerDoor_0aGOY_OOT9fva8zh0hPM___t
+    {
+
+        type		zeroGradient;
+
+    }
+
+    InnerWall_1r3PHt9bbCOPWBJytLgNNf
+    {
+
+        type		zeroGradient;
+
+    }
+
+    InnerWall_0poZkiU6nAzQsz___5j1tEEO
+    {
+
+        type		zeroGradient;
+
+    }
+
+    InnerWall_18dtnPzhbDfA93nuFIFIQD
+    {
+
+        type		zeroGradient;
+
+    }
+
+    OuterWall_3eJjh1rC9D6u9xQvTJvVV1
+    {
+
+        type		zeroGradient;
+
+    }
+
+    OuterWall_1Rq56ElXP9mOLKW7Xhapuj
+    {
+
+        type		zeroGradient;
+
+    }
+
+    Window_3YwbLt4uL17hwYjrGkpnG2
+    {
+
+        type		zeroGradient;
+
+    }
+
+    OuterWall_1T2XvptoT41wqhpFAnaD97
+    {
+
+        type		zeroGradient;
+
+    }
+
+    OuterWall_0An_qycgfB5RACnBVc2erc
+    {
+
+        type		zeroGradient;
+
+    }
+
+    Window_3tw6evsPf4cOKvenfxmdSF
+    {
+
+        type		zeroGradient;
+
+    }
+
+    heater0_surface
+    {
+
+        type		zeroGradient;
+
+    }
+
+    heater1_surface
+    {
+
+        type		zeroGradient;
+
+    }
+
+    inlet_0_diffuser
+    {
+
+        type		zeroGradient;
+
+    }
+
+    inlet_0_source_sink
+    {
+
+        type		fixedValue;
+
+        value		uniform 0;
+
+    }
+
+    inlet_0_box
+    {
+
+        type		zeroGradient;
+
+    }
+
+    outlet_overflow_0_source_sink
+    {
+
+        type		inletOutlet;
+
+        inletValue		uniform 0;
+
+        value		uniform 0;
+
+    }
+
+    furniture_Tab0_Chair0
+    {
+
+        type		zeroGradient;
+
+    }
+
+    furniture_Desk0
+    {
+
+        type		zeroGradient;
+
+    }
+
+    furniture_Tab1_Chair0
+    {
+
+        type		zeroGradient;
+
+    }
+
+    furniture_Desk1
+    {
+
+        type		zeroGradient;
+
+    }
+
+    furniture_Tab2_Chair0
+    {
+
+        type		zeroGradient;
+
+    }
+
+    furniture_Desk2
+    {
+
+        type		zeroGradient;
+
+    }
+
+    furniture_Tab3_Chair0
+    {
+
+        type		zeroGradient;
+
+    }
+
+    furniture_Desk3
+    {
+
+        type		zeroGradient;
+
+    }
+
+    person_Person0_FullBody
+    {
+
+        type		zeroGradient;
+
+    }
+
+    person_Person1_FullBody
+    {
+
+        type		zeroGradient;
+
+    }
+
+    person_Person2_FullBody
+    {
+
+        type		zeroGradient;
+
+    }
+
+    person_Person3_FullBody
+    {
+
+        type		zeroGradient;
+
+    }
+
+    boundingbox
+    {
+
+        type		zeroGradient;
+
+    }
+
+}

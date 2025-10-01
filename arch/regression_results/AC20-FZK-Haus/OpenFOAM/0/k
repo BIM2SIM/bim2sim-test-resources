@@ -1,0 +1,165 @@
+/*--------------------------------*- C++ -*----------------------------------*\
+| =========                 |                                                 |
+| \\      /  F ield         | OpenFOAM: The Open Source CFD Toolbox           |
+|  \\    /   O peration     | Version:  v1706+                                |
+|   \\  /    A nd           | Web:      www.OpenFOAM.org                      |
+|    \\/     M anipulation  |                                                 |
+\*---------------------------------------------------------------------------*/
+/* Butterfly 0.0.5                https://github.com/ladybug-tools/butterfly *\
+\*---------------------------------------------------------------------------*/
+FoamFile
+{
+	version		4.0;
+	format		ascii;
+	class		volScalarField;
+	location	"0";
+	object		k;
+}
+
+dimensions		[0 2 -2 0 0 0 0];
+
+internalField		uniform 0.1;
+
+boundaryField
+{
+
+    InnerWall_3S62uZocO66ngdmMaRS2M9
+    {
+
+        type		kqRWallFunction;
+
+        value		uniform 0.1;
+
+    }
+
+    Ceiling_14TeGe_aGDXLMTt8fX0vQP
+    {
+
+        type		kqRWallFunction;
+
+        value		uniform 0.1;
+
+    }
+
+    InnerWall_1zvtHpRHFWSVHgO9MXUL0M
+    {
+
+        type		kqRWallFunction;
+
+        value		uniform 0.1;
+
+    }
+
+    InnerDoor_1aGihCk9trZ___gjiWxX___Jdv
+    {
+
+        type		kqRWallFunction;
+
+        value		uniform 0.1;
+
+    }
+
+    GroundFloor_2Sn7uAlFxA___POrax5b6wqo
+    {
+
+        type		kqRWallFunction;
+
+        value		uniform 0.1;
+
+    }
+
+    OuterWall_3XYW9SWB7YBTXnJuv3X___K5
+    {
+
+        type		kqRWallFunction;
+
+        value		uniform 0.1;
+
+    }
+
+    OuterWall_3XTF9VnRG___5_FyP6rRZVuw
+    {
+
+        type		kqRWallFunction;
+
+        value		uniform 0.1;
+
+    }
+
+    Window_2CVWUzpEdesdJARzpmJYC8
+    {
+
+        type		kqRWallFunction;
+
+        value		uniform 0.1;
+
+    }
+
+    Window_2NviMh_1vArANYae7v_22c
+    {
+
+        type		kqRWallFunction;
+
+        value		uniform 0.1;
+
+    }
+
+    heater0_surface
+    {
+
+        type		kqRWallFunction;
+
+        value		uniform 0.1;
+
+    }
+
+    inlet_diffuser
+    {
+
+        type		kqRWallFunction;
+
+        value		uniform 0.1;
+
+    }
+
+    inlet_source_sink
+    {
+
+        type		turbulentIntensityKineticEnergyInlet;
+
+        intensity		0.02;
+
+        value		uniform 1;
+
+    }
+
+    outlet_diffuser
+    {
+
+        type		kqRWallFunction;
+
+        value		uniform 0.1;
+
+    }
+
+    outlet_source_sink
+    {
+
+        type		inletOutlet;
+
+        inletValue		uniform 0.1;
+
+        value		uniform 0.1;
+
+    }
+
+    boundingbox
+    {
+
+        type		kqRWallFunction;
+
+        value		uniform 0.1;
+
+    }
+
+}

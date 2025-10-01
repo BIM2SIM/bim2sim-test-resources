@@ -1,0 +1,86 @@
+solid heater0_porous_media
+facet normal -0.741200 0.000000 0.000000
+  outer loop
+    vertex 69.765953 8.217534 4.600000
+    vertex 69.765953 9.307534 3.920000
+    vertex 69.765953 8.217534 3.920000
+  endloop
+endfacet
+facet normal -0.741200 0.000000 0.000000
+  outer loop
+    vertex 69.765953 8.217534 4.600000
+    vertex 69.765953 9.307534 4.600000
+    vertex 69.765953 9.307534 3.920000
+  endloop
+endfacet
+facet normal 0.741200 0.000000 0.000000
+  outer loop
+    vertex 69.825951 8.217534 4.600000
+    vertex 69.825951 8.217534 3.920000
+    vertex 69.825951 9.307534 3.920000
+  endloop
+endfacet
+facet normal 0.741200 -0.000000 0.000000
+  outer loop
+    vertex 69.825951 8.217534 4.600000
+    vertex 69.825951 9.307534 3.920000
+    vertex 69.825951 9.307534 4.600000
+  endloop
+endfacet
+facet normal 0.000000 -0.040798 -0.000000
+  outer loop
+    vertex 69.825951 8.217534 4.600000
+    vertex 69.765953 8.217534 3.920000
+    vertex 69.825951 8.217534 3.920000
+  endloop
+endfacet
+facet normal -0.000000 -0.040798 0.000000
+  outer loop
+    vertex 69.825951 8.217534 4.600000
+    vertex 69.765953 8.217534 4.600000
+    vertex 69.765953 8.217534 3.920000
+  endloop
+endfacet
+facet normal 0.000000 0.040798 0.000000
+  outer loop
+    vertex 69.825951 9.307534 4.600000
+    vertex 69.825951 9.307534 3.920000
+    vertex 69.765953 9.307534 3.920000
+  endloop
+endfacet
+facet normal 0.000000 0.040798 0.000000
+  outer loop
+    vertex 69.825951 9.307534 4.600000
+    vertex 69.765953 9.307534 3.920000
+    vertex 69.765953 9.307534 4.600000
+  endloop
+endfacet
+facet normal -0.000000 0.000000 -0.065397
+  outer loop
+    vertex 69.825951 9.307534 3.920000
+    vertex 69.765953 8.217534 3.920000
+    vertex 69.765953 9.307534 3.920000
+  endloop
+endfacet
+facet normal 0.000000 -0.000000 -0.065397
+  outer loop
+    vertex 69.825951 9.307534 3.920000
+    vertex 69.825951 8.217534 3.920000
+    vertex 69.765953 8.217534 3.920000
+  endloop
+endfacet
+facet normal 0.000000 0.000000 0.065397
+  outer loop
+    vertex 69.825951 9.307534 4.600000
+    vertex 69.765953 9.307534 4.600000
+    vertex 69.765953 8.217534 4.600000
+  endloop
+endfacet
+facet normal 0.000000 0.000000 0.065397
+  outer loop
+    vertex 69.825951 9.307534 4.600000
+    vertex 69.765953 8.217534 4.600000
+    vertex 69.825951 8.217534 4.600000
+  endloop
+endfacet
+endsolid heater0_porous_media

@@ -1,0 +1,338 @@
+/*--------------------------------*- C++ -*----------------------------------*\
+| =========                 |                                                 |
+| \\      /  F ield         | OpenFOAM: The Open Source CFD Toolbox           |
+|  \\    /   O peration     | Version:  v1706+                                |
+|   \\  /    A nd           | Web:      www.OpenFOAM.org                      |
+|    \\/     M anipulation  |                                                 |
+\*---------------------------------------------------------------------------*/
+/* Butterfly 0.0.5                https://github.com/ladybug-tools/butterfly *\
+\*---------------------------------------------------------------------------*/
+FoamFile
+{
+	version		4.0;
+	format		ascii;
+	class		volVectorField;
+	location	"0";
+	object		U;
+}
+
+dimensions		[0 1 -1 0 0 0 0];
+
+internalField		uniform (0 0 0);
+
+boundaryField
+{
+
+    InnerFloor_3YmTTmFtbDPRDphiCy399_
+    {
+
+        type		fixedValue;
+
+        value		uniform (0.000 0.000 0.000);
+
+    }
+
+    InnerFloor_14KVjb4bn2zOxEfCwOWKb_
+    {
+
+        type		fixedValue;
+
+        value		uniform (0.000 0.000 0.000);
+
+    }
+
+    InnerWall_0EYBE3lWP5OQPgfymh45fT
+    {
+
+        type		fixedValue;
+
+        value		uniform (0.000 0.000 0.000);
+
+    }
+
+    InnerWall_10NUX___CcjBcRRxCQJh2Suf
+    {
+
+        type		fixedValue;
+
+        value		uniform (0.000 0.000 0.000);
+
+    }
+
+    Roof_174xOdW7H4iw488r9lVn33
+    {
+
+        type		fixedValue;
+
+        value		uniform (0.000 0.000 0.000);
+
+    }
+
+    InnerDoor_0aGOY_OOT9fva8zh0hPM___t
+    {
+
+        type		fixedValue;
+
+        value		uniform (0.000 0.000 0.000);
+
+    }
+
+    InnerWall_1r3PHt9bbCOPWBJytLgNNf
+    {
+
+        type		fixedValue;
+
+        value		uniform (0.000 0.000 0.000);
+
+    }
+
+    InnerWall_0poZkiU6nAzQsz___5j1tEEO
+    {
+
+        type		fixedValue;
+
+        value		uniform (0.000 0.000 0.000);
+
+    }
+
+    InnerWall_18dtnPzhbDfA93nuFIFIQD
+    {
+
+        type		fixedValue;
+
+        value		uniform (0.000 0.000 0.000);
+
+    }
+
+    OuterWall_3eJjh1rC9D6u9xQvTJvVV1
+    {
+
+        type		fixedValue;
+
+        value		uniform (0.000 0.000 0.000);
+
+    }
+
+    OuterWall_1Rq56ElXP9mOLKW7Xhapuj
+    {
+
+        type		fixedValue;
+
+        value		uniform (0.000 0.000 0.000);
+
+    }
+
+    Window_3YwbLt4uL17hwYjrGkpnG2
+    {
+
+        type		fixedValue;
+
+        value		uniform (0.000 0.000 0.000);
+
+    }
+
+    OuterWall_1T2XvptoT41wqhpFAnaD97
+    {
+
+        type		fixedValue;
+
+        value		uniform (0.000 0.000 0.000);
+
+    }
+
+    OuterWall_0An_qycgfB5RACnBVc2erc
+    {
+
+        type		fixedValue;
+
+        value		uniform (0.000 0.000 0.000);
+
+    }
+
+    Window_3tw6evsPf4cOKvenfxmdSF
+    {
+
+        type		fixedValue;
+
+        value		uniform (0.000 0.000 0.000);
+
+    }
+
+    heater0_surface
+    {
+
+        type		fixedValue;
+
+        value		uniform (0.000 0.000 0.000);
+
+    }
+
+    heater1_surface
+    {
+
+        type		fixedValue;
+
+        value		uniform (0.000 0.000 0.000);
+
+    }
+
+    inlet_0_diffuser
+    {
+
+        type		fixedValue;
+
+        value		uniform (0.000 0.000 0.000);
+
+    }
+
+    inlet_0_source_sink
+    {
+
+        type		flowRateInletVelocity;
+
+        flowRate		volumetricFlowRate;
+
+        volumetricFlowRate		constant 0.10296;
+
+        value		uniform (0.000 0.000 0.000);
+
+    }
+
+    inlet_0_box
+    {
+
+        type		fixedValue;
+
+        value		uniform (0.000 0.000 0.000);
+
+    }
+
+    outlet_overflow_0_source_sink
+    {
+
+        type		inletOutlet;
+
+        inletValue		uniform (0.000 0.000 0.000);
+
+        value		uniform (0.000 0.000 0.000);
+
+    }
+
+    furniture_Tab0_Chair0
+    {
+
+        type		fixedValue;
+
+        value		uniform (0.000 0.000 0.000);
+
+    }
+
+    furniture_Desk0
+    {
+
+        type		fixedValue;
+
+        value		uniform (0.000 0.000 0.000);
+
+    }
+
+    furniture_Tab1_Chair0
+    {
+
+        type		fixedValue;
+
+        value		uniform (0.000 0.000 0.000);
+
+    }
+
+    furniture_Desk1
+    {
+
+        type		fixedValue;
+
+        value		uniform (0.000 0.000 0.000);
+
+    }
+
+    furniture_Tab2_Chair0
+    {
+
+        type		fixedValue;
+
+        value		uniform (0.000 0.000 0.000);
+
+    }
+
+    furniture_Desk2
+    {
+
+        type		fixedValue;
+
+        value		uniform (0.000 0.000 0.000);
+
+    }
+
+    furniture_Tab3_Chair0
+    {
+
+        type		fixedValue;
+
+        value		uniform (0.000 0.000 0.000);
+
+    }
+
+    furniture_Desk3
+    {
+
+        type		fixedValue;
+
+        value		uniform (0.000 0.000 0.000);
+
+    }
+
+    person_Person0_FullBody
+    {
+
+        type		fixedValue;
+
+        value		uniform (0.000 0.000 0.000);
+
+    }
+
+    person_Person1_FullBody
+    {
+
+        type		fixedValue;
+
+        value		uniform (0.000 0.000 0.000);
+
+    }
+
+    person_Person2_FullBody
+    {
+
+        type		fixedValue;
+
+        value		uniform (0.000 0.000 0.000);
+
+    }
+
+    person_Person3_FullBody
+    {
+
+        type		fixedValue;
+
+        value		uniform (0.000 0.000 0.000);
+
+    }
+
+    boundingbox
+    {
+
+        type		fixedValue;
+
+        value		uniform (0.000 0.000 0.000);
+
+    }
+
+}

@@ -1,0 +1,89 @@
+/*--------------------------------*- C++ -*----------------------------------*\
+| =========                 |                                                 |
+| \\      /  F ield         | OpenFOAM: The Open Source CFD Toolbox           |
+|  \\    /   O peration     | Version:  v1706+                                |
+|   \\  /    A nd           | Web:      www.OpenFOAM.org                      |
+|    \\/     M anipulation  |                                                 |
+\*---------------------------------------------------------------------------*/
+/* Butterfly 0.0.5                https://github.com/ladybug-tools/butterfly *\
+\*---------------------------------------------------------------------------*/
+FoamFile
+{
+	version		4.0;
+	format		ascii;
+	class		dictionary;
+	location	"system";
+	object		topoSetDict;
+}
+
+actions (		//;
+
+//heater0
+{
+
+    name		heater0_porous_media;
+
+    action		new;
+
+    type		cellSet;
+
+    source		surfaceToCell;
+
+    sourceInfo
+    {
+
+        file		"constant/triSurface/heater0_porous_media.stl";
+
+        useSurfaceOrientation		true;
+
+        outsidePoints		((0 0 0));
+
+        includeCut		false;
+
+        includeInside		true;
+
+        includeOutside		false;
+
+        nearDistance		-1;
+
+        curvature		0;
+
+    }
+
+}
+
+//heater1
+{
+
+    name		heater1_porous_media;
+
+    action		new;
+
+    type		cellSet;
+
+    source		surfaceToCell;
+
+    sourceInfo
+    {
+
+        file		"constant/triSurface/heater1_porous_media.stl";
+
+        useSurfaceOrientation		true;
+
+        outsidePoints		((0 0 0));
+
+        includeCut		false;
+
+        includeInside		true;
+
+        includeOutside		false;
+
+        nearDistance		-1;
+
+        curvature		0;
+
+    }
+
+}
+
+);		//;

@@ -1,0 +1,352 @@
+solid InnerFloor_3YmTTmFtbDPRDphiCy399_
+facet normal 0.000000 0.000000 -0.337021
+  outer loop
+    vertex 63.063801 7.125019 3.900000
+    vertex 63.125050 12.627520 3.900000
+    vertex 63.125050 7.125019 3.900000
+  endloop
+endfacet
+facet normal 0.000000 0.000000 -0.337021
+  outer loop
+    vertex 63.063801 7.125019 3.900000
+    vertex 63.063801 12.627520 3.900000
+    vertex 63.125050 12.627520 3.900000
+  endloop
+endfacet
+endsolid InnerFloor_3YmTTmFtbDPRDphiCy399_
+solid InnerFloor_14KVjb4bn2zOxEfCwOWKb_
+facet normal -0.000000 0.000000 -37.141899
+  outer loop
+    vertex 69.875053 12.627520 3.900000
+    vertex 63.125050 7.125019 3.900000
+    vertex 63.125050 12.627520 3.900000
+  endloop
+endfacet
+facet normal 0.000000 -0.000000 -37.141899
+  outer loop
+    vertex 69.875053 12.627520 3.900000
+    vertex 69.875053 7.125019 3.900000
+    vertex 63.125050 7.125019 3.900000
+  endloop
+endfacet
+endsolid InnerFloor_14KVjb4bn2zOxEfCwOWKb_
+solid InnerWall_0EYBE3lWP5OQPgfymh45fT
+facet normal 0.000000 -0.476873 -0.000000
+  outer loop
+    vertex 63.200050 7.125019 7.400000
+    vertex 63.063801 7.125019 3.900000
+    vertex 63.200050 7.125019 3.900000
+  endloop
+endfacet
+facet normal -0.000000 -0.476873 0.000000
+  outer loop
+    vertex 63.200050 7.125019 7.400000
+    vertex 63.063801 7.125019 7.400000
+    vertex 63.063801 7.125019 3.900000
+  endloop
+endfacet
+endsolid InnerWall_0EYBE3lWP5OQPgfymh45fT
+solid InnerWall_10NUX___CcjBcRRxCQJh2Suf
+facet normal -19.258751 0.000000 0.000000
+  outer loop
+    vertex 63.063801 12.627520 3.900000
+    vertex 63.063801 7.125019 7.400000
+    vertex 63.063801 12.627520 7.400000
+  endloop
+endfacet
+facet normal -19.258751 0.000000 0.000000
+  outer loop
+    vertex 63.063801 12.627520 3.900000
+    vertex 63.063801 7.125019 3.900000
+    vertex 63.063801 7.125019 7.400000
+  endloop
+endfacet
+endsolid InnerWall_10NUX___CcjBcRRxCQJh2Suf
+solid Roof_174xOdW7H4iw488r9lVn33
+facet normal 0.000000 0.000000 37.478920
+  outer loop
+    vertex 69.875053 12.627520 7.400000
+    vertex 63.063801 7.125019 7.400000
+    vertex 69.875053 7.125019 7.400000
+  endloop
+endfacet
+facet normal 0.000000 0.000000 37.478920
+  outer loop
+    vertex 69.875053 12.627520 7.400000
+    vertex 63.063801 12.627520 7.400000
+    vertex 63.063801 7.125019 7.400000
+  endloop
+endfacet
+endsolid Roof_174xOdW7H4iw488r9lVn33
+solid InnerDoor_0aGOY_OOT9fva8zh0hPM___t
+facet normal 0.000000 2.207250 0.000000
+  outer loop
+    vertex 63.163799 12.627520 5.945000
+    vertex 64.253799 12.627520 3.920000
+    vertex 63.163799 12.627520 3.920000
+  endloop
+endfacet
+facet normal 0.000000 2.207250 0.000000
+  outer loop
+    vertex 64.253799 12.627520 5.945000
+    vertex 64.253799 12.627520 3.920000
+    vertex 63.163799 12.627520 5.945000
+  endloop
+endfacet
+endsolid InnerDoor_0aGOY_OOT9fva8zh0hPM___t
+solid InnerWall_1r3PHt9bbCOPWBJytLgNNf
+facet normal 0.000000 0.524979 0.000000
+  outer loop
+    vertex 64.475037 12.627520 7.400000
+    vertex 64.325043 12.627520 3.900000
+    vertex 64.325043 12.627520 7.400000
+  endloop
+endfacet
+facet normal 0.000000 0.524979 0.000000
+  outer loop
+    vertex 64.475037 12.627520 7.400000
+    vertex 64.475037 12.627520 3.900000
+    vertex 64.325043 12.627520 3.900000
+  endloop
+endfacet
+endsolid InnerWall_1r3PHt9bbCOPWBJytLgNNf
+solid InnerWall_0poZkiU6nAzQsz___5j1tEEO
+facet normal 0.000000 0.204497 0.000000
+  outer loop
+    vertex 63.163799 12.627520 5.945000
+    vertex 63.163799 12.627520 3.900000
+    vertex 63.063801 12.627520 3.900000
+  endloop
+endfacet
+facet normal 0.000000 0.145693 0.000000
+  outer loop
+    vertex 64.253799 12.627520 5.945000
+    vertex 64.325043 12.627520 3.900000
+    vertex 64.253799 12.627520 3.900000
+  endloop
+endfacet
+facet normal 0.000000 0.349995 0.000000
+  outer loop
+    vertex 63.063801 12.627520 7.400000
+    vertex 63.163799 12.627520 5.945000
+    vertex 63.063801 12.627520 3.900000
+  endloop
+endfacet
+facet normal 0.000000 1.585950 0.000000
+  outer loop
+    vertex 64.325043 12.627520 7.400000
+    vertex 64.253799 12.627520 5.945000
+    vertex 63.163799 12.627520 5.945000
+  endloop
+endfacet
+facet normal 0.000000 1.835107 0.000000
+  outer loop
+    vertex 64.325043 12.627520 7.400000
+    vertex 63.163799 12.627520 5.945000
+    vertex 63.063801 12.627520 7.400000
+  endloop
+endfacet
+facet normal 0.000000 0.249352 0.000000
+  outer loop
+    vertex 64.325043 12.627520 7.400000
+    vertex 64.325043 12.627520 3.900000
+    vertex 64.253799 12.627520 5.945000
+  endloop
+endfacet
+endsolid InnerWall_0poZkiU6nAzQsz___5j1tEEO
+solid InnerWall_18dtnPzhbDfA93nuFIFIQD
+facet normal 0.000000 18.900059 0.000000
+  outer loop
+    vertex 69.875053 12.627520 7.400000
+    vertex 64.475037 12.627520 3.900000
+    vertex 64.475037 12.627520 7.400000
+  endloop
+endfacet
+facet normal 0.000000 18.900059 0.000000
+  outer loop
+    vertex 69.875053 12.627520 7.400000
+    vertex 69.875053 12.627520 3.900000
+    vertex 64.475037 12.627520 3.900000
+  endloop
+endfacet
+endsolid InnerWall_18dtnPzhbDfA93nuFIFIQD
+solid OuterWall_3eJjh1rC9D6u9xQvTJvVV1
+facet normal 0.000000 -0.478497 -0.000000
+  outer loop
+    vertex 63.530048 7.125019 6.169999
+    vertex 63.200050 7.125019 3.900000
+    vertex 63.530048 7.125019 4.720000
+  endloop
+endfacet
+facet normal 0.000000 -1.154993 0.000000
+  outer loop
+    vertex 63.200050 7.125019 7.400000
+    vertex 63.200050 7.125019 3.900000
+    vertex 63.530048 7.125019 6.169999
+  endloop
+endfacet
+facet normal 0.000000 -5.473501 -0.000000
+  outer loop
+    vertex 69.470047 7.125019 4.720000
+    vertex 63.200050 7.125019 3.900000
+    vertex 69.875053 7.125019 3.900000
+  endloop
+endfacet
+facet normal -0.000000 -4.870797 0.000000
+  outer loop
+    vertex 69.470047 7.125019 4.720000
+    vertex 63.530048 7.125019 4.720000
+    vertex 63.200050 7.125019 3.900000
+  endloop
+endfacet
+facet normal 0.000000 -7.306204 0.000000
+  outer loop
+    vertex 69.470047 7.125019 6.169999
+    vertex 63.200050 7.125019 7.400000
+    vertex 63.530048 7.125019 6.169999
+  endloop
+endfacet
+facet normal 0.000000 -0.587259 0.000000
+  outer loop
+    vertex 69.470047 7.125019 6.169999
+    vertex 69.470047 7.125019 4.720000
+    vertex 69.875053 7.125019 3.900000
+  endloop
+endfacet
+facet normal 0.000000 -1.417522 -0.000000
+  outer loop
+    vertex 69.875053 7.125019 7.400000
+    vertex 69.470047 7.125019 6.169999
+    vertex 69.875053 7.125019 3.900000
+  endloop
+endfacet
+facet normal -0.000000 -8.210260 0.000000
+  outer loop
+    vertex 69.875053 7.125019 7.400000
+    vertex 63.200050 7.125019 7.400000
+    vertex 69.470047 7.125019 6.169999
+  endloop
+endfacet
+endsolid OuterWall_3eJjh1rC9D6u9xQvTJvVV1
+solid OuterWall_1Rq56ElXP9mOLKW7Xhapuj
+facet normal 0.000000 -0.058705 0.000000
+  outer loop
+    vertex 69.470047 7.125019 4.710117
+    vertex 69.470047 7.125019 4.720000
+    vertex 63.530048 7.125019 4.720000
+  endloop
+endfacet
+facet normal 0.000000 -0.058705 0.000000
+  outer loop
+    vertex 69.470047 7.125019 4.710117
+    vertex 63.530048 7.125019 4.720000
+    vertex 63.530048 7.125019 4.710117
+  endloop
+endfacet
+endsolid OuterWall_1Rq56ElXP9mOLKW7Xhapuj
+solid Window_3YwbLt4uL17hwYjrGkpnG2
+facet normal 0.000000 -8.612994 -0.000000
+  outer loop
+    vertex 69.470047 7.125019 6.169999
+    vertex 63.530048 7.125019 4.720000
+    vertex 69.470047 7.125019 4.720000
+  endloop
+endfacet
+facet normal -0.000000 -8.612994 0.000000
+  outer loop
+    vertex 69.470047 7.125019 6.169999
+    vertex 63.530048 7.125019 6.169999
+    vertex 63.530048 7.125019 4.720000
+  endloop
+endfacet
+endsolid Window_3YwbLt4uL17hwYjrGkpnG2
+solid OuterWall_1T2XvptoT41wqhpFAnaD97
+facet normal 0.587248 0.000000 0.000000
+  outer loop
+    vertex 69.875053 7.530018 6.170000
+    vertex 69.875053 7.125019 3.900000
+    vertex 69.875053 7.530018 4.720000
+  endloop
+endfacet
+facet normal 1.417496 0.000000 0.000000
+  outer loop
+    vertex 69.875053 7.125019 7.400000
+    vertex 69.875053 7.125019 3.900000
+    vertex 69.875053 7.530018 6.170000
+  endloop
+endfacet
+facet normal 3.230801 0.000000 0.000000
+  outer loop
+    vertex 69.875053 11.470020 4.720000
+    vertex 69.875053 7.530018 4.720000
+    vertex 69.875053 7.125019 3.900000
+  endloop
+endfacet
+facet normal 4.512049 0.000000 0.000000
+  outer loop
+    vertex 69.875053 12.627520 3.900000
+    vertex 69.875053 11.470020 4.720000
+    vertex 69.875053 7.125019 3.900000
+  endloop
+endfacet
+facet normal 4.846203 0.000000 0.000000
+  outer loop
+    vertex 69.875053 11.470020 6.170000
+    vertex 69.875053 7.125019 7.400000
+    vertex 69.875053 7.530018 6.170000
+  endloop
+endfacet
+facet normal 1.678374 0.000000 0.000000
+  outer loop
+    vertex 69.875053 11.470020 6.170000
+    vertex 69.875053 11.470020 4.720000
+    vertex 69.875053 12.627520 3.900000
+  endloop
+endfacet
+facet normal 6.768076 0.000000 0.000000
+  outer loop
+    vertex 69.875053 12.627520 7.400000
+    vertex 69.875053 7.125019 7.400000
+    vertex 69.875053 11.470020 6.170000
+  endloop
+endfacet
+facet normal 4.051248 0.000000 0.000000
+  outer loop
+    vertex 69.875053 12.627520 7.400000
+    vertex 69.875053 11.470020 6.170000
+    vertex 69.875053 12.627520 3.900000
+  endloop
+endfacet
+endsolid OuterWall_1T2XvptoT41wqhpFAnaD97
+solid OuterWall_0An_qycgfB5RACnBVc2erc
+facet normal 0.038939 0.000000 0.000000
+  outer loop
+    vertex 69.875053 7.530018 4.720000
+    vertex 69.875053 7.530018 4.710117
+    vertex 69.875053 11.470020 4.710117
+  endloop
+endfacet
+facet normal 0.038939 -0.000000 0.000000
+  outer loop
+    vertex 69.875053 7.530018 4.720000
+    vertex 69.875053 11.470020 4.710117
+    vertex 69.875053 11.470020 4.720000
+  endloop
+endfacet
+endsolid OuterWall_0An_qycgfB5RACnBVc2erc
+solid Window_3tw6evsPf4cOKvenfxmdSF
+facet normal 5.713005 0.000000 0.000000
+  outer loop
+    vertex 69.875053 11.470020 6.170000
+    vertex 69.875053 7.530018 4.720000
+    vertex 69.875053 11.470020 4.720000
+  endloop
+endfacet
+facet normal 5.713005 0.000000 0.000000
+  outer loop
+    vertex 69.875053 11.470020 6.170000
+    vertex 69.875053 7.530018 6.170000
+    vertex 69.875053 7.530018 4.720000
+  endloop
+endfacet
+endsolid Window_3tw6evsPf4cOKvenfxmdSF

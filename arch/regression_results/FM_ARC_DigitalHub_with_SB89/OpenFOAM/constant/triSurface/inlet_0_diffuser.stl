@@ -1,0 +1,58 @@
+solid inlet_0_diffuser
+facet normal 0.000000 0.000000 0.000118
+  outer loop
+    vertex 65.909950 9.842924 6.900000
+    vertex 65.899948 9.778024 6.900000
+    vertex 65.909950 9.831124 6.900000
+  endloop
+endfacet
+facet normal 0.000000 0.000000 0.001180
+  outer loop
+    vertex 65.899948 9.896024 6.900000
+    vertex 65.899948 9.778024 6.900000
+    vertex 65.909950 9.842924 6.900000
+  endloop
+endfacet
+facet normal 0.000000 0.000000 0.063721
+  outer loop
+    vertex 67.099953 9.778024 6.900000
+    vertex 65.909950 9.831124 6.900000
+    vertex 65.899948 9.778024 6.900000
+  endloop
+endfacet
+facet normal 0.000000 0.000000 0.062659
+  outer loop
+    vertex 67.089951 9.831124 6.900000
+    vertex 65.909950 9.831124 6.900000
+    vertex 67.099953 9.778024 6.900000
+  endloop
+endfacet
+facet normal 0.000000 0.000000 0.062658
+  outer loop
+    vertex 67.089951 9.842924 6.900000
+    vertex 65.899948 9.896024 6.900000
+    vertex 65.909950 9.842924 6.900000
+  endloop
+endfacet
+facet normal 0.000000 0.000000 0.000118
+  outer loop
+    vertex 67.099953 9.896024 6.900000
+    vertex 67.089951 9.842924 6.900000
+    vertex 67.089951 9.831124 6.900000
+  endloop
+endfacet
+facet normal 0.000000 0.000000 0.001180
+  outer loop
+    vertex 67.099953 9.896024 6.900000
+    vertex 67.089951 9.831124 6.900000
+    vertex 67.099953 9.778024 6.900000
+  endloop
+endfacet
+facet normal 0.000000 0.000000 0.063720
+  outer loop
+    vertex 67.099953 9.896024 6.900000
+    vertex 65.899948 9.896024 6.900000
+    vertex 67.089951 9.842924 6.900000
+  endloop
+endfacet
+endsolid inlet_0_diffuser
