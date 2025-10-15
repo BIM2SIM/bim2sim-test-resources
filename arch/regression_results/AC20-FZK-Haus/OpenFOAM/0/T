@@ -28,7 +28,7 @@ boundaryField
 
         type		fixedValue;
 
-        value		uniform 293.05853;
+        value		uniform 293.058535;
 
     }
 
@@ -41,7 +41,7 @@ boundaryField
 
         qr		qr;
 
-        Q		uniform -51.8442;
+        Q		uniform -51.844204;
 
         qrRelaxation		0.003;
 
@@ -51,7 +51,7 @@ boundaryField
 
         kappa		fluidThermo;
 
-        value		uniform 292.57564;
+        value		uniform 292.575644;
 
     }
 
@@ -60,7 +60,7 @@ boundaryField
 
         type		fixedValue;
 
-        value		uniform 292.75357;
+        value		uniform 292.753568;
 
     }
 
@@ -69,7 +69,7 @@ boundaryField
 
         type		fixedValue;
 
-        value		uniform 292.88991;
+        value		uniform 292.889914;
 
     }
 
@@ -78,7 +78,7 @@ boundaryField
 
         type		fixedValue;
 
-        value		uniform 291.99386;
+        value		uniform 291.993864;
 
     }
 
@@ -91,7 +91,7 @@ boundaryField
 
         qr		qr;
 
-        Q		uniform -78.47657;
+        Q		uniform -78.476567;
 
         qrRelaxation		0.003;
 
@@ -101,7 +101,7 @@ boundaryField
 
         kappa		fluidThermo;
 
-        value		uniform 291.24152;
+        value		uniform 291.241522;
 
     }
 
@@ -114,7 +114,7 @@ boundaryField
 
         qr		qr;
 
-        Q		uniform -80.54845;
+        Q		uniform -80.548453;
 
         qrRelaxation		0.003;
 
@@ -124,7 +124,7 @@ boundaryField
 
         kappa		fluidThermo;
 
-        value		uniform 291.33135;
+        value		uniform 291.331347;
 
     }
 
@@ -137,7 +137,7 @@ boundaryField
 
         qr		qr;
 
-        Q		uniform 102.96846;
+        Q		uniform 102.968463;
 
         qrRelaxation		0.003;
 
@@ -147,7 +147,7 @@ boundaryField
 
         kappa		fluidThermo;
 
-        value		uniform 290.67553;
+        value		uniform 290.675526;
 
     }
 
@@ -170,7 +170,7 @@ boundaryField
 
         kappa		fluidThermo;
 
-        value		uniform 290.67314;
+        value		uniform 290.673138;
 
     }
 
@@ -183,7 +183,7 @@ boundaryField
 
         qr		qr;
 
-        Q		76.61082;
+        Q		76.610823;
 
         qrRelaxation		0.003;
 
