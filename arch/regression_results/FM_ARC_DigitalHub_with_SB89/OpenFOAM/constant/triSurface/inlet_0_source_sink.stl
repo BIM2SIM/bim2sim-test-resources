@@ -1,16 +1,16 @@
 solid inlet_0_source_sink
-facet normal 0.000000 0.000000 0.013924
+facet normal 0.000000 -0.000001 0.013924
   outer loop
     vertex 65.909950 9.842924 6.900000
-    vertex 65.909950 9.831124 6.900000
-    vertex 67.089951 9.831124 6.900000
+    vertex 65.909950 9.831124 6.899999
+    vertex 67.089958 9.831124 6.899999
   endloop
 endfacet
-facet normal -0.000000 0.000000 0.013924
+facet normal 0.000000 -0.000001 0.013924
   outer loop
     vertex 65.909950 9.842924 6.900000
-    vertex 67.089951 9.831124 6.900000
-    vertex 67.089951 9.842924 6.900000
+    vertex 67.089958 9.831124 6.899999
+    vertex 67.089958 9.842924 6.900000
   endloop
 endfacet
 endsolid inlet_0_source_sink
