@@ -28,7 +28,7 @@ boundaryField
 
         type		fixedValue;
 
-        value		uniform 293.058535;
+        value		uniform 293.05853;
 
     }
 
@@ -41,7 +41,7 @@ boundaryField
 
         qr		qr;
 
-        Q		uniform -51.844204;
+        Q		uniform -51.844537;
 
         qrRelaxation		0.003;
 
@@ -51,7 +51,7 @@ boundaryField
 
         kappa		fluidThermo;
 
-        value		uniform 292.575644;
+        value		uniform 292.575636;
 
     }
 
@@ -60,7 +60,7 @@ boundaryField
 
         type		fixedValue;
 
-        value		uniform 292.753568;
+        value		uniform 292.753557;
 
     }
 
@@ -69,7 +69,7 @@ boundaryField
 
         type		fixedValue;
 
-        value		uniform 292.889914;
+        value		uniform 292.889901;
 
     }
 
@@ -78,7 +78,7 @@ boundaryField
 
         type		fixedValue;
 
-        value		uniform 291.993864;
+        value		uniform 291.993859;
 
     }
 
@@ -91,7 +91,7 @@ boundaryField
 
         qr		qr;
 
-        Q		uniform -78.476567;
+        Q		uniform -78.476548;
 
         qrRelaxation		0.003;
 
@@ -101,7 +101,7 @@ boundaryField
 
         kappa		fluidThermo;
 
-        value		uniform 291.241522;
+        value		uniform 291.241518;
 
     }
 
@@ -114,7 +114,7 @@ boundaryField
 
         qr		qr;
 
-        Q		uniform -80.548453;
+        Q		uniform -80.548432;
 
         qrRelaxation		0.003;
 
@@ -124,7 +124,7 @@ boundaryField
 
         kappa		fluidThermo;
 
-        value		uniform 291.331347;
+        value		uniform 291.331343;
 
     }
 
@@ -137,7 +137,7 @@ boundaryField
 
         qr		qr;
 
-        Q		uniform 102.968463;
+        Q		uniform 102.968475;
 
         qrRelaxation		0.003;
 
@@ -147,7 +147,7 @@ boundaryField
 
         kappa		fluidThermo;
 
-        value		uniform 290.675526;
+        value		uniform 290.675522;
 
     }
 
@@ -160,7 +160,7 @@ boundaryField
 
         qr		qr;
 
-        Q		uniform 102.93347;
+        Q		uniform 102.933481;
 
         qrRelaxation		0.003;
 
@@ -170,7 +170,7 @@ boundaryField
 
         kappa		fluidThermo;
 
-        value		uniform 290.673138;
+        value		uniform 290.673134;
 
     }
 
@@ -183,7 +183,7 @@ boundaryField
 
         qr		qr;
 
-        Q		76.610823;
+        Q		76.611154;
 
         qrRelaxation		0.003;
 
