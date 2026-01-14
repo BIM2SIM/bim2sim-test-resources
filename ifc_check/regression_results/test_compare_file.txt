@@ -1,0 +1,3 @@
+This is file used only while development of the regression test of IFCCheck.
+
+It should be deleted later.
