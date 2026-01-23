@@ -1,0 +1,1846 @@
+<!--
+    IfcTester - IDS based model auditing
+    Copyright (C) 2022 Dion Moult <dion@thinkmoult.com>
+
+    This file is part of IfcTester.
+
+    IfcTester is free software: you can redistribute it and/or modify
+    it under the terms of the GNU Lesser General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    IfcTester is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU Lesser General Public License for more details.
+
+    You should have received a copy of the GNU Lesser General Public License
+    along with IfcTester.  If not, see <http://www.gnu.org/licenses/>.
+-->
+<!DOCTYPE html>
+<html lang=>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="foobaro">
+    <title></title>
+    <link href="https://fonts.googleapis.com/css?family=Comfortaa|Inconsolata|Open+Sans&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --green: #97cc64;
+            --light-green: #b6cca1;
+            --red: #fb5a3e;
+            --light-red: #fbb4a8;
+        }
+        body { font-family: 'Arial', sans-serif; padding: 10px 40px; }
+        section { padding: 15px; border-radius: 5px; border: 1px solid #eee; margin-bottom: 15px; }
+        section>h2 { margin-top: 0px; }
+        span.time { color: #999; font-style: italic; float: right; }
+        span.step-time { float: right; color: #555; font-size: 0.8em; font-style: italic; }
+        span.item { padding: 5px; border-radius: 5px; margin-right: 5px; border: 1px solid #eee; }
+        span.item.pass, span.item.fail { color: #FFF; font-weight: bold; border: 0px; }
+        p.fail { background-color: #fb5a3e; padding: 5px; border-radius: 5px; color: #fff; }
+        p.unspecified { background-color: #994f00; padding: 5px; border-radius: 5px; color: #fff; }
+        p.skipped { background-color: #8b8d8f; padding: 5px; border-radius: 5px; color: #fff; }
+        p.description { background-color: #eee; border-radius: 5px; padding: 20px; margin-left: auto; margin-right: auto; display: inline-block; font-weight: bold;}
+        li { padding: 10px; font-family: monospace; border-radius: 5px; margin-bottom: 5px; }
+        li.pass { background-color: var(--light-green); color: #333; }
+        li.fail { background-color: var(--light-red); color: #900; }
+        li.unspecified { background-color: #ffd37f; color: #a30; }
+        li.skipped { background-color: #f5f5f5; color: #333; }
+        li p { margin-bottom: 0px; }
+        footer { color: #999; font-size: 0.8em; }
+        header { text-align: center; }
+        hr { margin: 20px; margin-left: 0px; margin-right: 0px;  border: none; border-top: 1px solid #ccc; }
+        summary { display: flex; cursor: pointer; }
+        summary::-webkit-details-marker { display: none; }
+        * {box-sizing:border-box}
+        .container { width: 100%; background-color: #ddd; border-radius: 5px}
+        .percent { text-align: left; padding-top: 5px; padding-left: 5px; padding-bottom: 5px; color: white; border-radius: 5px; white-space: nowrap; }
+        .pass { background-color: var(--green); }
+        .fail { background-color: var(--red); }
+        table { width: 100%; border-spacing: 0; border-radius: 5px; margin-top: 10px; }
+        th, td { padding: 5px; color: #000; }
+        table.pass { border-bottom: 2px solid var(--green); }
+        table.fail { border-bottom: 2px solid var(--red); }
+        table thead>tr { font-weight: bold; color: #000; }
+        table.pass tbody tr { border-bottom: 1px solid var(--green); }
+        table.fail tbody tr { border-bottom: 1px solid var(--red); }
+        tbody tr:nth-child(odd) { background-color: rgba(1, 1, 1, 0.05); }
+        tbody tr:nth-child(even) { background-color: rgba(1, 1, 1, 0.1); }
+        tbody tr:hover { background-color: rgba(0, 0, 0, 0); }
+        div.info { float: left; width: 30%; }
+        div.results { float: left; width: calc(70% - 20px); margin-left: 20px; padding: 20px; border-radius: 5px; background-color: #fafafa; }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Ifc_properties</h1>
+        <p><strong>2026-01-22 14:30:26</strong></p>
+    </header>
+    <h2>Summary</h2>
+    <div class="container">
+        <div class="fail percent" style="width: 100%;">100%</div>
+    </div>
+    <p>
+        <span class="item fail">Fail</span>
+        <span class="item">
+            Specifications passed: <strong>7</strong> / <strong>9</strong>
+        </span>
+        <span class="item">
+            Requirements passed: <strong>11</strong> / <strong>18</strong>
+        </span>
+        <span class="item">
+            Checks passed: <strong>1349</strong> / <strong>1349</strong>
+        </span>
+    </p>
+    <hr>
+    <section style="clear: both; overflow: hidden;">
+        <div class="info">
+            <h2>guid_length_equal_22_character</h2>
+
+            <div class="container">
+                <div class="pass percent" style="width: 100%;">100%</div>
+            </div>
+            <p>
+                <span class="item pass">Pass</span>
+                <span class="item">
+                    Checks passed: <strong>1304</strong> / <strong>1304</strong>
+                </span>
+                <span class="item">
+                    Elements passed: <strong>1304</strong> / <strong>1304</strong>
+                </span>
+            </p>
+        </div>
+        <div class="results">
+            <p>
+                <strong>Applicability</strong>
+            </p>
+            <ul>
+                <li>Data where the GlobalId is provided</li>
+            </ul>
+            <p>
+                <strong>Requirements</strong>
+            </p>
+            <ol>
+                <li class="pass">
+                    <details>
+                        <summary>
+                            The GlobalId shall be {&#x27;length&#x27;: 22}
+                        </summary>
+ 
+                        <table class="pass">
+                            <thead>
+                                <tr>
+                                    <th>Class</th>
+                                    <th>PredefinedType</th>
+                                    <th>Name</th>
+                                    <th>Description</th>
+                                    <th>GlobalId</th>
+                                    <th>Tag</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>IfcAnnotation</td>
+                                    <td>None</td>
+                                    <td>None</td>
+                                    <td>None</td>
+                                    <td>3YZcx3Gb58SwNRLuheFOxL</td>
+                                    <td>None</td>
+                                </tr>
+                                <tr>
+                                    <td>IfcRelDefinesByProperties</td>
+                                    <td>None</td>
+                                    <td>None</td>
+                                    <td>None</td>
+                                    <td>0JQb9ScX7f6NvfKLyyb3Nm</td>
+                                    <td>None</td>
+                                </tr>
+                                <tr>
+                                    <td>IfcAnnotation</td>
+                                    <td>None</td>
+                                    <td>None</td>
+                                    <td>None</td>
+                                    <td>2TSghi3E94BuNE_F6jBcWe</td>
+                                    <td>None</td>
+                                </tr>
+                                <tr>
+                                    <td>IfcRelDefinesByProperties</td>
+                                    <td>None</td>
+                                    <td>None</td>
+                                    <td>None</td>
+                                    <td>1k6Ns1KGYSRfwu9ZC7L_DO</td>
+                                    <td>None</td>
+                                </tr>
+                                <tr>
+                                    <td>IfcRelDefinesByProperties</td>
+                                    <td>None</td>
+                                    <td>None</td>
+                                    <td>None</td>
+                                    <td>2habKkHuwpmwS92J26S6J7</td>
+                                    <td>None</td>
+                                </tr>
+                                <tr>
+                                    <td>IfcRelSpaceBoundary</td>
+                                    <td>None</td>
+                                    <td>2ndLevel</td>
+                                    <td>2a</td>
+                                    <td>29sJT6Ho2mKZovzttaNM5H</td>
+                                    <td>None</td>
+                                </tr>
+                                <tr>
+                                    <td>IfcRelDefinesByProperties</td>
+                                    <td>None</td>
+                                    <td>None</td>
+                                    <td>None</td>
+                                    <td>3xLcQ47MOto7xK_9bijtT2</td>
+                                    <td>None</td>
+                                </tr>
+                                <tr>
+                                    <td>IfcRelDefinesByProperties</td>
+                                    <td>None</td>
+                                    <td>None</td>
+                                    <td>None</td>
+                                    <td>38dLPo9QR6wjzetBJg4bW9</td>
+                                    <td>None</td>
+                                </tr>
+                                <tr>
+                                    <td>IfcPropertySet</td>
+                                    <td>None</td>
+                                    <td>ArchiCADProperties</td>
+                                    <td>None</td>
+                                    <td>2eNPDzHTvVCU7G11nMNcZJ</td>
+                                    <td>None</td>
+                                </tr>
+                                <tr>
+                                    <td>IfcRelDefinesByProperties</td>
+                                    <td>None</td>
+                                    <td>None</td>
+                                    <td>None</td>
+                                    <td>138H3$BRSNO$MJ7oDmvYEl</td>
+                                    <td>None</td>
+                                </tr>
+                                <tr>
+                                    <td>IfcRelDefinesByProperties</td>
+                                    <td>None</td>
+                                    <td>None</td>
+                                    <td>None</td>
+                                    <td>3smUZulT3W0HoEw63K53gw</td>
+                                    <td>None</td>
+                                </tr>
+                                <tr>
+                                    <td>IfcBeamType</td>
+                                    <td>NOTDEFINED</td>
+                                    <td>None</td>
+                                    <td>None</td>
+                                    <td>3sgJ7WltQ0Z2M$pcct8y0M</td>
+                                    <td>F6A931E0-BF76-808C-25BF-CE69B723C016</td>
+                                </tr>
+                                <tr>
+                                    <td>IfcPropertySet</td>
+                                    <td>None</td>
+                                    <td>AC_Pset_Name</td>
+                                    <td>None</td>
+                                    <td>2RqsaBmHhiyiFHAvDd0gii</td>
+                                    <td>None</td>
+                                </tr>
+                                <tr>
+                                    <td>IfcRelDefinesByProperties</td>
+                                    <td>None</td>
+                                    <td>None</td>
+                                    <td>None</td>
+                                    <td>2uDjvFtRM1l4kDYy2FS3$D</td>
+                                    <td>None</td>
+                                </tr>
+                                <tr>
+                                    <td>IfcMember</td>
+                                    <td>None</td>
+                                    <td>Sparren-38</td>
+                                    <td>None</td>
+                                    <td>3CS1rsE3bB7vMHAdjyaamh</td>
+                                    <td>46488648-16DC-44A4-91-12-698B815D6192</td>
+                                </tr>
+                                <tr>
+                                    <td>IfcRelDefinesByProperties</td>
+                                    <td>None</td>
+                                    <td>None</td>
+                                    <td>None</td>
+                                    <td>3XpRqOdQhB1FTZDPmqXkq_</td>
+                                    <td>None</td>
+                                </tr>
+                                <tr>
+                                    <td>IfcElementQuantity</td>
+                                    <td>None</td>
+                                    <td>BaseQuantities</td>
+                                    <td>None</td>
+                                    <td>0a6SQcNnboIRbnOjQanR_w</td>
+                                    <td>None</td>
+                                </tr>
+                                <tr>
+                                    <td>IfcRelDefinesByProperties</td>
+                                    <td>None</td>
+                                    <td>None</td>
+                                    <td>None</td>
+                                    <td>28rdzjqpRRO7li2rUgJdh4</td>
+                                    <td>None</td>
+                                </tr>
+                                <tr>
+                                    <td>IfcElementQuantity</td>
+                                    <td>None</td>
+                                    <td>ArchiCADQuantities</td>
+                                    <td>None</td>
+                                    <td>0QugS0X5d09zxdOsRWZ97v</td>
+                                    <td>None</td>
+                                </tr>
+                                <tr>
+                                    <td>IfcRelSpaceBoundary</td>
+                                    <td>None</td>
+                                    <td>2ndLevel</td>
+                                    <td>2a</td>
+                                    <td>30Y14$n6BcKo4zt3hjgwMk</td>
+                                    <td>None</td>
+                                </tr>
+                                <tr>
+                                    <td>IfcRelFillsElement</td>
+                                    <td>None</td>
+                                    <td>None</td>
+                                    <td>None</td>
+                                    <td>00YdWGGeonv_6xK7feEdNz</td>
+                                    <td>None</td>
+                                </tr>
+                                <tr>
+                                    <td>IfcPropertySet</td>
+                                    <td>None</td>
+                                    <td>ArchiCADProperties</td>
+                                    <td>None</td>
+                                    <td>09sm7NmXWeqywMA5IYdEZW</td>
+                                    <td>None</td>
+                                </tr>
+                                <tr>
+                                    <td>IfcPropertySet</td>
+                                    <td>None</td>
+                                    <td>ArchiCADProperties</td>
+                                    <td>None</td>
+                                    <td>2KnKEzu_Gk7HLJsNnkt0es</td>
+                                    <td>None</td>
+                                </tr>
+                                <tr>
+                                    <td>IfcPropertySet</td>
+                                    <td>None</td>
+                                    <td>Pset_SpaceCommon</td>
+                                    <td>None</td>
+                                    <td>1mVrjzUN8AC7mkU99Lf3PJ</td>
+                                    <td>None</td>
+                                </tr>
+                                <tr>
+                                    <td>IfcRelDefinesByProperties</td>
+                                    <td>None</td>
+                                    <td>None</td>
+                                    <td>None</td>
+                                    <td>17HNBJnQdiPcAM11r$p2wb</td>
+                                    <td>None</td>
+                                </tr>
+                                <tr>
+                                    <td>IfcRelDefinesByProperties</td>
+                                    <td>None</td>
+                                    <td>None</td>
+                                    <td>None</td>
+                                    <td>3hBi$yyk8jU3ByiSlU8oMm</td>
+                                    <td>None</td>
+                                </tr>
+                                <tr>
+                                    <td>IfcDoorPanelProperties</td>
+                                    <td>None</td>
+                                    <td>Türblatt-Sachmerkmale - Panel1</td>
+                                    <td>None</td>
+                                    <td>0gaR2hV3i9v2mF$Q3sgjhC</td>
+                                    <td>None</td>
+                                </tr>
+                                <tr>
+                                    <td>IfcPropertySet</td>
+                                    <td>None</td>
+                                    <td>AC_Pset_Name</td>
+                                    <td>None</td>
+                                    <td>1E5CIpLRcKL6t0lH4lbOfJ</td>
+                                    <td>None</td>
+                                </tr>
+                                <tr>
+                                    <td>IfcElementQuantity</td>
+                                    <td>None</td>
+                                    <td>ArchiCADQuantities</td>
+                                    <td>None</td>
+                                    <td>2m6RHX5pltWJECImFTs50k</td>
+                                    <td>None</td>
+                                </tr>
+                                <tr>
+                                    <td>IfcWindow</td>
+                                    <td>None</td>
+                                    <td>EG-Fenster-4</td>
+                                    <td>None</td>
+                                    <td>25nJxEpYf8LRDJNkMUVO0m</td>
+                                    <td>436D2D20-7879-42FD-A7-70-F2BECB09D642</td>
+                                </tr>
+                                <tr>
+                                    <td>IfcRelDefinesByProperties</td>
+                                    <td>None</td>
+                                    <td>None</td>
+                                    <td>None</td>
+                                    <td>3PsPmojb1HXMjL49EVU7Jt</td>
+                                    <td>None</td>
+                                </tr>
+                                <tr>
+                                    <td>IfcElementQuantity</td>
+                                    <td>None</td>
+                                    <td>ArchiCADQuantities</td>
+                                    <td>None</td>
+                                    <td>3SUygqVWjApZVxP7QZqr91</td>
+                                    <td>None</td>
+                                </tr>
+                                <tr>
+                                    <td>IfcElementQuantity</td>
+                                    <td>None</td>
+                                    <td>ArchiCADQuantities</td>
+                                    <td>None</td>
+                                    <td>38rnXSiq0Kg7TWu9rqazyV</td>
+                                    <td>None</td>
+                                </tr>
+                                <tr>
+                                    <td>IfcWindowLiningProperties</td>
+                                    <td>None</td>
+                                    <td>Fenster Linien-Sachmerkmale</td>
+                                    <td>None</td>
+                                    <td>3TQPOgDoRK$8xqVQTcXSTG</td>
+                                    <td>None</td>
+                                </tr>
+                                <tr>
+                                    <td>IfcRelDefinesByProperties</td>
+                                    <td>None</td>
+                                    <td>None</td>
+                                    <td>None</td>
+                                    <td>0e8hTrQlnf3kAQAriI4Duo</td>
+                                    <td>None</td>
+                                </tr>
+                                <tr>
+                                    <td>IfcVirtualElement</td>
+                                    <td>None</td>
+                                    <td>None</td>
+                                    <td>None</td>
+                                    <td>0wuj6ac_Rv$ZYWzILFrlw0</td>
+                                    <td>None</td>
+                                </tr>
+                                <tr>
+                                    <td>IfcPropertySet</td>
+                                    <td>None</td>
+                                    <td>AC_Pset_Name</td>
+                                    <td>None</td>
+                                    <td>3MCrfjIiBo_ipV0_Y7WuSO</td>
+                                    <td>None</td>
+                                </tr>
+                                <tr>
+                                    <td>IfcRelDefinesByProperties</td>
+                                    <td>None</td>
+                                    <td>None</td>
+                                    <td>None</td>
+                                    <td>3v54d3TAlQgCtLfoLEkWmE</td>
+                                    <td>None</td>
+                                </tr>
+                                <tr>
+                                    <td>IfcElementQuantity</td>
+                                    <td>None</td>
+                                    <td>AC_Equantity_Allgemeiner_Raumstempel</td>
+                                    <td>None</td>
+                                    <td>21Gmu3KXLjcP4C_BpKJVd8</td>
+                                    <td>None</td>
+                                </tr>
+                                <tr>
+                                    <td>IfcWindow</td>
+                                    <td>None</td>
+                                    <td>EG-Fenster-8</td>
+                                    <td>None</td>
+                                    <td>13aSY79zb8fP4HApEJ0z_e</td>
+                                    <td>8FAFF59C-23BB-48D6-9C-CE-C4F804C53C9A</td>
+                                </tr>
+                                <tr>
+                                    <td>IfcRelDefinesByProperties</td>
+                                    <td>None</td>
+                                    <td>None</td>
+                                    <td>None</td>
+                                    <td>0MY6ATU_JcFD0lBwrys_ha</td>
+                                    <td>None</td>
+                                </tr>
+                                <tr>
+                                    <td>IfcWindowLiningProperties</td>
+                                    <td>None</td>
+                                    <td>Fenster Linien-Sachmerkmale</td>
+                                    <td>None</td>
+                                    <td>0D1dgfHHG0hrRQfHAEulmS</td>
+                                    <td>None</td>
+                                </tr>
+                                <tr>
+                                    <td>IfcRelAggregates</td>
+                                    <td>None</td>
+                                    <td>None</td>
+                                    <td>None</td>
+                                    <td>2ZuYRWA3u0cgSkWV3X7KNw</td>
+                                    <td>None</td>
+                                </tr>
+                                <tr>
+                                    <td>IfcPropertySet</td>
+                                    <td>None</td>
+                                    <td>AC_Pset_Name</td>
+                                    <td>None</td>
+                                    <td>2r$KbEO4TLsfEH6LUlZqrv</td>
+                                    <td>None</td>
+                                </tr>
+                                <tr>
+                                    <td>IfcRelDefinesByProperties</td>
+                                    <td>None</td>
+                                    <td>None</td>
+                                    <td>None</td>
+                                    <td>0sbxBUn_$VCNABN5h8twxJ</td>
+                                    <td>None</td>
+                                </tr>
+                                <tr>
+                                    <td>IfcElementQuantity</td>
+                                    <td>None</td>
+                                    <td>ArchiCADQuantities</td>
+                                    <td>None</td>
+                                    <td>2WH97keVeTykk_unkqqyzI</td>
+                                    <td>None</td>
+                                </tr>
+                                <tr>
+                                    <td>IfcRelSpaceBoundary</td>
+                                    <td>None</td>
+                                    <td>2ndLevel</td>
+                                    <td>2a</td>
+                                    <td>0dxBkPkUSBXBx7uHwKy0y2</td>
+                                    <td>None</td>
+                                </tr>
+                                <tr>
+                                    <td>IfcPropertySet</td>
+                                    <td>None</td>
+                                    <td>ArchiCADProperties</td>
+                                    <td>None</td>
+                                    <td>0YX258TZU73OFBnzL7ga6R</td>
+                                    <td>None</td>
+                                </tr>
+                                <tr>
+                                    <td>IfcPropertySet</td>
+                                    <td>None</td>
+                                    <td>ArchiCADProperties</td>
+                                    <td>None</td>
+                                    <td>0GKOBxJnY5cPzVadlEwISR</td>
+                                    <td>None</td>
+                                </tr>
+                                <tr>
+                                    <td>IfcRelAggregates</td>
+                                    <td>None</td>
+                                    <td>None</td>
+                                    <td>None</td>
+                                    <td>3XwAdBXgnd6wCOt6sYCOEg</td>
+                                    <td>None</td>
+                                </tr>
+                                <tr>
+                                    <td>IfcRelDefinesByProperties</td>
+                                    <td>None</td>
+                                    <td>None</td>
+                                    <td>None</td>
+                                    <td>3iHcHzHz8p1RbbbH42aIx$</td>
+                                    <td>None</td>
+                                </tr>
+                                <tr>
+                                    <td>IfcPropertySet</td>
+                                    <td>None</td>
+                                    <td>Pset_FireRatingProperties</td>
+                                    <td>None</td>
+                                    <td>0ih6OwaaDpeFZI935Wzkig</td>
+                                    <td>None</td>
+                                </tr>
+                                <tr>
+                                    <td>IfcRelDefinesByProperties</td>
+                                    <td>None</td>
+                                    <td>None</td>
+                                    <td>None</td>
+                                    <td>1XE$JIzcF3wTdwKBhq1wd0</td>
+                                    <td>None</td>
+                                </tr>
+                                <tr>
+                                    <td>IfcRelDefinesByProperties</td>
+                                    <td>None</td>
+                                    <td>None</td>
+                                    <td>None</td>
+                                    <td>3u5rTiUpP8wx7AOfymDfNn</td>
+                                    <td>None</td>
+                                </tr>
+                                <tr>
+                                    <td>IfcRelSpaceBoundary</td>
+                                    <td>None</td>
+                                    <td>2ndLevel</td>
+                                    <td>2a</td>
+                                    <td>3S62uZocO66ngdmMaRS2M9</td>
+                                    <td>None</td>
+                                </tr>
+                                <tr>
+                                    <td>IfcPropertySet</td>
+                                    <td>None</td>
+                                    <td>ArchiCADProperties</td>
+                                    <td>None</td>
+                                    <td>12dFRZ7i_LZpHucqBXZsBs</td>
+                                    <td>None</td>
+                                </tr>
+                                <tr>
+                                    <td>IfcRelDefinesByProperties</td>
+                                    <td>None</td>
+                                    <td>None</td>
+                                    <td>None</td>
+                                    <td>1AL6h1VT0xA86y_jc$_JIp</td>
+                                    <td>None</td>
+                                </tr>
+                                <tr>
+                                    <td>IfcElementQuantity</td>
+                                    <td>None</td>
+                                    <td>BaseQuantities</td>
+                                    <td>None</td>
+                                    <td>1JFBkwYx3Z5AQ6ZU7pgIOB</td>
+                                    <td>None</td>
+                                </tr>
+                                <tr>
+                                    <td>IfcWallStandardCase</td>
+                                    <td>None</td>
+                                    <td>Wand-Int-ERDG-5</td>
+                                    <td>None</td>
+                                    <td>1$wmdwWPjDYuku_ghVkynE</td>
+                                    <td>623FF5CC-008F-4D9B-BE-AC-E81A16C53080</td>
+                                </tr>
+                                <tr>
+                                    <td>IfcElementQuantity</td>
+                                    <td>None</td>
+                                    <td>BaseQuantities</td>
+                                    <td>None</td>
+                                    <td>3X9L7b9hYaktIKtyBCLv3t</td>
+                                    <td>None</td>
+                                </tr>
+                                <tr>
+                                    <td>IfcElementQuantity</td>
+                                    <td>None</td>
+                                    <td>ArchiCADQuantities</td>
+                                    <td>None</td>
+                                    <td>2Rp4C9dvNi9uGMJKaNXRci</td>
+                                    <td>None</td>
+                                </tr>
+                                <tr>
+                                    <td>IfcRelDefinesByProperties</td>
+                                    <td>None</td>
+                                    <td>None</td>
+                                    <td>None</td>
+                                    <td>302jZj4n9_24Cj853sbV0S</td>
+                                    <td>None</td>
+                                </tr>
+                                <tr>
+                                    <td>IfcRelDefinesByProperties</td>
+                                    <td>None</td>
+                                    <td>None</td>
+                                    <td>None</td>
+                                    <td>2Fn_5gqQYjKqB8Hco5_2SG</td>
+                                    <td>None</td>
+                                </tr>
+                                <tr>
+                                    <td>IfcPropertySet</td>
+                                    <td>None</td>
+                                    <td>AC_Pset_Rundfenster_13</td>
+                                    <td>None</td>
+                                    <td>18$WgrOXUBkToPSVpLmqGQ</td>
+                                    <td>None</td>
+                                </tr>
+                                <tr>
+                                    <td>IfcRelDefinesByProperties</td>
+                                    <td>None</td>
+                                    <td>None</td>
+                                    <td>None</td>
+                                    <td>1xjhHysfrJ41WFgnjsHIQY</td>
+                                    <td>None</td>
+                                </tr>
+                                <tr>
+                                    <td>IfcElementQuantity</td>
+                                    <td>None</td>
+                                    <td>BaseQuantities</td>
+                                    <td>None</td>
+                                    <td>0MMWMJFJ2og7mAWgWm9QAU</td>
+                                    <td>None</td>
+                                </tr>
+                                <tr>
+                                    <td>IfcRelDefinesByProperties</td>
+                                    <td>None</td>
+                                    <td>None</td>
+                                    <td>None</td>
+                                    <td>1rJmG9GPg2L9jdajbxbxnY</td>
+                                    <td>None</td>
+                                </tr>
+                                <tr>
+                                    <td>IfcRelDefinesByProperties</td>
+                                    <td>None</td>
+                                    <td>None</td>
+                                    <td>None</td>
+                                    <td>1FJ83gT$frxZ3YA2fKNkbl</td>
+                                    <td>None</td>
+                                </tr>
+                                <tr>
+                                    <td>IfcElementQuantity</td>
+                                    <td>None</td>
+                                    <td>ArchiCADQuantities</td>
+                                    <td>None</td>
+                                    <td>2BPV_FfZ_7wiYNabwjTpM7</td>
+                                    <td>None</td>
+                                </tr>
+                                <tr>
+                                    <td>IfcElementQuantity</td>
+                                    <td>None</td>
+                                    <td>ArchiCADQuantities</td>
+                                    <td>None</td>
+                                    <td>05uxHET6csu58CMAYGU4vm</td>
+                                    <td>None</td>
+                                </tr>
+                                <tr>
+                                    <td>IfcElementQuantity</td>
+                                    <td>None</td>
+                                    <td>ArchiCADQuantities</td>
+                                    <td>None</td>
+                                    <td>0pbMDSRi76Dc8_B6HqdP8J</td>
+                                    <td>None</td>
+                                </tr>
+                                <tr>
+                                    <td>IfcRelDefinesByProperties</td>
+                                    <td>None</td>
+                                    <td>None</td>
+                                    <td>None</td>
+                                    <td>0REXRPAzJXB74$aafYwiY_</td>
+                                    <td>None</td>
+                                </tr>
+                                <tr>
+                                    <td>IfcRelAssociatesMaterial</td>
+                                    <td>None</td>
+                                    <td>None</td>
+                                    <td>None</td>
+                                    <td>3XSlHdZUiHf7WEo4gS_lg7</td>
+                                    <td>None</td>
+                                </tr>
+                                <tr>
+                                    <td>IfcWindowPanelProperties</td>
+                                    <td>None</td>
+                                    <td>Fenster Flügel-Sachmerkmale - Panel1</td>
+                                    <td>None</td>
+                                    <td>3_oIyvGPgPz2xlGkYRBECS</td>
+                                    <td>None</td>
+                                </tr>
+                                <tr>
+                                    <td>IfcSlabType</td>
+                                    <td>ROOF</td>
+                                    <td>Solid 397409098 200</td>
+                                    <td>None</td>
+                                    <td>2KfEc98gn2hG04a21b8uqd</td>
+                                    <td>94A4E989-22AC-42AD-0004-902065238D27</td>
+                                </tr>
+                                <tr>
+                                    <td>IfcPropertySet</td>
+                                    <td>None</td>
+                                    <td>ArchiCADProperties</td>
+                                    <td>None</td>
+                                    <td>3JzWpzwaJSkjCzFqHvhit$</td>
+                                    <td>None</td>
+                                </tr>
+                                <tr>
+                                    <td>IfcRelDefinesByProperties</td>
+                                    <td>None</td>
+                                    <td>None</td>
+                                    <td>None</td>
+                                    <td>09zvdOjvxg3erymNE4pgTd</td>
+                                    <td>None</td>
+                                </tr>
+                                <tr>
+                                    <td>IfcRelDefinesByProperties</td>
+                                    <td>None</td>
+                                    <td>None</td>
+                                    <td>None</td>
+                                    <td>0EHpLKnG1Ik$E4x9AvofIu</td>
+                                    <td>None</td>
+                                </tr>
+                                <tr>
+                                    <td>IfcPropertySet</td>
+                                    <td>None</td>
+                                    <td>Pset_BeamCommon</td>
+                                    <td>None</td>
+                                    <td>3mLuTWGrwFIZHguxQGkASp</td>
+                                    <td>None</td>
+                                </tr>
+                                <tr>
+                                    <td>IfcRelDefinesByProperties</td>
+                                    <td>None</td>
+                                    <td>None</td>
+                                    <td>None</td>
+                                    <td>0hVmt2vq649QK8AJCOSayf</td>
+                                    <td>None</td>
+                                </tr>
+                                <tr>
+                                    <td>IfcWindowPanelProperties</td>
+                                    <td>None</td>
+                                    <td>Fenster Flügel-Sachmerkmale - Panel1</td>
+                                    <td>None</td>
+                                    <td>0y1wZ8xNrO2w$uG2ZvTsBI</td>
+                                    <td>None</td>
+                                </tr>
+                                <tr>
+                                    <td>IfcWindow</td>
+                                    <td>None</td>
+                                    <td>OG-Fenster-2</td>
+                                    <td>None</td>
+                                    <td>1zOBw0Gej5Wf0QAJfHnOc0</td>
+                                    <td>FA683FAD-0F01-4AF4-93-87-2834E91204A6</td>
+                                </tr>
+                                <tr>
+                                    <td>IfcElementQuantity</td>
+                                    <td>None</td>
+                                    <td>ArchiCADQuantities</td>
+                                    <td>None</td>
+                                    <td>1764zlXJ9MNbf5iSJaT4A_</td>
+                                    <td>None</td>
+                                </tr>
+                                <tr>
+                                    <td>IfcRelDefinesByProperties</td>
+                                    <td>None</td>
+                                    <td>None</td>
+                                    <td>None</td>
+                                    <td>0NQRzKyTTX77GlgRHVX4zC</td>
+                                    <td>None</td>
+                                </tr>
+                                <tr>
+                                    <td>IfcPropertySet</td>
+                                    <td>None</td>
+                                    <td>AC_Pset_Name</td>
+                                    <td>None</td>
+                                    <td>0bro4k6BRoC4uyOh93lkuc</td>
+                                    <td>None</td>
+                                </tr>
+                                <tr>
+                                    <td>IfcPropertySet</td>
+                                    <td>None</td>
+                                    <td>AC_Pset_Name</td>
+                                    <td>None</td>
+                                    <td>2FKK9U560eaNG6WX0SwjD$</td>
+                                    <td>None</td>
+                                </tr>
+                                <tr>
+                                    <td>IfcRelDefinesByProperties</td>
+                                    <td>None</td>
+                                    <td>None</td>
+                                    <td>None</td>
+                                    <td>3Zxy_fgSOT7LxMWUnyZxRR</td>
+                                    <td>None</td>
+                                </tr>
+                                <tr>
+                                    <td>IfcElementQuantity</td>
+                                    <td>None</td>
+                                    <td>ArchiCADQuantities</td>
+                                    <td>None</td>
+                                    <td>0uwXiMa$do5_Sx5nWKk3rj</td>
+                                    <td>None</td>
+                                </tr>
+                                <tr>
+                                    <td>IfcRelDefinesByProperties</td>
+                                    <td>None</td>
+                                    <td>None</td>
+                                    <td>None</td>
+                                    <td>29ooQv715PzCVCKdsfFrWb</td>
+                                    <td>None</td>
+                                </tr>
+                                <tr>
+                                    <td>IfcRelDefinesByProperties</td>
+                                    <td>None</td>
+                                    <td>None</td>
+                                    <td>None</td>
+                                    <td>1xvwt5PikGJ60Xx5GNNXDk</td>
+                                    <td>None</td>
+                                </tr>
+                                <tr>
+                                    <td>IfcRelDefinesByProperties</td>
+                                    <td>None</td>
+                                    <td>None</td>
+                                    <td>None</td>
+                                    <td>2Ej8pFqO_w9RInVfywiVbV</td>
+                                    <td>None</td>
+                                </tr>
+                                <tr>
+                                    <td>IfcPropertySet</td>
+                                    <td>None</td>
+                                    <td>ArchiCADProperties</td>
+                                    <td>None</td>
+                                    <td>0HFjfutgAkKtUJjQh8bKli</td>
+                                    <td>None</td>
+                                </tr>
+                                <tr>
+                                    <td>IfcElementQuantity</td>
+                                    <td>None</td>
+                                    <td>ArchiCADQuantities</td>
+                                    <td>None</td>
+                                    <td>2swWKn5t8hKehIchwfDe0Y</td>
+                                    <td>None</td>
+                                </tr>
+                                <tr>
+                                    <td>IfcWallStandardCase</td>
+                                    <td>None</td>
+                                    <td>Wand-Int-ERDG-4</td>
+                                    <td>None</td>
+                                    <td>2XPyKWY018sA1ygZKgQPtU</td>
+                                    <td>BC6F0F70-6195-495E-A2-FC-239713029DB1</td>
+                                </tr>
+                                <tr>
+                                    <td>IfcElementQuantity</td>
+                                    <td>None</td>
+                                    <td>AC_Equantity_Allgemeiner_Raumstempel</td>
+                                    <td>None</td>
+                                    <td>2C0GwKYIHTXBof4oWTLj4z</td>
+                                    <td>None</td>
+                                </tr>
+                                <tr>
+                                    <td>IfcPropertySet</td>
+                                    <td>None</td>
+                                    <td>AC_Pset_Name</td>
+                                    <td>None</td>
+                                    <td>3mdBf0LmEqAX38y6aOaG71</td>
+                                    <td>None</td>
+                                </tr>
+                                <tr>
+                                    <td>IfcElementQuantity</td>
+                                    <td>None</td>
+                                    <td>BaseQuantities</td>
+                                    <td>None</td>
+                                    <td>2oK1krQ8FCv5ACp2DgB1dN</td>
+                                    <td>None</td>
+                                </tr>
+                                <tr>
+                                    <td>IfcRelDefinesByProperties</td>
+                                    <td>None</td>
+                                    <td>None</td>
+                                    <td>None</td>
+                                    <td>37CEcduPBCu2joGMTXQEuM</td>
+                                    <td>None</td>
+                                </tr>
+                                <tr>
+                                    <td>IfcPropertySet</td>
+                                    <td>None</td>
+                                    <td>AC_Pset_Name</td>
+                                    <td>None</td>
+                                    <td>3dFYg6hK11K_F40GspheoG</td>
+                                    <td>None</td>
+                                </tr>
+                                <tr>
+                                    <td>IfcRelDefinesByProperties</td>
+                                    <td>None</td>
+                                    <td>None</td>
+                                    <td>None</td>
+                                    <td>3kjulR$GFVzkkUhIJ9LK1D</td>
+                                    <td>None</td>
+                                </tr>
+                                <tr>
+                                    <td colspan="7"> ... 1204 more passing elements not shown out of 1304 total ...</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </details>
+                </li>
+            </ol>
+        </div>
+    </section>
+    <section style="clear: both; overflow: hidden;">
+        <div class="info">
+            <h2>properties of IfcWindows (not enrichable)</h2>
+
+            <div class="container">
+                <div class="pass percent" style="width: 100%;">100%</div>
+            </div>
+            <p>
+                <span class="item pass">Pass</span>
+                <span class="item">
+                    Checks passed: <strong>11</strong> / <strong>11</strong>
+                </span>
+                <span class="item">
+                    Elements passed: <strong>11</strong> / <strong>11</strong>
+                </span>
+            </p>
+        </div>
+        <div class="results">
+            <p>
+                <strong>Applicability</strong>
+            </p>
+            <ul>
+                <li>All IFCWINDOW data</li>
+            </ul>
+            <p>
+                <strong>Requirements</strong>
+            </p>
+            <ol>
+                <li class="pass">
+                    <details>
+                        <summary>
+                            ThermalTransmittance data shall be provided in the dataset Pset_WindowCommon
+                        </summary>
+ 
+                        <table class="pass">
+                            <thead>
+                                <tr>
+                                    <th>Class</th>
+                                    <th>PredefinedType</th>
+                                    <th>Name</th>
+                                    <th>Description</th>
+                                    <th>GlobalId</th>
+                                    <th>Tag</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>IfcWindow</td>
+                                    <td>None</td>
+                                    <td>EG-Fenster-6</td>
+                                    <td>None</td>
+                                    <td>1srAI$R4T8ihLXSNHmUSET</td>
+                                    <td>2872C43C-81BB-4535-95-65-B3AC3FB4DE23</td>
+                                </tr>
+                                <tr>
+                                    <td>IfcWindow</td>
+                                    <td>None</td>
+                                    <td>OG-Fenster-1</td>
+                                    <td>None</td>
+                                    <td>2ACmFFQhT1Ouf0x4YRUh9m</td>
+                                    <td>671AB351-B612-4D9E-BC-6F-DAEBA688142F</td>
+                                </tr>
+                                <tr>
+                                    <td>IfcWindow</td>
+                                    <td>None</td>
+                                    <td>OG-Fenster-2</td>
+                                    <td>None</td>
+                                    <td>1zOBw0Gej5Wf0QAJfHnOc0</td>
+                                    <td>FA683FAD-0F01-4AF4-93-87-2834E91204A6</td>
+                                </tr>
+                                <tr>
+                                    <td>IfcWindow</td>
+                                    <td>None</td>
+                                    <td>EG-Fenster-4</td>
+                                    <td>None</td>
+                                    <td>25nJxEpYf8LRDJNkMUVO0m</td>
+                                    <td>436D2D20-7879-42FD-A7-70-F2BECB09D642</td>
+                                </tr>
+                                <tr>
+                                    <td>IfcWindow</td>
+                                    <td>None</td>
+                                    <td>EG-Fenster-5</td>
+                                    <td>None</td>
+                                    <td>3BFcylCsX74PQAoRAe5fNv</td>
+                                    <td>EE544359-8729-43CD-AE-E2-4BB37935CFDA</td>
+                                </tr>
+                                <tr>
+                                    <td>IfcWindow</td>
+                                    <td>None</td>
+                                    <td>EG-Fenster-2</td>
+                                    <td>None</td>
+                                    <td>2Q9w7oRXP249jBobEMVqlZ</td>
+                                    <td>84B24574-B3EE-412A-A4-33-CE7E10ED2A8D</td>
+                                </tr>
+                                <tr>
+                                    <td>IfcWindow</td>
+                                    <td>None</td>
+                                    <td>EG-Fenster-3</td>
+                                    <td>None</td>
+                                    <td>1DiYqhfzH9xxuJdVHwXCNa</td>
+                                    <td>EDE1E333-3D1C-441D-BE-45-790DF31E9DDC</td>
+                                </tr>
+                                <tr>
+                                    <td>IfcWindow</td>
+                                    <td>None</td>
+                                    <td>EG-Fenster-8</td>
+                                    <td>None</td>
+                                    <td>13aSY79zb8fP4HApEJ0z_e</td>
+                                    <td>8FAFF59C-23BB-48D6-9C-CE-C4F804C53C9A</td>
+                                </tr>
+                                <tr>
+                                    <td>IfcWindow</td>
+                                    <td>None</td>
+                                    <td>EG-Fenster-9</td>
+                                    <td>None</td>
+                                    <td>2EQh_jhP1B_A_AMuSJc5E0</td>
+                                    <td>A896A1CB-16B1-4CCD-A5-98-F5C5BC0C37DE</td>
+                                </tr>
+                                <tr>
+                                    <td>IfcWindow</td>
+                                    <td>None</td>
+                                    <td>EG-Fenster-1</td>
+                                    <td>None</td>
+                                    <td>1TAI4ouKX4Xx4lBDZIu5qM</td>
+                                    <td>EAC2BE5E-BCD2-474E-95-24-57C652F96BF7</td>
+                                </tr>
+                                <tr>
+                                    <td>IfcWindow</td>
+                                    <td>None</td>
+                                    <td>EG-Fenster-7</td>
+                                    <td>None</td>
+                                    <td>0B1RwEzzP3CfME5NR$Vqh5</td>
+                                    <td>E5AC7902-7454-439D-AF-DD-A1E5E37A0D08</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </details>
+                </li>
+            </ol>
+        </div>
+    </section>
+    <section style="clear: both; overflow: hidden;">
+        <div class="info">
+            <h2>properties of IfcSlab / IfcRoof (not enrichable)</h2>
+
+            <div class="container">
+                <div class="pass percent" style="width: 100%;">100%</div>
+            </div>
+            <p>
+                <span class="item pass">Pass</span>
+                <span class="item">
+                    Checks passed: <strong>4</strong> / <strong>4</strong>
+                </span>
+                <span class="item">
+                    Elements passed: <strong>4</strong> / <strong>4</strong>
+                </span>
+            </p>
+        </div>
+        <div class="results">
+            <p>
+                <strong>Applicability</strong>
+            </p>
+            <ul>
+                <li>All {&#x27;enumeration&#x27;: [&#x27;IFCSLAB&#x27;, &#x27;IFCROOF&#x27;]} data</li>
+            </ul>
+            <p>
+                <strong>Requirements</strong>
+            </p>
+            <ol>
+                <li class="pass">
+                    <details>
+                        <summary>
+                            ThermalTransmittance data shall be provided in the dataset Pset_SlabCommon
+                        </summary>
+ 
+                        <table class="pass">
+                            <thead>
+                                <tr>
+                                    <th>Class</th>
+                                    <th>PredefinedType</th>
+                                    <th>Name</th>
+                                    <th>Description</th>
+                                    <th>GlobalId</th>
+                                    <th>Tag</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>IfcSlab</td>
+                                    <td>ROOF</td>
+                                    <td>Dach-2</td>
+                                    <td>None</td>
+                                    <td>2IxUUNUVPB6Ob$eicCfP2N</td>
+                                    <td>BD6D9414-37DF-40A8-88-40-301A32A9A5B5</td>
+                                </tr>
+                                <tr>
+                                    <td>IfcSlab</td>
+                                    <td>ROOF</td>
+                                    <td>Dach-1</td>
+                                    <td>None</td>
+                                    <td>07Enbsqm9C7AQC9iyBwfSD</td>
+                                    <td>E142B455-80E4-4B96-83-EC-E1589CA998DB</td>
+                                </tr>
+                                <tr>
+                                    <td>IfcSlab</td>
+                                    <td>FLOOR</td>
+                                    <td>Bodenplatte</td>
+                                    <td>None</td>
+                                    <td>1pPHnf7cXCpPsNEnQf8_6B</td>
+                                    <td>E4D9CD4B-CA43-4735-94-BD-1FD4376BD455</td>
+                                </tr>
+                                <tr>
+                                    <td>IfcSlab</td>
+                                    <td>FLOOR</td>
+                                    <td>Slab-033</td>
+                                    <td>None</td>
+                                    <td>2RGlQk4xH47RHK93zcTzUL</td>
+                                    <td>DA0A17AC-B773-47AC-99-C5-D390C73AD5CC</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </details>
+                </li>
+            </ol>
+        </div>
+    </section>
+    <section style="clear: both; overflow: hidden;">
+        <div class="info">
+            <h2>properties of IfcWall etc. (not enrichable)</h2>
+
+            <div class="container">
+                <div class="pass percent" style="width: 100%;">100%</div>
+            </div>
+            <p>
+                <span class="item pass">Pass</span>
+                <span class="item">
+                    Checks passed: <strong>13</strong> / <strong>13</strong>
+                </span>
+                <span class="item">
+                    Elements passed: <strong>13</strong> / <strong>13</strong>
+                </span>
+            </p>
+        </div>
+        <div class="results">
+            <p>
+                <strong>Applicability</strong>
+            </p>
+            <ul>
+                <li>All {&#x27;enumeration&#x27;: [&#x27;IFCWALL&#x27;, &#x27;IFCWALLSTANDARDCASE&#x27;]} data</li>
+            </ul>
+            <p>
+                <strong>Requirements</strong>
+            </p>
+            <ol>
+                <li class="pass">
+                    <details>
+                        <summary>
+                            ThermalTransmittance data shall be provided in the dataset Pset_WallCommon
+                        </summary>
+ 
+                        <table class="pass">
+                            <thead>
+                                <tr>
+                                    <th>Class</th>
+                                    <th>PredefinedType</th>
+                                    <th>Name</th>
+                                    <th>Description</th>
+                                    <th>GlobalId</th>
+                                    <th>Tag</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>IfcWallStandardCase</td>
+                                    <td>None</td>
+                                    <td>Wand-Ext-ERDG-1</td>
+                                    <td>None</td>
+                                    <td>3rPX_Juz59peXXY6wDJl18</td>
+                                    <td>BEF1E630-DE4B-41C5-AD-66-B87F1A8D67A1</td>
+                                </tr>
+                                <tr>
+                                    <td>IfcWallStandardCase</td>
+                                    <td>None</td>
+                                    <td>Wand-Ext-OG-3</td>
+                                    <td>None</td>
+                                    <td>3VCarUKgH1buLo22Ozxe6J</td>
+                                    <td>5D0903EC-02FE-4DE0-98-05-1D4D15974A41</td>
+                                </tr>
+                                <tr>
+                                    <td>IfcWallStandardCase</td>
+                                    <td>None</td>
+                                    <td>Wand-Int-ERDG-2</td>
+                                    <td>None</td>
+                                    <td>3PfS__Y_DBAfq5naM6zD2Z</td>
+                                    <td>40F78310-9E7E-4793-BC-9E-DB102FD72B73</td>
+                                </tr>
+                                <tr>
+                                    <td>IfcWallStandardCase</td>
+                                    <td>None</td>
+                                    <td>Wand-Int-ERDG-4</td>
+                                    <td>None</td>
+                                    <td>2XPyKWY018sA1ygZKgQPtU</td>
+                                    <td>BC6F0F70-6195-495E-A2-FC-239713029DB1</td>
+                                </tr>
+                                <tr>
+                                    <td>IfcWallStandardCase</td>
+                                    <td>None</td>
+                                    <td>Wand-Int-ERDG-5</td>
+                                    <td>None</td>
+                                    <td>1$wmdwWPjDYuku_ghVkynE</td>
+                                    <td>623FF5CC-008F-4D9B-BE-AC-E81A16C53080</td>
+                                </tr>
+                                <tr>
+                                    <td>IfcWallStandardCase</td>
+                                    <td>None</td>
+                                    <td>Wand-Ext-OG-1</td>
+                                    <td>None</td>
+                                    <td>0knNIAVBPBFvBy_m5QVHsU</td>
+                                    <td>7B65A2FF-2B2E-4F49-B4-A1-7B41CF4110EE</td>
+                                </tr>
+                                <tr>
+                                    <td>IfcWallStandardCase</td>
+                                    <td>None</td>
+                                    <td>Wand-Ext-ERDG-3</td>
+                                    <td>None</td>
+                                    <td>25fsbPyk15VvuXI$yNKenK</td>
+                                    <td>D1BD94FD-C699-41C5-B0-98-57167561802A</td>
+                                </tr>
+                                <tr>
+                                    <td>IfcWallStandardCase</td>
+                                    <td>None</td>
+                                    <td>Wand-Ext-OG-4</td>
+                                    <td>None</td>
+                                    <td>3Ttjr$59XEWfWN1WUHjelZ</td>
+                                    <td>C0070317-136B-4A93-BD-CC-3B8478F23A5C</td>
+                                </tr>
+                                <tr>
+                                    <td>IfcWallStandardCase</td>
+                                    <td>None</td>
+                                    <td>Wand-Ext-ERDG-4</td>
+                                    <td>None</td>
+                                    <td>16DNNqzfP2thtfaOflvsKA</td>
+                                    <td>A6C3DE63-3731-4F6A-94-7E-DE8A8295779F</td>
+                                </tr>
+                                <tr>
+                                    <td>IfcWallStandardCase</td>
+                                    <td>None</td>
+                                    <td>Wand-Int-ERDG-1</td>
+                                    <td>None</td>
+                                    <td>2ptk1k7qn8_Qk22vjh$0DE</td>
+                                    <td>8C826359-B394-49D6-BD-D5-49D50F806B56</td>
+                                </tr>
+                                <tr>
+                                    <td>IfcWallStandardCase</td>
+                                    <td>None</td>
+                                    <td>Wand-Ext-ERDG-2</td>
+                                    <td>None</td>
+                                    <td>1bzfVsJqn8De5PukCrqylz</td>
+                                    <td>74EAE11D-EA09-459E-92-62-5370AED48E8E</td>
+                                </tr>
+                                <tr>
+                                    <td>IfcWallStandardCase</td>
+                                    <td>None</td>
+                                    <td>Wand-Int-ERDG-3</td>
+                                    <td>None</td>
+                                    <td>3jjW3rL656ex34Gws22EfM</td>
+                                    <td>2197C9B9-DEF1-444F-B8-1E-1DB092762AB7</td>
+                                </tr>
+                                <tr>
+                                    <td>IfcWallStandardCase</td>
+                                    <td>None</td>
+                                    <td>Wand-Ext-OG-2</td>
+                                    <td>None</td>
+                                    <td>25OWQvmXj5BPgyergP43tY</td>
+                                    <td>79A3F0D1-59C9-4AE1-9D-6D-772238A0ECC7</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </details>
+                </li>
+            </ol>
+        </div>
+    </section>
+    <section style="clear: both; overflow: hidden;">
+        <div class="info">
+            <h2>properties of IfcBuilding (not enrichable)</h2>
+
+            <div class="container">
+                <div class="pass percent" style="width: 100%;">100%</div>
+            </div>
+            <p>
+                <span class="item pass">Pass</span>
+                <span class="item">
+                    Checks passed: <strong>2</strong> / <strong>2</strong>
+                </span>
+                <span class="item">
+                    Elements passed: <strong>1</strong> / <strong>1</strong>
+                </span>
+            </p>
+        </div>
+        <div class="results">
+            <p>
+                <strong>Applicability</strong>
+            </p>
+            <ul>
+                <li>All IFCBUILDING data</li>
+            </ul>
+            <p>
+                <strong>Requirements</strong>
+            </p>
+            <ol>
+                <li class="pass">
+                    <details>
+                        <summary>
+                            YearOfConstruction data shall be provided in the dataset Pset_BuildingCommon
+                        </summary>
+ 
+                        <table class="pass">
+                            <thead>
+                                <tr>
+                                    <th>Class</th>
+                                    <th>PredefinedType</th>
+                                    <th>Name</th>
+                                    <th>Description</th>
+                                    <th>GlobalId</th>
+                                    <th>Tag</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>IfcBuilding</td>
+                                    <td>Wohnhaus</td>
+                                    <td>FZK-Haus</td>
+                                    <td>FZK-Haus create by KHH / IAI / FZK</td>
+                                    <td>2hQBAVPOr5VxhS3Jl0O47h</td>
+                                    <td>None</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </details>
+                </li>
+                <li class="pass">
+                    <details>
+                        <summary>
+                            OccupancyType data shall be provided in the dataset Pset_BuildingCommon
+                        </summary>
+ 
+                        <table class="pass">
+                            <thead>
+                                <tr>
+                                    <th>Class</th>
+                                    <th>PredefinedType</th>
+                                    <th>Name</th>
+                                    <th>Description</th>
+                                    <th>GlobalId</th>
+                                    <th>Tag</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>IfcBuilding</td>
+                                    <td>Wohnhaus</td>
+                                    <td>FZK-Haus</td>
+                                    <td>FZK-Haus create by KHH / IAI / FZK</td>
+                                    <td>2hQBAVPOr5VxhS3Jl0O47h</td>
+                                    <td>None</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </details>
+                </li>
+            </ol>
+        </div>
+    </section>
+    <section style="clear: both; overflow: hidden;">
+        <div class="info">
+            <h2>properties of IfcBuildingStorey (not enrichable)</h2>
+
+            <div class="container">
+                <div class="pass percent" style="width: 100%;">100%</div>
+            </div>
+            <p>
+                <span class="item pass">Pass</span>
+                <span class="item">
+                    Checks passed: <strong>8</strong> / <strong>8</strong>
+                </span>
+                <span class="item">
+                    Elements passed: <strong>2</strong> / <strong>2</strong>
+                </span>
+            </p>
+        </div>
+        <div class="results">
+            <p>
+                <strong>Applicability</strong>
+            </p>
+            <ul>
+                <li>All IFCBUILDINGSTOREY data</li>
+            </ul>
+            <p>
+                <strong>Requirements</strong>
+            </p>
+            <ol>
+                <li class="pass">
+                    <details>
+                        <summary>
+                            GrossFloorArea data shall be provided in the dataset {&#x27;pattern&#x27;: &#x27;.*BaseQuantities.*&#x27;}
+                        </summary>
+ 
+                        <table class="pass">
+                            <thead>
+                                <tr>
+                                    <th>Class</th>
+                                    <th>PredefinedType</th>
+                                    <th>Name</th>
+                                    <th>Description</th>
+                                    <th>GlobalId</th>
+                                    <th>Tag</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>IfcBuildingStorey</td>
+                                    <td>None</td>
+                                    <td>Dachgeschoss</td>
+                                    <td>None</td>
+                                    <td>273g3wqLzDtfYIl7qqkgcO</td>
+                                    <td>None</td>
+                                </tr>
+                                <tr>
+                                    <td>IfcBuildingStorey</td>
+                                    <td>None</td>
+                                    <td>Erdgeschoss</td>
+                                    <td>None</td>
+                                    <td>2eyxpyOx95m90jmsXLOuR0</td>
+                                    <td>None</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </details>
+                </li>
+                <li class="pass">
+                    <details>
+                        <summary>
+                            GrossHeight data shall be provided in the dataset {&#x27;pattern&#x27;: &#x27;.*BaseQuantities.*&#x27;}
+                        </summary>
+ 
+                        <table class="pass">
+                            <thead>
+                                <tr>
+                                    <th>Class</th>
+                                    <th>PredefinedType</th>
+                                    <th>Name</th>
+                                    <th>Description</th>
+                                    <th>GlobalId</th>
+                                    <th>Tag</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>IfcBuildingStorey</td>
+                                    <td>None</td>
+                                    <td>Dachgeschoss</td>
+                                    <td>None</td>
+                                    <td>273g3wqLzDtfYIl7qqkgcO</td>
+                                    <td>None</td>
+                                </tr>
+                                <tr>
+                                    <td>IfcBuildingStorey</td>
+                                    <td>None</td>
+                                    <td>Erdgeschoss</td>
+                                    <td>None</td>
+                                    <td>2eyxpyOx95m90jmsXLOuR0</td>
+                                    <td>None</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </details>
+                </li>
+                <li class="pass">
+                    <details>
+                        <summary>
+                            Height data shall be provided in the dataset {&#x27;pattern&#x27;: &#x27;.*BaseQuantities.*&#x27;}
+                        </summary>
+ 
+                        <table class="pass">
+                            <thead>
+                                <tr>
+                                    <th>Class</th>
+                                    <th>PredefinedType</th>
+                                    <th>Name</th>
+                                    <th>Description</th>
+                                    <th>GlobalId</th>
+                                    <th>Tag</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>IfcBuildingStorey</td>
+                                    <td>None</td>
+                                    <td>Dachgeschoss</td>
+                                    <td>None</td>
+                                    <td>273g3wqLzDtfYIl7qqkgcO</td>
+                                    <td>None</td>
+                                </tr>
+                                <tr>
+                                    <td>IfcBuildingStorey</td>
+                                    <td>None</td>
+                                    <td>Erdgeschoss</td>
+                                    <td>None</td>
+                                    <td>2eyxpyOx95m90jmsXLOuR0</td>
+                                    <td>None</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </details>
+                </li>
+                <li class="pass">
+                    <details>
+                        <summary>
+                            NetHeight data shall be provided in the dataset {&#x27;pattern&#x27;: &#x27;.*BaseQuantities.*&#x27;}
+                        </summary>
+ 
+                        <table class="pass">
+                            <thead>
+                                <tr>
+                                    <th>Class</th>
+                                    <th>PredefinedType</th>
+                                    <th>Name</th>
+                                    <th>Description</th>
+                                    <th>GlobalId</th>
+                                    <th>Tag</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>IfcBuildingStorey</td>
+                                    <td>None</td>
+                                    <td>Dachgeschoss</td>
+                                    <td>None</td>
+                                    <td>273g3wqLzDtfYIl7qqkgcO</td>
+                                    <td>None</td>
+                                </tr>
+                                <tr>
+                                    <td>IfcBuildingStorey</td>
+                                    <td>None</td>
+                                    <td>Erdgeschoss</td>
+                                    <td>None</td>
+                                    <td>2eyxpyOx95m90jmsXLOuR0</td>
+                                    <td>None</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </details>
+                </li>
+            </ol>
+        </div>
+    </section>
+    <section style="clear: both; overflow: hidden;">
+        <div class="info">
+            <h2>properties of IfcSpace (not enrichable)</h2>
+
+            <div class="container">
+                <div class="pass percent" style="width: 100%;">100%</div>
+            </div>
+            <p>
+                <span class="item pass">Pass</span>
+                <span class="item">
+                    Checks passed: <strong>7</strong> / <strong>7</strong>
+                </span>
+                <span class="item">
+                    Elements passed: <strong>7</strong> / <strong>7</strong>
+                </span>
+            </p>
+        </div>
+        <div class="results">
+            <p>
+                <strong>Applicability</strong>
+            </p>
+            <ul>
+                <li>All IFCSPACE data</li>
+            </ul>
+            <p>
+                <strong>Requirements</strong>
+            </p>
+            <ol>
+                <li class="pass">
+                    <details>
+                        <summary>
+                            Shall be IFCSPACE data
+                        </summary>
+ 
+                        <table class="pass">
+                            <thead>
+                                <tr>
+                                    <th>Class</th>
+                                    <th>PredefinedType</th>
+                                    <th>Name</th>
+                                    <th>Description</th>
+                                    <th>GlobalId</th>
+                                    <th>Tag</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>IfcSpace</td>
+                                    <td>None</td>
+                                    <td>1</td>
+                                    <td>None</td>
+                                    <td>3$f2p7VyLB7eox67SA_zKE</td>
+                                    <td>None</td>
+                                </tr>
+                                <tr>
+                                    <td>IfcSpace</td>
+                                    <td>None</td>
+                                    <td>4</td>
+                                    <td>None</td>
+                                    <td>347jFE2yX7IhCEIALmupEH</td>
+                                    <td>None</td>
+                                </tr>
+                                <tr>
+                                    <td>IfcSpace</td>
+                                    <td>None</td>
+                                    <td>6</td>
+                                    <td>None</td>
+                                    <td>17JZcMFrf5tOftUTidA0d3</td>
+                                    <td>None</td>
+                                </tr>
+                                <tr>
+                                    <td>IfcSpace</td>
+                                    <td>None</td>
+                                    <td>2</td>
+                                    <td>None</td>
+                                    <td>2RSCzLOBz4FAK$_wE8VckM</td>
+                                    <td>None</td>
+                                </tr>
+                                <tr>
+                                    <td>IfcSpace</td>
+                                    <td>None</td>
+                                    <td>3</td>
+                                    <td>None</td>
+                                    <td>0e_hbkIQ5DMQlIJ$2V3j_m</td>
+                                    <td>None</td>
+                                </tr>
+                                <tr>
+                                    <td>IfcSpace</td>
+                                    <td>None</td>
+                                    <td>7</td>
+                                    <td>None</td>
+                                    <td>2dQFggKBb1fOc1CqZDIDlx</td>
+                                    <td>None</td>
+                                </tr>
+                                <tr>
+                                    <td>IfcSpace</td>
+                                    <td>None</td>
+                                    <td>5</td>
+                                    <td>None</td>
+                                    <td>0Lt8gR_E9ESeGH5uY_g9e9</td>
+                                    <td>None</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </details>
+                </li>
+            </ol>
+        </div>
+    </section>
+    <section style="clear: both; overflow: hidden;">
+        <div class="info">
+            <h2>2nd Level Spaceboundaries, pure</h2>
+
+            <div class="container">
+                <div class="skipped percent" style="width: 100%;">Skipped</div>
+            </div>
+            <p>
+                <span class="item skipped">Skipped</span>
+                <span class="item">
+                    Checks passed: <strong>0</strong> / <strong>0</strong>
+                </span>
+                <span class="item">
+                    Elements passed: <strong>0</strong> / <strong>0</strong>
+                </span>
+            </p>
+        </div>
+        <div class="results">
+            <p>
+                <strong>Applicability</strong>
+            </p>
+            <ul>
+                <li>All IFCRELSPACEBOUNDARY2NDLEVEL data</li>
+            </ul>
+            <p>
+                <strong>Requirements</strong>
+            </p>
+            <ol>
+                <li class="skipped">
+                    <details>
+                        <summary>
+                            The RelatingSpace shall be provided
+                        </summary>
+ 
+                    </details>
+                </li>
+                <li class="skipped">
+                    <details>
+                        <summary>
+                            The RelatedBuildingElement shall be provided
+                        </summary>
+ 
+                    </details>
+                </li>
+                <li class="skipped">
+                    <details>
+                        <summary>
+                            The Description shall be {&#x27;pattern&#x27;: &#x27;^2[ab]&#x27;}
+                        </summary>
+ 
+                    </details>
+                </li>
+                <li class="skipped">
+                    <details>
+                        <summary>
+                            The ConnectionGeometry shall be provided
+                        </summary>
+ 
+                    </details>
+                </li>
+                <li class="skipped">
+                    <details>
+                        <summary>
+                            The PhysicalOrVirtualBoundary shall be {&#x27;pattern&#x27;: &#x27;PHYSICAL|VIRTUAL&#x27;}
+                        </summary>
+ 
+                    </details>
+                </li>
+                <li class="skipped">
+                    <details>
+                        <summary>
+                            The InternalOrExternalBoundary shall be {&#x27;pattern&#x27;: &#x27;INTERNAL|EXTERNAL|EXTERNAL_EARTH|EXTERNAL_FIRE|EXTERNAL_WATER&#x27;}
+                        </summary>
+ 
+                    </details>
+                </li>
+            </ol>
+        </div>
+    </section>
+    <section style="clear: both; overflow: hidden;">
+        <div class="info">
+            <h2>2nd Level Spaceboundaries with set CorrespondingBoundary</h2>
+
+            <div class="container">
+                <div class="skipped percent" style="width: 100%;">Skipped</div>
+            </div>
+            <p>
+                <span class="item skipped">Skipped</span>
+                <span class="item">
+                    Checks passed: <strong>0</strong> / <strong>0</strong>
+                </span>
+                <span class="item">
+                    Elements passed: <strong>0</strong> / <strong>0</strong>
+                </span>
+            </p>
+        </div>
+        <div class="results">
+            <p>
+                <strong>Applicability</strong>
+            </p>
+            <ul>
+                <li>All IFCRELSPACEBOUNDARY2NDLEVEL data</li>
+                <li>Data where the CorrespondingBoundary is provided</li>
+            </ul>
+            <p>
+                <strong>Requirements</strong>
+            </p>
+            <ol>
+                <li class="skipped">
+                    <details>
+                        <summary>
+                            The Description shall be 2a
+                        </summary>
+ 
+                    </details>
+                </li>
+            </ol>
+        </div>
+    </section>
+    <hr>
+    <footer>
+        <p>
+            Report by the <a href="https://bonsaibim.org/">Bonsai</a> and <a href="http://ifcopenshell.org/">IfcOpenShell</a>.
+        </p>
+    </footer>
+</body>
+</html>
