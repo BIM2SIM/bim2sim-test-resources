@@ -1,0 +1,16 @@
+solid b'inlet_1'
+facet normal 0.000000 0.000000 0.089457
+  outer loop
+    vertex -1.246647 4.405516 2.905919
+    vertex -1.246647 4.106422 2.905919
+    vertex -0.947553 4.106422 2.905919
+  endloop
+endfacet
+facet normal -0.000000 0.000000 0.089457
+  outer loop
+    vertex -1.246647 4.405516 2.905919
+    vertex -0.947553 4.106422 2.905919
+    vertex -0.947553 4.405516 2.905919
+  endloop
+endfacet
+endsolid b'inlet_1'

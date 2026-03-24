@@ -1,0 +1,297 @@
+/*--------------------------------*- C++ -*----------------------------------*\
+| =========                 |                                                 |
+| \\      /  F ield         | OpenFOAM: The Open Source CFD Toolbox           |
+|  \\    /   O peration     | Version:  v1706+                                |
+|   \\  /    A nd           | Web:      www.OpenFOAM.org                      |
+|    \\/     M anipulation  |                                                 |
+\*---------------------------------------------------------------------------*/
+/* Butterfly 0.0.5                https://github.com/ladybug-tools/butterfly *\
+\*---------------------------------------------------------------------------*/
+FoamFile
+{
+	version		4.0;
+	format		ascii;
+	class		volScalarField;
+	location	"0";
+	object		T;
+}
+
+dimensions		[0 0 0 1 0 0 0];
+
+internalField		uniform 296.093366 \\Simulation time: 08/14, 12:00:00 \\Building rotation: 180\u00b0;
+
+boundaryField
+{
+
+    InnerWall_3S62uZocO66ngdmMaRS2M9
+    {
+
+        type		externalWallHeatFluxTemperature;
+
+        mode		power;
+
+        qr		qr;
+
+        Q		uniform -74.612191;
+
+        qrRelaxation		0.003;
+
+        relaxation		1.0;
+
+        kappaMethod		fluidThermo;
+
+        kappa		fluidThermo;
+
+        value		uniform 296.53235;
+
+    }
+
+    Ceiling_14TeGe_aGDXLMTt8fX0vQP
+    {
+
+        type		externalWallHeatFluxTemperature;
+
+        mode		power;
+
+        qr		qr;
+
+        Q		uniform -227.525574;
+
+        qrRelaxation		0.003;
+
+        relaxation		1.0;
+
+        kappaMethod		fluidThermo;
+
+        kappa		fluidThermo;
+
+        value		uniform 295.355038;
+
+    }
+
+    InnerWall_1zvtHpRHFWSVHgO9MXUL0M
+    {
+
+        type		externalWallHeatFluxTemperature;
+
+        mode		power;
+
+        qr		qr;
+
+        Q		uniform -77.244605;
+
+        qrRelaxation		0.003;
+
+        relaxation		1.0;
+
+        kappaMethod		fluidThermo;
+
+        kappa		fluidThermo;
+
+        value		uniform 296.096026;
+
+    }
+
+    InnerDoor_1aGihCk9trZ___gjiWxX___Jdv
+    {
+
+        type		externalWallHeatFluxTemperature;
+
+        mode		power;
+
+        qr		qr;
+
+        Q		uniform -17.036261;
+
+        qrRelaxation		0.003;
+
+        relaxation		1.0;
+
+        kappaMethod		fluidThermo;
+
+        kappa		fluidThermo;
+
+        value		uniform 296.337048;
+
+    }
+
+    GroundFloor_2Sn7uAlFxA___POrax5b6wqo
+    {
+
+        type		fixedValue;
+
+        value		uniform 297.512307;
+
+    }
+
+    OuterWall_3XYW9SWB7YBTXnJuv3X___K5
+    {
+
+        type		externalWallHeatFluxTemperature;
+
+        mode		power;
+
+        qr		qr;
+
+        Q		uniform -136.364312;
+
+        qrRelaxation		0.003;
+
+        relaxation		1.0;
+
+        kappaMethod		fluidThermo;
+
+        kappa		fluidThermo;
+
+        value		uniform 294.145762;
+
+    }
+
+    OuterWall_3XTF9VnRG___5_FyP6rRZVuw
+    {
+
+        type		externalWallHeatFluxTemperature;
+
+        mode		power;
+
+        qr		qr;
+
+        Q		uniform -165.863275;
+
+        qrRelaxation		0.003;
+
+        relaxation		1.0;
+
+        kappaMethod		fluidThermo;
+
+        kappa		fluidThermo;
+
+        value		uniform 294.035529;
+
+    }
+
+    Window_2CVWUzpEdesdJARzpmJYC8
+    {
+
+        type		externalWallHeatFluxTemperature;
+
+        mode		power;
+
+        qr		qr;
+
+        Q		uniform 47.165864;
+
+        qrRelaxation		0.003;
+
+        relaxation		1.0;
+
+        kappaMethod		fluidThermo;
+
+        kappa		fluidThermo;
+
+        value		uniform 299.350676;
+
+    }
+
+    Window_2NviMh_1vArANYae7v_22c
+    {
+
+        type		externalWallHeatFluxTemperature;
+
+        mode		power;
+
+        qr		qr;
+
+        Q		uniform -8.008604;
+
+        qrRelaxation		0.003;
+
+        relaxation		1.0;
+
+        kappaMethod		fluidThermo;
+
+        kappa		fluidThermo;
+
+        value		uniform 296.113582;
+
+    }
+
+    heater0_surface
+    {
+
+        type		externalWallHeatFluxTemperature;
+
+        mode		power;
+
+        qr		qr;
+
+        Q		322.974795;
+
+        qrRelaxation		0.003;
+
+        relaxation		1.0;
+
+        kappaMethod		fluidThermo;
+
+        kappa		fluidThermo;
+
+        value		uniform 313.15;
+
+    }
+
+    inlet_diffuser
+    {
+
+        type		zeroGradient;
+
+    }
+
+    inlet_source_sink
+    {
+
+        type		fixedValue;
+
+        value		uniform 296.093366;
+
+    }
+
+    inlet_box
+    {
+
+        type		zeroGradient;
+
+    }
+
+    outlet_diffuser
+    {
+
+        type		zeroGradient;
+
+    }
+
+    outlet_source_sink
+    {
+
+        type		inletOutlet;
+
+        inletValue		$internalField;
+
+        value		$internalField;
+
+    }
+
+    outlet_box
+    {
+
+        type		zeroGradient;
+
+    }
+
+    boundingbox
+    {
+
+        type		zeroGradient;
+
+    }
+
+}

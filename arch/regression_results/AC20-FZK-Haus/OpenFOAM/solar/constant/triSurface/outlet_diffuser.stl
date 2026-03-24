@@ -1,0 +1,16 @@
+solid outlet_diffuser
+facet normal 0.000000 0.000000 0.160000
+  outer loop
+    vertex 2.250000 8.972500 2.460000
+    vertex 1.850000 8.572500 2.460000
+    vertex 2.250000 8.572500 2.460000
+  endloop
+endfacet
+facet normal 0.000000 0.000000 0.160000
+  outer loop
+    vertex 2.250000 8.972500 2.460000
+    vertex 1.850000 8.972500 2.460000
+    vertex 1.850000 8.572500 2.460000
+  endloop
+endfacet
+endsolid outlet_diffuser

@@ -1,0 +1,58 @@
+solid b'box_3'
+facet normal 0.000000 0.061589 0.000000
+  outer loop
+    vertex -0.947553 4.405516 2.905919
+    vertex -0.947553 4.405516 2.700000
+    vertex -1.246647 4.405516 2.700000
+  endloop
+endfacet
+facet normal 0.000000 0.061589 0.000000
+  outer loop
+    vertex -0.947553 4.405516 2.905919
+    vertex -1.246647 4.405516 2.700000
+    vertex -1.246647 4.405516 2.905919
+  endloop
+endfacet
+facet normal -0.061589 0.000000 -0.000000
+  outer loop
+    vertex -1.246647 4.405516 2.905919
+    vertex -1.246647 4.405516 2.700000
+    vertex -1.246647 4.106422 2.700000
+  endloop
+endfacet
+facet normal -0.061589 -0.000000 0.000000
+  outer loop
+    vertex -1.246647 4.405516 2.905919
+    vertex -1.246647 4.106422 2.700000
+    vertex -1.246647 4.106422 2.905919
+  endloop
+endfacet
+facet normal 0.000000 -0.061589 0.000000
+  outer loop
+    vertex -1.246647 4.106422 2.905919
+    vertex -1.246647 4.106422 2.700000
+    vertex -0.947553 4.106422 2.700000
+  endloop
+endfacet
+facet normal 0.000000 -0.061589 0.000000
+  outer loop
+    vertex -1.246647 4.106422 2.905919
+    vertex -0.947553 4.106422 2.700000
+    vertex -0.947553 4.106422 2.905919
+  endloop
+endfacet
+facet normal 0.061589 0.000000 0.000000
+  outer loop
+    vertex -0.947553 4.106422 2.905919
+    vertex -0.947553 4.106422 2.700000
+    vertex -0.947553 4.405516 2.700000
+  endloop
+endfacet
+facet normal 0.061589 -0.000000 0.000000
+  outer loop
+    vertex -0.947553 4.106422 2.905919
+    vertex -0.947553 4.405516 2.700000
+    vertex -0.947553 4.405516 2.905919
+  endloop
+endfacet
+endsolid b'box_3'

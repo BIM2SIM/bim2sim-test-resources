@@ -1,0 +1,58 @@
+solid inlet_box
+facet normal 0.000000 0.061589 0.000000
+  outer loop
+    vertex 2.199547 7.067047 2.695919
+    vertex 2.199547 7.067047 2.490000
+    vertex 1.900453 7.067047 2.490000
+  endloop
+endfacet
+facet normal 0.000000 0.061589 0.000000
+  outer loop
+    vertex 2.199547 7.067047 2.695919
+    vertex 1.900453 7.067047 2.490000
+    vertex 1.900453 7.067047 2.695919
+  endloop
+endfacet
+facet normal -0.061589 0.000000 0.000000
+  outer loop
+    vertex 1.900453 6.767953 2.490000
+    vertex 1.900453 7.067047 2.695919
+    vertex 1.900453 7.067047 2.490000
+  endloop
+endfacet
+facet normal -0.061589 0.000000 0.000000
+  outer loop
+    vertex 1.900453 6.767953 2.490000
+    vertex 1.900453 6.767953 2.695919
+    vertex 1.900453 7.067047 2.695919
+  endloop
+endfacet
+facet normal 0.000000 -0.061589 0.000000
+  outer loop
+    vertex 2.199547 6.767953 2.490000
+    vertex 1.900453 6.767953 2.695919
+    vertex 1.900453 6.767953 2.490000
+  endloop
+endfacet
+facet normal 0.000000 -0.061589 0.000000
+  outer loop
+    vertex 2.199547 6.767953 2.490000
+    vertex 2.199547 6.767953 2.695919
+    vertex 1.900453 6.767953 2.695919
+  endloop
+endfacet
+facet normal 0.061589 0.000000 0.000000
+  outer loop
+    vertex 2.199547 6.767953 2.695919
+    vertex 2.199547 6.767953 2.490000
+    vertex 2.199547 7.067047 2.490000
+  endloop
+endfacet
+facet normal 0.061589 -0.000000 0.000000
+  outer loop
+    vertex 2.199547 6.767953 2.695919
+    vertex 2.199547 7.067047 2.490000
+    vertex 2.199547 7.067047 2.695919
+  endloop
+endfacet
+endsolid inlet_box
