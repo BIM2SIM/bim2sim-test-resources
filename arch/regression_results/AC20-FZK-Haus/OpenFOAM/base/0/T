@@ -137,7 +137,7 @@ boundaryField
 
         qr		qr;
 
-        Q		uniform 102.968475;
+        Q		uniform -30.53916;
 
         qrRelaxation		0.003;
 
@@ -160,7 +160,7 @@ boundaryField
 
         qr		qr;
 
-        Q		uniform 102.933481;
+        Q		uniform -30.574153;
 
         qrRelaxation		0.003;
 
@@ -183,7 +183,7 @@ boundaryField
 
         qr		qr;
 
-        Q		76.611154;
+        Q		236.820315;
 
         qrRelaxation		0.003;
 

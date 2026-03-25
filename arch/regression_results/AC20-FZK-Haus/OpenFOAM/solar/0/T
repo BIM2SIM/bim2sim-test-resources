@@ -18,7 +18,7 @@ FoamFile
 
 dimensions		[0 0 0 1 0 0 0];
 
-internalField		uniform 296.093366 \\Simulation time: 08/14, 12:00:00 \\Building rotation: 180\u00b0;
+internalField		uniform 296.093366;
 
 boundaryField
 {
