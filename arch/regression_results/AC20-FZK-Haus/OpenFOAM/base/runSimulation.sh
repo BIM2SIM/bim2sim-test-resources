@@ -6,6 +6,7 @@
 
 #### Request the memory you need for your job.
 ##SBATCH --mem-per-cpu=2600M
+#SBATCH --output=logRegressionTest.txt
 
 ### Request & nodes
 #SBATCH --account=test1234

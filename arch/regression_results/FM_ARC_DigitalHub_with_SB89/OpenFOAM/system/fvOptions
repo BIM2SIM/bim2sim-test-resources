@@ -35,7 +35,7 @@ heater0_porous_media_ScalarSemiImplicitSource
         injectionRateSuSp
         {
 
-            h		(0.0 0);
+            h		(1035.997047 0);
 
         }
 
@@ -62,7 +62,7 @@ heater1_porous_media_ScalarSemiImplicitSource
         injectionRateSuSp
         {
 
-            h		(0.0 0);
+            h		(1035.997047 0);
 
         }
 
