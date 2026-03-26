@@ -173,7 +173,7 @@ boundaryField
 
         qr		qr;
 
-        Q		uniform 2474.641954;
+        Q		uniform 168.496002;
 
         qrRelaxation		0.003;
 
@@ -242,7 +242,7 @@ boundaryField
 
         qr		qr;
 
-        Q		uniform 1167.451981;
+        Q		uniform 65.772805;
 
         qrRelaxation		0.003;
 
@@ -265,7 +265,7 @@ boundaryField
 
         qr		qr;
 
-        Q		0.0;
+        Q		443.998734;
 
         qrRelaxation		0.003;
 
@@ -288,7 +288,7 @@ boundaryField
 
         qr		qr;
 
-        Q		0.0;
+        Q		443.998734;
 
         qrRelaxation		0.003;
 
@@ -314,7 +314,7 @@ boundaryField
 
         type		fixedValue;
 
-        value		uniform 293.576242;
+        value		uniform 297.172672;
 
     }
 
