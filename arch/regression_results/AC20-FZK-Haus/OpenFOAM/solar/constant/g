@@ -11,61 +11,11 @@ FoamFile
 {
 	version		4.0;
 	format		ascii;
-	class		dictionary;
-	location	"system";
-	object		fvOptions;
+	class		uniformDimensionedVectorField;
+	location	"constant";
+	object		g;
 }
 
-heater0_porous_media_ScalarSemiImplicitSource
-{
+dimensions		[0 1 -2 0 0 0 0];
 
-    type		scalarSemiImplicitSource;
-
-    scalarSemiImplicitSourceCoeffs
-    {
-
-        mode		uniform;
-
-        selectionMode		cellZone;
-
-        volumeMode		absolute;
-
-        cellZone		heater0_porous_media;
-
-        injectionRateSuSp
-        {
-
-            h		(1035.997047 0);
-
-        }
-
-    }
-
-}
-
-heater1_porous_media_ScalarSemiImplicitSource
-{
-
-    type		scalarSemiImplicitSource;
-
-    scalarSemiImplicitSourceCoeffs
-    {
-
-        mode		uniform;
-
-        selectionMode		cellZone;
-
-        volumeMode		absolute;
-
-        cellZone		heater1_porous_media;
-
-        injectionRateSuSp
-        {
-
-            h		(1035.997047 0);
-
-        }
-
-    }
-
-}
+value		(0 0 -9.81);

@@ -13,59 +13,22 @@ FoamFile
 	format		ascii;
 	class		dictionary;
 	location	"system";
-	object		fvOptions;
+	object		decomposeParDict;
 }
 
-heater0_porous_media_ScalarSemiImplicitSource
+numberOfSubdomains		12;
+
+method		hierarchical;
+
+hierarchicalCoeffs
 {
 
-    type		scalarSemiImplicitSource;
+    n		(3 2 2);
 
-    scalarSemiImplicitSourceCoeffs
-    {
+    delta		1e-3;
 
-        mode		uniform;
-
-        selectionMode		cellZone;
-
-        volumeMode		absolute;
-
-        cellZone		heater0_porous_media;
-
-        injectionRateSuSp
-        {
-
-            h		(1035.997047 0);
-
-        }
-
-    }
+    order		xyz;
 
 }
 
-heater1_porous_media_ScalarSemiImplicitSource
-{
-
-    type		scalarSemiImplicitSource;
-
-    scalarSemiImplicitSourceCoeffs
-    {
-
-        mode		uniform;
-
-        selectionMode		cellZone;
-
-        volumeMode		absolute;
-
-        cellZone		heater1_porous_media;
-
-        injectionRateSuSp
-        {
-
-            h		(1035.997047 0);
-
-        }
-
-    }
-
-}
+distributed		no;

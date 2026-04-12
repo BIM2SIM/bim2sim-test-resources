@@ -12,59 +12,56 @@ FoamFile
 	version		4.0;
 	format		ascii;
 	class		dictionary;
-	location	"system";
-	object		fvOptions;
+	location	"constant";
+	object		thermophysicalProperties;
 }
 
-heater0_porous_media_ScalarSemiImplicitSource
+thermoType
 {
 
-    type		scalarSemiImplicitSource;
+    type		heRhoThermo;
 
-    scalarSemiImplicitSourceCoeffs
+    mixture		pureMixture;
+
+    transport		const;
+
+    thermo		hConst;
+
+    equationOfState		perfectGas;
+
+    specie		specie;
+
+    energy		sensibleEnthalpy;
+
+}
+
+mixture
+{
+
+    specie
     {
 
-        mode		uniform;
+        molWeight		28.9644;
 
-        selectionMode		cellZone;
-
-        volumeMode		absolute;
-
-        cellZone		heater0_porous_media;
-
-        injectionRateSuSp
-        {
-
-            h		(1035.997047 0);
-
-        }
+        nMoles		1;
 
     }
 
-}
-
-heater1_porous_media_ScalarSemiImplicitSource
-{
-
-    type		scalarSemiImplicitSource;
-
-    scalarSemiImplicitSourceCoeffs
+    thermodynamics
     {
 
-        mode		uniform;
+        Cp		1004.5;
 
-        selectionMode		cellZone;
+        Hf		0;
 
-        volumeMode		absolute;
+    }
 
-        cellZone		heater1_porous_media;
+    transport
+    {
 
-        injectionRateSuSp
-        {
+        mu		1.8e-05;
 
-            h		(1035.997047 0);
-
-        }
+        Pr		0.71;
 
     }
 

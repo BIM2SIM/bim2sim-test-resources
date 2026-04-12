@@ -13,59 +13,53 @@ FoamFile
 	format		ascii;
 	class		dictionary;
 	location	"system";
-	object		fvOptions;
+	object		blockMeshDict;
 }
 
-heater0_porous_media_ScalarSemiImplicitSource
-{
+convertToMeters 1.0000;
 
-    type		scalarSemiImplicitSource;
+vertices
+(
+	(0.2 5.89 -0.1)
+	(3.9 5.89 -0.1)
+	(3.9 9.8 -0.1)
+	(0.2 9.8 -0.1)
+	(0.2 5.89 2.79592)
+	(3.9 5.89 2.79592)
+	(3.9 9.8 2.79592)
+	(0.2 9.8 2.79592)
+);
 
-    scalarSemiImplicitSourceCoeffs
-    {
+blocks
+(
+hex (0 1 2 3 4 5 6 7) (37 39 29) 
+simpleGrading (
+	1.0
+	1.0
+	1.0
+	)
+);
 
-        mode		uniform;
+edges
+(
+);
 
-        selectionMode		cellZone;
+boundary
+(   boundingbox
+   {
+       type wall;
+       faces
+       (       
+	(0 3 2 1)
+	(4 5 6 7)
+	(1 2 6 5)
+	(3 0 4 7)
+	(0 1 5 4)
+	(2 3 7 6)
+       );
+   }
+);
 
-        volumeMode		absolute;
-
-        cellZone		heater0_porous_media;
-
-        injectionRateSuSp
-        {
-
-            h		(1035.997047 0);
-
-        }
-
-    }
-
-}
-
-heater1_porous_media_ScalarSemiImplicitSource
-{
-
-    type		scalarSemiImplicitSource;
-
-    scalarSemiImplicitSourceCoeffs
-    {
-
-        mode		uniform;
-
-        selectionMode		cellZone;
-
-        volumeMode		absolute;
-
-        cellZone		heater1_porous_media;
-
-        injectionRateSuSp
-        {
-
-            h		(1035.997047 0);
-
-        }
-
-    }
-
-}
+mergePatchPair
+(
+);

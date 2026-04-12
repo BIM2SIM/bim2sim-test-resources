@@ -1,0 +1,58 @@
+solid heater0_surface
+facet normal -0.050400 0.000000 0.000000
+  outer loop
+    vertex 1.050000 9.570000 0.750000
+    vertex 1.050000 9.650000 0.119999
+    vertex 1.050000 9.570000 0.119999
+  endloop
+endfacet
+facet normal -0.050400 0.000000 0.000000
+  outer loop
+    vertex 1.050000 9.570000 0.750000
+    vertex 1.050000 9.650000 0.750000
+    vertex 1.050000 9.650000 0.119999
+  endloop
+endfacet
+facet normal -0.050400 0.000000 0.000000
+  outer loop
+    vertex 3.050000 9.570000 0.750000
+    vertex 3.050000 9.650000 0.119999
+    vertex 3.050000 9.570000 0.119999
+  endloop
+endfacet
+facet normal -0.050400 0.000000 0.000000
+  outer loop
+    vertex 3.050000 9.570000 0.750000
+    vertex 3.050000 9.650000 0.750000
+    vertex 3.050000 9.650000 0.119999
+  endloop
+endfacet
+facet normal 0.000000 -1.260002 0.000000
+  outer loop
+    vertex 1.050000 9.570000 0.119999
+    vertex 3.050000 9.570000 0.119999
+    vertex 3.050000 9.570000 0.750000
+  endloop
+endfacet
+facet normal 0.000000 -1.260002 0.000000
+  outer loop
+    vertex 1.050000 9.570000 0.119999
+    vertex 3.050000 9.570000 0.750000
+    vertex 1.050000 9.570000 0.750000
+  endloop
+endfacet
+facet normal 0.000000 -1.260002 0.000000
+  outer loop
+    vertex 1.050000 9.650000 0.119999
+    vertex 3.050000 9.650000 0.119999
+    vertex 3.050000 9.650000 0.750000
+  endloop
+endfacet
+facet normal 0.000000 -1.260002 0.000000
+  outer loop
+    vertex 1.050000 9.650000 0.119999
+    vertex 3.050000 9.650000 0.750000
+    vertex 1.050000 9.650000 0.750000
+  endloop
+endfacet
+endsolid heater0_surface

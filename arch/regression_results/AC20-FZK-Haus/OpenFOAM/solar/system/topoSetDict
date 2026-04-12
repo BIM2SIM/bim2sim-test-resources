@@ -13,59 +13,43 @@ FoamFile
 	format		ascii;
 	class		dictionary;
 	location	"system";
-	object		fvOptions;
+	object		topoSetDict;
 }
 
-heater0_porous_media_ScalarSemiImplicitSource
+actions (		//;
+
+//heater0
 {
 
-    type		scalarSemiImplicitSource;
+    name		heater0_porous_media;
 
-    scalarSemiImplicitSourceCoeffs
+    action		new;
+
+    type		cellSet;
+
+    source		surfaceToCell;
+
+    sourceInfo
     {
 
-        mode		uniform;
+        file		"constant/triSurface/heater0_porous_media.stl";
 
-        selectionMode		cellZone;
+        useSurfaceOrientation		true;
 
-        volumeMode		absolute;
+        outsidePoints		((0 0 0));
 
-        cellZone		heater0_porous_media;
+        includeCut		false;
 
-        injectionRateSuSp
-        {
+        includeInside		true;
 
-            h		(1035.997047 0);
+        includeOutside		false;
 
-        }
+        nearDistance		-1;
+
+        curvature		0;
 
     }
 
 }
 
-heater1_porous_media_ScalarSemiImplicitSource
-{
-
-    type		scalarSemiImplicitSource;
-
-    scalarSemiImplicitSourceCoeffs
-    {
-
-        mode		uniform;
-
-        selectionMode		cellZone;
-
-        volumeMode		absolute;
-
-        cellZone		heater1_porous_media;
-
-        injectionRateSuSp
-        {
-
-            h		(1035.997047 0);
-
-        }
-
-    }
-
-}
+);		//;

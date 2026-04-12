@@ -18,7 +18,7 @@ FoamFile
 
 dimensions		[0 0 0 1 0 0 0];
 
-internalField		uniform 293.15;
+internalField		uniform 296.093366;
 
 boundaryField
 {
@@ -26,9 +26,23 @@ boundaryField
     InnerWall_3S62uZocO66ngdmMaRS2M9
     {
 
-        type		fixedValue;
+        type		externalWallHeatFluxTemperature;
 
-        value		uniform 293.05853;
+        mode		power;
+
+        qr		qr;
+
+        Q		uniform -74.612191;
+
+        qrRelaxation		0.003;
+
+        relaxation		1.0;
+
+        kappaMethod		fluidThermo;
+
+        kappa		fluidThermo;
+
+        value		uniform 296.53235;
 
     }
 
@@ -41,7 +55,7 @@ boundaryField
 
         qr		qr;
 
-        Q		uniform -51.844537;
+        Q		uniform -227.525574;
 
         qrRelaxation		0.003;
 
@@ -51,25 +65,53 @@ boundaryField
 
         kappa		fluidThermo;
 
-        value		uniform 292.575636;
+        value		uniform 295.355038;
 
     }
 
     InnerWall_1zvtHpRHFWSVHgO9MXUL0M
     {
 
-        type		fixedValue;
+        type		externalWallHeatFluxTemperature;
 
-        value		uniform 292.753557;
+        mode		power;
+
+        qr		qr;
+
+        Q		uniform -77.244605;
+
+        qrRelaxation		0.003;
+
+        relaxation		1.0;
+
+        kappaMethod		fluidThermo;
+
+        kappa		fluidThermo;
+
+        value		uniform 296.096026;
 
     }
 
     InnerDoor_1aGihCk9trZ___gjiWxX___Jdv
     {
 
-        type		fixedValue;
+        type		externalWallHeatFluxTemperature;
 
-        value		uniform 292.889901;
+        mode		power;
+
+        qr		qr;
+
+        Q		uniform -17.036261;
+
+        qrRelaxation		0.003;
+
+        relaxation		1.0;
+
+        kappaMethod		fluidThermo;
+
+        kappa		fluidThermo;
+
+        value		uniform 296.337048;
 
     }
 
@@ -78,7 +120,7 @@ boundaryField
 
         type		fixedValue;
 
-        value		uniform 291.993859;
+        value		uniform 297.512307;
 
     }
 
@@ -91,7 +133,7 @@ boundaryField
 
         qr		qr;
 
-        Q		uniform -78.476548;
+        Q		uniform -136.364312;
 
         qrRelaxation		0.003;
 
@@ -101,7 +143,7 @@ boundaryField
 
         kappa		fluidThermo;
 
-        value		uniform 291.241518;
+        value		uniform 294.145762;
 
     }
 
@@ -114,7 +156,7 @@ boundaryField
 
         qr		qr;
 
-        Q		uniform -80.548432;
+        Q		uniform -165.863275;
 
         qrRelaxation		0.003;
 
@@ -124,7 +166,7 @@ boundaryField
 
         kappa		fluidThermo;
 
-        value		uniform 291.331343;
+        value		uniform 294.035529;
 
     }
 
@@ -137,7 +179,7 @@ boundaryField
 
         qr		qr;
 
-        Q		uniform 102.968475;
+        Q		uniform 47.165864;
 
         qrRelaxation		0.003;
 
@@ -147,7 +189,7 @@ boundaryField
 
         kappa		fluidThermo;
 
-        value		uniform 290.675522;
+        value		uniform 299.350676;
 
     }
 
@@ -160,7 +202,7 @@ boundaryField
 
         qr		qr;
 
-        Q		uniform 102.933481;
+        Q		uniform -8.008604;
 
         qrRelaxation		0.003;
 
@@ -170,7 +212,7 @@ boundaryField
 
         kappa		fluidThermo;
 
-        value		uniform 290.673134;
+        value		uniform 296.113582;
 
     }
 
@@ -183,7 +225,7 @@ boundaryField
 
         qr		qr;
 
-        Q		76.611154;
+        Q		322.974795;
 
         qrRelaxation		0.003;
 
@@ -209,7 +251,14 @@ boundaryField
 
         type		fixedValue;
 
-        value		uniform 293.15;
+        value		uniform 296.093366;
+
+    }
+
+    inlet_box
+    {
+
+        type		zeroGradient;
 
     }
 
@@ -228,6 +277,13 @@ boundaryField
         inletValue		$internalField;
 
         value		$internalField;
+
+    }
+
+    outlet_box
+    {
+
+        type		zeroGradient;
 
     }
 

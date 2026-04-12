@@ -16,7 +16,7 @@
 ### Load the required module files
 module load GCC/11.3.0
 module load OpenMPI/4.1.4
-module load OpenFOAM/v2206
+source /work/rwth1588/openfoam-correctedSolar/etc/bashrc
 
 ### start the OpenFOAM binary in parallel, cf.
 blockMesh

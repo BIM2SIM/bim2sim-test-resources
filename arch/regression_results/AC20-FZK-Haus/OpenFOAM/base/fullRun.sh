@@ -1,17 +1,17 @@
 #!/usr/bin/zsh
-#SBATCH --job-name=newJob
+#SBATCH --job-name=RegressionTest
 
 ### Request the time you need for execution.
-#SBATCH --time=00:59:00
+#SBATCH --time=02:59:00
 
 #### Request the memory you need for your job.
 ##SBATCH --mem-per-cpu=2600M
-#SBATCH --output=lognewJob.txt
+#SBATCH --output=logRegressionTest.txt
 
-### Request & nodes
-
-#SBATCH --nodes=1
-#SBATCH --ntasks=12
+### Request processes & nodes
+#SBATCH --account=test1234
+#SBATCH --nodes=2
+#SBATCH --ntasks=72
 
 ### Load the required module files
 module load GCC/11.3.0
@@ -27,3 +27,7 @@ reconstructParMesh -mergeTol 1e-10 -constant
 topoSet
 setsToZones
 checkMesh > logCheckMesh.compress
+decomposePar -force
+$MPIEXEC $FLAGS_MPI_BATCH buoyantSimpleFoam -parallel >logSimulation.compress
+
+reconstructPar -latestTime

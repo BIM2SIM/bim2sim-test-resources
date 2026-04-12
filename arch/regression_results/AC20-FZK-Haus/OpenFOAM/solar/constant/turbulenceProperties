@@ -12,33 +12,50 @@ FoamFile
 	version		4.0;
 	format		ascii;
 	class		dictionary;
-	location	"system";
-	object		fvOptions;
+	location	"constant";
+	object		turbulenceProperties;
 }
 
-heater0_porous_media_ScalarSemiImplicitSource
+simulationType		RAS;
+
+RAS
 {
 
-    type		scalarSemiImplicitSource;
-
-    scalarSemiImplicitSourceCoeffs
+    kOmegaSSTCoeffs
     {
 
-        mode		uniform;
+        alphaK1		0.85;
 
-        selectionMode		cellZone;
+        alphaK2		1.0;
 
-        volumeMode		absolute;
+        alphaOmega1		0.5;
 
-        cellZone		heater0_porous_media;
+        alphaOmega2		0.856;
 
-        injectionRateSuSp
-        {
+        beta1		0.075;
 
-            h		(51.074103 0);
+        beta2		0.0828;
 
-        }
+        betaStar		0.09;
+
+        gamma1		0.555;
+
+        gamma2		0.44;
+
+        a1		0.31;
+
+        b1		1.0;
+
+        c1		10.0;
+
+        F3		no;
 
     }
+
+    RASModel		kOmegaSST;
+
+    turbulence		on;
+
+    printCoeffs		on;
 
 }

@@ -35,34 +35,7 @@ heater0_porous_media_ScalarSemiImplicitSource
         injectionRateSuSp
         {
 
-            h		(1035.997047 0);
-
-        }
-
-    }
-
-}
-
-heater1_porous_media_ScalarSemiImplicitSource
-{
-
-    type		scalarSemiImplicitSource;
-
-    scalarSemiImplicitSourceCoeffs
-    {
-
-        mode		uniform;
-
-        selectionMode		cellZone;
-
-        volumeMode		absolute;
-
-        cellZone		heater1_porous_media;
-
-        injectionRateSuSp
-        {
-
-            h		(1035.997047 0);
+            h		(157.88021 0);
 
         }
 
