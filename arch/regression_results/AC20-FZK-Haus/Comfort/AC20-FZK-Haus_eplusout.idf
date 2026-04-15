@@ -4738,7 +4738,7 @@ ZONE,
     1,                        !- Type
     1,                        !- Multiplier
     autocalculate,            !- Ceiling Height
-    64.97137499990724,        !- Volume
+    64.97137499990725,        !- Volume
     autocalculate,            !- Floor Area
     ,                         !- Zone Inside Convection Algorithm
     ,                         !- Zone Outside Convection Algorithm
@@ -4813,7 +4813,7 @@ ZONE,
     1,                        !- Type
     1,                        !- Multiplier
     autocalculate,            !- Ceiling Height
-    28.65521999999999,        !- Volume
+    28.655219999999993,       !- Volume
     autocalculate,            !- Floor Area
     ,                         !- Zone Inside Convection Algorithm
     ,                         !- Zone Outside Convection Algorithm
@@ -4948,21 +4948,18 @@ BUILDINGSURFACE:DETAILED,
     NoWind,                   !- Wind Exposure
     autocalculate,            !- View Factor to Ground
     autocalculate,            !- Number of Vertices
-    11.7,                     !- Vertex 1 Xcoordinate
-    4.01,                     !- Vertex 1 Ycoordinate
+    7.44,                     !- Vertex 1 Xcoordinate
+    0.3,                      !- Vertex 1 Ycoordinate
     2.5,                      !- Vertex 1 Zcoordinate
-    4.695,                    !- Vertex 2 Xcoordinate
+    7.44,                     !- Vertex 2 Xcoordinate
     4.01,                     !- Vertex 2 Ycoordinate
     2.5,                      !- Vertex 2 Zcoordinate
     4.695,                    !- Vertex 3 Xcoordinate
-    0.3,                      !- Vertex 3 Ycoordinate
+    4.01,                     !- Vertex 3 Ycoordinate
     2.5,                      !- Vertex 3 Zcoordinate
-    7.44,                     !- Vertex 4 Xcoordinate
+    4.695,                    !- Vertex 4 Xcoordinate
     0.3,                      !- Vertex 4 Ycoordinate
-    2.5,                      !- Vertex 4 Zcoordinate
-    7.44,                     !- Vertex 5 Xcoordinate
-    4.01,                     !- Vertex 5 Ycoordinate
-    2.5;                      !- Vertex 5 Zcoordinate
+    2.5;                      !- Vertex 4 Zcoordinate
 
 BUILDINGSURFACE:DETAILED,
     0iCm9iR1IwGqmD8UGv$izX,    !- Name
@@ -5551,21 +5548,18 @@ BUILDINGSURFACE:DETAILED,
     NoWind,                   !- Wind Exposure
     autocalculate,            !- View Factor to Ground
     autocalculate,            !- Number of Vertices
-    11.7,                     !- Vertex 1 Xcoordinate
+    7.44,                     !- Vertex 1 Xcoordinate
     4.01,                     !- Vertex 1 Ycoordinate
     2.7,                      !- Vertex 1 Zcoordinate
     7.44,                     !- Vertex 2 Xcoordinate
-    4.01,                     !- Vertex 2 Ycoordinate
+    0.3,                      !- Vertex 2 Ycoordinate
     2.7,                      !- Vertex 2 Zcoordinate
-    7.44,                     !- Vertex 3 Xcoordinate
+    4.695,                    !- Vertex 3 Xcoordinate
     0.3,                      !- Vertex 3 Ycoordinate
     2.7,                      !- Vertex 3 Zcoordinate
     4.695,                    !- Vertex 4 Xcoordinate
-    0.3,                      !- Vertex 4 Ycoordinate
-    2.7,                      !- Vertex 4 Zcoordinate
-    4.695,                    !- Vertex 5 Xcoordinate
-    4.01,                     !- Vertex 5 Ycoordinate
-    2.7;                      !- Vertex 5 Zcoordinate
+    4.01,                     !- Vertex 4 Ycoordinate
+    2.7;                      !- Vertex 4 Zcoordinate
 
 BUILDINGSURFACE:DETAILED,
     30Y14$n6BcKo4zt3hjgwMk,    !- Name
@@ -6408,7 +6402,7 @@ BUILDINGSURFACE:DETAILED,
     2.5;                      !- Vertex 4 Zcoordinate
 
 BUILDINGSURFACE:DETAILED,
-    3F8vzaDPL3kBQTvESC3RQt,    !- Name
+    2kGszyGRj9X8ImDiiNritv,    !- Name
     Wall,                     !- Surface Type
     BPS-InnerWall_3_0.01_0.15_0.01,    !- Construction Name
     0Lt8gR_E9ESeGH5uY_g9e9,    !- Zone Name
@@ -6429,13 +6423,10 @@ BUILDINGSURFACE:DETAILED,
     0,                        !- Vertex 3 Zcoordinate
     7.41,                     !- Vertex 4 Xcoordinate
     4.01,                     !- Vertex 4 Ycoordinate
-    2.5,                      !- Vertex 4 Zcoordinate
-    7.44,                     !- Vertex 5 Xcoordinate
-    4.01,                     !- Vertex 5 Ycoordinate
-    2.5;                      !- Vertex 5 Zcoordinate
+    2.5;                      !- Vertex 4 Zcoordinate
 
 BUILDINGSURFACE:DETAILED,
-    2xUkM$LSL2zemSr1Prh4TH,    !- Name
+    3N09qH2WP7kOrCLUdDe6xs,    !- Name
     Floor,                    !- Surface Type
     BPS-InnerFloor_3_0.04_0.06_0.16,    !- Construction Name
     2dQFggKBb1fOc1CqZDIDlx,    !- Zone Name
@@ -6460,51 +6451,54 @@ BUILDINGSURFACE:DETAILED,
     7.44,                     !- Vertex 5 Xcoordinate
     4.01,                     !- Vertex 5 Ycoordinate
     2.7,                      !- Vertex 5 Zcoordinate
-    7.41,                     !- Vertex 6 Xcoordinate
+    4.695,                    !- Vertex 6 Xcoordinate
     4.01,                     !- Vertex 6 Ycoordinate
     2.7,                      !- Vertex 6 Zcoordinate
     7.41,                     !- Vertex 7 Xcoordinate
-    4.03,                     !- Vertex 7 Ycoordinate
+    4.01,                     !- Vertex 7 Ycoordinate
     2.7,                      !- Vertex 7 Zcoordinate
-    7.65,                     !- Vertex 8 Xcoordinate
+    7.41,                     !- Vertex 8 Xcoordinate
     4.03,                     !- Vertex 8 Ycoordinate
     2.7,                      !- Vertex 8 Zcoordinate
     7.65,                     !- Vertex 9 Xcoordinate
-    4.23,                     !- Vertex 9 Ycoordinate
+    4.03,                     !- Vertex 9 Ycoordinate
     2.7,                      !- Vertex 9 Zcoordinate
-    7.41,                     !- Vertex 10 Xcoordinate
+    7.65,                     !- Vertex 10 Xcoordinate
     4.23,                     !- Vertex 10 Ycoordinate
     2.7,                      !- Vertex 10 Zcoordinate
     7.41,                     !- Vertex 11 Xcoordinate
-    5.75,                     !- Vertex 11 Ycoordinate
+    4.23,                     !- Vertex 11 Ycoordinate
     2.7,                      !- Vertex 11 Zcoordinate
-    0.3,                      !- Vertex 12 Xcoordinate
+    7.41,                     !- Vertex 12 Xcoordinate
     5.75,                     !- Vertex 12 Ycoordinate
     2.7,                      !- Vertex 12 Zcoordinate
     0.3,                      !- Vertex 13 Xcoordinate
-    5.99,                     !- Vertex 13 Ycoordinate
+    5.75,                     !- Vertex 13 Ycoordinate
     2.7,                      !- Vertex 13 Zcoordinate
-    3.8,                      !- Vertex 14 Xcoordinate
+    0.3,                      !- Vertex 14 Xcoordinate
     5.99,                     !- Vertex 14 Ycoordinate
     2.7,                      !- Vertex 14 Zcoordinate
     3.8,                      !- Vertex 15 Xcoordinate
-    9.7,                      !- Vertex 15 Ycoordinate
+    5.99,                     !- Vertex 15 Ycoordinate
     2.7,                      !- Vertex 15 Zcoordinate
-    4.04,                     !- Vertex 16 Xcoordinate
+    3.8,                      !- Vertex 16 Xcoordinate
     9.7,                      !- Vertex 16 Ycoordinate
     2.7,                      !- Vertex 16 Zcoordinate
     4.04,                     !- Vertex 17 Xcoordinate
-    5.99,                     !- Vertex 17 Ycoordinate
+    9.7,                      !- Vertex 17 Ycoordinate
     2.7,                      !- Vertex 17 Zcoordinate
-    7.41,                     !- Vertex 18 Xcoordinate
+    4.04,                     !- Vertex 18 Xcoordinate
     5.99,                     !- Vertex 18 Ycoordinate
     2.7,                      !- Vertex 18 Zcoordinate
     7.41,                     !- Vertex 19 Xcoordinate
-    9.7,                      !- Vertex 19 Ycoordinate
-    2.7;                      !- Vertex 19 Zcoordinate
+    5.99,                     !- Vertex 19 Ycoordinate
+    2.7,                      !- Vertex 19 Zcoordinate
+    7.41,                     !- Vertex 20 Xcoordinate
+    9.7,                      !- Vertex 20 Ycoordinate
+    2.7;                      !- Vertex 20 Zcoordinate
 
 BUILDINGSURFACE:DETAILED,
-    2r3JIJQ8b6Fuwek0bXCLMI,    !- Name
+    1anJXYv4vFnAWOz6QiGhqK,    !- Name
     Floor,                    !- Surface Type
     BPS-InnerFloor_3_0.04_0.06_0.16,    !- Construction Name
     2dQFggKBb1fOc1CqZDIDlx,    !- Zone Name
@@ -6540,7 +6534,7 @@ BUILDINGSURFACE:DETAILED,
     2.7;                      !- Vertex 8 Zcoordinate
 
 BUILDINGSURFACE:DETAILED,
-    22W0ZiYF99RORO8XDiez0M,    !- Name
+    1ctCxpD5n0yOvglniA9ZMe,    !- Name
     Wall,                     !- Surface Type
     BPS-InnerWall_3_0.01_0.15_0.01,    !- Construction Name
     3$f2p7VyLB7eox67SA_zKE,    !- Zone Name
@@ -6576,7 +6570,7 @@ BUILDINGSURFACE:DETAILED,
     2.5;                      !- Vertex 8 Zcoordinate
 
 BUILDINGSURFACE:DETAILED,
-    3yNKUEydXBKwWfXXfNEFRj,    !- Name
+    1Dh8CeRQvD_uO_K_ZSpCcY,    !- Name
     Wall,                     !- Surface Type
     BPS-InnerWall_3_0.01_0.15_0.01,    !- Construction Name
     3$f2p7VyLB7eox67SA_zKE,    !- Zone Name
@@ -6600,7 +6594,7 @@ BUILDINGSURFACE:DETAILED,
     2.5;                      !- Vertex 4 Zcoordinate
 
 BUILDINGSURFACE:DETAILED,
-    1pGX25_p1CqfsdgKIGpvw6,    !- Name
+    019Ez2Drf4iBxulDmfjLs4,    !- Name
     Wall,                     !- Surface Type
     BPS-InnerWall_3_0.01_0.15_0.01,    !- Construction Name
     3$f2p7VyLB7eox67SA_zKE,    !- Zone Name
@@ -6636,7 +6630,7 @@ BUILDINGSURFACE:DETAILED,
     2.5;                      !- Vertex 8 Zcoordinate
 
 BUILDINGSURFACE:DETAILED,
-    0nEiecWrHEsP4lRbqZmnXo,    !- Name
+    0X_TahS1L80A6Q2CY3rQyr,    !- Name
     Wall,                     !- Surface Type
     BPS-InnerWall_3_0.01_0.15_0.01,    !- Construction Name
     347jFE2yX7IhCEIALmupEH,    !- Zone Name
@@ -6899,15 +6893,15 @@ FENESTRATIONSURFACE:DETAILED,
     ,                         !- Frame and Divider Name
     1.0,                      !- Multiplier
     autocalculate,            !- Number of Vertices
-    0.3,                      !- Vertex 1 Xcoordinate
-    4.646693333333317,        !- Vertex 1 Ycoordinate
-    4.3516399999999855,       !- Vertex 1 Zcoordinate
-    3.000000e-01,             !- Vertex 2 Xcoordinate
-    4.99715333332851,         !- Vertex 2 Ycoordinate
-    4.001179999995629,        !- Vertex 2 Zcoordinate
+    3.000000e-01,             !- Vertex 1 Xcoordinate
+    4.997049999995176,        !- Vertex 1 Ycoordinate
+    4.000893333328962,        !- Vertex 1 Zcoordinate
+    0.3,                      !- Vertex 2 Xcoordinate
+    4.504029999999983,        !- Vertex 2 Ycoordinate
+    3.952383333333319,        !- Vertex 2 Zcoordinate
     0.3,                      !- Vertex 3 Xcoordinate
-    4.502153333333317,        !- Vertex 3 Ycoordinate
-    4.0011799999999855;       !- Vertex 3 Zcoordinate
+    4.613919999999984,        !- Vertex 3 Ycoordinate
+    4.314723333333319;        !- Vertex 3 Zcoordinate
 
 FENESTRATIONSURFACE:DETAILED,
     0lATuSchmS3UUhGXJfE9jD_2,    !- Name
@@ -6920,14 +6914,14 @@ FENESTRATIONSURFACE:DETAILED,
     1.0,                      !- Multiplier
     autocalculate,            !- Number of Vertices
     0.3,                      !- Vertex 1 Xcoordinate
-    4.998819999999984,        !- Vertex 1 Ycoordinate
-    4.497846666666652,        !- Vertex 1 Zcoordinate
+    4.950036666666651,        !- Vertex 1 Ycoordinate
+    4.4957366666666525,       !- Vertex 1 Zcoordinate
     3.000000e-01,             !- Vertex 2 Xcoordinate
-    4.998819999995177,        !- Vertex 2 Ycoordinate
-    4.002846666662296,        !- Vertex 2 Zcoordinate
+    4.998546666661843,        !- Vertex 2 Ycoordinate
+    4.0027166666622955,       !- Vertex 2 Zcoordinate
     0.3,                      !- Vertex 3 Xcoordinate
-    4.648359999999984,        !- Vertex 3 Ycoordinate
-    4.353306666666652;        !- Vertex 3 Zcoordinate
+    4.615416666666651,        !- Vertex 3 Ycoordinate
+    4.316546666666652;        !- Vertex 3 Zcoordinate
 
 FENESTRATIONSURFACE:DETAILED,
     0lATuSchmS3UUhGXJfE9jD_3,    !- Name
@@ -6940,14 +6934,14 @@ FENESTRATIONSURFACE:DETAILED,
     1.0,                      !- Multiplier
     autocalculate,            !- Number of Vertices
     0.3,                      !- Vertex 1 Xcoordinate
-    5.351639999999984,        !- Vertex 1 Ycoordinate
-    4.353306666666652,        !- Vertex 1 Zcoordinate
+    5.314723333333317,        !- Vertex 1 Ycoordinate
+    4.386079999999985,        !- Vertex 1 Zcoordinate
     3.000000e-01,             !- Vertex 2 Xcoordinate
-    5.001179999995176,        !- Vertex 2 Ycoordinate
-    4.002846666662296,        !- Vertex 2 Zcoordinate
+    5.000893333328509,        !- Vertex 2 Ycoordinate
+    4.0029499999956295,       !- Vertex 2 Zcoordinate
     0.3,                      !- Vertex 3 Xcoordinate
-    5.001179999999984,        !- Vertex 3 Ycoordinate
-    4.497846666666652;        !- Vertex 3 Zcoordinate
+    4.952383333333317,        !- Vertex 3 Ycoordinate
+    4.495969999999986;        !- Vertex 3 Zcoordinate
 
 FENESTRATIONSURFACE:DETAILED,
     0lATuSchmS3UUhGXJfE9jD_4,    !- Name
@@ -6960,14 +6954,14 @@ FENESTRATIONSURFACE:DETAILED,
     1.0,                      !- Multiplier
     autocalculate,            !- Number of Vertices
     0.3,                      !- Vertex 1 Xcoordinate
-    5.353306666666651,        !- Vertex 1 Ycoordinate
-    4.3516399999999855,       !- Vertex 1 Zcoordinate
+    5.3165466666666505,       !- Vertex 1 Ycoordinate
+    4.384583333333318,        !- Vertex 1 Zcoordinate
     0.3,                      !- Vertex 2 Xcoordinate
-    5.497846666666651,        !- Vertex 2 Ycoordinate
-    4.0011799999999855,       !- Vertex 2 Zcoordinate
+    5.49573666666665,         !- Vertex 2 Ycoordinate
+    4.049963333333319,        !- Vertex 2 Zcoordinate
     3.000000e-01,             !- Vertex 3 Xcoordinate
-    5.002846666661843,        !- Vertex 3 Ycoordinate
-    4.001179999995629;        !- Vertex 3 Zcoordinate
+    5.002716666661843,        !- Vertex 3 Ycoordinate
+    4.001453333328962;        !- Vertex 3 Zcoordinate
 
 FENESTRATIONSURFACE:DETAILED,
     0lATuSchmS3UUhGXJfE9jD_5,    !- Name
@@ -6980,14 +6974,14 @@ FENESTRATIONSURFACE:DETAILED,
     1.0,                      !- Multiplier
     autocalculate,            !- Number of Vertices
     0.3,                      !- Vertex 1 Xcoordinate
-    5.497846666666651,        !- Vertex 1 Ycoordinate
-    3.998819999999985,        !- Vertex 1 Zcoordinate
+    5.495969999999984,        !- Vertex 1 Ycoordinate
+    4.047616666666652,        !- Vertex 1 Zcoordinate
     0.3,                      !- Vertex 2 Xcoordinate
-    5.353306666666651,        !- Vertex 2 Ycoordinate
-    3.648359999999985,        !- Vertex 2 Zcoordinate
+    5.386079999999984,        !- Vertex 2 Ycoordinate
+    3.6852766666666517,       !- Vertex 2 Zcoordinate
     3.000000e-01,             !- Vertex 3 Xcoordinate
-    5.002846666661843,        !- Vertex 3 Ycoordinate
-    3.998819999995629;        !- Vertex 3 Zcoordinate
+    5.0029499999951765,       !- Vertex 3 Ycoordinate
+    3.999106666662296;        !- Vertex 3 Zcoordinate
 
 FENESTRATIONSURFACE:DETAILED,
     0lATuSchmS3UUhGXJfE9jD_6,    !- Name
@@ -7000,14 +6994,14 @@ FENESTRATIONSURFACE:DETAILED,
     1.0,                      !- Multiplier
     autocalculate,            !- Number of Vertices
     0.3,                      !- Vertex 1 Xcoordinate
-    5.351639999999984,        !- Vertex 1 Ycoordinate
-    3.6466933333333187,       !- Vertex 1 Zcoordinate
+    5.384583333333317,        !- Vertex 1 Ycoordinate
+    3.6834533333333184,       !- Vertex 1 Zcoordinate
     0.3,                      !- Vertex 2 Xcoordinate
-    5.001179999999984,        !- Vertex 2 Ycoordinate
-    3.5021533333333186,       !- Vertex 2 Zcoordinate
+    5.049963333333317,        !- Vertex 2 Ycoordinate
+    3.5042633333333186,       !- Vertex 2 Zcoordinate
     3.000000e-01,             !- Vertex 3 Xcoordinate
-    5.001179999995176,        !- Vertex 3 Ycoordinate
-    3.9971533333289626;       !- Vertex 3 Zcoordinate
+    5.001453333328509,        !- Vertex 3 Ycoordinate
+    3.9972833333289626;       !- Vertex 3 Zcoordinate
 
 FENESTRATIONSURFACE:DETAILED,
     0lATuSchmS3UUhGXJfE9jD_7,    !- Name
@@ -7020,14 +7014,14 @@ FENESTRATIONSURFACE:DETAILED,
     1.0,                      !- Multiplier
     autocalculate,            !- Number of Vertices
     3.000000e-01,             !- Vertex 1 Xcoordinate
-    4.998819999995177,        !- Vertex 1 Ycoordinate
-    3.9971533333289626,       !- Vertex 1 Zcoordinate
+    4.999106666661843,        !- Vertex 1 Ycoordinate
+    3.997049999995629,        !- Vertex 1 Zcoordinate
     0.3,                      !- Vertex 2 Xcoordinate
-    4.998819999999984,        !- Vertex 2 Ycoordinate
-    3.5021533333333186,       !- Vertex 2 Zcoordinate
+    5.047616666666651,        !- Vertex 2 Ycoordinate
+    3.504029999999985,        !- Vertex 2 Zcoordinate
     0.3,                      !- Vertex 3 Xcoordinate
-    4.648359999999984,        !- Vertex 3 Ycoordinate
-    3.6466933333333187;       !- Vertex 3 Zcoordinate
+    4.685276666666651,        !- Vertex 3 Ycoordinate
+    3.613919999999985;        !- Vertex 3 Zcoordinate
 
 FENESTRATIONSURFACE:DETAILED,
     0lATuSchmS3UUhGXJfE9jD_8,    !- Name
@@ -7040,14 +7034,14 @@ FENESTRATIONSURFACE:DETAILED,
     1.0,                      !- Multiplier
     autocalculate,            !- Number of Vertices
     3.000000e-01,             !- Vertex 1 Xcoordinate
-    4.99715333332851,         !- Vertex 1 Ycoordinate
-    3.998819999995629,        !- Vertex 1 Zcoordinate
+    4.99728333332851,         !- Vertex 1 Ycoordinate
+    3.9985466666622957,       !- Vertex 1 Zcoordinate
     0.3,                      !- Vertex 2 Xcoordinate
-    4.646693333333317,        !- Vertex 2 Ycoordinate
-    3.648359999999985,        !- Vertex 2 Zcoordinate
+    4.6834533333333175,       !- Vertex 2 Ycoordinate
+    3.615416666666652,        !- Vertex 2 Zcoordinate
     0.3,                      !- Vertex 3 Xcoordinate
-    4.502153333333317,        !- Vertex 3 Ycoordinate
-    3.998819999999985;        !- Vertex 3 Zcoordinate
+    4.504263333333317,        !- Vertex 3 Ycoordinate
+    3.950036666666652;        !- Vertex 3 Zcoordinate
 
 FENESTRATIONSURFACE:DETAILED,
     0ehDWn$jRmOLrzss_CMuG1_1,    !- Name
@@ -7060,14 +7054,14 @@ FENESTRATIONSURFACE:DETAILED,
     1.0,                      !- Multiplier
     autocalculate,            !- Number of Vertices
     11.7,                     !- Vertex 1 Xcoordinate
-    5.353306666666683,        !- Vertex 1 Ycoordinate
-    4.3516399999999855,       !- Vertex 1 Zcoordinate
+    5.002950000004822,        !- Vertex 1 Ycoordinate
+    4.000893333328962,        !- Vertex 1 Zcoordinate
     11.7,                     !- Vertex 2 Xcoordinate
-    5.002846666671489,        !- Vertex 2 Ycoordinate
-    4.001179999995629,        !- Vertex 2 Zcoordinate
+    5.495970000000016,        !- Vertex 2 Ycoordinate
+    3.952383333333319,        !- Vertex 2 Zcoordinate
     11.7,                     !- Vertex 3 Xcoordinate
-    5.497846666666683,        !- Vertex 3 Ycoordinate
-    4.0011799999999855;       !- Vertex 3 Zcoordinate
+    5.386080000000016,        !- Vertex 3 Ycoordinate
+    4.314723333333319;        !- Vertex 3 Zcoordinate
 
 FENESTRATIONSURFACE:DETAILED,
     0ehDWn$jRmOLrzss_CMuG1_2,    !- Name
@@ -7080,14 +7074,14 @@ FENESTRATIONSURFACE:DETAILED,
     1.0,                      !- Multiplier
     autocalculate,            !- Number of Vertices
     11.7,                     !- Vertex 1 Xcoordinate
-    5.001180000000017,        !- Vertex 1 Ycoordinate
-    4.497846666666652,        !- Vertex 1 Zcoordinate
+    5.04996333333335,         !- Vertex 1 Ycoordinate
+    4.4957366666666525,       !- Vertex 1 Zcoordinate
     11.7,                     !- Vertex 2 Xcoordinate
-    5.0011800000048225,       !- Vertex 2 Ycoordinate
-    4.002846666662296,        !- Vertex 2 Zcoordinate
+    5.001453333338156,        !- Vertex 2 Ycoordinate
+    4.0027166666622955,       !- Vertex 2 Zcoordinate
     11.7,                     !- Vertex 3 Xcoordinate
-    5.351640000000017,        !- Vertex 3 Ycoordinate
-    4.353306666666652;        !- Vertex 3 Zcoordinate
+    5.3845833333333495,       !- Vertex 3 Ycoordinate
+    4.316546666666652;        !- Vertex 3 Zcoordinate
 
 FENESTRATIONSURFACE:DETAILED,
     0ehDWn$jRmOLrzss_CMuG1_3,    !- Name
@@ -7100,14 +7094,14 @@ FENESTRATIONSURFACE:DETAILED,
     1.0,                      !- Multiplier
     autocalculate,            !- Number of Vertices
     11.7,                     !- Vertex 1 Xcoordinate
-    4.648360000000016,        !- Vertex 1 Ycoordinate
-    4.353306666666652,        !- Vertex 1 Zcoordinate
+    4.685276666666683,        !- Vertex 1 Ycoordinate
+    4.386079999999985,        !- Vertex 1 Zcoordinate
     11.7,                     !- Vertex 2 Xcoordinate
-    4.998820000004822,        !- Vertex 2 Ycoordinate
-    4.002846666662296,        !- Vertex 2 Zcoordinate
+    4.999106666671489,        !- Vertex 2 Ycoordinate
+    4.0029499999956295,       !- Vertex 2 Zcoordinate
     11.7,                     !- Vertex 3 Xcoordinate
-    4.998820000000016,        !- Vertex 3 Ycoordinate
-    4.497846666666652;        !- Vertex 3 Zcoordinate
+    5.047616666666683,        !- Vertex 3 Ycoordinate
+    4.495969999999986;        !- Vertex 3 Zcoordinate
 
 FENESTRATIONSURFACE:DETAILED,
     0ehDWn$jRmOLrzss_CMuG1_4,    !- Name
@@ -7120,14 +7114,14 @@ FENESTRATIONSURFACE:DETAILED,
     1.0,                      !- Multiplier
     autocalculate,            !- Number of Vertices
     11.7,                     !- Vertex 1 Xcoordinate
-    4.646693333333349,        !- Vertex 1 Ycoordinate
-    4.3516399999999855,       !- Vertex 1 Zcoordinate
+    4.6834533333333495,       !- Vertex 1 Ycoordinate
+    4.384583333333318,        !- Vertex 1 Zcoordinate
     11.7,                     !- Vertex 2 Xcoordinate
-    4.502153333333349,        !- Vertex 2 Ycoordinate
-    4.0011799999999855,       !- Vertex 2 Zcoordinate
+    4.504263333333349,        !- Vertex 2 Ycoordinate
+    4.049963333333319,        !- Vertex 2 Zcoordinate
     11.7,                     !- Vertex 3 Xcoordinate
-    4.997153333338155,        !- Vertex 3 Ycoordinate
-    4.001179999995629;        !- Vertex 3 Zcoordinate
+    4.997283333338156,        !- Vertex 3 Ycoordinate
+    4.001453333328962;        !- Vertex 3 Zcoordinate
 
 FENESTRATIONSURFACE:DETAILED,
     0ehDWn$jRmOLrzss_CMuG1_5,    !- Name
@@ -7140,14 +7134,14 @@ FENESTRATIONSURFACE:DETAILED,
     1.0,                      !- Multiplier
     autocalculate,            !- Number of Vertices
     11.7,                     !- Vertex 1 Xcoordinate
-    4.502153333333349,        !- Vertex 1 Ycoordinate
-    3.998819999999985,        !- Vertex 1 Zcoordinate
+    4.504030000000016,        !- Vertex 1 Ycoordinate
+    4.047616666666652,        !- Vertex 1 Zcoordinate
     11.7,                     !- Vertex 2 Xcoordinate
-    4.646693333333349,        !- Vertex 2 Ycoordinate
-    3.648359999999985,        !- Vertex 2 Zcoordinate
+    4.613920000000017,        !- Vertex 2 Ycoordinate
+    3.6852766666666517,       !- Vertex 2 Zcoordinate
     11.7,                     !- Vertex 3 Xcoordinate
-    4.997153333338155,        !- Vertex 3 Ycoordinate
-    3.998819999995629;        !- Vertex 3 Zcoordinate
+    4.997050000004823,        !- Vertex 3 Ycoordinate
+    3.999106666662296;        !- Vertex 3 Zcoordinate
 
 FENESTRATIONSURFACE:DETAILED,
     0ehDWn$jRmOLrzss_CMuG1_6,    !- Name
@@ -7160,14 +7154,14 @@ FENESTRATIONSURFACE:DETAILED,
     1.0,                      !- Multiplier
     autocalculate,            !- Number of Vertices
     11.7,                     !- Vertex 1 Xcoordinate
-    4.648360000000016,        !- Vertex 1 Ycoordinate
-    3.6466933333333187,       !- Vertex 1 Zcoordinate
+    4.615416666666683,        !- Vertex 1 Ycoordinate
+    3.6834533333333184,       !- Vertex 1 Zcoordinate
     11.7,                     !- Vertex 2 Xcoordinate
-    4.998820000000016,        !- Vertex 2 Ycoordinate
-    3.5021533333333186,       !- Vertex 2 Zcoordinate
+    4.950036666666683,        !- Vertex 2 Ycoordinate
+    3.5042633333333186,       !- Vertex 2 Zcoordinate
     11.7,                     !- Vertex 3 Xcoordinate
-    4.998820000004822,        !- Vertex 3 Ycoordinate
-    3.9971533333289626;       !- Vertex 3 Zcoordinate
+    4.998546666671489,        !- Vertex 3 Ycoordinate
+    3.9972833333289626;       !- Vertex 3 Zcoordinate
 
 FENESTRATIONSURFACE:DETAILED,
     0ehDWn$jRmOLrzss_CMuG1_7,    !- Name
@@ -7180,14 +7174,14 @@ FENESTRATIONSURFACE:DETAILED,
     1.0,                      !- Multiplier
     autocalculate,            !- Number of Vertices
     11.7,                     !- Vertex 1 Xcoordinate
-    5.0011800000048225,       !- Vertex 1 Ycoordinate
-    3.9971533333289626,       !- Vertex 1 Zcoordinate
+    5.000893333338156,        !- Vertex 1 Ycoordinate
+    3.997049999995629,        !- Vertex 1 Zcoordinate
     11.7,                     !- Vertex 2 Xcoordinate
-    5.001180000000017,        !- Vertex 2 Ycoordinate
-    3.5021533333333186,       !- Vertex 2 Zcoordinate
+    4.95238333333335,         !- Vertex 2 Ycoordinate
+    3.504029999999985,        !- Vertex 2 Zcoordinate
     11.7,                     !- Vertex 3 Xcoordinate
-    5.351640000000017,        !- Vertex 3 Ycoordinate
-    3.6466933333333187;       !- Vertex 3 Zcoordinate
+    5.31472333333335,         !- Vertex 3 Ycoordinate
+    3.613919999999985;        !- Vertex 3 Zcoordinate
 
 FENESTRATIONSURFACE:DETAILED,
     0ehDWn$jRmOLrzss_CMuG1_8,    !- Name
@@ -7200,14 +7194,14 @@ FENESTRATIONSURFACE:DETAILED,
     1.0,                      !- Multiplier
     autocalculate,            !- Number of Vertices
     11.7,                     !- Vertex 1 Xcoordinate
-    5.002846666671489,        !- Vertex 1 Ycoordinate
-    3.998819999995629,        !- Vertex 1 Zcoordinate
+    5.002716666671489,        !- Vertex 1 Ycoordinate
+    3.9985466666622957,       !- Vertex 1 Zcoordinate
     11.7,                     !- Vertex 2 Xcoordinate
-    5.353306666666683,        !- Vertex 2 Ycoordinate
-    3.648359999999985,        !- Vertex 2 Zcoordinate
+    5.316546666666683,        !- Vertex 2 Ycoordinate
+    3.615416666666652,        !- Vertex 2 Zcoordinate
     11.7,                     !- Vertex 3 Xcoordinate
-    5.497846666666683,        !- Vertex 3 Ycoordinate
-    3.998819999999985;        !- Vertex 3 Zcoordinate
+    5.495736666666683,        !- Vertex 3 Ycoordinate
+    3.950036666666652;        !- Vertex 3 Zcoordinate
 
 FENESTRATIONSURFACE:DETAILED,
     064ScFx4rXJ9WMtPSmhFXX,    !- Name
