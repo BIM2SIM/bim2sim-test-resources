@@ -41,7 +41,7 @@ boundaryField
 
         qr		qr;
 
-        Q		uniform -51.844537;
+        Q		uniform -51.844418;
 
         qrRelaxation		0.003;
 
@@ -51,7 +51,7 @@ boundaryField
 
         kappa		fluidThermo;
 
-        value		uniform 292.575636;
+        value		uniform 292.575638;
 
     }
 
@@ -69,7 +69,7 @@ boundaryField
 
         type		fixedValue;
 
-        value		uniform 292.889901;
+        value		uniform 292.8899;
 
     }
 
@@ -78,7 +78,7 @@ boundaryField
 
         type		fixedValue;
 
-        value		uniform 291.993859;
+        value		uniform 291.99386;
 
     }
 
@@ -91,7 +91,7 @@ boundaryField
 
         qr		qr;
 
-        Q		uniform -78.476548;
+        Q		uniform -78.476549;
 
         qrRelaxation		0.003;
 
@@ -114,7 +114,7 @@ boundaryField
 
         qr		qr;
 
-        Q		uniform -80.548432;
+        Q		uniform -80.548434;
 
         qrRelaxation		0.003;
 
@@ -137,7 +137,7 @@ boundaryField
 
         qr		qr;
 
-        Q		uniform -30.53916;
+        Q		uniform -30.539161;
 
         qrRelaxation		0.003;
 
@@ -147,7 +147,7 @@ boundaryField
 
         kappa		fluidThermo;
 
-        value		uniform 290.675522;
+        value		uniform 290.675523;
 
     }
 
@@ -160,7 +160,7 @@ boundaryField
 
         qr		qr;
 
-        Q		uniform -30.574153;
+        Q		uniform -30.574155;
 
         qrRelaxation		0.003;
 
@@ -183,7 +183,7 @@ boundaryField
 
         qr		qr;
 
-        Q		236.820315;
+        Q		236.82028;
 
         qrRelaxation		0.003;
 
